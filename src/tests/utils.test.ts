@@ -20,5 +20,6 @@ describe("Utility functions", () => {
     expect(formatVersion(1)).toEqual("1.0");
     expect(formatVersion("THIS IS TEXT")).toEqual("THIS IS TEXT");
     expect(formatVersion(undefined)).toEqual("");
+    expect(formatVersion("534.30")).toEqual("534.30");
   });
 });

@@ -1,8 +1,8 @@
-import { Browsers, BrowserEngines } from "../typings/device-detector";
-import { formatVersion } from "../utils/version";
-import { variableReplacement } from "../utils/variable-replacement";
-import { userAgentParser } from "../utils/user-agent";
-import { loadYaml } from "../utils/yaml-loader";
+import { Browsers, BrowserEngines } from "../../typings/device-detector";
+import { formatVersion, parseBrowserEngineVersion } from "../../utils/version";
+import { variableReplacement } from "../../utils/variable-replacement";
+import { userAgentParser } from "../../utils/user-agent";
+import { loadYaml } from "../../utils/yaml-loader";
 
 interface BrowserResult {
   client: {
@@ -10,6 +10,7 @@ interface BrowserResult {
     name: string;
     version: string;
     engine: string;
+    engineVersion: string;
   }
 }
 
@@ -23,7 +24,8 @@ export default class BrowserParser {
         type: "",
         name: "",
         version: "",
-        engine: ""
+        engine: "",
+        engineVersion: ""
       }
     };
 
@@ -68,6 +70,8 @@ export default class BrowserParser {
         break;
       }
     }
+
+    result.client.engineVersion = formatVersion(parseBrowserEngineVersion(userAgent, result.client.engine));
 
     return result;
   };

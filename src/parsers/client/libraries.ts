@@ -1,15 +1,15 @@
-import { Libraries } from "../typings/device-detector";
-import { formatVersion } from "../utils/version";
-import { variableReplacement } from "../utils/variable-replacement";
-import { userAgentParser } from "../utils/user-agent";
-import { loadYaml } from "../utils/yaml-loader";
+import { Libraries } from "../../typings/device-detector";
+import { formatVersion } from "../../utils/version";
+import { variableReplacement } from "../../utils/variable-replacement";
+import { userAgentParser } from "../../utils/user-agent";
+import { loadYaml } from "../../utils/yaml-loader";
 
 interface LibrariesResult {
   client: {
     type: string;
     name: string;
     version: string;
-    url?: string;
+    url: string;
   }
 }
 
@@ -21,7 +21,8 @@ export default class LibraryParser {
       client: {
         type: "",
         name: "",
-        version: ""
+        version: "",
+        url: ""
       }
     };
 
@@ -33,10 +34,7 @@ export default class LibraryParser {
       result.client.type = "library";
       result.client.name = variableReplacement(library.name, match);
       result.client.version = formatVersion(variableReplacement(library.version, match));
-
-      if (library.url) {
-        result.client.url = library.url || "";
-      }
+      result.client.url = library.url || "";
 
       break;
     }

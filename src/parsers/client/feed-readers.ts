@@ -1,8 +1,8 @@
-import { FeedReaders } from "../typings/device-detector";
-import { formatVersion } from "../utils/version";
-import { variableReplacement } from "../utils/variable-replacement";
-import { userAgentParser } from "../utils/user-agent";
-import {loadYaml} from "../utils/yaml-loader";
+import { FeedReaders } from "../../typings/device-detector";
+import { formatVersion } from "../../utils/version";
+import { variableReplacement } from "../../utils/variable-replacement";
+import { userAgentParser } from "../../utils/user-agent";
+import {loadYaml} from "../../utils/yaml-loader";
 
 interface FeedReaderResult {
   client: {

@@ -1,11 +1,11 @@
 import * as YAML from "yamljs";
 import * as path from "path";
-import BrowserParser from "../parsers/browser";
-import MobileAppParser from "../parsers/mobile-apps";
-import FeedReaderParser from "../parsers/feed-readers";
-import LibraryParser from "../parsers/libraries";
-import MediaPlayerParser from "../parsers/media-players";
-import PersonalInformationManagerParser from "../parsers/personal-information-managers";
+import BrowserParser from "../parsers/client/browser";
+import MobileAppParser from "../parsers/client/mobile-apps";
+import FeedReaderParser from "../parsers/client/feed-readers";
+import LibraryParser from "../parsers/client/libraries";
+import MediaPlayerParser from "../parsers/client/media-players";
+import PersonalInformationManagerParser from "../parsers/client/personal-information-managers";
 import {BrowserTests, FeedReaders, MobileApps, Libraries, MediaPlayers, PersonalInformationManagers} from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 
@@ -37,6 +37,12 @@ describe("Client / browsers", () => {
         expect(result.client.engine).toBe("");
       } else {
         expect(result.client.engine).toEqual(browserTest.client.engine);
+      }
+
+      if (!browserTest.client.engine_version) {
+        expect(result.client.engineVersion).toBe("");
+      } else {
+        expect(result.client.engineVersion).toEqual(formatVersion(browserTest.client.engine_version));
       }
     });
   }
