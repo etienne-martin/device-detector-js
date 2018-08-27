@@ -3,6 +3,7 @@ import * as path from "path";
 import { Browsers, BrowserEngines } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
+import {userAgentParser} from "../utils/user-agent";
 
 interface BrowserResult {
   client: {
@@ -29,9 +30,7 @@ export default class BrowserParser {
     };
 
     for (const browser of browsers) {
-      // only match if useragent begins with given regex or there is no letter before it
-      const regex = `(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(?:${browser.regex})`;
-      const match = RegExp(regex, "i").exec(userAgent);
+      const match = userAgentParser(browser.regex, userAgent);
 
       if (!match) continue;
 

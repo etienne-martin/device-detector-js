@@ -33,7 +33,37 @@ export interface MobileApp {
   version: string;
 }
 
+export interface FeedReader {
+  regex: string;
+  name: string;
+  version: string;
+  url: string;
+}
+
+export interface Library {
+  regex: string;
+  name: string;
+  version: string;
+  url?: string;
+}
+
+export interface MediaPlayer {
+  regex: string;
+  name: string;
+  version: string;
+}
+
+export interface PersonalInformationManager {
+  regex: string;
+  name: string;
+  version: string;
+}
+
 export type Browsers = Browser[];
 export type BrowserEngines = BrowserEngine[];
 export type BrowserTests = BrowserTest[];
 export type MobileApps = MobileApp[];
+export type FeedReaders = FeedReader[];
+export type Libraries = Library[];
+export type MediaPlayers = MediaPlayer[];
+export type PersonalInformationManagers = PersonalInformationManager[];

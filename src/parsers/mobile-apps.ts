@@ -3,6 +3,7 @@ import * as path from "path";
 import { MobileApps } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
+import { userAgentParser } from "../utils/user-agent";
 
 interface MobileAppsResult {
   client: {
@@ -15,7 +16,7 @@ interface MobileAppsResult {
 const root = path.resolve(__dirname);
 const mobileApps: MobileApps = YAML.load(root + "/../../node_modules/device-detector/regexes/client/mobile_apps.yml");
 
-export default class MobileAppsParser {
+export default class MobileAppParser {
   public detect = (userAgent: string): MobileAppsResult => {
     const result: MobileAppsResult = {
       client: {
@@ -26,9 +27,7 @@ export default class MobileAppsParser {
     };
 
     for (const mobileApp of mobileApps) {
-      // only match if useragent begins with given regex or there is no letter before it
-      const regex = `(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(?:${mobileApp.regex})`;
-      const match = RegExp(regex, "i").exec(userAgent);
+      const match = userAgentParser(mobileApp.regex, userAgent);
 
       if (!match) continue;
 
