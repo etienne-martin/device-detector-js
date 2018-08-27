@@ -1,13 +1,14 @@
 import * as YAML from "yamljs";
 import * as path from "path";
-import DeviceDetector from "../index";
-import { BrowserTests } from "../typings/device-detector";
+import BrowserDetector from "../parsers/browser";
+import MobileAppsDetector from "../parsers/mobile-apps";
+import {BrowserTests, MobileApps} from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 
 const root = path.resolve(__dirname);
 const browserTests: BrowserTests = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/browser.yml");
-const deviceDetector = new DeviceDetector();
+const mobileAppTests: MobileApps = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/mobile_app.yml");
 
 describe("Utility functions", () => {
   test(`variable replacement`, async () => {
@@ -32,10 +33,12 @@ describe("Utility functions", () => {
 });
 
 describe("Client / browsers", () => {
+  const browserDetector = new BrowserDetector();
+
   for (const browserTest of browserTests) {
     test(`${browserTest.client.name} ${browserTest.client.version || ""}`, async () => {
       const userAgent = browserTest.user_agent;
-      const result = deviceDetector.detect(userAgent);
+      const result = browserDetector.detect(userAgent);
 
       expect(result.client.type).toEqual(browserTest.client.type);
       expect(result.client.name).toEqual(browserTest.client.name);
@@ -50,6 +53,26 @@ describe("Client / browsers", () => {
         expect(result.client.engine).toBe("");
       } else {
         expect(result.client.engine).toEqual(browserTest.client.engine);
+      }
+    });
+  }
+});
+
+describe("Client / mobile apps", () => {
+  const mobileAppsDetector = new MobileAppsDetector();
+
+  for (const mobileAppTest of mobileAppTests) {
+    test(`${mobileAppTest.client.name} ${mobileAppTest.client.version || ""}`, async () => {
+      const userAgent = mobileAppTest.user_agent;
+      const result = mobileAppsDetector.detect(userAgent);
+
+      expect(result.client.type).toEqual(mobileAppTest.client.type);
+      expect(result.client.name).toEqual(mobileAppTest.client.name);
+
+      if (!mobileAppTest.client.version) {
+        expect(result.client.version).toBe("");
+      } else {
+        expect(result.client.version).toEqual(formatVersion(mobileAppTest.client.version));
       }
     });
   }

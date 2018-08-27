@@ -27,6 +27,13 @@ export interface BrowserTest {
   };
 }
 
+export interface MobileApp {
+  regex: string;
+  name: string;
+  version: string;
+}
+
 export type Browsers = Browser[];
 export type BrowserEngines = BrowserEngine[];
 export type BrowserTests = BrowserTest[];
+export type MobileApps = MobileApp[];

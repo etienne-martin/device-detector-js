@@ -3,15 +3,16 @@ import { trim } from "lodash";
 export const formatVersion = (str: string | number | undefined): string => {
   if (str === undefined) return "";
 
-  const trimmedString = trim(str.toString(), ".");
+  let sanitizedString = trim(str.toString(), ".");
+  sanitizedString = sanitizedString.replace("_", ".");
 
-  if (typeof trimmedString === "string" && trimmedString.split(".").length > 2) {
-    return trimmedString;
+  if (typeof sanitizedString === "string" && sanitizedString.split(".").length > 2) {
+    return sanitizedString;
   }
 
-  if (parseFloat(trimmedString.toString()) === parseInt(trimmedString.toString(), 10)) {
-    return parseInt(trimmedString.toString(), 10).toFixed(1);
+  if (parseFloat(sanitizedString.toString()) === parseInt(sanitizedString.toString(), 10)) {
+    return parseInt(sanitizedString.toString(), 10).toFixed(1);
   }
 
-  return trimmedString.toString();
+  return sanitizedString.toString();
 };
