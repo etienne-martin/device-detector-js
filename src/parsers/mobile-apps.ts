@@ -4,7 +4,7 @@ import { MobileApps } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 
-interface Result {
+interface MobileAppsResult {
   client: {
     type: string;
     name: string;
@@ -15,9 +15,9 @@ interface Result {
 const root = path.resolve(__dirname);
 const mobileApps: MobileApps = YAML.load(root + "/../../node_modules/device-detector/regexes/client/mobile_apps.yml");
 
-export default class MobileAppsDetector {
-  public detect = (userAgent: string) => {
-    const result: Result = {
+export default class MobileAppsParser {
+  public detect = (userAgent: string): MobileAppsResult => {
+    const result: MobileAppsResult = {
       client: {
         type: "",
         name: "",

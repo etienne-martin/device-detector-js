@@ -4,7 +4,7 @@ import { Browsers, BrowserEngines } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 
-interface Result {
+interface BrowserResult {
   client: {
     type: string;
     name: string;
@@ -17,9 +17,9 @@ const root = path.resolve(__dirname);
 const browsers: Browsers = YAML.load(root + "/../../node_modules/device-detector/regexes/client/browsers.yml");
 const browserEngines: BrowserEngines = YAML.load(root + "/../../node_modules/device-detector/regexes/client/browser_engine.yml");
 
-export default class BrowserDetector {
-  public detect = (userAgent: string) => {
-    const result: Result = {
+export default class BrowserParser {
+  public detect = (userAgent: string): BrowserResult => {
+    const result: BrowserResult = {
       client: {
         type: "",
         name: "",
