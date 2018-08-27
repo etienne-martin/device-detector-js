@@ -2,14 +2,14 @@ import * as YAML from "yamljs";
 import * as path from "path";
 import DeviceDetector from "../index";
 import { BrowserTests } from "../typings/device-detector";
-import { formatVersion } from "../helpers/version";
-import { variableReplacement } from "../helpers/variable-replacement";
+import { formatVersion } from "../utils/version";
+import { variableReplacement } from "../utils/variable-replacement";
 
 const root = path.resolve(__dirname);
 const browserTests: BrowserTests = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/browser.yml");
 const deviceDetector = new DeviceDetector();
 
-describe("Helper functions", () => {
+describe("Utility functions", () => {
   test(`variable replacement`, async () => {
     expect(variableReplacement("$1", ["test"])).toEqual("test");
     expect(variableReplacement("$2 $1", ["last", "first"])).toEqual("first last");

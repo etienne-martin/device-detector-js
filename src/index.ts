@@ -1,8 +1,8 @@
 import * as YAML from "yamljs";
 import * as path from "path";
 import { Browsers, BrowserEngines } from "./typings/device-detector";
-import { formatVersion } from "./helpers/version";
-import { variableReplacement } from "./helpers/variable-replacement";
+import { formatVersion } from "./utils/version";
+import { variableReplacement } from "./utils/variable-replacement";
 
 interface Result {
   client: {
