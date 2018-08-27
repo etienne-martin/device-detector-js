@@ -2,7 +2,7 @@ import { MediaPlayers } from "../../typings/device-detector";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import {loadYaml} from "../../utils/yaml-loader";
+import { loadRegexes } from "../../utils/yaml-loader";
 
 interface MediaPlayersResult {
   client: {
@@ -12,7 +12,7 @@ interface MediaPlayersResult {
   }
 }
 
-const mediaPlayers: MediaPlayers = loadYaml("client/mediaplayers");
+const mediaPlayers: MediaPlayers = loadRegexes("client/mediaplayers");
 
 export default class MediaPlayerParser {
   public detect = (userAgent: string): MediaPlayersResult => {

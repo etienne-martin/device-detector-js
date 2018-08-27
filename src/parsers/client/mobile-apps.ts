@@ -2,7 +2,7 @@ import { MobileApps } from "../../typings/device-detector";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import {loadYaml} from "../../utils/yaml-loader";
+import { loadRegexes } from "../../utils/yaml-loader";
 
 interface MobileAppsResult {
   client: {
@@ -12,7 +12,7 @@ interface MobileAppsResult {
   }
 }
 
-const mobileApps: MobileApps = loadYaml("client/mobile_apps");
+const mobileApps: MobileApps = loadRegexes("client/mobile_apps");
 
 export default class MobileAppParser {
   public detect = (userAgent: string): MobileAppsResult => {

@@ -2,7 +2,7 @@ import { PersonalInformationManagers } from "../../typings/device-detector";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import {loadYaml} from "../../utils/yaml-loader";
+import { loadRegexes } from "../../utils/yaml-loader";
 
 interface PersonalInformationManagerResult {
   client: {
@@ -12,7 +12,7 @@ interface PersonalInformationManagerResult {
   }
 }
 
-const personalInformationManagers: PersonalInformationManagers = loadYaml("client/pim");
+const personalInformationManagers: PersonalInformationManagers = loadRegexes("client/pim");
 
 export default class PersonalInformationManagerParser {
   public detect = (userAgent: string): PersonalInformationManagerResult => {

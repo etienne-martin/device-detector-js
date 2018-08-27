@@ -2,7 +2,7 @@ import { Browsers, BrowserEngines } from "../../typings/device-detector";
 import { formatVersion, parseBrowserEngineVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadYaml } from "../../utils/yaml-loader";
+import { loadRegexes } from "../../utils/yaml-loader";
 
 interface BrowserResult {
   client: {
@@ -14,8 +14,8 @@ interface BrowserResult {
   }
 }
 
-const browsers: Browsers = loadYaml("client/browsers");
-const browserEngines: BrowserEngines = loadYaml("client/browser_engine");
+const browsers: Browsers = loadRegexes("client/browsers");
+const browserEngines: BrowserEngines = loadRegexes("client/browser_engine");
 
 export default class BrowserParser {
   public detect = (userAgent: string): BrowserResult => {

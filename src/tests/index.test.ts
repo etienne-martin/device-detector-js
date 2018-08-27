@@ -1,5 +1,4 @@
-import * as YAML from "yamljs";
-import * as path from "path";
+import { loadTests } from "../utils/yaml-loader";
 import BrowserParser from "../parsers/client/browser";
 import MobileAppParser from "../parsers/client/mobile-apps";
 import FeedReaderParser from "../parsers/client/feed-readers";
@@ -9,13 +8,12 @@ import PersonalInformationManagerParser from "../parsers/client/personal-informa
 import {BrowserTests, FeedReaders, MobileApps, Libraries, MediaPlayers, PersonalInformationManagers} from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 
-const root = path.resolve(__dirname);
-const browserTests: BrowserTests = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/browser.yml");
-const mobileAppTests: MobileApps = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/mobile_app.yml");
-const feedReaderTests: FeedReaders = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/feed_reader.yml");
-const libraryTests: Libraries = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/library.yml");
-const mediaPlayerTests: MediaPlayers = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/mediaplayer.yml");
-const personalInformationManagerTests: PersonalInformationManagers = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/pim.yml");
+const browserTests: BrowserTests = loadTests("Parser/Client/fixtures/browser");
+const mobileAppTests: MobileApps = loadTests("Parser/Client/fixtures/mobile_app");
+const feedReaderTests: FeedReaders = loadTests("Parser/Client/fixtures/feed_reader");
+const libraryTests: Libraries = loadTests("Parser/Client/fixtures/library");
+const mediaPlayerTests: MediaPlayers = loadTests("Parser/Client/fixtures/mediaplayer");
+const personalInformationManagerTests: PersonalInformationManagers = loadTests("Parser/Client/fixtures/pim");
 
 describe("Client / browsers", () => {
   const browserParser = new BrowserParser();

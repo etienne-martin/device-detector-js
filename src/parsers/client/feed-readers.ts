@@ -2,7 +2,7 @@ import { FeedReaders } from "../../typings/device-detector";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import {loadYaml} from "../../utils/yaml-loader";
+import { loadRegexes } from "../../utils/yaml-loader";
 
 interface FeedReaderResult {
   client: {
@@ -13,7 +13,7 @@ interface FeedReaderResult {
   }
 }
 
-const feedReaders: FeedReaders = loadYaml("client/feed_readers");
+const feedReaders: FeedReaders = loadRegexes("client/feed_readers");
 
 export default class FeedReaderParser {
   public detect = (userAgent: string): FeedReaderResult => {

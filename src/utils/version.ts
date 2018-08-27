@@ -1,19 +1,17 @@
 import { trim } from "lodash";
 
 // TODO: implement $maxMinorParts
-export const formatVersion = (version: string | number | undefined): string => {
+export const formatVersion = (version: string | undefined): string => {
   if (version === undefined) return "";
 
-  let versionString = trim(version.toString(), ".");
-
-  versionString = versionString.replace("_", ".");
+  const versionString = trim(version, ".").replace("_", ".");
 
   if (versionString.split(".").length > 2) {
     return versionString;
   }
 
-  if (Number.isInteger(parseFloat(versionString.toString()))) {
-    return parseInt(versionString.toString(), 10).toFixed(1);
+  if (Number.isInteger(parseFloat(versionString))) {
+    return parseInt(versionString, 10).toFixed(1);
   }
 
   return versionString;

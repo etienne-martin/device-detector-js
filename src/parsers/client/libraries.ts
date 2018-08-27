@@ -2,7 +2,7 @@ import { Libraries } from "../../typings/device-detector";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadYaml } from "../../utils/yaml-loader";
+import { loadRegexes } from "../../utils/yaml-loader";
 
 interface LibrariesResult {
   client: {
@@ -13,7 +13,7 @@ interface LibrariesResult {
   }
 }
 
-const libraries: Libraries = loadYaml("client/libraries");
+const libraries: Libraries = loadRegexes("client/libraries");
 
 export default class LibraryParser {
   public detect = (userAgent: string): LibrariesResult => {
