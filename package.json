@@ -1,0 +1,84 @@
+{
+  "name": "device-detector",
+  "version": "0.0.1",
+  "description": "A Node.js port of Matomo device-detector",
+  "main": "dist/index.js",
+  "private": false,
+  "author": {
+    "name": "Etienne Martin",
+    "url": "https://github.com/etienne-martin"
+  },
+  "scripts": {
+    "dev": "tsc --pretty --watch",
+    "lint": "tslint -c tslint.json -p tsconfig.json --fix",
+    "pretest": "npm run lint",
+    "test": "jest src --coverage --verbose",
+    "test:watch": "jest src --coverage --verbose --watch",
+    "prebuild": "rm -rf dist/ && npm run lint",
+    "build": "tsc --pretty",
+    "install": "napa"
+  },
+  "napa": {
+    "device-detector": "https://github.com/matomo-org/device-detector/archive/3.11.1.tar.gz",
+    "device-detector-tests": "https://github.com/matomo-org/device-detector"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build",
+      "pre-push": "npm run build"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/coverage/",
+      "/dist/",
+      "/typings/",
+      "/tests/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": -10
+      }
+    },
+    "testMatch": [
+      "**/?(*.)(test).(tsx|ts)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.(tsx|ts)"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.0",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.9.2",
+    "@types/yamljs": "^0.2.30",
+    "husky": "^0.15.0-rc.9",
+    "jest": "^22.4.2",
+    "napa": "^3.0.0",
+    "ts-jest": "^22.4.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.7.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "typescript": "^2.7.2"
+  }
+}
