@@ -1,9 +1,8 @@
-import * as YAML from "yamljs";
-import * as path from "path";
 import { PersonalInformationManagers } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 import { userAgentParser } from "../utils/user-agent";
+import {loadYaml} from "../utils/yaml-loader";
 
 interface PersonalInformationManagerResult {
   client: {
@@ -13,8 +12,7 @@ interface PersonalInformationManagerResult {
   }
 }
 
-const root = path.resolve(__dirname);
-const personalInformationManagers: PersonalInformationManagers = YAML.load(root + "/../../node_modules/device-detector/regexes/client/pim.yml");
+const personalInformationManagers: PersonalInformationManagers = loadYaml("client/pim");
 
 export default class PersonalInformationManagerParser {
   public detect = (userAgent: string): PersonalInformationManagerResult => {
@@ -31,9 +29,9 @@ export default class PersonalInformationManagerParser {
 
       if (!match) continue;
 
-      result.client.type = "media player";
-      result.client.name = variableReplacement(personalInformationManager.name, match.slice(1));
-      result.client.version = formatVersion(variableReplacement(personalInformationManager.version, match.slice(1)));
+      result.client.type = "personal information manager";
+      result.client.name = variableReplacement(personalInformationManager.name, match);
+      result.client.version = formatVersion(variableReplacement(personalInformationManager.version, match));
 
       break;
     }

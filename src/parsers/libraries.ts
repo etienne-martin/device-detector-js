@@ -1,9 +1,8 @@
-import * as YAML from "yamljs";
-import * as path from "path";
 import { Libraries } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 import { userAgentParser } from "../utils/user-agent";
+import { loadYaml } from "../utils/yaml-loader";
 
 interface LibrariesResult {
   client: {
@@ -14,8 +13,7 @@ interface LibrariesResult {
   }
 }
 
-const root = path.resolve(__dirname);
-const libraries: Libraries = YAML.load(root + "/../../node_modules/device-detector/regexes/client/libraries.yml");
+const libraries: Libraries = loadYaml("client/libraries");
 
 export default class LibraryParser {
   public detect = (userAgent: string): LibrariesResult => {
@@ -33,8 +31,8 @@ export default class LibraryParser {
       if (!match) continue;
 
       result.client.type = "library";
-      result.client.name = variableReplacement(library.name, match.slice(1));
-      result.client.version = formatVersion(variableReplacement(library.version, match.slice(1)));
+      result.client.name = variableReplacement(library.name, match);
+      result.client.version = formatVersion(variableReplacement(library.version, match));
 
       if (library.url) {
         result.client.url = library.url || "";

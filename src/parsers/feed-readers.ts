@@ -1,9 +1,8 @@
-import * as YAML from "yamljs";
-import * as path from "path";
 import { FeedReaders } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 import { userAgentParser } from "../utils/user-agent";
+import {loadYaml} from "../utils/yaml-loader";
 
 interface FeedReaderResult {
   client: {
@@ -14,8 +13,7 @@ interface FeedReaderResult {
   }
 }
 
-const root = path.resolve(__dirname);
-const feedReaders: FeedReaders = YAML.load(root + "/../../node_modules/device-detector/regexes/client/feed_readers.yml");
+const feedReaders: FeedReaders = loadYaml("client/feed_readers");
 
 export default class FeedReaderParser {
   public detect = (userAgent: string): FeedReaderResult => {
@@ -34,8 +32,8 @@ export default class FeedReaderParser {
       if (!match) continue;
 
       result.client.type = "feed reader";
-      result.client.name = variableReplacement(feedReader.name, match.slice(1));
-      result.client.version = formatVersion(variableReplacement(feedReader.version, match.slice(1)));
+      result.client.name = variableReplacement(feedReader.name, match);
+      result.client.version = formatVersion(variableReplacement(feedReader.version, match));
       result.client.url = feedReader.url;
 
       break;

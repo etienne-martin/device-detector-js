@@ -1,9 +1,8 @@
-import * as YAML from "yamljs";
-import * as path from "path";
 import { MediaPlayers } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 import { userAgentParser } from "../utils/user-agent";
+import {loadYaml} from "../utils/yaml-loader";
 
 interface MediaPlayersResult {
   client: {
@@ -13,8 +12,7 @@ interface MediaPlayersResult {
   }
 }
 
-const root = path.resolve(__dirname);
-const mediaPlayers: MediaPlayers = YAML.load(root + "/../../node_modules/device-detector/regexes/client/mediaplayers.yml");
+const mediaPlayers: MediaPlayers = loadYaml("client/mediaplayers");
 
 export default class MediaPlayerParser {
   public detect = (userAgent: string): MediaPlayersResult => {
@@ -32,8 +30,8 @@ export default class MediaPlayerParser {
       if (!match) continue;
 
       result.client.type = "media player";
-      result.client.name = variableReplacement(mediaPlayer.name, match.slice(1));
-      result.client.version = formatVersion(variableReplacement(mediaPlayer.version, match.slice(1)));
+      result.client.name = variableReplacement(mediaPlayer.name, match);
+      result.client.version = formatVersion(variableReplacement(mediaPlayer.version, match));
 
       break;
     }

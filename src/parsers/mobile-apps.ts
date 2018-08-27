@@ -1,9 +1,8 @@
-import * as YAML from "yamljs";
-import * as path from "path";
 import { MobileApps } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
 import { userAgentParser } from "../utils/user-agent";
+import {loadYaml} from "../utils/yaml-loader";
 
 interface MobileAppsResult {
   client: {
@@ -13,8 +12,7 @@ interface MobileAppsResult {
   }
 }
 
-const root = path.resolve(__dirname);
-const mobileApps: MobileApps = YAML.load(root + "/../../node_modules/device-detector/regexes/client/mobile_apps.yml");
+const mobileApps: MobileApps = loadYaml("client/mobile_apps");
 
 export default class MobileAppParser {
   public detect = (userAgent: string): MobileAppsResult => {
@@ -32,8 +30,8 @@ export default class MobileAppParser {
       if (!match) continue;
 
       result.client.type = "mobile app";
-      result.client.name = variableReplacement(mobileApp.name, match.slice(1));
-      result.client.version = formatVersion(variableReplacement(mobileApp.version, match.slice(1)));
+      result.client.name = variableReplacement(mobileApp.name, match);
+      result.client.version = formatVersion(variableReplacement(mobileApp.version, match));
 
       break;
     }

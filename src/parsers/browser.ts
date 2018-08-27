@@ -1,9 +1,8 @@
-import * as YAML from "yamljs";
-import * as path from "path";
 import { Browsers, BrowserEngines } from "../typings/device-detector";
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
-import {userAgentParser} from "../utils/user-agent";
+import { userAgentParser } from "../utils/user-agent";
+import { loadYaml } from "../utils/yaml-loader";
 
 interface BrowserResult {
   client: {
@@ -14,9 +13,8 @@ interface BrowserResult {
   }
 }
 
-const root = path.resolve(__dirname);
-const browsers: Browsers = YAML.load(root + "/../../node_modules/device-detector/regexes/client/browsers.yml");
-const browserEngines: BrowserEngines = YAML.load(root + "/../../node_modules/device-detector/regexes/client/browser_engine.yml");
+const browsers: Browsers = loadYaml("client/browsers");
+const browserEngines: BrowserEngines = loadYaml("client/browser_engine");
 
 export default class BrowserParser {
   public detect = (userAgent: string): BrowserResult => {
@@ -34,7 +32,7 @@ export default class BrowserParser {
 
       if (!match) continue;
 
-      const version = formatVersion(variableReplacement(browser.version, match.slice(1)));
+      const version = formatVersion(variableReplacement(browser.version, match));
       const shortVersion = version && parseFloat(version) || "";
       let engine = "";
 
@@ -52,7 +50,7 @@ export default class BrowserParser {
       }
 
       result.client.type = "browser";
-      result.client.name = variableReplacement(browser.name, match.slice(1));
+      result.client.name = variableReplacement(browser.name, match);
       result.client.version = version;
       result.client.engine = engine;
 

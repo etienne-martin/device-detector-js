@@ -18,9 +18,11 @@ const mediaPlayerTests: MediaPlayers = YAML.load(root + "/../../node_modules/dev
 const personalInformationManagerTests: PersonalInformationManagers = YAML.load(root + "/../../node_modules/device-detector-tests/Tests/Parser/Client/fixtures/pim.yml");
 
 describe("Client / browsers", () => {
+  const browserParser = new BrowserParser();
+
   for (const browserTest of browserTests) {
     test(`${browserTest.client.name} ${browserTest.client.version || ""}`, async () => {
-      const result = new BrowserParser().detect(browserTest.user_agent);
+      const result = browserParser.detect(browserTest.user_agent);
 
       expect(result.client.type).toEqual(browserTest.client.type);
       expect(result.client.name).toEqual(browserTest.client.name);
@@ -41,9 +43,11 @@ describe("Client / browsers", () => {
 });
 
 describe("Client / mobile apps", () => {
+  const mobileAppParser = new MobileAppParser();
+
   for (const mobileAppTest of mobileAppTests) {
     test(`${mobileAppTest.client.name} ${mobileAppTest.client.version || ""}`, async () => {
-      const result = new MobileAppParser().detect(mobileAppTest.user_agent);
+      const result = mobileAppParser.detect(mobileAppTest.user_agent);
 
       expect(result.client.type).toEqual(mobileAppTest.client.type);
       expect(result.client.name).toEqual(mobileAppTest.client.name);
@@ -58,9 +62,11 @@ describe("Client / mobile apps", () => {
 });
 
 describe("Client / feed readers", () => {
+  const feedReaderParser = new FeedReaderParser();
+
   for (const feedReaderTest of feedReaderTests) {
     test(`${feedReaderTest.client.name} ${feedReaderTest.client.version || ""}`, async () => {
-      const result = new FeedReaderParser().detect(feedReaderTest.user_agent);
+      const result = feedReaderParser.detect(feedReaderTest.user_agent);
 
       expect(result.client.type).toEqual(feedReaderTest.client.type);
       expect(result.client.name).toEqual(feedReaderTest.client.name);
@@ -75,9 +81,11 @@ describe("Client / feed readers", () => {
 });
 
 describe("Client / libraries", () => {
+  const libraryParser = new LibraryParser();
+
   for (const libraryTest of libraryTests) {
     test(`${libraryTest.client.name} ${libraryTest.client.version || ""}`, async () => {
-      const result = new LibraryParser().detect(libraryTest.user_agent);
+      const result = libraryParser.detect(libraryTest.user_agent);
 
       expect(result.client.type).toEqual(libraryTest.client.type);
       expect(result.client.name).toEqual(libraryTest.client.name);
@@ -92,11 +100,14 @@ describe("Client / libraries", () => {
 });
 
 describe("Client / media players", () => {
+  const mediaPlayerParser = new MediaPlayerParser();
+
   for (const mediaPlayerTest of mediaPlayerTests) {
     test(`${mediaPlayerTest.client.name} ${mediaPlayerTest.client.version || ""}`, async () => {
-      const result = new MediaPlayerParser().detect(mediaPlayerTest.user_agent);
+      const result = mediaPlayerParser.detect(mediaPlayerTest.user_agent);
+      const sanitizedType = mediaPlayerTest.client.type.replace("mediaplayer", "media player");
 
-      expect(result.client.type).toEqual("media player");
+      expect(result.client.type).toEqual(sanitizedType);
       expect(result.client.name).toEqual(mediaPlayerTest.client.name);
 
       if (!mediaPlayerTest.client.version) {
@@ -109,11 +120,14 @@ describe("Client / media players", () => {
 });
 
 describe("Client / personal information managers", () => {
+  const personalInformationManagerParser = new PersonalInformationManagerParser();
+
   for (const personalInformationManagerTest of personalInformationManagerTests) {
     test(`${personalInformationManagerTest.client.name} ${personalInformationManagerTest.client.version || ""}`, async () => {
-      const result = new PersonalInformationManagerParser().detect(personalInformationManagerTest.user_agent);
+      const result = personalInformationManagerParser.detect(personalInformationManagerTest.user_agent);
+      const sanitizedType = personalInformationManagerTest.client.type.replace("pim", "personal information manager");
 
-      expect(result.client.type).toEqual("media player");
+      expect(result.client.type).toEqual(sanitizedType);
       expect(result.client.name).toEqual(personalInformationManagerTest.client.name);
 
       if (!personalInformationManagerTest.client.version) {
