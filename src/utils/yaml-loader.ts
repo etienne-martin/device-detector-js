@@ -13,5 +13,5 @@ export const loadRegexes = (slug: string): any => {
 };
 
 export const loadTests = (slug: string): any => {
-  return loadYaml(`${path.resolve(__dirname)}/../../node_modules/device-detector-tests/Tests/${slug}.yml`);
+  return loadYaml(`${path.resolve(__dirname)}/../../node_modules/device-detector/Tests/${slug}.yml`);
 };

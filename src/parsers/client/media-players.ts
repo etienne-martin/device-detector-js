@@ -1,27 +1,33 @@
-import { MediaPlayers } from "../../typings/device-detector";
+import { MediaPlayers } from "../../typings/client";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 
-interface MediaPlayersResult {
-  client: {
-    type: string;
-    name: string;
-    version: string;
-  }
+export interface MediaPlayerResult {
+  type: string;
+  name: string;
+  version: string;
 }
 
-const mediaPlayers: MediaPlayers = loadRegexes("client/mediaplayers");
+let mediaPlayers: MediaPlayers;
 
 export default class MediaPlayerParser {
-  public detect = (userAgent: string): MediaPlayersResult => {
-    const result: MediaPlayersResult = {
-      client: {
-        type: "",
-        name: "",
-        version: ""
-      }
+  private readonly mediaPlayers: MediaPlayers;
+
+  constructor() {
+    this.mediaPlayers = mediaPlayers || loadRegexes("client/mediaplayers");
+
+    if (!mediaPlayers) {
+      mediaPlayers = this.mediaPlayers;
+    }
+  }
+
+  public parse = (userAgent: string): MediaPlayerResult => {
+    const result: MediaPlayerResult = {
+      type: "",
+      name: "",
+      version: ""
     };
 
     for (const mediaPlayer of mediaPlayers) {
@@ -29,9 +35,9 @@ export default class MediaPlayerParser {
 
       if (!match) continue;
 
-      result.client.type = "media player";
-      result.client.name = variableReplacement(mediaPlayer.name, match);
-      result.client.version = formatVersion(variableReplacement(mediaPlayer.version, match));
+      result.type = "media player";
+      result.name = variableReplacement(mediaPlayer.name, match);
+      result.version = formatVersion(variableReplacement(mediaPlayer.version, match));
 
       break;
     }

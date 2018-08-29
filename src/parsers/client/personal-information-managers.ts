@@ -1,27 +1,33 @@
-import { PersonalInformationManagers } from "../../typings/device-detector";
+import { PersonalInformationManagers } from "../../typings/client";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 
-interface PersonalInformationManagerResult {
-  client: {
-    type: string;
-    name: string;
-    version: string;
-  }
+export interface PersonalInformationManagerResult {
+  type: string;
+  name: string;
+  version: string;
 }
 
-const personalInformationManagers: PersonalInformationManagers = loadRegexes("client/pim");
+let personalInformationManagers: PersonalInformationManagers;
 
 export default class PersonalInformationManagerParser {
-  public detect = (userAgent: string): PersonalInformationManagerResult => {
+  private readonly personalInformationManagers: PersonalInformationManagers;
+
+  constructor() {
+    this.personalInformationManagers = personalInformationManagers || loadRegexes("client/pim");
+
+    if (!personalInformationManagers) {
+      personalInformationManagers = this.personalInformationManagers;
+    }
+  }
+
+  public parse = (userAgent: string): PersonalInformationManagerResult => {
     const result: PersonalInformationManagerResult = {
-      client: {
-        type: "",
-        name: "",
-        version: ""
-      }
+      type: "",
+      name: "",
+      version: ""
     };
 
     for (const personalInformationManager of personalInformationManagers) {
@@ -29,9 +35,9 @@ export default class PersonalInformationManagerParser {
 
       if (!match) continue;
 
-      result.client.type = "personal information manager";
-      result.client.name = variableReplacement(personalInformationManager.name, match);
-      result.client.version = formatVersion(variableReplacement(personalInformationManager.version, match));
+      result.type = "personal information manager";
+      result.name = variableReplacement(personalInformationManager.name, match);
+      result.version = formatVersion(variableReplacement(personalInformationManager.version, match));
 
       break;
     }

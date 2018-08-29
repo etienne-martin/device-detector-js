@@ -1,29 +1,35 @@
-import { FeedReaders } from "../../typings/device-detector";
+import { FeedReaders } from "../../typings/client";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 
-interface FeedReaderResult {
-  client: {
-    type: string;
-    name: string;
-    version: string;
-    url: string;
-  }
+export interface FeedReaderResult {
+  type: string;
+  name: string;
+  version: string;
+  url: string;
 }
 
-const feedReaders: FeedReaders = loadRegexes("client/feed_readers");
+let feedReaders: FeedReaders;
 
 export default class FeedReaderParser {
-  public detect = (userAgent: string): FeedReaderResult => {
+  private readonly feedReaders: FeedReaders;
+
+  constructor() {
+    this.feedReaders = feedReaders || loadRegexes("client/feed_readers");
+
+    if (!feedReaders) {
+      feedReaders = this.feedReaders;
+    }
+  }
+
+  public parse = (userAgent: string): FeedReaderResult => {
     const result: FeedReaderResult = {
-      client: {
-        type: "",
-        name: "",
-        version: "",
-        url: ""
-      }
+      type: "",
+      name: "",
+      version: "",
+      url: ""
     };
 
     for (const feedReader of feedReaders) {
@@ -31,10 +37,10 @@ export default class FeedReaderParser {
 
       if (!match) continue;
 
-      result.client.type = "feed reader";
-      result.client.name = variableReplacement(feedReader.name, match);
-      result.client.version = formatVersion(variableReplacement(feedReader.version, match));
-      result.client.url = feedReader.url;
+      result.type = "feed reader";
+      result.name = variableReplacement(feedReader.name, match);
+      result.version = formatVersion(variableReplacement(feedReader.version, match));
+      result.url = feedReader.url;
 
       break;
     }

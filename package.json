@@ -19,13 +19,12 @@
     "install": "napa"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector/archive/3.11.1.tar.gz",
-    "device-detector-tests": "https://github.com/matomo-org/device-detector"
+    "device-detector": "https://github.com/matomo-org/device-detector#v3.11.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && npm run test",
-      "pre-push": "npm run build && npm run test"
+      "pre-commit": "npm run build",
+      "pre-push": "npm run build"
     }
   },
   "jest": {
