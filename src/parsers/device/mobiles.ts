@@ -57,15 +57,6 @@ export default class MobileParser {
           if (!modelMatch) continue;
 
           result.model = buildModel(variableReplacement(model.model, modelMatch)).trim();
-
-          if (result.model === "One Touch A3 XL") {
-            console.log("TATATATATA:");
-            console.log(result);
-            console.log(userAgent);
-            console.log(mobile.regex);
-            console.log(model.regex);
-          }
-
           break;
         }
       }
