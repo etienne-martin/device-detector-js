@@ -38,14 +38,14 @@ export default class CameraParser {
       result.brand = brand;
 
       if (camera.model) {
-        result.model = camera.model;
+        result.model = variableReplacement(camera.model, match).trim();
       } else if (camera.models) {
         for (const model of camera.models) {
           const modelMatch = userAgentParser(model.regex, userAgent);
 
           if (!modelMatch) continue;
 
-          result.model = variableReplacement(model.model, modelMatch);
+          result.model = variableReplacement(model.model, modelMatch).trim();
           break;
         }
       }

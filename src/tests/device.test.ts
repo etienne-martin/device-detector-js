@@ -1,12 +1,41 @@
 import DeviceParser from "../parsers/device";
 import { loadTests } from "../utils/yaml-loader";
-import { CameraTests, MobileTests } from "../typings/device";
+import {
+  CameraTests,
+  CarTests,
+  ConsoleTests,
+  MobileTests,
+  PortableMediaPlayerTests,
+  TelevisionTests
+} from "../typings/device";
 import { CameraResult } from "../parsers/device/cameras";
 import { MobileResult } from "../parsers/device/mobiles";
+import { TelevisionResult } from "../parsers/device/televisions";
+import { CarResult } from "../parsers/device/cars";
+import { ConsoleResult } from "../parsers/device/consoles";
 import { get } from "lodash";
+import {PortableMediaPlayerResult} from "../parsers/device/portable-media-players";
 
 const cameraTests: CameraTests = loadTests("Parser/Devices/fixtures/camera");
-const smartphoneTests: MobileTests = loadTests("fixtures/smartphone");
+const mobileTests: MobileTests = [
+  ...loadTests("fixtures/smartphone"),
+  ...loadTests("fixtures/smartphone-1"),
+  ...loadTests("fixtures/smartphone-2"),
+  ...loadTests("fixtures/smartphone-3"),
+  ...loadTests("fixtures/smartphone-4"),
+  ...loadTests("fixtures/smartphone-5"),
+  ...loadTests("fixtures/smartphone-6"),
+  ...loadTests("fixtures/tablet"),
+  ...loadTests("fixtures/tablet-1"),
+  ...loadTests("fixtures/tablet-2"),
+  ...loadTests("fixtures/feature_phone"),
+  ...loadTests("fixtures/phablet"),
+  ...loadTests("fixtures/smart_display")
+];
+const televisionTests: TelevisionTests = loadTests("fixtures/tv");
+const carTests: CarTests = loadTests("fixtures/car_browser");
+const consoleTests: ConsoleTests = loadTests("fixtures/console");
+const portableMediaPlayerTests: PortableMediaPlayerTests = loadTests("fixtures/portable_media_player");
 
 const deviceParser = new DeviceParser();
 const brands: {
@@ -15,24 +44,94 @@ const brands: {
 
 describe("Device / cameras", () => {
   for (const cameraTest of cameraTests) {
-    test(`${cameraTest.device.brand} ${cameraTest.device.model || ""}`, async () => {
+    test(`${brands[cameraTest.device.brand]} ${cameraTest.device.model || ""}`, async () => {
       const result = deviceParser.parse(cameraTest.user_agent) as CameraResult;
 
       expect(result.type).toEqual(cameraTest.device.type.replace("8", "camera"));
-      // expect(result.brand).toEqual(cameraTest.device.brand);
+      expect(result.brand).toEqual(brands[cameraTest.device.brand]);
       expect(result.model).toEqual(cameraTest.device.model);
     });
   }
 });
 
 describe("Device / mobiles", () => {
-  for (const smartphoneTest of smartphoneTests) {
-    test(`${brands[smartphoneTest.device.brand]} ${smartphoneTest.device.model || ""}`, async () => {
-      const result = deviceParser.parse(smartphoneTest.user_agent) as MobileResult;
+  for (const mobileTest of mobileTests) {
+    test(`${mobileTest.device.type}: ${brands[mobileTest.device.brand]} ${mobileTest.device.model || ""}`, async () => {
+      const result = deviceParser.parse(mobileTest.user_agent) as MobileResult;
 
-      // expect(result.type).toEqual(smartphoneTest.device.type);
-      expect(get(result, "brand")).toEqual(brands[smartphoneTest.device.brand]);
-      expect(get(result, "model") || "").toEqual(smartphoneTest.device.model);
+      // Some tests contains "null" as string for the model
+      // We need to sanitize it
+      if (mobileTest.device.model === "null") {
+        mobileTest.device.model = "";
+      }
+
+      const formattedResult = {
+        type: get(result, "type") || "",
+        brand: get(result, "brand") || "",
+        model: get(result, "model") || ""
+      };
+
+      const formattedTest = {
+        type: mobileTest.device.type || "",
+        brand: brands[mobileTest.device.brand] || "",
+        model: mobileTest.device.model || ""
+      };
+
+      expect(formattedResult).toEqual(formattedTest);
+    });
+  }
+});
+
+describe("Device / televisions", () => {
+  for (const televisionTest of televisionTests) {
+    test(`${brands[televisionTest.device.brand]} ${televisionTest.device.model || ""} ${televisionTest.user_agent}`, async () => {
+      const result = deviceParser.parse(televisionTest.user_agent) as TelevisionResult;
+
+      // Some tests contains "Unknown" as string for the brand
+      // We need to sanitize it
+      if (televisionTest.device.brand === "Unknown") {
+        televisionTest.device.brand = "";
+      }
+
+      expect(get(result, "type") || "").toEqual(televisionTest.device.type.replace("tv", "television"));
+      expect(result.brand).toEqual(brands[televisionTest.device.brand] || "");
+      expect(result.model).toEqual(televisionTest.device.model);
+    });
+  }
+});
+
+describe("Device / cars", () => {
+  for (const carTest of carTests) {
+    test(`${brands[carTest.device.brand]} ${carTest.device.model || ""}`, async () => {
+      const result = deviceParser.parse(carTest.user_agent) as CarResult;
+
+      expect(result.type).toEqual(carTest.device.type.replace("car browser", "car"));
+      expect(result.brand).toEqual(brands[carTest.device.brand]);
+      expect(result.model).toEqual(carTest.device.model);
+    });
+  }
+});
+
+describe("Device / consoles", () => {
+  for (const consoleTest of consoleTests) {
+    test(`${brands[consoleTest.device.brand]} ${consoleTest.device.model || ""}`, async () => {
+      const result = deviceParser.parse(consoleTest.user_agent) as ConsoleResult;
+
+      expect(result.type).toEqual(consoleTest.device.type);
+      expect(result.brand).toEqual(brands[consoleTest.device.brand]);
+      expect(result.model).toEqual(consoleTest.device.model);
+    });
+  }
+});
+
+describe("Device / portable media players", () => {
+  for (const portableMediaPlayerTest of portableMediaPlayerTests) {
+    test(`${brands[portableMediaPlayerTest.device.brand]} ${portableMediaPlayerTest.device.model || ""}`, async () => {
+      const result = deviceParser.parse(portableMediaPlayerTest.user_agent) as PortableMediaPlayerResult;
+
+      expect(result.type).toEqual(portableMediaPlayerTest.device.type);
+      expect(result.brand).toEqual(brands[portableMediaPlayerTest.device.brand]);
+      expect(result.model).toEqual(portableMediaPlayerTest.device.model);
     });
   }
 });

@@ -4,7 +4,7 @@ import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 
 export interface MobileResult {
-  type: string;
+  type: string; // TODO: maybe add better typing, ie: add all possible string values
   brand: string;
   model: string;
 }
@@ -57,10 +57,28 @@ export default class MobileParser {
           if (!modelMatch) continue;
 
           result.model = buildModel(variableReplacement(model.model, modelMatch)).trim();
+
+          if (model.device) {
+            result.type = model.device;
+          }
+
+          if (model.brand) {
+            result.brand = model.brand;
+          }
           break;
         }
       }
       break;
+    }
+
+    // Sanitize device type
+    if (result.type === "tv") {
+      result.type = result.type.replace("tv", "television");
+    }
+
+    // Sanitize device brand
+    if (result.brand === "Unknown") {
+      result.brand = "";
     }
 
     return result;
