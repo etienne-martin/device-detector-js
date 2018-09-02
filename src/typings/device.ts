@@ -67,7 +67,7 @@ export interface Cars { [brand: string]: Car; }
 export interface Consoles { [brand: string]: Console; }
 export interface PortableMediaPlayers { [brand: string]: PortableMediaPlayer; }
 
-export interface CameraTest {
+export interface DeviceTest {
   user_agent: string;
   device: {
     type: string;
@@ -76,54 +76,10 @@ export interface CameraTest {
   };
 }
 
-export interface MobileTest {
-  user_agent: string;
-  device: {
-    type: string;
-    brand: string;
-    model: string;
-  };
-}
+export type DeviceTests = DeviceTest[];
 
-export interface TelevisionTest {
-  user_agent: string;
-  device: {
-    type: string;
-    brand: string;
-    model: string;
-  };
+export interface DeviceResult {
+  type: string;
+  brand: string;
+  model: string;
 }
-
-export interface CarTest {
-  user_agent: string;
-  device: {
-    type: string;
-    brand: string;
-    model: string;
-  };
-}
-
-export interface ConsoleTest {
-  user_agent: string;
-  device: {
-    type: string;
-    brand: string;
-    model: string;
-  };
-}
-
-export interface PortableMediaPlayerTest {
-  user_agent: string;
-  device: {
-    type: string;
-    brand: string;
-    model: string;
-  };
-}
-
-export type CameraTests = CameraTest[];
-export type MobileTests = MobileTest[];
-export type TelevisionTests = TelevisionTest[];
-export type CarTests = CarTest[];
-export type ConsoleTests = ConsoleTest[];
-export type PortableMediaPlayerTests = PortableMediaPlayerTest[];

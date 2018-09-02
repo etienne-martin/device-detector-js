@@ -1,13 +1,7 @@
-import { Consoles } from "../../typings/device";
+import { Consoles, DeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
-
-export interface ConsoleResult {
-  type: string;
-  brand: string;
-  model: string;
-}
 
 let consoles: Consoles;
 
@@ -22,8 +16,8 @@ export default class ConsoleParser {
     }
   }
 
-  public parse = (userAgent: string): ConsoleResult => {
-    const result: ConsoleResult = {
+  public parse = (userAgent: string): DeviceResult => {
+    const result: DeviceResult = {
       type: "",
       brand: "",
       model: ""

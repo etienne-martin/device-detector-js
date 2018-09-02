@@ -1,11 +1,12 @@
-import CameraParser, { CameraResult } from "./cameras";
-import MobileParser, { MobileResult } from "./mobiles";
-import TelevisionParser, { TelevisionResult } from "./televisions";
-import CarParser, { CarResult } from "./cars";
-import ConsoleParser, { ConsoleResult } from "./consoles";
-import PortableMediaPlayerParser, { PortableMediaPlayerResult } from "./portable-media-players";
+import CameraParser from "./cameras";
+import MobileParser from "./mobiles";
+import TelevisionParser from "./televisions";
+import CarParser from "./cars";
+import ConsoleParser from "./consoles";
+import PortableMediaPlayerParser from "./portable-media-players";
+import { DeviceResult } from "../../typings/device";
 
-type Result = CameraResult | MobileResult | TelevisionResult | CarResult | ConsoleResult | PortableMediaPlayerResult | null;
+type Result = DeviceResult | null;
 
 const deviceParsers = [
   ConsoleParser,

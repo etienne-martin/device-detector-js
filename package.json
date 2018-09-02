@@ -19,7 +19,7 @@
     "install": "napa"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#v3.11.1"
+    "device-detector": "https://github.com/matomo-org/device-detector#59a1369ec38bf653323fb4c6d5fc4ecacdd9e4a9"
   },
   "husky": {
     "hooks": {
