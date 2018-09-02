@@ -31,7 +31,6 @@ export default class FeedReaderParser {
       result.name = variableReplacement(feedReader.name, match);
       result.version = formatVersion(variableReplacement(feedReader.version, match));
       result.url = feedReader.url;
-
       break;
     }
 

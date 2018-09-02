@@ -31,7 +31,6 @@ export default class LibraryParser {
       result.name = variableReplacement(library.name, match);
       result.version = formatVersion(variableReplacement(library.version, match));
       result.url = library.url || "";
-
       break;
     }
 

@@ -28,7 +28,6 @@ export default class PersonalInformationManagerParser {
       result.type = "personal information manager";
       result.name = variableReplacement(personalInformationManager.name, match);
       result.version = formatVersion(variableReplacement(personalInformationManager.version, match));
-
       break;
     }
 

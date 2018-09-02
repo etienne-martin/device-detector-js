@@ -49,7 +49,6 @@ export default class BrowserParser {
       result.type = "browser";
       result.name = variableReplacement(browser.name, match);
       result.version = version;
-
       break;
     }
 
@@ -60,7 +59,6 @@ export default class BrowserParser {
         if (!match) continue;
 
         result.engine = browserEngine.name;
-
         break;
       }
     }

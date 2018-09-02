@@ -28,7 +28,6 @@ export default class MediaPlayerParser {
       result.type = "media player";
       result.name = variableReplacement(mediaPlayer.name, match);
       result.version = formatVersion(variableReplacement(mediaPlayer.version, match));
-
       break;
     }
 

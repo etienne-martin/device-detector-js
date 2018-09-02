@@ -28,7 +28,6 @@ export default class MobileAppParser {
       result.type = "mobile app";
       result.name = variableReplacement(mobileApp.name, match);
       result.version = formatVersion(variableReplacement(mobileApp.version, match));
-
       break;
     }
 
