@@ -10,19 +10,9 @@ export interface MobileAppResult {
   version: string;
 }
 
-let mobileApps: MobileApps;
+const mobileApps: MobileApps = loadRegexes("client/mobile_apps");
 
 export default class MobileAppParser {
-  private readonly mobileApps: MobileApps;
-
-  constructor() {
-    this.mobileApps = mobileApps || loadRegexes("client/mobile_apps");
-
-    if (!mobileApps) {
-      mobileApps = this.mobileApps;
-    }
-  }
-
   public parse = (userAgent: string): MobileAppResult => {
     const result: MobileAppResult = {
       type: "",

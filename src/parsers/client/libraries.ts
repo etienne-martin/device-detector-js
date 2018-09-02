@@ -11,19 +11,9 @@ export interface LibraryResult {
   url: string;
 }
 
-let libraries: Libraries;
+const libraries: Libraries = loadRegexes("client/libraries");
 
 export default class LibraryParser {
-  private readonly libraries: Libraries;
-
-  constructor() {
-    this.libraries = libraries || loadRegexes("client/libraries");
-
-    if (!libraries) {
-      libraries = this.libraries;
-    }
-  }
-
   public parse = (userAgent: string): LibraryResult => {
     const result: LibraryResult = {
       type: "",
@@ -32,7 +22,7 @@ export default class LibraryParser {
       url: ""
     };
 
-    for (const library of this.libraries) {
+    for (const library of libraries) {
       const match = userAgentParser(library.regex, userAgent);
 
       if (!match) continue;

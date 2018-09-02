@@ -3,19 +3,9 @@ import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 
-let consoles: Consoles;
+const consoles: Consoles = loadRegexes("device/consoles");
 
 export default class ConsoleParser {
-  private readonly consoles: Consoles;
-
-  constructor() {
-    this.consoles = consoles || loadRegexes("device/consoles");
-
-    if (!consoles) {
-      consoles = this.consoles;
-    }
-  }
-
   public parse = (userAgent: string): GenericDeviceResult => {
     const result: GenericDeviceResult = {
       type: "",
@@ -23,7 +13,7 @@ export default class ConsoleParser {
       model: ""
     };
 
-    for (const [brand, gameConsole] of Object.entries(this.consoles)) {
+    for (const [brand, gameConsole] of Object.entries(consoles)) {
       const match = userAgentParser(gameConsole.regex, userAgent);
 
       if (!match) continue;

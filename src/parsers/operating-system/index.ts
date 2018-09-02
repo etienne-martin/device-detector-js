@@ -9,26 +9,16 @@ export interface OperatingSystemResult {
 
 type Result = OperatingSystemResult | null;
 
-let operatingSystems: OperatingSystems;
+const operatingSystems: OperatingSystems = loadRegexes("oss");
 
 export default class OperatingSystemParser {
-  private readonly operatingSystems: OperatingSystems;
-
-  constructor() {
-    this.operatingSystems = operatingSystems || loadRegexes("oss");
-
-    if (!operatingSystems) {
-      operatingSystems = this.operatingSystems;
-    }
-  }
-
   public parse = (userAgent: string): Result => {
     const result: Result = {
       name: "",
       version: ""
     };
 
-    for (const operatingSystem of this.operatingSystems) {
+    for (const operatingSystem of operatingSystems) {
       const match = userAgentParser(operatingSystem.regex, userAgent);
 
       if (!match) continue;

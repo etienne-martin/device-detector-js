@@ -5,7 +5,7 @@ import CarParser from "./cars";
 import ConsoleParser from "./consoles";
 import PortableMediaPlayerParser from "./portable-media-players";
 import { GenericDeviceResult } from "../../typings/device";
-import {userAgentParser} from "../../utils/user-agent";
+import { userAgentParser } from "../../utils/user-agent";
 
 export type DeviceResult = GenericDeviceResult | null;
 

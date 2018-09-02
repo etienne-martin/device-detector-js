@@ -10,19 +10,9 @@ export interface MediaPlayerResult {
   version: string;
 }
 
-let mediaPlayers: MediaPlayers;
+const mediaPlayers: MediaPlayers = loadRegexes("client/mediaplayers");
 
 export default class MediaPlayerParser {
-  private readonly mediaPlayers: MediaPlayers;
-
-  constructor() {
-    this.mediaPlayers = mediaPlayers || loadRegexes("client/mediaplayers");
-
-    if (!mediaPlayers) {
-      mediaPlayers = this.mediaPlayers;
-    }
-  }
-
   public parse = (userAgent: string): MediaPlayerResult => {
     const result: MediaPlayerResult = {
       type: "",

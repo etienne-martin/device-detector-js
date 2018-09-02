@@ -12,23 +12,10 @@ export interface BrowserResult {
   engineVersion: string;
 }
 
-let browsers: Browsers;
-let browserEngines: BrowserEngines;
+const browsers: Browsers = loadRegexes("client/browsers");
+const browserEngines: BrowserEngines = loadRegexes("client/browser_engine");
 
 export default class BrowserParser {
-  private readonly browsers: Browsers;
-  private readonly browserEngines: BrowserEngines;
-
-  constructor() {
-    this.browsers = browsers || loadRegexes("client/browsers");
-    this.browserEngines = browserEngines || loadRegexes("client/browser_engine");
-
-    if (!browsers) {
-      browsers = this.browsers;
-      browserEngines = this.browserEngines;
-    }
-  }
-
   public parse = (userAgent: string): BrowserResult => {
     const result: BrowserResult = {
       type: "",

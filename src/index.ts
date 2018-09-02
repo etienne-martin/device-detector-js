@@ -6,11 +6,11 @@ interface Result {
   device: DeviceResult;
 }
 
+const clientParser = new ClientParser();
+const deviceParser = new DeviceParser();
+
 export default class DeviceDetector {
   public parse = (userAgent: string): Result => {
-    const clientParser = new ClientParser();
-    const deviceParser = new DeviceParser();
-
     return {
       client: clientParser.parse(userAgent),
       device: deviceParser.parse(userAgent)

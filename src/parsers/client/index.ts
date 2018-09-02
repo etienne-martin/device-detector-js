@@ -1,9 +1,9 @@
-import BrowserParser, {BrowserResult} from "./browser";
-import MobileAppParser, {MobileAppResult} from "./mobile-apps";
-import FeedReaderParser, {FeedReaderResult} from "./feed-readers";
-import LibraryParser, {LibraryResult} from "./libraries";
-import MediaPlayerParser, {MediaPlayerResult} from "./media-players";
-import PersonalInformationManagerParser, {PersonalInformationManagerResult} from "./personal-information-managers";
+import BrowserParser, { BrowserResult } from "./browser";
+import MobileAppParser, { MobileAppResult } from "./mobile-apps";
+import FeedReaderParser, { FeedReaderResult } from "./feed-readers";
+import LibraryParser, { LibraryResult } from "./libraries";
+import MediaPlayerParser, { MediaPlayerResult } from "./media-players";
+import PersonalInformationManagerParser, { PersonalInformationManagerResult } from "./personal-information-managers";
 
 export type ClientResult = BrowserResult | FeedReaderResult | LibraryResult | MediaPlayerResult | MobileAppResult | PersonalInformationManagerResult | null;
 

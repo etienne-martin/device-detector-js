@@ -3,19 +3,9 @@ import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 
-let cameras: Cameras;
+const cameras: Cameras = loadRegexes("device/cameras");
 
 export default class CameraParser {
-  private readonly cameras: Cameras;
-
-  constructor() {
-    this.cameras = cameras || loadRegexes("device/cameras");
-
-    if (!cameras) {
-      cameras = this.cameras;
-    }
-  }
-
   public parse = (userAgent: string): GenericDeviceResult => {
     const result: GenericDeviceResult = {
       type: "",
@@ -23,7 +13,7 @@ export default class CameraParser {
       model: ""
     };
 
-    for (const [brand, camera] of Object.entries(this.cameras)) {
+    for (const [brand, camera] of Object.entries(cameras)) {
       const match = userAgentParser(camera.regex, userAgent);
 
       if (!match) continue;

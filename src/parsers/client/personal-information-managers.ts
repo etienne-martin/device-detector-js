@@ -10,19 +10,9 @@ export interface PersonalInformationManagerResult {
   version: string;
 }
 
-let personalInformationManagers: PersonalInformationManagers;
+const personalInformationManagers: PersonalInformationManagers = loadRegexes("client/pim");
 
 export default class PersonalInformationManagerParser {
-  private readonly personalInformationManagers: PersonalInformationManagers;
-
-  constructor() {
-    this.personalInformationManagers = personalInformationManagers || loadRegexes("client/pim");
-
-    if (!personalInformationManagers) {
-      personalInformationManagers = this.personalInformationManagers;
-    }
-  }
-
   public parse = (userAgent: string): PersonalInformationManagerResult => {
     const result: PersonalInformationManagerResult = {
       type: "",

@@ -3,19 +3,9 @@ import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 
-let portableMediaPlayers: PortableMediaPlayers;
+const portableMediaPlayers: PortableMediaPlayers = loadRegexes("device/portable_media_player");
 
 export default class PortableMediaPlayersParser {
-  private readonly portableMediaPlayers: PortableMediaPlayers;
-
-  constructor() {
-    this.portableMediaPlayers = portableMediaPlayers || loadRegexes("device/portable_media_player");
-
-    if (!portableMediaPlayers) {
-      portableMediaPlayers = this.portableMediaPlayers;
-    }
-  }
-
   public parse = (userAgent: string): GenericDeviceResult => {
     const result: GenericDeviceResult = {
       type: "",
@@ -23,7 +13,7 @@ export default class PortableMediaPlayersParser {
       model: ""
     };
 
-    for (const [brand, portableMediaPlayer] of Object.entries(this.portableMediaPlayers)) {
+    for (const [brand, portableMediaPlayer] of Object.entries(portableMediaPlayers)) {
       const match = userAgentParser(portableMediaPlayer.regex, userAgent);
 
       if (!match) continue;

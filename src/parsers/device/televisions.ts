@@ -4,19 +4,9 @@ import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 import { buildModel } from "../../utils/model";
 
-let televisions: Televisions;
+const televisions: Televisions = loadRegexes("device/televisions");
 
 export default class TelevisionParser {
-  private readonly televisions: Televisions;
-
-  constructor() {
-    this.televisions = televisions || loadRegexes("device/televisions");
-
-    if (!televisions) {
-      televisions = this.televisions;
-    }
-  }
-
   public parse = (userAgent: string): GenericDeviceResult => {
     const result: GenericDeviceResult = {
       type: "",
@@ -28,7 +18,7 @@ export default class TelevisionParser {
 
     result.type = "television";
 
-    for (const [brand, television] of Object.entries(this.televisions)) {
+    for (const [brand, television] of Object.entries(televisions)) {
       const match = userAgentParser(television.regex, userAgent);
 
       if (!match) continue;

@@ -4,19 +4,9 @@ import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 import { buildModel } from "../../utils/model";
 
-let mobiles: Mobiles;
+const mobiles: Mobiles = loadRegexes("device/mobiles");
 
 export default class MobileParser {
-  private readonly mobiles: Mobiles;
-
-  constructor() {
-    this.mobiles = mobiles || loadRegexes("device/mobiles");
-
-    if (!mobiles) {
-      mobiles = this.mobiles;
-    }
-  }
-
   public parse = (userAgent: string): GenericDeviceResult => {
     const result: GenericDeviceResult = {
       type: "",
@@ -24,7 +14,7 @@ export default class MobileParser {
       model: ""
     };
 
-    for (const [brand, mobile] of Object.entries(this.mobiles)) {
+    for (const [brand, mobile] of Object.entries(mobiles)) {
       const match = userAgentParser(mobile.regex, userAgent);
 
       if (!match) continue;

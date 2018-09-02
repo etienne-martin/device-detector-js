@@ -11,19 +11,9 @@ export interface FeedReaderResult {
   url: string;
 }
 
-let feedReaders: FeedReaders;
+const feedReaders: FeedReaders = loadRegexes("client/feed_readers");
 
 export default class FeedReaderParser {
-  private readonly feedReaders: FeedReaders;
-
-  constructor() {
-    this.feedReaders = feedReaders || loadRegexes("client/feed_readers");
-
-    if (!feedReaders) {
-      feedReaders = this.feedReaders;
-    }
-  }
-
   public parse = (userAgent: string): FeedReaderResult => {
     const result: FeedReaderResult = {
       type: "",
