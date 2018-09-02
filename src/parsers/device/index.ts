@@ -5,6 +5,7 @@ import CarParser from "./cars";
 import ConsoleParser from "./consoles";
 import PortableMediaPlayerParser from "./portable-media-players";
 import { DeviceResult } from "../../typings/device";
+import {userAgentParser} from "../../utils/user-agent";
 
 type Result = DeviceResult | null;
 
@@ -25,9 +26,25 @@ export default class ClientParser {
 
       if (device.type !== "") {
         return device;
+      } else if (this.hasAndroidMobileFragment(userAgent)) {
+        device.type = "smartphone";
+
+        return device;
+      } else if (this.hasAndroidTabletFragment(userAgent) || userAgentParser("'Opera Tablet'", userAgent)) {
+        device.type = "tablet";
+
+        return device;
       }
     }
 
     return null;
+  };
+
+  private hasAndroidMobileFragment = (userAgent: string) => {
+    return userAgentParser("Android( [\.0-9]+)?; Mobile;", userAgent);
+  };
+
+  private hasAndroidTabletFragment = (userAgent: string) => {
+    return userAgentParser("Android( [\.0-9]+)?; Tablet;", userAgent);
   };
 }
