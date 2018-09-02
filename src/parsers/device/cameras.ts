@@ -1,13 +1,7 @@
-import { Cameras } from "../../typings/device";
+import { Cameras, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
-
-export interface CameraResult {
-  type: string;
-  brand: string;
-  model: string;
-}
 
 let cameras: Cameras;
 
@@ -22,8 +16,8 @@ export default class CameraParser {
     }
   }
 
-  public parse = (userAgent: string): CameraResult => {
-    const result: CameraResult = {
+  public parse = (userAgent: string): GenericDeviceResult => {
+    const result: GenericDeviceResult = {
       type: "",
       brand: "",
       model: ""

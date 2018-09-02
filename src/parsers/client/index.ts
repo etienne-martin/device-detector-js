@@ -5,7 +5,7 @@ import LibraryParser, {LibraryResult} from "./libraries";
 import MediaPlayerParser, {MediaPlayerResult} from "./media-players";
 import PersonalInformationManagerParser, {PersonalInformationManagerResult} from "./personal-information-managers";
 
-type Result = BrowserResult | FeedReaderResult | LibraryResult | MediaPlayerResult | MobileAppResult | PersonalInformationManagerResult | null;
+export type ClientResult = BrowserResult | FeedReaderResult | LibraryResult | MediaPlayerResult | MobileAppResult | PersonalInformationManagerResult | null;
 
 const clientParsers = [
   FeedReaderParser,
@@ -17,7 +17,7 @@ const clientParsers = [
 ];
 
 export default class ClientParser {
-  public parse = (userAgent: string): Result => {
+  public parse = (userAgent: string): ClientResult => {
     for (const Parser of clientParsers) {
       const parser = new Parser();
       const client = parser.parse(userAgent);

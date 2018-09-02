@@ -1,26 +1,10 @@
-import { Mobiles } from "../../typings/device";
+import { Mobiles, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
-
-export interface MobileResult {
-  type: string; // TODO: maybe add better typing, ie: add all possible string values
-  brand: string;
-  model: string;
-}
+import { buildModel } from "../../utils/model";
 
 let mobiles: Mobiles;
-
-const buildModel = (model: string) => {
-  model = model.replace(/_/g, " ");
-  model = model.replace(RegExp(" TD$", "i"), "");
-
-  if (model === "Build") {
-    return "";
-  }
-
-  return model;
-};
 
 export default class MobileParser {
   private readonly mobiles: Mobiles;
@@ -33,8 +17,8 @@ export default class MobileParser {
     }
   }
 
-  public parse = (userAgent: string): MobileResult => {
-    const result: MobileResult = {
+  public parse = (userAgent: string): GenericDeviceResult => {
+    const result: GenericDeviceResult = {
       type: "",
       brand: "",
       model: ""

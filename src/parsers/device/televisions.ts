@@ -1,27 +1,10 @@
-import { Televisions } from "../../typings/device";
+import { Televisions, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
-
-export interface TelevisionResult {
-  type: string; // TODO: maybe add better typing, ie: add all possible string values
-  brand: string;
-  model: string;
-}
+import { buildModel } from "../../utils/model";
 
 let televisions: Televisions;
-
-// TODO: move to the utils folder
-const buildModel = (model: string) => {
-  model = model.replace(/_/g, " ");
-  model = model.replace(RegExp(" TD$", "i"), "");
-
-  if (model === "Build") {
-    return "";
-  }
-
-  return model;
-};
 
 export default class TelevisionParser {
   private readonly televisions: Televisions;
@@ -34,8 +17,8 @@ export default class TelevisionParser {
     }
   }
 
-  public parse = (userAgent: string): TelevisionResult => {
-    const result: TelevisionResult = {
+  public parse = (userAgent: string): GenericDeviceResult => {
+    const result: GenericDeviceResult = {
       type: "",
       brand: "",
       model: ""

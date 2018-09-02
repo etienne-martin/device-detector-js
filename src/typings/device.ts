@@ -78,7 +78,7 @@ export interface DeviceTest {
 
 export type DeviceTests = DeviceTest[];
 
-export interface DeviceResult {
+export interface GenericDeviceResult {
   type: string;
   brand: string;
   model: string;

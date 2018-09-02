@@ -1,13 +1,7 @@
-import { Cars } from "../../typings/device";
+import { Cars, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
-
-export interface CarResult {
-  type: string;
-  brand: string;
-  model: string;
-}
 
 let cars: Cars;
 
@@ -22,8 +16,8 @@ export default class CarParser {
     }
   }
 
-  public parse = (userAgent: string): CarResult => {
-    const result: CarResult = {
+  public parse = (userAgent: string): GenericDeviceResult => {
+    const result: GenericDeviceResult = {
       type: "",
       brand: "",
       model: ""

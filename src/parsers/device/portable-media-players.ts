@@ -1,13 +1,7 @@
-import { PortableMediaPlayers } from "../../typings/device";
+import { PortableMediaPlayers, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
-
-export interface PortableMediaPlayerResult {
-  type: string;
-  brand: string;
-  model: string;
-}
 
 let portableMediaPlayers: PortableMediaPlayers;
 
@@ -22,8 +16,8 @@ export default class PortableMediaPlayersParser {
     }
   }
 
-  public parse = (userAgent: string): PortableMediaPlayerResult => {
-    const result: PortableMediaPlayerResult = {
+  public parse = (userAgent: string): GenericDeviceResult => {
+    const result: GenericDeviceResult = {
       type: "",
       brand: "",
       model: ""

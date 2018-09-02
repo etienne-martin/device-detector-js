@@ -1,4 +1,4 @@
-import { Consoles, DeviceResult } from "../../typings/device";
+import { Consoles, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
@@ -16,8 +16,8 @@ export default class ConsoleParser {
     }
   }
 
-  public parse = (userAgent: string): DeviceResult => {
-    const result: DeviceResult = {
+  public parse = (userAgent: string): GenericDeviceResult => {
+    const result: GenericDeviceResult = {
       type: "",
       brand: "",
       model: ""
