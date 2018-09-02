@@ -26,12 +26,22 @@ export default class ClientParser {
 
       if (device.type !== "") {
         return device;
-      } else if (this.hasAndroidMobileFragment(userAgent)) {
-        device.type = "smartphone";
+      }
+
+      /**
+       * Some user agents simply contain the fragment 'Android; Tablet;' or 'Opera Tablet', so we assume those devices as tablets
+       */
+      if (this.hasAndroidTabletFragment(userAgent) || userAgentParser("Opera Tablet", userAgent)) {
+        device.type = "tablet";
 
         return device;
-      } else if (this.hasAndroidTabletFragment(userAgent) || userAgentParser("'Opera Tablet'", userAgent)) {
-        device.type = "tablet";
+      }
+
+      /**
+       * Some user agents simply contain the fragment 'Android; Mobile;', so we assume those devices as smartphones
+       */
+      if (this.hasAndroidMobileFragment(userAgent)) {
+        device.type = "smartphone";
 
         return device;
       }
