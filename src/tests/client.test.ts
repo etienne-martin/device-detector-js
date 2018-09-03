@@ -1,4 +1,4 @@
-import ClientParser from "../parsers/client";
+import DeviceDetector from "../";
 import { loadTests } from "../utils/yaml-loader";
 import { formatVersion } from "../utils/version";
 import { BrowserResult } from "../parsers/client/browser";
@@ -24,12 +24,12 @@ const libraryTests: LibraryTests = loadTests("Parser/Client/fixtures/library");
 const mediaPlayerTests: MediaPlayerTests = loadTests("Parser/Client/fixtures/mediaplayer");
 const personalInformationManagerTests: PersonalInformationManagerTests = loadTests("Parser/Client/fixtures/pim");
 
-const clientParser = new ClientParser();
+const deviceDetector = new DeviceDetector();
 
 describe("Client / browsers", () => {
   for (const browserTest of browserTests) {
     test(`${browserTest.client.name} ${browserTest.client.version || ""}`, async () => {
-      const result = clientParser.parse(browserTest.user_agent) as BrowserResult;
+      const result = deviceDetector.parse(browserTest.user_agent).client as BrowserResult;
 
       expect(result.type).toEqual(browserTest.client.type);
       expect(result.name).toEqual(browserTest.client.name);
@@ -58,7 +58,7 @@ describe("Client / browsers", () => {
 describe("Client / mobile apps", () => {
   for (const mobileAppTest of mobileAppTests) {
     test(`${mobileAppTest.client.name} ${mobileAppTest.client.version || ""}`, async () => {
-      const result = clientParser.parse(mobileAppTest.user_agent) as MobileAppResult;
+      const result = deviceDetector.parse(mobileAppTest.user_agent).client as MobileAppResult;
 
       expect(result.type).toEqual(mobileAppTest.client.type);
       expect(result.name).toEqual(mobileAppTest.client.name);
@@ -75,7 +75,7 @@ describe("Client / mobile apps", () => {
 describe("Client / feed readers", () => {
   for (const feedReaderTest of feedReaderTests) {
     test(`${feedReaderTest.client.name} ${feedReaderTest.client.version || ""}`, async () => {
-      const result = clientParser.parse(feedReaderTest.user_agent) as FeedReaderResult;
+      const result = deviceDetector.parse(feedReaderTest.user_agent).client as FeedReaderResult;
 
       expect(result.type).toEqual(feedReaderTest.client.type);
       expect(result.name).toEqual(feedReaderTest.client.name);
@@ -92,7 +92,7 @@ describe("Client / feed readers", () => {
 describe("Client / libraries", () => {
   for (const libraryTest of libraryTests) {
     test(`${libraryTest.client.name} ${libraryTest.client.version || ""}`, async () => {
-      const result = clientParser.parse(libraryTest.user_agent) as LibraryResult;
+      const result = deviceDetector.parse(libraryTest.user_agent).client as LibraryResult;
 
       expect(result.type).toEqual(libraryTest.client.type);
       expect(result.name).toEqual(libraryTest.client.name);
@@ -109,7 +109,7 @@ describe("Client / libraries", () => {
 describe("Client / media players", () => {
   for (const mediaPlayerTest of mediaPlayerTests) {
     test(`${mediaPlayerTest.client.name} ${mediaPlayerTest.client.version || ""}`, async () => {
-      const result = clientParser.parse(mediaPlayerTest.user_agent) as MediaPlayerResult;
+      const result = deviceDetector.parse(mediaPlayerTest.user_agent).client as MediaPlayerResult;
       const sanitizedType = mediaPlayerTest.client.type.replace("mediaplayer", "media player");
 
       expect(result.type).toEqual(sanitizedType);
@@ -127,7 +127,7 @@ describe("Client / media players", () => {
 describe("Client / personal information managers", () => {
   for (const personalInformationManagerTest of personalInformationManagerTests) {
     test(`${personalInformationManagerTest.client.name} ${personalInformationManagerTest.client.version || ""}`, async () => {
-      const result = clientParser.parse(personalInformationManagerTest.user_agent) as PersonalInformationManagerResult;
+      const result = deviceDetector.parse(personalInformationManagerTest.user_agent).client as PersonalInformationManagerResult;
       const sanitizedType = personalInformationManagerTest.client.type.replace("pim", "personal information manager");
 
       expect(result.type).toEqual(sanitizedType);

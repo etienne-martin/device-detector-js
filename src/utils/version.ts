@@ -4,7 +4,7 @@ import { trim } from "lodash";
 export const formatVersion = (version: string | undefined): string => {
   if (version === undefined) return "";
 
-  const versionString = trim(version, ".").replace("_", ".");
+  const versionString = trim(version, ".").replace(new RegExp("_", "g"), ".");
 
   if (versionString.split(".").length > 2) {
     return versionString;
