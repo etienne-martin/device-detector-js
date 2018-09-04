@@ -41,7 +41,7 @@ export default class OperatingSystemParser {
   };
 
   public parse = (userAgent: string): Result => {
-    const result: Result = {
+    const result: OperatingSystemResult = {
       name: "",
       version: "",
       platform: this.parsePlatform(userAgent)

@@ -18,13 +18,13 @@ const deviceParser = new DeviceParser();
 const operatingSystemParser = new OperatingSystemParser();
 const vendorFragmentParser = new VendorFragmentParser();
 
-const createDeviceObject = () => ({
-  type: "",
-  brand: "",
-  model: ""
-});
-
 export default class DeviceDetector {
+  public createDeviceObject = () => ({
+    type: "",
+    brand: "",
+    model: ""
+  });
+
   public parse = (userAgent: string): Result => {
     const result = {
       client: clientParser.parse(userAgent),
@@ -37,7 +37,7 @@ export default class DeviceDetector {
 
       if (brand) {
         if (!result.device) {
-          result.device = createDeviceObject();
+          result.device = this.createDeviceObject();
         }
         result.device.brand = brand;
       }
@@ -52,7 +52,7 @@ export default class DeviceDetector {
      */
     if (!get(result, "device.brand") && ["Apple TV", "iOS", "Mac"].includes(osName)) {
       if (!result.device) {
-        result.device = createDeviceObject();
+        result.device = this.createDeviceObject();
       }
 
       result.device.brand = "Apple";
@@ -66,13 +66,13 @@ export default class DeviceDetector {
     if (!get(result, "device.type") && osFamily === "Android" && ["Chrome", "Chrome Mobile"].includes(get(result, "client.name"))) {
       if (userAgentParser("Chrome/[.0-9]* Mobile", userAgent)) {
         if (!result.device) {
-          result.device = createDeviceObject();
+          result.device = this.createDeviceObject();
         }
 
         result.device.type = "smartphone";
       } else if (userAgentParser("Chrome/[.0-9]* (?!Mobile)", userAgent)) {
         if (!result.device) {
-          result.device = createDeviceObject();
+          result.device = this.createDeviceObject();
         }
 
         result.device.type = "tablet";
@@ -90,13 +90,13 @@ export default class DeviceDetector {
     if (!get(result, "device.type") && osName === "Android" && osVersion !== "") {
       if (versionCompare(osVersion, "2.0") === -1) {
         if (!result.device) {
-          result.device = createDeviceObject();
+          result.device = this.createDeviceObject();
         }
 
         result.device.type = "smartphone";
       } else if (versionCompare(osVersion, "3.0") >= 0 && versionCompare(osVersion, "4.0") === -1) {
         if (!result.device) {
-          result.device = createDeviceObject();
+          result.device = this.createDeviceObject();
         }
 
         result.device.type = "tablet";
@@ -108,7 +108,7 @@ export default class DeviceDetector {
      */
     if (get(result, "device.type") === "feature phone" && osFamily === "Android") {
       if (!result.device) {
-        result.device = createDeviceObject();
+        result.device = this.createDeviceObject();
       }
 
       result.device.type = "smartphone";
@@ -135,7 +135,7 @@ export default class DeviceDetector {
       )
     ) {
       if (!result.device) {
-        result.device = createDeviceObject();
+        result.device = this.createDeviceObject();
       }
 
       result.device.type = "tablet";
@@ -146,7 +146,7 @@ export default class DeviceDetector {
      */
     if (!get(result, "device.type") && ["Kylo", "Espial TV Browser"].includes(get(result, "client.name"))) {
       if (!result.device) {
-        result.device = createDeviceObject();
+        result.device = this.createDeviceObject();
       }
 
       result.device.type = "television";
@@ -155,7 +155,7 @@ export default class DeviceDetector {
     // set device type to desktop for all devices running a desktop os that were not detected as an other device type
     if (!get(result, "device.type") && result.os && this.isDesktop(result, osFamily)) {
       if (!result.device) {
-        result.device = createDeviceObject();
+        result.device = this.createDeviceObject();
       }
 
       result.device.type = "desktop";
