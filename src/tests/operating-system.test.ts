@@ -19,6 +19,12 @@ describe("Operating systems", () => {
       } else {
         expect(result.version).toEqual(formatVersion(operatingSystemTest.os.version));
       }
+
+      if (!operatingSystemTest.os.platform) {
+        expect(result.platform).toBe("");
+      } else {
+        expect(result.platform).toBe(operatingSystemTest.os.platform);
+      }
     });
   }
 });
