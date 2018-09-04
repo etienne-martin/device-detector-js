@@ -7,6 +7,7 @@ import { loadRegexes } from "../../utils/yaml-loader";
 export interface OperatingSystemResult {
   name: string;
   version: string;
+  platform: "ARM" | "x64" | "x86" | "";
 }
 
 export type Result = OperatingSystemResult | null;
@@ -42,7 +43,8 @@ export default class OperatingSystemParser {
   public parse = (userAgent: string): Result => {
     const result: Result = {
       name: "",
-      version: ""
+      version: "",
+      platform: this.parsePlatform(userAgent)
     };
 
     for (const operatingSystem of operatingSystems) {
@@ -67,5 +69,21 @@ export default class OperatingSystemParser {
     }
 
     return null;
+  };
+
+  private parsePlatform = (userAgent: string) => {
+    if (userAgentParser("arm", userAgent)) {
+      return "ARM";
+    }
+
+    if (userAgentParser("WOW64|x64|win64|amd64|x86_64", userAgent)) {
+      return "x64";
+    }
+
+    if (userAgentParser("i[0-9]86|i86pc", userAgent)) {
+      return "x86";
+    }
+
+    return "";
   };
 }

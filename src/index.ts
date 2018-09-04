@@ -1,6 +1,7 @@
 import ClientParser, { ClientResult } from "./parsers/client";
 import DeviceParser, { DeviceResult } from "./parsers/device";
 import OperatingSystemParser, { Result as OperatingSystemResult } from "./parsers/operating-system";
+import VendorFragmentParser from "./parsers/vendor-fragment";
 import BrowserParser from "./parsers/client/browser";
 import { get } from "lodash";
 import { userAgentParser } from "./utils/user-agent";
@@ -15,6 +16,7 @@ interface Result {
 const clientParser = new ClientParser();
 const deviceParser = new DeviceParser();
 const operatingSystemParser = new OperatingSystemParser();
+const vendorFragmentParser = new VendorFragmentParser();
 
 const createDeviceObject = () => ({
   type: "",
@@ -29,6 +31,17 @@ export default class DeviceDetector {
       device: deviceParser.parse(userAgent),
       os: operatingSystemParser.parse(userAgent)
     };
+
+    if (!get(result, "device.brand")) {
+      const brand = vendorFragmentParser.parse(userAgent);
+
+      if (brand) {
+        if (!result.device) {
+          result.device = createDeviceObject();
+        }
+        result.device.brand = brand;
+      }
+    }
 
     const osName = get(result, "os.name");
     const osVersion = get(result, "os.version");
@@ -50,13 +63,21 @@ export default class DeviceDetector {
      * If it is present the device should be a smartphone, otherwise it's a tablet
      * See https://developer.chrome.com/multidevice/user-agent#chrome_for_android_user_agent
      */
-    // if (is_null($this->device) && $osFamily == 'Android' && in_array($this->getClient('name'), array('Chrome', 'Chrome Mobile'))) {
-    //   if ($this->matchUserAgent('Chrome/[\.0-9]* Mobile')) {
-    //     $this->device = DeviceParserAbstract::DEVICE_TYPE_SMARTPHONE;
-    //   } else if ($this->matchUserAgent('Chrome/[\.0-9]* (?!Mobile)')) {
-    //     $this->device = DeviceParserAbstract::DEVICE_TYPE_TABLET;
-    //   }
-    // }
+    if (!get(result, "device.type") && osFamily === "Android" && ["Chrome", "Chrome Mobile"].includes(get(result, "client.name"))) {
+      if (userAgentParser("Chrome/[.0-9]* Mobile", userAgent)) {
+        if (!result.device) {
+          result.device = createDeviceObject();
+        }
+
+        result.device.type = "smartphone";
+      } else if (userAgentParser("Chrome/[.0-9]* (?!Mobile)", userAgent)) {
+        if (!result.device) {
+          result.device = createDeviceObject();
+        }
+
+        result.device.type = "tablet";
+      }
+    }
 
     /**
      * Android up to 3.0 was designed for smartphones only. But as 3.0, which was tablet only, was published
