@@ -8,6 +8,10 @@ setTimeout(() => {
     console.log(JSON.stringify(deviceDetector.parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"), null, 2));
     console.timeEnd("Detection");
 
+    console.time("Detection1");
+    console.log(JSON.stringify(deviceDetector.parse("Tarmot Gezgin/1.0 (compatible; TarmotGezgin/1.1; +http://www.tarmot.com/gezgin)"), null, 2));
+    console.timeEnd("Detection1");
+
     console.time("Detection2");
     console.log(deviceDetector.parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:61.0) Gecko/20100101 Firefox/61.0"));
     console.timeEnd("Detection2");

@@ -1,6 +1,7 @@
-import { Bots } from "../../typings/bots";
+import { Bots } from "../../typings/bot";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
+import { get } from "lodash";
 
 export interface BotResult {
   name: string;
@@ -34,10 +35,10 @@ export default class BotParser {
       if (!match) continue;
 
       result.name = bot.name;
-      result.category = bot.category;
-      result.url = bot.url;
-      result.producer.name = bot.producer.name;
-      result.producer.url = bot.producer.url;
+      result.category = bot.category || "";
+      result.url = bot.url || "";
+      result.producer.name = get(bot, "producer.name") || "";
+      result.producer.url = get(bot, "producer.url") || "";
 
       return result;
     }

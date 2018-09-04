@@ -3,6 +3,7 @@ import DeviceParser, { DeviceResult } from "./parsers/device";
 import OperatingSystemParser, { Result as OperatingSystemResult } from "./parsers/operating-system";
 import VendorFragmentParser from "./parsers/vendor-fragment";
 import BrowserParser from "./parsers/client/browser";
+import BotParser, { Result as BotResult } from "./parsers/bot";
 import { get } from "lodash";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
@@ -11,12 +12,14 @@ interface Result {
   client: ClientResult;
   device: DeviceResult;
   os: OperatingSystemResult;
+  bot: BotResult;
 }
 
 const clientParser = new ClientParser();
 const deviceParser = new DeviceParser();
 const operatingSystemParser = new OperatingSystemParser();
 const vendorFragmentParser = new VendorFragmentParser();
+const botParser = new BotParser();
 
 export default class DeviceDetector {
   public createDeviceObject = () => ({
@@ -26,10 +29,11 @@ export default class DeviceDetector {
   });
 
   public parse = (userAgent: string): Result => {
-    const result = {
+    const result: Result = {
       client: clientParser.parse(userAgent),
       device: deviceParser.parse(userAgent),
-      os: operatingSystemParser.parse(userAgent)
+      os: operatingSystemParser.parse(userAgent),
+      bot: botParser.parse(userAgent)
     };
 
     if (!get(result, "device.brand")) {
