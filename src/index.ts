@@ -32,6 +32,7 @@ export default class DeviceDetector {
 
     const osName = get(result, "os.name");
     const osVersion = get(result, "os.version");
+    const osFamily = OperatingSystemParser.getOsFamily(OperatingSystemParser.getOsShortName(get(result, "os.name")));
 
     /**
      * Assume all devices running iOS / Mac OS are from Apple
@@ -84,7 +85,7 @@ export default class DeviceDetector {
     /**
      * All detected feature phones running android are more likely smartphones
      */
-    if (get(result, "device.type") === "feature phone" && get(result, "os.family") === "Android") {
+    if (get(result, "device.type") === "feature phone" && osFamily === "Android") {
       if (!result.device) {
         result.device = createDeviceObject();
       }
@@ -131,7 +132,7 @@ export default class DeviceDetector {
     }
 
     // set device type to desktop for all devices running a desktop os that were not detected as an other device type
-    if (!get(result, "device.type") && result.os && this.isDesktop(result)) {
+    if (!get(result, "device.type") && result.os && this.isDesktop(result, osFamily)) {
       if (!result.device) {
         result.device = createDeviceObject();
       }
@@ -142,7 +143,7 @@ export default class DeviceDetector {
     return result;
   };
 
-  private isDesktop = (result: Result): boolean => {
+  private isDesktop = (result: Result, osFamily: string): boolean => {
     if (!result.os) {
       return false;
     }
@@ -157,8 +158,6 @@ export default class DeviceDetector {
     if (this.usesMobileBrowser(result.client)) {
       return false;
     }
-
-    const osFamily = result.os.family;
 
     return OperatingSystemParser.getDesktopOsArray().includes(osFamily);
   };

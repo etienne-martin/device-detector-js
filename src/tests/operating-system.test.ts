@@ -1,25 +1,24 @@
-import OperatingSystemParser from "../parsers/operating-system";
+import { OperatingSystemResult } from "../parsers/operating-system";
 import { loadTests } from "../utils/yaml-loader";
 import { formatVersion } from "../utils/version";
-import { LibraryResult } from "../parsers/client/libraries";
-import { LibraryTests } from "../typings/client";
+import { OperatingSystemTests } from "../typings/operating-system";
+import DeviceDetector from "../index";
 
-const libraryTests: LibraryTests = loadTests("Parser/Client/fixtures/library");
-const operatingSystemParser = new OperatingSystemParser();
+const operatingSystemTests: OperatingSystemTests = loadTests("Parser/fixtures/oss");
+const deviceDetector = new DeviceDetector();
 
-// describe("Client / libraries", () => {
-//   for (const libraryTest of libraryTests) {
-//     test(`${libraryTest.client.name} ${libraryTest.client.version || ""}`, async () => {
-//       const result = operatingSystemParser.parse(libraryTest.user_agent) as LibraryResult;
-//
-//       expect(result.type).toEqual(libraryTest.client.type);
-//       expect(result.name).toEqual(libraryTest.client.name);
-//
-//       if (!libraryTest.client.version) {
-//         expect(result.version).toBe("");
-//       } else {
-//         expect(result.version).toEqual(formatVersion(libraryTest.client.version));
-//       }
-//     });
-//   }
-// });
+describe("Operating systems", () => {
+  for (const operatingSystemTest of operatingSystemTests) {
+    test(`${operatingSystemTest.os.name} ${operatingSystemTest.os.version || ""}`, async () => {
+      const result = deviceDetector.parse(operatingSystemTest.user_agent).os as OperatingSystemResult;
+
+      expect(result.name).toEqual(operatingSystemTest.os.name);
+
+      if (!operatingSystemTest.os.version) {
+        expect(result.version).toBe("");
+      } else {
+        expect(result.version).toEqual(formatVersion(operatingSystemTest.os.version));
+      }
+    });
+  }
+});

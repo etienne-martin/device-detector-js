@@ -7,7 +7,6 @@ import { loadRegexes } from "../../utils/yaml-loader";
 export interface OperatingSystemResult {
   name: string;
   version: string;
-  family: string;
 }
 
 export type Result = OperatingSystemResult | null;
@@ -43,8 +42,7 @@ export default class OperatingSystemParser {
   public parse = (userAgent: string): Result => {
     const result: Result = {
       name: "",
-      version: "",
-      family: ""
+      version: ""
     };
 
     for (const operatingSystem of operatingSystems) {
@@ -52,9 +50,18 @@ export default class OperatingSystemParser {
 
       if (!match) continue;
 
-      result.name = operatingSystem.name;
+      result.name = variableReplacement(operatingSystem.name, match);
       result.version = formatVersion(variableReplacement(operatingSystem.version, match));
-      result.family = OperatingSystemParser.getOsFamily(OperatingSystemParser.getOsShortName(result.name));
+
+      // Cleanup
+      if (result.name === "lubuntu") {
+        result.name = "Lubuntu";
+      }
+
+      // Cleanup
+      if (result.name === "YunOS") {
+        result.name = "YunOs";
+      }
 
       return result;
     }
