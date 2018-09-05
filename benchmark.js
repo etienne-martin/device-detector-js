@@ -5,22 +5,6 @@ setTimeout(() => {
     deviceDetector.parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36");
 
     console.time("Detection");
-    console.log(JSON.stringify(deviceDetector.parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"), null, 2));
+    console.log(JSON.stringify(deviceDetector.parse("Mozilla/5.0 (Linux; Android 5.1.1; General Mobile 4G Build/LUZ59K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"), null, 2));
     console.timeEnd("Detection");
-
-    console.time("Detection1");
-    console.log(JSON.stringify(deviceDetector.parse("Tarmot Gezgin/1.0 (compatible; TarmotGezgin/1.1; +http://www.tarmot.com/gezgin)"), null, 2));
-    console.timeEnd("Detection1");
-
-    console.time("Detection2");
-    console.log(deviceDetector.parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:61.0) Gecko/20100101 Firefox/61.0"));
-    console.timeEnd("Detection2");
-
-    console.time("Detection3");
-    console.log(deviceDetector.parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.2 Safari/605.1.15"));
-    console.timeEnd("Detection3");
-
-    console.time("Detection4");
-    console.log(deviceDetector.parse("Mozilla/6.0 (Macintosh; U; Amiga-AWeb) Safari 3.1"));
-    console.timeEnd("Detection4");
 }, 1000);

@@ -19,12 +19,15 @@
     "install": "napa"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#59a1369ec38bf653323fb4c6d5fc4ecacdd9e4a9"
+    "device-detector": "https://github.com/etienne-martin/matomo-device-detector#master"
+  },
+  "napa-config": {
+    "cache": false
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run build",
-      "pre-push": "npm run build"
+      "pre-push": "npm run build && npm run test"
     }
   },
   "jest": {
@@ -45,13 +48,14 @@
       "/coverage/",
       "/dist/",
       "/typings/",
-      "/tests/"
+      "/tests/",
+      "/utils/version-compare.ts"
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 100,
+        "branches": 90,
         "functions": 100,
-        "lines": 100,
+        "lines": 90,
         "statements": -10
       }
     },

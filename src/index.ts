@@ -110,11 +110,7 @@ export default class DeviceDetector {
     /**
      * All detected feature phones running android are more likely smartphones
      */
-    if (get(result, "device.type") === "feature phone" && osFamily === "Android") {
-      if (!result.device) {
-        result.device = this.createDeviceObject();
-      }
-
+    if (result.device && get(result, "device.type") === "feature phone" && osFamily === "Android") {
       result.device.type = "smartphone";
     }
 
