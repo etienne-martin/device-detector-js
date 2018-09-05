@@ -4,9 +4,9 @@ import { DeviceTests, DeviceTest, GenericDeviceResult } from "../typings/device"
 import { get } from "lodash";
 
 const cameraTests: DeviceTests = loadTests("Parser/Devices/fixtures/camera");
+const carTests: DeviceTests = loadTests("Parser/Devices/fixtures/car_browser");
+const consoleTests: DeviceTests = loadTests("Parser/Devices/fixtures/console");
 const televisionTests: DeviceTests = loadTests("fixtures/tv");
-const carTests: DeviceTests = loadTests("fixtures/car_browser");
-const consoleTests: DeviceTests = loadTests("fixtures/console");
 const portableMediaPlayerTests: DeviceTests = loadTests("fixtures/portable_media_player");
 const mobileTests: DeviceTests = [
   ...loadTests("fixtures/smartphone"),
@@ -34,9 +34,10 @@ const deviceTester = (tests: DeviceTest[]) => {
       const result = deviceDetector.parse(unitTest.user_agent).device as GenericDeviceResult;
 
       unitTest.device.type = unitTest.device.type
-        .replace("car browser", "car")
         .replace("tv", "television")
-        .replace("8", "camera");
+        .replace("8", "camera")
+        .replace("6", "car")
+        .replace("4", "console");
 
       // Some tests contains "Unknown" as string for the brand
       // We need to sanitize it
@@ -73,14 +74,6 @@ describe("Device / cameras", () => {
   deviceTester(cameraTests);
 });
 
-describe("Device / mobiles", () => {
-  deviceTester(mobileTests);
-});
-
-describe("Device / televisions", () => {
-  deviceTester(televisionTests);
-});
-
 describe("Device / cars", () => {
   deviceTester(carTests);
 });
@@ -89,6 +82,14 @@ describe("Device / consoles", () => {
   deviceTester(consoleTests);
 });
 
+describe("Device / televisions", () => {
+  deviceTester(televisionTests);
+});
+
 describe("Device / portable media players", () => {
   deviceTester(portableMediaPlayerTests);
+});
+
+describe("Device / mobiles", () => {
+  deviceTester(mobileTests);
 });
