@@ -53,10 +53,13 @@ export default class BrowserParser {
         result.engine = browser.engine.default;
 
         if (browser.engine && browser.engine.versions && shortVersion) {
-          for (const [versionThreshold, engineByVersion] of Object.entries(browser.engine.versions)) {
+          const sortedEngineVersions = Object.entries(browser.engine.versions).sort((a, b) => {
+            return parseFloat(a[0]) > parseFloat(b[0]) ? 1 : -1;
+          });
+
+          for (const [versionThreshold, engineByVersion] of sortedEngineVersions) {
             if (parseFloat(versionThreshold) <= shortVersion) {
               result.engine = engineByVersion;
-              break;
             }
           }
         }
