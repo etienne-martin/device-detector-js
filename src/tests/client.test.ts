@@ -18,10 +18,10 @@ import {
 } from "../typings/client";
 
 const browserTests: BrowserTests = loadTests("Parser/Client/fixtures/browser");
-const mobileAppTests: MobileAppTests = loadTests("Parser/Client/fixtures/mobile_app");
 const feedReaderTests: FeedReaderTests = loadTests("Parser/Client/fixtures/feed_reader");
 const libraryTests: LibraryTests = loadTests("Parser/Client/fixtures/library");
 const mediaPlayerTests: MediaPlayerTests = loadTests("Parser/Client/fixtures/mediaplayer");
+const mobileAppTests: MobileAppTests = loadTests("Parser/Client/fixtures/mobile_app");
 const personalInformationManagerTests: PersonalInformationManagerTests = loadTests("Parser/Client/fixtures/pim");
 
 const deviceDetector = new DeviceDetector();

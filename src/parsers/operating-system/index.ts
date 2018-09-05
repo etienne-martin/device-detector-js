@@ -61,6 +61,11 @@ export default class OperatingSystemParser {
       }
 
       // Cleanup
+      if (result.name === "debian") {
+        result.name = "Debian";
+      }
+
+      // Cleanup
       if (result.name === "YunOS") {
         result.name = "YunOs";
       }
