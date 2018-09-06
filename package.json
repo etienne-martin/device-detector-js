@@ -1,6 +1,6 @@
 {
   "name": "device-detector",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Node.js port of Matomo device-detector",
   "main": "dist/index.js",
   "private": false,
@@ -19,7 +19,7 @@
     "install": "napa"
   },
   "napa": {
-    "device-detector": "https://github.com/etienne-martin/matomo-device-detector#master"
+    "device-detector": "https://github.com/etienne-martin/matomo-device-detector#1.0.0"
   },
   "napa-config": {
     "cache": false
@@ -55,7 +55,7 @@
       "global": {
         "branches": 90,
         "functions": 100,
-        "lines": 90,
+        "lines": 100,
         "statements": -10
       }
     },

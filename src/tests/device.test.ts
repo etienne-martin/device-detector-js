@@ -6,23 +6,6 @@ import { get } from "lodash";
 const cameraTests: DeviceTests = loadTests("Parser/Devices/fixtures/camera");
 const carTests: DeviceTests = loadTests("Parser/Devices/fixtures/car_browser");
 const consoleTests: DeviceTests = loadTests("Parser/Devices/fixtures/console");
-const televisionTests: DeviceTests = loadTests("fixtures/tv");
-const portableMediaPlayerTests: DeviceTests = loadTests("fixtures/portable_media_player");
-const mobileTests: DeviceTests = [
-  ...loadTests("fixtures/smartphone"),
-  ...loadTests("fixtures/smartphone-1"),
-  ...loadTests("fixtures/smartphone-2"),
-  ...loadTests("fixtures/smartphone-3"),
-  ...loadTests("fixtures/smartphone-4"),
-  ...loadTests("fixtures/smartphone-5"),
-  ...loadTests("fixtures/smartphone-6"),
-  ...loadTests("fixtures/tablet"),
-  ...loadTests("fixtures/tablet-1"),
-  ...loadTests("fixtures/tablet-2"),
-  ...loadTests("fixtures/feature_phone"),
-  ...loadTests("fixtures/phablet"),
-  ...loadTests("fixtures/smart_display")
-];
 
 const deviceDetector = new DeviceDetector();
 // TODO: share the same list between the vendor fragment test and this file
@@ -34,22 +17,9 @@ const deviceTester = (tests: DeviceTest[]) => {
       const result = deviceDetector.parse(unitTest.user_agent).device as GenericDeviceResult;
 
       unitTest.device.type = unitTest.device.type
-        .replace("tv", "television")
         .replace("8", "camera")
         .replace("6", "car")
         .replace("4", "console");
-
-      // Some tests contains "Unknown" as string for the brand
-      // We need to sanitize it
-      if (unitTest.device.brand === "Unknown") {
-        unitTest.device.brand = "";
-      }
-
-      // Some tests contains "null" as string for the model
-      // We need to sanitize it
-      if (unitTest.device.model === "null") {
-        unitTest.device.model = "";
-      }
 
       const formattedResult = {
         type: get(result, "type") || "",
@@ -80,16 +50,4 @@ describe("Device / cars", () => {
 
 describe("Device / consoles", () => {
   deviceTester(consoleTests);
-});
-
-describe("Device / televisions", () => {
-  deviceTester(televisionTests);
-});
-
-describe("Device / portable media players", () => {
-  deviceTester(portableMediaPlayerTests);
-});
-
-describe("Device / mobiles", () => {
-  deviceTester(mobileTests);
 });

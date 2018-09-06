@@ -153,7 +153,7 @@ export default class DeviceDetector {
     }
 
     // set device type to desktop for all devices running a desktop os that were not detected as an other device type
-    if (!get(result, "device.type") && result.os && this.isDesktop(result, osFamily)) {
+    if (!get(result, "device.type") && this.isDesktop(result, osFamily)) {
       if (!result.device) {
         result.device = this.createDeviceObject();
       }
@@ -166,12 +166,6 @@ export default class DeviceDetector {
 
   private isDesktop = (result: Result, osFamily: string): boolean => {
     if (!result.os) {
-      return false;
-    }
-
-    const osShortName = OperatingSystemParser.getOsShortName(result.os.name);
-
-    if (!osShortName) {
       return false;
     }
 
