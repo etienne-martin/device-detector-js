@@ -9,17 +9,26 @@ describe("Utility functions", () => {
   });
 
   test(`version formatting`, async () => {
-    expect(formatVersion("0")).toEqual("0.0");
-    expect(formatVersion(0)).toEqual("0.0");
-    expect(formatVersion("0.1")).toEqual("0.1");
-    expect(formatVersion("1.0")).toEqual("1.0");
-    expect(formatVersion("1.0.")).toEqual("1.0");
-    expect(formatVersion("1")).toEqual("1.0");
-    expect(formatVersion("1.")).toEqual("1.0");
-    expect(formatVersion("1.1.1")).toEqual("1.1.1");
-    expect(formatVersion(1)).toEqual("1.0");
-    expect(formatVersion("THIS IS TEXT")).toEqual("THIS IS TEXT");
-    expect(formatVersion(undefined)).toEqual("");
-    expect(formatVersion("534.30")).toEqual("534.30");
+    expect(formatVersion("0", null)).toEqual("0.0");
+    expect(formatVersion("0.1", null)).toEqual("0.1");
+    expect(formatVersion("1.0", null)).toEqual("1.0");
+    expect(formatVersion("1.0.", null)).toEqual("1.0");
+    expect(formatVersion("1", null)).toEqual("1.0");
+    expect(formatVersion("1.", null)).toEqual("1.0");
+    expect(formatVersion("1.1.1", null)).toEqual("1.1.1");
+    expect(formatVersion("THIS IS TEXT", null)).toEqual("THIS IS TEXT");
+    expect(formatVersion(undefined, null)).toEqual("");
+    expect(formatVersion("534.30", null)).toEqual("534.30");
+
+    // Test version truncation
+    expect(formatVersion("1", 0)).toEqual("1");
+    expect(formatVersion("1", 1)).toEqual("1.0");
+    expect(formatVersion("1", 2)).toEqual("1.0");
+    expect(formatVersion("1.1.3", 1)).toEqual("1.1");
+    expect(formatVersion("1.1.3", 2)).toEqual("1.1.3");
+    expect(formatVersion("1.1.3.5", 3)).toEqual("1.1.3.5");
+
+    // This shouldn't get truncated
+    expect(formatVersion("THIS.IS.SOME.TEXT", 1)).toEqual("THIS.IS.SOME.TEXT");
   });
 });

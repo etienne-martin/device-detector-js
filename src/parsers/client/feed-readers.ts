@@ -11,9 +11,21 @@ export interface FeedReaderResult {
   url: string;
 }
 
+interface Options {
+  versionTruncation: 0 | 1 | 2 | 3 | null;
+}
+
 const feedReaders: FeedReaders = loadRegexes("client/feed_readers");
 
 export default class FeedReaderParser {
+  private readonly options: Options = {
+    versionTruncation: 1
+  };
+
+  constructor(options?: Partial<Options>) {
+    this.options = {...this.options, ...options};
+  }
+
   public parse = (userAgent: string): FeedReaderResult => {
     const result: FeedReaderResult = {
       type: "",
@@ -29,7 +41,7 @@ export default class FeedReaderParser {
 
       result.type = "feed reader";
       result.name = variableReplacement(feedReader.name, match);
-      result.version = formatVersion(variableReplacement(feedReader.version, match));
+      result.version = formatVersion(variableReplacement(feedReader.version, match), this.options.versionTruncation);
       result.url = feedReader.url;
       break;
     }

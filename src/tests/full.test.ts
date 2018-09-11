@@ -30,7 +30,9 @@ const tests: any = [
   ...loadTests("fixtures/unknown")
 ];
 
-const deviceDetector = new DeviceDetector();
+const deviceDetector = new DeviceDetector({
+  versionTruncation: 1
+});
 
 describe("Full test", () => {
   for (const unitTest of tests) {
@@ -75,15 +77,15 @@ describe("Full test", () => {
       const formattedTest = {
         os: {
           name: unitTest.os.name || "",
-          version: formatVersion(unitTest.os.version) || "",
+          version: formatVersion(unitTest.os.version, 1) || "",
           platform: unitTest.os.platform || ""
         },
         client: {
           type: expectedClientType,
           name: unitTest.client.name || "",
-          version: formatVersion(unitTest.client.version) || "",
+          version: formatVersion(unitTest.client.version, 1) || "",
           engine: unitTest.client.engine || "",
-          engineVersion: formatVersion(unitTest.client.engine_version) || "",
+          engineVersion: formatVersion(unitTest.client.engine_version, 1) || "",
         },
         device: {
           type: expectedDeviceType,

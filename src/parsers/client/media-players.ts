@@ -10,9 +10,21 @@ export interface MediaPlayerResult {
   version: string;
 }
 
+interface Options {
+  versionTruncation: 0 | 1 | 2 | 3 | null;
+}
+
 const mediaPlayers: MediaPlayers = loadRegexes("client/mediaplayers");
 
 export default class MediaPlayerParser {
+  private readonly options: Options = {
+    versionTruncation: 1
+  };
+
+  constructor(options?: Partial<Options>) {
+    this.options = {...this.options, ...options};
+  }
+
   public parse = (userAgent: string): MediaPlayerResult => {
     const result: MediaPlayerResult = {
       type: "",
@@ -27,7 +39,7 @@ export default class MediaPlayerParser {
 
       result.type = "media player";
       result.name = variableReplacement(mediaPlayer.name, match);
-      result.version = formatVersion(variableReplacement(mediaPlayer.version, match));
+      result.version = formatVersion(variableReplacement(mediaPlayer.version, match), this.options.versionTruncation);
       break;
     }
 

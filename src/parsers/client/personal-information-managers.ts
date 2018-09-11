@@ -10,9 +10,21 @@ export interface PersonalInformationManagerResult {
   version: string;
 }
 
+interface Options {
+  versionTruncation: 0 | 1 | 2 | 3 | null;
+}
+
 const personalInformationManagers: PersonalInformationManagers = loadRegexes("client/pim");
 
 export default class PersonalInformationManagerParser {
+  private readonly options: Options = {
+    versionTruncation: 1
+  };
+
+  constructor(options?: Partial<Options>) {
+    this.options = {...this.options, ...options};
+  }
+
   public parse = (userAgent: string): PersonalInformationManagerResult => {
     const result: PersonalInformationManagerResult = {
       type: "",
@@ -27,7 +39,7 @@ export default class PersonalInformationManagerParser {
 
       result.type = "personal information manager";
       result.name = variableReplacement(personalInformationManager.name, match);
-      result.version = formatVersion(variableReplacement(personalInformationManager.version, match));
+      result.version = formatVersion(variableReplacement(personalInformationManager.version, match), this.options.versionTruncation);
       break;
     }
 

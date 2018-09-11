@@ -2,18 +2,45 @@
   "name": "device-detector",
   "version": "1.0.0",
   "description": "A Node.js port of Matomo device-detector",
+  "homepage": "https://github.com/etienne-martin/device-detector",
+  "keywords": [
+    "user-agent",
+    "parsing",
+    "parser",
+    "device",
+    "mobile",
+    "tablet",
+    "phone",
+    "desktop",
+    "os",
+    "bot",
+    "browser",
+    "mobile"
+  ],
   "main": "dist/index.js",
-  "private": false,
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Etienne Martin",
-    "url": "https://github.com/etienne-martin"
+    "url": "http://etiennemartin.ca/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etienne-martin/device-detector"
+  },
+  "bugs": {
+    "url": "https://github.com/etienne-martin/device-detector/issues"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "tsc --pretty --watch",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
     "pretest": "npm run lint",
     "test": "jest src --coverage --verbose",
     "test:watch": "jest src --coverage --verbose --watch",
+    "coverage": "coveralls < ./coverage/lcov.info",
     "prebuild": "rm -rf dist/ && npm run lint",
     "build": "tsc --pretty",
     "install": "napa"
@@ -68,8 +95,7 @@
   },
   "dependencies": {
     "js-yaml": "^3.12.0",
-    "lodash": "^4.17.10",
-    "yamljs": "^0.3.0"
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "@types/jest": "^22.2.0",
@@ -77,6 +103,7 @@
     "@types/lodash": "^4.14.116",
     "@types/node": "^10.9.2",
     "@types/yamljs": "^0.2.30",
+    "coveralls": "^3.0.2",
     "husky": "^0.15.0-rc.9",
     "jest": "^22.4.2",
     "napa": "^3.0.0",

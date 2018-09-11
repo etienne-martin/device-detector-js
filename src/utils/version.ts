@@ -1,17 +1,27 @@
 import { trim } from "lodash";
 
 // TODO: implement $maxMinorParts
-export const formatVersion = (version: string | undefined): string => {
+export const formatVersion = (version: string | undefined, versionTruncation: 0 | 1 | 2 | 3 | null): string => {
   if (version === undefined) return "";
 
   const versionString = trim(version, ".").replace(new RegExp("_", "g"), ".");
+  const versionParts = versionString.split(".");
 
-  if (versionString.split(".").length > 2) {
+  // Return if the string is not only digits once we removed the dots
+  if (!/^\d+$/.test(versionParts.join(""))) {
     return versionString;
   }
 
-  if (Number.isInteger(parseFloat(versionString))) {
-    return parseInt(versionString, 10).toFixed(1);
+  if (versionParts.length > 1) {
+    if (versionTruncation !== null) {
+      return versionParts.slice(0, versionTruncation + 1).join(".");
+    }
+  }
+
+  if (versionTruncation !== 0) {
+    if (Number.isInteger(parseFloat(versionString))) {
+      return parseInt(versionString, 10).toFixed(1);
+    }
   }
 
   return versionString;

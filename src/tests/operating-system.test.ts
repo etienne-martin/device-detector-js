@@ -5,7 +5,9 @@ import { OperatingSystemTests } from "../typings/operating-system";
 import DeviceDetector from "../index";
 
 const operatingSystemTests: OperatingSystemTests = loadTests("Parser/fixtures/oss");
-const deviceDetector = new DeviceDetector();
+const deviceDetector = new DeviceDetector({
+  versionTruncation: 1
+});
 
 describe("Operating systems", () => {
   for (const operatingSystemTest of operatingSystemTests) {
@@ -17,7 +19,7 @@ describe("Operating systems", () => {
       if (!operatingSystemTest.os.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(operatingSystemTest.os.version));
+        expect(result.version).toEqual(formatVersion(operatingSystemTest.os.version, 1));
       }
 
       if (!operatingSystemTest.os.platform) {

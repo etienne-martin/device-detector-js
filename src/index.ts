@@ -15,23 +15,42 @@ interface Result {
   bot: BotResult;
 }
 
-const clientParser = new ClientParser();
-const deviceParser = new DeviceParser();
-const operatingSystemParser = new OperatingSystemParser();
-const vendorFragmentParser = new VendorFragmentParser();
-const botParser = new BotParser();
+interface Options {
+  skipBotDetection: boolean;
+  versionTruncation: 0 | 1 | 2 | 3 | null;
+}
 
 export default class DeviceDetector {
+  private clientParser: ClientParser;
+  private deviceParser: DeviceParser;
+  private operatingSystemParser: OperatingSystemParser;
+  private vendorFragmentParser: VendorFragmentParser;
+  private botParser: BotParser;
+  private readonly options: Options = {
+    skipBotDetection: false,
+    versionTruncation: 1
+  };
+
+  constructor(options?: Partial<Options>) {
+    this.options = {...this.options, ...options};
+
+    this.clientParser = new ClientParser(this.options);
+    this.deviceParser = new DeviceParser();
+    this.operatingSystemParser = new OperatingSystemParser(this.options);
+    this.vendorFragmentParser = new VendorFragmentParser();
+    this.botParser = new BotParser();
+  }
+
   public parse = (userAgent: string): Result => {
     const result: Result = {
-      client: clientParser.parse(userAgent),
-      device: deviceParser.parse(userAgent),
-      os: operatingSystemParser.parse(userAgent),
-      bot: botParser.parse(userAgent)
+      client: this.clientParser.parse(userAgent),
+      device: this.deviceParser.parse(userAgent),
+      os: this.operatingSystemParser.parse(userAgent),
+      bot: this.options.skipBotDetection ? null : this.botParser.parse(userAgent)
     };
 
     if (!get(result, "device.brand")) {
-      const brand = vendorFragmentParser.parse(userAgent);
+      const brand = this.vendorFragmentParser.parse(userAgent);
 
       if (brand) {
         if (!result.device) {

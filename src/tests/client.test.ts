@@ -24,7 +24,9 @@ const mediaPlayerTests: MediaPlayerTests = loadTests("Parser/Client/fixtures/med
 const mobileAppTests: MobileAppTests = loadTests("Parser/Client/fixtures/mobile_app");
 const personalInformationManagerTests: PersonalInformationManagerTests = loadTests("Parser/Client/fixtures/pim");
 
-const deviceDetector = new DeviceDetector();
+const deviceDetector = new DeviceDetector({
+  versionTruncation: 1
+});
 
 describe("Client / browsers", () => {
   for (const browserTest of browserTests) {
@@ -37,7 +39,7 @@ describe("Client / browsers", () => {
       if (!browserTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(browserTest.client.version));
+        expect(result.version).toEqual(formatVersion(browserTest.client.version, 1));
       }
 
       if (!browserTest.client.engine) {
@@ -49,7 +51,7 @@ describe("Client / browsers", () => {
       if (!browserTest.client.engine_version) {
         expect(result.engineVersion).toBe("");
       } else {
-        expect(result.engineVersion).toEqual(formatVersion(browserTest.client.engine_version));
+        expect(result.engineVersion).toEqual(formatVersion(browserTest.client.engine_version, 1));
       }
     });
   }
@@ -66,7 +68,7 @@ describe("Client / mobile apps", () => {
       if (!mobileAppTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(mobileAppTest.client.version));
+        expect(result.version).toEqual(formatVersion(mobileAppTest.client.version, 1));
       }
     });
   }
@@ -83,7 +85,7 @@ describe("Client / feed readers", () => {
       if (!feedReaderTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(feedReaderTest.client.version));
+        expect(result.version).toEqual(formatVersion(feedReaderTest.client.version, 1));
       }
     });
   }
@@ -100,7 +102,7 @@ describe("Client / libraries", () => {
       if (!libraryTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(libraryTest.client.version));
+        expect(result.version).toEqual(formatVersion(libraryTest.client.version, 1));
       }
     });
   }
@@ -118,7 +120,7 @@ describe("Client / media players", () => {
       if (!mediaPlayerTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(mediaPlayerTest.client.version));
+        expect(result.version).toEqual(formatVersion(mediaPlayerTest.client.version, 1));
       }
     });
   }
@@ -136,7 +138,7 @@ describe("Client / personal information managers", () => {
       if (!personalInformationManagerTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(personalInformationManagerTest.client.version));
+        expect(result.version).toEqual(formatVersion(personalInformationManagerTest.client.version, 1));
       }
     });
   }
