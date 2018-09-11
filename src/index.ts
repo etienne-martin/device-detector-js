@@ -22,12 +22,6 @@ const vendorFragmentParser = new VendorFragmentParser();
 const botParser = new BotParser();
 
 export default class DeviceDetector {
-  public createDeviceObject = () => ({
-    type: "",
-    brand: "",
-    model: ""
-  });
-
   public parse = (userAgent: string): Result => {
     const result: Result = {
       client: clientParser.parse(userAgent),
@@ -186,4 +180,10 @@ export default class DeviceDetector {
   private isToucheEnabled = (userAgent: string) => {
     return userAgentParser("Touch", userAgent);
   };
+
+  private createDeviceObject = () => ({
+    type: "",
+    brand: "",
+    model: ""
+  });
 }
