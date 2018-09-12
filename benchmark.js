@@ -1,7 +1,6 @@
 const DeviceDetector = require("./dist/").default;
 const deviceDetector = new DeviceDetector({
-  skipBotDetection: false,
-  versionTruncation: 3
+  skipBotDetection: false
 });
 
 setTimeout(() => {

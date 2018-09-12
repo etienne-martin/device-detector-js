@@ -33,7 +33,6 @@ export default class DeviceDetector {
 
   constructor(options?: Partial<Options>) {
     this.options = {...this.options, ...options};
-
     this.clientParser = new ClientParser(this.options);
     this.deviceParser = new DeviceParser();
     this.operatingSystemParser = new OperatingSystemParser(this.options);
@@ -62,7 +61,7 @@ export default class DeviceDetector {
 
     const osName = get(result, "os.name");
     const osVersion = get(result, "os.version");
-    const osFamily = OperatingSystemParser.getOsFamily(OperatingSystemParser.getOsShortName(get(result, "os.name")));
+    const osFamily = OperatingSystemParser.getOsFamily(get(result, "os.name"));
 
     /**
      * Assume all devices running iOS / Mac OS are from Apple
