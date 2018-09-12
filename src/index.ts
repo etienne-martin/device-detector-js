@@ -7,6 +7,7 @@ import BotParser, { Result as BotResult } from "./parsers/bot";
 import { get } from "lodash";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
+import * as LRU from "lru-cache";
 
 interface Result {
   client: ClientResult;
@@ -18,9 +19,11 @@ interface Result {
 interface Options {
   skipBotDetection: boolean;
   versionTruncation: 0 | 1 | 2 | 3 | null;
+  cache: boolean | number;
 }
 
 export default class DeviceDetector {
+  private cache: LRU.Cache<string, Result> | undefined;
   private clientParser: ClientParser;
   private deviceParser: DeviceParser;
   private operatingSystemParser: OperatingSystemParser;
@@ -28,7 +31,8 @@ export default class DeviceDetector {
   private botParser: BotParser;
   private readonly options: Options = {
     skipBotDetection: false,
-    versionTruncation: 1
+    versionTruncation: 1,
+    cache: true
   };
 
   constructor(options?: Partial<Options>) {
@@ -38,9 +42,21 @@ export default class DeviceDetector {
     this.operatingSystemParser = new OperatingSystemParser(this.options);
     this.vendorFragmentParser = new VendorFragmentParser();
     this.botParser = new BotParser();
+
+    if (this.options.cache) {
+      this.cache = LRU<string, Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+    }
   }
 
   public parse = (userAgent: string): Result => {
+    if (this.cache) {
+      const cachedResult = this.cache.get(userAgent);
+
+      if (cachedResult) {
+        return cachedResult;
+      }
+    }
+
     const result: Result = {
       client: this.clientParser.parse(userAgent),
       device: this.deviceParser.parse(userAgent),
@@ -171,6 +187,10 @@ export default class DeviceDetector {
       }
 
       result.device.type = "desktop";
+    }
+
+    if (this.cache) {
+      this.cache.set(userAgent, result);
     }
 
     return result;
