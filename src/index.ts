@@ -23,12 +23,14 @@ interface Options {
 }
 
 export default class DeviceDetector {
-  private cache: LRU.Cache<string, Result> | undefined;
+  private readonly cache: LRU.Cache<string, Result> | undefined;
   private clientParser: ClientParser;
   private deviceParser: DeviceParser;
   private operatingSystemParser: OperatingSystemParser;
   private vendorFragmentParser: VendorFragmentParser;
   private botParser: BotParser;
+
+  // Default options
   private readonly options: Options = {
     skipBotDetection: false,
     versionTruncation: 1,
@@ -59,8 +61,8 @@ export default class DeviceDetector {
 
     const result: Result = {
       client: this.clientParser.parse(userAgent),
-      device: this.deviceParser.parse(userAgent),
       os: this.operatingSystemParser.parse(userAgent),
+      device: this.deviceParser.parse(userAgent),
       bot: this.options.skipBotDetection ? null : this.botParser.parse(userAgent)
     };
 
@@ -109,6 +111,28 @@ export default class DeviceDetector {
 
         result.device.type = "tablet";
       }
+    }
+
+    /**
+     * Some user agents simply contain the fragment 'Android; Tablet;' or 'Opera Tablet', so we assume those devices are tablets
+     */
+    if (!get(result, "device.type") && this.hasAndroidTabletFragment(userAgent) || userAgentParser("Opera Tablet", userAgent)) {
+      if (!result.device) {
+        result.device = this.createDeviceObject();
+      }
+
+      result.device.type = "tablet";
+    }
+
+    /**
+     * Some user agents simply contain the fragment 'Android; Mobile;', so we assume those devices are smartphones
+     */
+    if (!get(result, "device.type") && this.hasAndroidMobileFragment(userAgent)) {
+      if (!result.device) {
+        result.device = this.createDeviceObject();
+      }
+
+      result.device.type = "smartphone";
     }
 
     /**
@@ -170,6 +194,17 @@ export default class DeviceDetector {
     }
 
     /**
+     * All devices running Opera TV Store are assumed to be televisions
+     */
+    if (userAgentParser("Opera TV Store", userAgent)) {
+      if (!result.device ) {
+        result.device = this.createDeviceObject();
+      }
+
+      result.device.type = "television";
+    }
+
+    /**
      * Devices running Kylo or Espital TV Browsers are assumed to be televisions
      */
     if (!get(result, "device.type") && ["Kylo", "Espial TV Browser"].includes(get(result, "client.name"))) {
@@ -194,6 +229,14 @@ export default class DeviceDetector {
     }
 
     return result;
+  };
+
+  private hasAndroidMobileFragment = (userAgent: string) => {
+    return userAgentParser("Android( [\.0-9]+)?; Mobile;", userAgent);
+  };
+
+  private hasAndroidTabletFragment = (userAgent: string) => {
+    return userAgentParser("Android( [\.0-9]+)?; Tablet;", userAgent);
   };
 
   private isDesktop = (result: Result, osFamily: string): boolean => {
