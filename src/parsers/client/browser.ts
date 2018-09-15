@@ -58,8 +58,9 @@ export default class BrowserParser {
 
       if (!match) continue;
 
-      const version = formatVersion(variableReplacement(browser.version, match), this.options.versionTruncation);
-      const shortVersion = version && parseFloat(version) || "";
+      const vrpVersion = variableReplacement(browser.version, match);
+      const version = formatVersion(vrpVersion, this.options.versionTruncation);
+      const shortVersion = version && parseFloat(formatVersion(vrpVersion, 1)) || "";
 
       if (browser.engine) {
         result.engine = browser.engine.default;

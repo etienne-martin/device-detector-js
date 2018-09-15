@@ -24,8 +24,10 @@ const mediaPlayerTests: MediaPlayerTests = loadTests("Parser/Client/fixtures/med
 const mobileAppTests: MobileAppTests = loadTests("Parser/Client/fixtures/mobile_app");
 const personalInformationManagerTests: PersonalInformationManagerTests = loadTests("Parser/Client/fixtures/pim");
 
+const versionTruncation = 1;
+
 const deviceDetector = new DeviceDetector({
-  versionTruncation: 1
+  versionTruncation
 });
 
 describe("Client / browsers", () => {
@@ -33,26 +35,19 @@ describe("Client / browsers", () => {
     test(`${browserTest.client.name} ${browserTest.client.version || ""}`, async () => {
       const result = deviceDetector.parse(browserTest.user_agent).client as BrowserResult;
 
-      expect(result.type).toEqual(browserTest.client.type);
-      expect(result.name).toEqual(browserTest.client.name);
-
-      if (!browserTest.client.version) {
-        expect(result.version).toBe("");
-      } else {
-        expect(result.version).toEqual(formatVersion(browserTest.client.version, 1));
-      }
-
-      if (!browserTest.client.engine) {
-        expect(result.engine).toBe("");
-      } else {
-        expect(result.engine).toEqual(browserTest.client.engine);
-      }
-
-      if (!browserTest.client.engine_version) {
-        expect(result.engineVersion).toBe("");
-      } else {
-        expect(result.engineVersion).toEqual(formatVersion(browserTest.client.engine_version, 1));
-      }
+      expect({
+        ...{ client: result },
+        userAgent: browserTest.user_agent
+      }).toEqual({
+        client: {
+          type: browserTest.client.type || "",
+          name: browserTest.client.name || "",
+          version: formatVersion(browserTest.client.version, versionTruncation) || "",
+          engine: browserTest.client.engine || "",
+          engineVersion: formatVersion(browserTest.client.engine_version, versionTruncation) || "",
+        },
+        userAgent: browserTest.user_agent
+      });
     });
   }
 });
@@ -62,14 +57,17 @@ describe("Client / mobile apps", () => {
     test(`${mobileAppTest.client.name} ${mobileAppTest.client.version || ""}`, async () => {
       const result = deviceDetector.parse(mobileAppTest.user_agent).client as MobileAppResult;
 
-      expect(result.type).toEqual(mobileAppTest.client.type);
-      expect(result.name).toEqual(mobileAppTest.client.name);
-
-      if (!mobileAppTest.client.version) {
-        expect(result.version).toBe("");
-      } else {
-        expect(result.version).toEqual(formatVersion(mobileAppTest.client.version, 1));
-      }
+      expect({
+        ...{ client: result },
+        userAgent: mobileAppTest.user_agent
+      }).toEqual({
+        client: {
+          type: mobileAppTest.client.type || "",
+          name: mobileAppTest.client.name || "",
+          version: formatVersion(mobileAppTest.client.version, versionTruncation) || "",
+        },
+        userAgent: mobileAppTest.user_agent
+      });
     });
   }
 });
@@ -85,7 +83,7 @@ describe("Client / feed readers", () => {
       if (!feedReaderTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(feedReaderTest.client.version, 1));
+        expect(result.version).toEqual(formatVersion(feedReaderTest.client.version, versionTruncation));
       }
     });
   }
@@ -102,7 +100,7 @@ describe("Client / libraries", () => {
       if (!libraryTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(libraryTest.client.version, 1));
+        expect(result.version).toEqual(formatVersion(libraryTest.client.version, versionTruncation));
       }
     });
   }
@@ -120,7 +118,7 @@ describe("Client / media players", () => {
       if (!mediaPlayerTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(mediaPlayerTest.client.version, 1));
+        expect(result.version).toEqual(formatVersion(mediaPlayerTest.client.version, versionTruncation));
       }
     });
   }
@@ -138,7 +136,7 @@ describe("Client / personal information managers", () => {
       if (!personalInformationManagerTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(personalInformationManagerTest.client.version, 1));
+        expect(result.version).toEqual(formatVersion(personalInformationManagerTest.client.version, versionTruncation));
       }
     });
   }

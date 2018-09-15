@@ -28,6 +28,9 @@ describe("Utility functions", () => {
     expect(formatVersion("1.1.3", 2)).toEqual("1.1.3");
     expect(formatVersion("1.1.3.5", 3)).toEqual("1.1.3.5");
 
+    expect(formatVersion("5.00.00", 1)).toEqual("5.0");
+    expect(formatVersion("8.00", 1)).toEqual("8.0");
+
     // This shouldn't get truncated
     expect(formatVersion("THIS.IS.SOME.TEXT", 1)).toEqual("THIS.IS.SOME.TEXT");
   });

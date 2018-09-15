@@ -12,15 +12,15 @@ export const formatVersion = (version: string | undefined, versionTruncation: 0 
     return versionString;
   }
 
-  if (versionParts.length > 1) {
-    if (versionTruncation !== null) {
-      return versionParts.slice(0, versionTruncation + 1).join(".");
-    }
-  }
-
   if (versionTruncation !== 0) {
     if (Number.isInteger(parseFloat(versionString))) {
       return parseInt(versionString, 10).toFixed(1);
+    }
+  }
+
+  if (versionParts.length > 1) {
+    if (versionTruncation !== null) {
+      return versionParts.slice(0, versionTruncation + 1).join(".");
     }
   }
 
