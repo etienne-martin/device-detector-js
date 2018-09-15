@@ -1,9 +1,5 @@
 const DeviceDetector = require("./dist/");
-const deviceDetector = new DeviceDetector({
-  skipBotDetection: false,
-  versionTruncation: 1,
-  cache: true
-});
+const deviceDetector = new DeviceDetector();
 
 setTimeout(() => {
   deviceDetector.parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36");

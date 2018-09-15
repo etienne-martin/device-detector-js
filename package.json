@@ -1,5 +1,5 @@
 {
-  "name": "device-detector",
+  "name": "device-detector-js",
   "version": "1.0.0",
   "description": "A Node.js port of Matomo device-detector",
   "homepage": "https://github.com/etienne-martin/device-detector",
