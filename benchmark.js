@@ -1,4 +1,4 @@
-const DeviceDetector = require("./dist/").default;
+const DeviceDetector = require("./dist/");
 const deviceDetector = new DeviceDetector({
   skipBotDetection: false,
   versionTruncation: 1,

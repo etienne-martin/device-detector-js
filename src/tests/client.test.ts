@@ -1,4 +1,4 @@
-import DeviceDetector from "../";
+import DeviceDetector = require("../");
 import { loadTests } from "../utils/yaml-loader";
 import { formatVersion } from "../utils/version";
 import { BrowserResult } from "../parsers/client/browser";

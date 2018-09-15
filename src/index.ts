@@ -22,7 +22,7 @@ interface Options {
   cache: boolean | number;
 }
 
-export default class DeviceDetector {
+class DeviceDetector {
   private readonly cache: LRU.Cache<string, Result> | undefined;
   private clientParser: ClientParser;
   private deviceParser: DeviceParser;
@@ -268,3 +268,5 @@ export default class DeviceDetector {
     model: ""
   });
 }
+
+export = DeviceDetector;

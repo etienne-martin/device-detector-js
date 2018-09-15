@@ -1,5 +1,5 @@
+import DeviceDetector = require("../");
 import BrowserParser from "../parsers/client/browser";
-import DeviceDetector from "../";
 
 const deviceDetector = new DeviceDetector();
 

@@ -1,5 +1,5 @@
+import DeviceDetector = require("../");
 import { loadTests } from "../utils/yaml-loader";
-import DeviceDetector from "../";
 import { get } from "lodash";
 import { formatVersion } from "../utils/version";
 
