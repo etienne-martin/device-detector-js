@@ -53,6 +53,32 @@ Output:
 }
 ```
 
+**Example** - bot detection:
+
+```javascript
+const DeviceDetector = require("device-detector-js");
+
+const deviceDetector = new DeviceDetector();
+const userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)";
+const device = deviceDetector.parse(userAgent);
+
+console.log(device.bot);
+```
+
+Output:
+
+```json
+{
+  "name": "Googlebot",
+  "category": "Search bot",
+  "url": "http://www.google.com/bot.html",
+  "producer": {
+    "name": "Google Inc.",
+    "url": "http://www.google.com"
+  }
+}
+```
+
 ## Built with
 
 * [Matomo device detector](https://github.com/etienne-martin/matomo-device-detector) - A powerful device detection library.
