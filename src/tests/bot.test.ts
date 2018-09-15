@@ -8,7 +8,7 @@ const botParser = new BotParser();
 
 describe("Bots", () => {
   for (const botTest of botTests) {
-    test(`${botTest.bot.name}`, async () => {
+    test(`${botTest.bot.name}`, () => {
       const result = botParser.parse(botTest.user_agent) as BotResult;
 
       expect(result.name).toEqual(botTest.bot.name);

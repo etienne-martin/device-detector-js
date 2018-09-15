@@ -12,7 +12,7 @@ const deviceDetector = new DeviceDetector();
 
 const deviceTester = (tests: DeviceTest[]) => {
   for (const unitTest of tests) {
-    test(`${brands[unitTest.device.brand]} ${unitTest.device.model || ""}`, async () => {
+    test(`${brands[unitTest.device.brand]} ${unitTest.device.model || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent).device as GenericDeviceResult;
 
       unitTest.device.type = unitTest.device.type

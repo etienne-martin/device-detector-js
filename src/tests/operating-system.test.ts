@@ -11,7 +11,7 @@ const deviceDetector = new DeviceDetector({
 
 describe("Operating systems", () => {
   for (const operatingSystemTest of operatingSystemTests) {
-    test(`${operatingSystemTest.os.name} ${operatingSystemTest.os.version || ""}`, async () => {
+    test(`${operatingSystemTest.os.name} ${operatingSystemTest.os.version || ""}`, () => {
       const result = deviceDetector.parse(operatingSystemTest.user_agent).os as OperatingSystemResult;
 
       expect(result.name).toEqual(operatingSystemTest.os.name);

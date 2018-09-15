@@ -38,7 +38,7 @@ const deviceDetector = new DeviceDetector({
 
 describe("Full test", () => {
   for (const unitTest of tests) {
-    test(`${unitTest.os.name || ""} ${brands[unitTest.device.brand] || ""} ${unitTest.client.name || ""}`, async () => {
+    test(`${unitTest.os.name || ""} ${brands[unitTest.device.brand] || ""} ${unitTest.client.name || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent);
 
       const formattedResult = {

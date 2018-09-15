@@ -8,7 +8,7 @@ const vendorFragmentParser = new VendorFragmentParser();
 
 describe("Vendor fragments", () => {
   for (const vendorFragmentTest of vendorFragmentTests) {
-    test(`${brands[vendorFragmentTest.vendor]}`, async () => {
+    test(`${brands[vendorFragmentTest.vendor]}`, () => {
       const result = vendorFragmentParser.parse(vendorFragmentTest.useragent);
 
       expect(result).toEqual(brands[vendorFragmentTest.vendor]);
