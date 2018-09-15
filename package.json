@@ -1,6 +1,6 @@
 {
   "name": "device-detector-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Node.js port of Matomo device-detector",
   "homepage": "https://github.com/etienne-martin/device-detector",
   "keywords": [
