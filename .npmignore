@@ -1,0 +1,7 @@
+src/
+.idea
+tsconfig.json
+tslint.json
+coverage
+.circleci
+benchmark.js
