@@ -85,7 +85,7 @@ Output:
 
 - `options` <[Object]> Options object which might have the following properties:
   - `skipBotDetection` <[boolean]> If true, bot detection will completely be skipped (bots will be detected as regular devices). Defaults to `false`.
-  - `versionTruncation` <[0 | 1 | 2 | 3 | null]> Passing `null` disable version truncation, so full versions will be returned. Defaults to `1`, only minor versions will be returned (e.g. X.Y).
+  - `versionTruncation` <[0 | 1 | 2 | 3 | null]> Passing `null` disables version truncation, so full versions will be returned. Defaults to `1`, only minor versions will be returned (e.g. X.Y).
   - `cache` <[boolean | number]> TTL of the cache. Defaults to `true` (no expiry).
 
 ## Built with
