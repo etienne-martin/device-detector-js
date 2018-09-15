@@ -79,6 +79,15 @@ Output:
 }
 ```
 
+## API Documentation
+
+#### new DeviceDetector([options])
+
+- `options` <[Object]> Options object which might have the following properties:
+  - `skipBotDetection` <[boolean]> If true, bot detection will completely be skipped (bots will be detected as regular devices). Defaults to `false`.
+  - `versionTruncation` <[0 | 1 | 2 | 3 | null]> Passing null disable version truncation, so full versions will be returned. Defaults to `1`, only minor versions will be returned (e.g. X.Y).
+  - `cache` <[boolean | number]> TTL of the cache. Defaults to `true` (no expiry).
+
 ## Built with
 
 * [Matomo device detector](https://github.com/etienne-martin/matomo-device-detector) - A powerful device detection library.
