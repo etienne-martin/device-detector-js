@@ -31,7 +31,7 @@
     "url": "https://github.com/etienne-martin/device-detector/issues"
   },
   "engines": {
-    "node": ">= 7.6.0"
+    "node": ">= 8.11.4"
   },
   "license": "LGPL-3.0",
   "scripts": {
