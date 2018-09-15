@@ -11,9 +11,21 @@ export interface LibraryResult {
   url: string;
 }
 
+interface Options {
+  versionTruncation: 0 | 1 | 2 | 3 | null;
+}
+
 const libraries: Libraries = loadRegexes("client/libraries");
 
 export default class LibraryParser {
+  private readonly options: Options = {
+    versionTruncation: 1
+  };
+
+  constructor(options?: Partial<Options>) {
+    this.options = {...this.options, ...options};
+  }
+
   public parse = (userAgent: string): LibraryResult => {
     const result: LibraryResult = {
       type: "",
@@ -29,7 +41,7 @@ export default class LibraryParser {
 
       result.type = "library";
       result.name = variableReplacement(library.name, match);
-      result.version = formatVersion(variableReplacement(library.version, match));
+      result.version = formatVersion(variableReplacement(library.version, match), this.options.versionTruncation);
       result.url = library.url || "";
       break;
     }

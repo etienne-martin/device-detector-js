@@ -7,6 +7,10 @@ import PersonalInformationManagerParser, { PersonalInformationManagerResult } fr
 
 export type ClientResult = BrowserResult | FeedReaderResult | LibraryResult | MediaPlayerResult | MobileAppResult | PersonalInformationManagerResult | null;
 
+interface Options {
+  versionTruncation: 0 | 1 | 2 | 3 | null;
+}
+
 const clientParsers = [
   FeedReaderParser,
   MobileAppParser,
@@ -17,9 +21,17 @@ const clientParsers = [
 ];
 
 export default class ClientParser {
+  private readonly options: Options = {
+    versionTruncation: 1
+  };
+
+  constructor(options?: Partial<Options>) {
+    this.options = {...this.options, ...options};
+  }
+
   public parse = (userAgent: string): ClientResult => {
     for (const Parser of clientParsers) {
-      const parser = new Parser();
+      const parser = new Parser(this.options);
       const client = parser.parse(userAgent);
 
       if (client.type !== "") {

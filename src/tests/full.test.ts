@@ -1,5 +1,5 @@
+import DeviceDetector = require("../");
 import { loadTests } from "../utils/yaml-loader";
-import DeviceDetector from "../";
 import { get } from "lodash";
 import { formatVersion } from "../utils/version";
 
@@ -30,11 +30,15 @@ const tests: any = [
   ...loadTests("fixtures/unknown")
 ];
 
-const deviceDetector = new DeviceDetector();
+const versionTruncation = 1;
+
+const deviceDetector = new DeviceDetector({
+  versionTruncation
+});
 
 describe("Full test", () => {
   for (const unitTest of tests) {
-    test(`${unitTest.os.name || ""} ${brands[unitTest.device.brand] || ""} ${unitTest.client.name || ""}`, async () => {
+    test(`${unitTest.os.name || ""} ${brands[unitTest.device.brand] || ""} ${unitTest.client.name || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent);
 
       const formattedResult = {
@@ -75,15 +79,15 @@ describe("Full test", () => {
       const formattedTest = {
         os: {
           name: unitTest.os.name || "",
-          version: formatVersion(unitTest.os.version) || "",
+          version: formatVersion(unitTest.os.version, versionTruncation) || "",
           platform: unitTest.os.platform || ""
         },
         client: {
           type: expectedClientType,
           name: unitTest.client.name || "",
-          version: formatVersion(unitTest.client.version) || "",
+          version: formatVersion(unitTest.client.version, versionTruncation) || "",
           engine: unitTest.client.engine || "",
-          engineVersion: formatVersion(unitTest.client.engine_version) || "",
+          engineVersion: formatVersion(unitTest.client.engine_version, versionTruncation) || "",
         },
         device: {
           type: expectedDeviceType,

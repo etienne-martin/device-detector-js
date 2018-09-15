@@ -1,4 +1,4 @@
-import DeviceDetector from "../";
+import DeviceDetector = require("../");
 import { loadTests } from "../utils/yaml-loader";
 import { formatVersion } from "../utils/version";
 import { BrowserResult } from "../parsers/client/browser";
@@ -24,57 +24,57 @@ const mediaPlayerTests: MediaPlayerTests = loadTests("Parser/Client/fixtures/med
 const mobileAppTests: MobileAppTests = loadTests("Parser/Client/fixtures/mobile_app");
 const personalInformationManagerTests: PersonalInformationManagerTests = loadTests("Parser/Client/fixtures/pim");
 
-const deviceDetector = new DeviceDetector();
+const versionTruncation = 1;
+
+const deviceDetector = new DeviceDetector({
+  versionTruncation
+});
 
 describe("Client / browsers", () => {
   for (const browserTest of browserTests) {
-    test(`${browserTest.client.name} ${browserTest.client.version || ""}`, async () => {
+    test(`${browserTest.client.name} ${browserTest.client.version || ""}`, () => {
       const result = deviceDetector.parse(browserTest.user_agent).client as BrowserResult;
 
-      expect(result.type).toEqual(browserTest.client.type);
-      expect(result.name).toEqual(browserTest.client.name);
-
-      if (!browserTest.client.version) {
-        expect(result.version).toBe("");
-      } else {
-        expect(result.version).toEqual(formatVersion(browserTest.client.version));
-      }
-
-      if (!browserTest.client.engine) {
-        expect(result.engine).toBe("");
-      } else {
-        expect(result.engine).toEqual(browserTest.client.engine);
-      }
-
-      if (!browserTest.client.engine_version) {
-        expect(result.engineVersion).toBe("");
-      } else {
-        expect(result.engineVersion).toEqual(formatVersion(browserTest.client.engine_version));
-      }
+      expect({
+        ...{ client: result },
+        userAgent: browserTest.user_agent
+      }).toEqual({
+        client: {
+          type: browserTest.client.type || "",
+          name: browserTest.client.name || "",
+          version: formatVersion(browserTest.client.version, versionTruncation) || "",
+          engine: browserTest.client.engine || "",
+          engineVersion: formatVersion(browserTest.client.engine_version, versionTruncation) || "",
+        },
+        userAgent: browserTest.user_agent
+      });
     });
   }
 });
 
 describe("Client / mobile apps", () => {
   for (const mobileAppTest of mobileAppTests) {
-    test(`${mobileAppTest.client.name} ${mobileAppTest.client.version || ""}`, async () => {
+    test(`${mobileAppTest.client.name} ${mobileAppTest.client.version || ""}`, () => {
       const result = deviceDetector.parse(mobileAppTest.user_agent).client as MobileAppResult;
 
-      expect(result.type).toEqual(mobileAppTest.client.type);
-      expect(result.name).toEqual(mobileAppTest.client.name);
-
-      if (!mobileAppTest.client.version) {
-        expect(result.version).toBe("");
-      } else {
-        expect(result.version).toEqual(formatVersion(mobileAppTest.client.version));
-      }
+      expect({
+        ...{ client: result },
+        userAgent: mobileAppTest.user_agent
+      }).toEqual({
+        client: {
+          type: mobileAppTest.client.type || "",
+          name: mobileAppTest.client.name || "",
+          version: formatVersion(mobileAppTest.client.version, versionTruncation) || "",
+        },
+        userAgent: mobileAppTest.user_agent
+      });
     });
   }
 });
 
 describe("Client / feed readers", () => {
   for (const feedReaderTest of feedReaderTests) {
-    test(`${feedReaderTest.client.name} ${feedReaderTest.client.version || ""}`, async () => {
+    test(`${feedReaderTest.client.name} ${feedReaderTest.client.version || ""}`, () => {
       const result = deviceDetector.parse(feedReaderTest.user_agent).client as FeedReaderResult;
 
       expect(result.type).toEqual(feedReaderTest.client.type);
@@ -83,7 +83,7 @@ describe("Client / feed readers", () => {
       if (!feedReaderTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(feedReaderTest.client.version));
+        expect(result.version).toEqual(formatVersion(feedReaderTest.client.version, versionTruncation));
       }
     });
   }
@@ -91,7 +91,7 @@ describe("Client / feed readers", () => {
 
 describe("Client / libraries", () => {
   for (const libraryTest of libraryTests) {
-    test(`${libraryTest.client.name} ${libraryTest.client.version || ""}`, async () => {
+    test(`${libraryTest.client.name} ${libraryTest.client.version || ""}`, () => {
       const result = deviceDetector.parse(libraryTest.user_agent).client as LibraryResult;
 
       expect(result.type).toEqual(libraryTest.client.type);
@@ -100,7 +100,7 @@ describe("Client / libraries", () => {
       if (!libraryTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(libraryTest.client.version));
+        expect(result.version).toEqual(formatVersion(libraryTest.client.version, versionTruncation));
       }
     });
   }
@@ -108,7 +108,7 @@ describe("Client / libraries", () => {
 
 describe("Client / media players", () => {
   for (const mediaPlayerTest of mediaPlayerTests) {
-    test(`${mediaPlayerTest.client.name} ${mediaPlayerTest.client.version || ""}`, async () => {
+    test(`${mediaPlayerTest.client.name} ${mediaPlayerTest.client.version || ""}`, () => {
       const result = deviceDetector.parse(mediaPlayerTest.user_agent).client as MediaPlayerResult;
       const sanitizedType = mediaPlayerTest.client.type.replace("mediaplayer", "media player");
 
@@ -118,7 +118,7 @@ describe("Client / media players", () => {
       if (!mediaPlayerTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(mediaPlayerTest.client.version));
+        expect(result.version).toEqual(formatVersion(mediaPlayerTest.client.version, versionTruncation));
       }
     });
   }
@@ -126,7 +126,7 @@ describe("Client / media players", () => {
 
 describe("Client / personal information managers", () => {
   for (const personalInformationManagerTest of personalInformationManagerTests) {
-    test(`${personalInformationManagerTest.client.name} ${personalInformationManagerTest.client.version || ""}`, async () => {
+    test(`${personalInformationManagerTest.client.name} ${personalInformationManagerTest.client.version || ""}`, () => {
       const result = deviceDetector.parse(personalInformationManagerTest.user_agent).client as PersonalInformationManagerResult;
       const sanitizedType = personalInformationManagerTest.client.type.replace("pim", "personal information manager");
 
@@ -136,7 +136,7 @@ describe("Client / personal information managers", () => {
       if (!personalInformationManagerTest.client.version) {
         expect(result.version).toBe("");
       } else {
-        expect(result.version).toEqual(formatVersion(personalInformationManagerTest.client.version));
+        expect(result.version).toEqual(formatVersion(personalInformationManagerTest.client.version, versionTruncation));
       }
     });
   }
