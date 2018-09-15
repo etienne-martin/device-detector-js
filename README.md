@@ -16,7 +16,7 @@ npm install device-detector-js
 
 ### Usage
 
-**Example** - converting a `svg` to `png`:
+**Example** - simple user agent detection:
 
 ```javascript
 const DeviceDetector = require("device-detector-js");
