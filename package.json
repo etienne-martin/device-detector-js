@@ -1,6 +1,6 @@
 {
   "name": "device-detector-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Node.js port of Matomo device-detector",
   "homepage": "https://github.com/etienne-martin/device-detector",
   "keywords": [
@@ -43,7 +43,7 @@
     "coverage": "coveralls < ./coverage/lcov.info",
     "prebuild": "rm -rf dist/ && npm run lint",
     "build": "tsc --pretty",
-    "install": "napa"
+    "postinstall": "napa"
   },
   "napa": {
     "device-detector": "https://github.com/etienne-martin/matomo-device-detector#1.0.0"
