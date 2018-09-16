@@ -62,13 +62,15 @@ Output:
 **Example** - bot detection:
 
 ```javascript
-const DeviceDetector = require("device-detector-js");
+const BotDetector = require("device-detector-js/dist/parsers/bot");
 
-const deviceDetector = new DeviceDetector();
+const botDetector = new BotDetector();
 const userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)";
-const device = deviceDetector.parse(userAgent);
+const bot = botDetector.parse(userAgent);
 
-console.log(device.bot);
+if (bot) {
+  console.log(bot);
+}
 ```
 
 Output:
@@ -92,6 +94,11 @@ Output:
 - `options` <[Object]> Options object which might have the following properties:
   - `skipBotDetection` <[boolean]> If true, bot detection will completely be skipped (bots will be detected as regular devices). Defaults to `false`.
   - `versionTruncation` <[0 | 1 | 2 | 3 | null]> Passing `null` disables version truncation, so full versions will be returned. Defaults to `1`, only minor versions will be returned (e.g. X.Y).
+  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry).
+  
+#### new BotDetector([options])
+
+- `options` <[Object]> Options object which might have the following property:
   - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry).
 
 ## Built with
