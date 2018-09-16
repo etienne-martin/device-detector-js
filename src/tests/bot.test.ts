@@ -1,6 +1,7 @@
 import { loadTests } from "../utils/yaml-loader";
 import { BotTests } from "../typings/bot";
-import BotParser, { BotResult } from "../parsers/bot";
+import BotParser = require("../parsers/bot");
+import { BotResult } from "../parsers/bot/typing";
 import { get } from "lodash";
 
 const botTests: BotTests = loadTests("fixtures/bots");

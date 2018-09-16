@@ -2,23 +2,38 @@ import { Bots } from "../../typings/bot";
 import { userAgentParser } from "../../utils/user-agent";
 import { loadRegexes } from "../../utils/yaml-loader";
 import { get } from "lodash";
+import { Result, BotResult } from "./typing";
+import * as LRU from "lru-cache";
 
-export interface BotResult {
-  name: string;
-  category: string;
-  url: string;
-  producer: {
-    name: string;
-    url: string;
-  }
+interface Options {
+  cache: boolean | number;
 }
-
-export type Result = BotResult | null;
 
 const bots: Bots = loadRegexes("bots");
 
-export default class BotParser {
+class BotParser {
+  private readonly cache: LRU.Cache<string, Result> | undefined;
+  private readonly options: Options = {
+    cache: true
+  };
+
+  constructor(options?: Partial<Options>) {
+    this.options = {...this.options, ...options};
+
+    if (this.options.cache) {
+      this.cache = LRU<string, Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+    }
+  }
+
   public parse = (userAgent: string): Result => {
+    if (this.cache) {
+      const cachedResult = this.cache.get(userAgent);
+
+      if (cachedResult) {
+        return cachedResult;
+      }
+    }
+
     const result: BotResult = {
       name: "",
       category: "",
@@ -40,9 +55,19 @@ export default class BotParser {
       result.producer.name = get(bot, "producer.name") || "";
       result.producer.url = get(bot, "producer.url") || "";
 
+      if (this.cache) {
+        this.cache.set(userAgent, result);
+      }
+
       return result;
+    }
+
+    if (this.cache) {
+      this.cache.set(userAgent, null);
     }
 
     return null;
   };
 }
+
+export = BotParser;
