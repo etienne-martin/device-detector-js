@@ -1,7 +1,7 @@
 import { ClientResult } from "./parsers/client";
 import { DeviceResult } from "./parsers/device";
 import { Result as OperatingSystemResult } from "./parsers/operating-system";
-import { Result as BotResult } from "./parsers/bot";
+import { Result as BotResult } from "./parsers/bot/typing";
 interface Result {
     client: ClientResult;
     device: DeviceResult;

@@ -1,13 +1,11 @@
-export interface BotResult {
-    name: string;
-    category: string;
-    url: string;
-    producer: {
-        name: string;
-        url: string;
-    };
+import { Result } from "./typing";
+interface Options {
+    cache: boolean | number;
 }
-export declare type Result = BotResult | null;
-export default class BotParser {
+declare class BotParser {
+    private readonly cache;
+    private readonly options;
+    constructor(options?: Partial<Options>);
     parse: (userAgent: string) => Result;
 }
+export = BotParser;
