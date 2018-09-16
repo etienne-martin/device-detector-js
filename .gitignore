@@ -1,4 +1,5 @@
 node_modules
+php_modules
 .idea
 coverage
 benchmark.js
