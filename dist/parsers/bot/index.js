@@ -1,12 +1,21 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const user_agent_1 = require("../../utils/user-agent");
 const yaml_loader_1 = require("../../utils/yaml-loader");
 const lodash_1 = require("lodash");
+const LRU = require("lru-cache");
 const bots = yaml_loader_1.loadRegexes("bots");
 class BotParser {
-    constructor() {
+    constructor(options) {
+        this.options = {
+            cache: true
+        };
         this.parse = (userAgent) => {
+            if (this.cache) {
+                const cachedResult = this.cache.get(userAgent);
+                if (cachedResult) {
+                    return cachedResult;
+                }
+            }
             const result = {
                 name: "",
                 category: "",
@@ -25,10 +34,20 @@ class BotParser {
                 result.url = bot.url || "";
                 result.producer.name = lodash_1.get(bot, "producer.name") || "";
                 result.producer.url = lodash_1.get(bot, "producer.url") || "";
+                if (this.cache) {
+                    this.cache.set(userAgent, result);
+                }
                 return result;
+            }
+            if (this.cache) {
+                this.cache.set(userAgent, null);
             }
             return null;
         };
+        this.options = Object.assign({}, this.options, options);
+        if (this.options.cache) {
+            this.cache = LRU({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+        }
     }
 }
-exports.default = BotParser;
+module.exports = BotParser;
