@@ -43,7 +43,7 @@
     "coverage": "coveralls < ./coverage/lcov.info",
     "prebuild": "rm -rf dist/ && npm run lint",
     "build": "tsc --pretty",
-    "postinstall": "napa"
+    "install": "sh install.sh"
   },
   "napa": {
     "device-detector": "https://github.com/etienne-martin/matomo-device-detector#1.0.0"

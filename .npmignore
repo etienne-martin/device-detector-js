@@ -5,3 +5,4 @@ tslint.json
 coverage
 .circleci
 benchmark.js
+php_modules
