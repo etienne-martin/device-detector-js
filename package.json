@@ -1,8 +1,8 @@
 {
   "name": "device-detector-js",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A Node.js port of Matomo device-detector",
-  "homepage": "https://github.com/etienne-martin/device-detector",
+  "homepage": "https://github.com/etienne-martin/device-detector-js",
   "keywords": [
     "user-agent",
     "parsing",
@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/etienne-martin/device-detector"
+    "url": "https://github.com/etienne-martin/device-detector-js"
   },
   "bugs": {
-    "url": "https://github.com/etienne-martin/device-detector/issues"
+    "url": "https://github.com/etienne-martin/device-detector-js/issues"
   },
   "engines": {
     "node": ">= 8.11.4"
