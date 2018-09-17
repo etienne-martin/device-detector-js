@@ -4,8 +4,8 @@ The Universal Device Detection library will parse any User Agent and detect the 
 
 #### This is a Node.js port of Matomo [device-detector](https://github.com/etienne-martin/matomo-device-detector).
 
-[![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector.svg)](https://coveralls.io/github/etienne-martin/device-detector)
-[![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector)
+[![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector-js.svg)](https://coveralls.io/github/etienne-martin/device-detector-js)
+[![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector-js)
 [![node version](https://img.shields.io/node/v/device-detector-js.svg)](https://www.npmjs.com/package/device-detector-js)
 [![npm version](https://img.shields.io/npm/v/device-detector-js.svg)](https://www.npmjs.com/package/device-detector-js)
 [![npm monthly downloads](https://img.shields.io/npm/dm/device-detector-js.svg)](https://www.npmjs.com/package/device-detector-js)
@@ -101,7 +101,7 @@ Output:
 - `options` <[Object]> Options object which might have the following property:
   - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry).
   
-## What Device Detector is able to detect
+## What device-detector-js is able to detect
 
 The lists below are auto generated and updated from time to time. Some of them might not be complete.
 
@@ -158,9 +158,9 @@ Akregator, Apple PubSub, BashPodder, Downcast, FeedDemon, Feeddler RSS Reader, g
 
 When contributing to this project, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-Update the [README.md](https://github.com/etienne-martin/device-detector/blob/master/README.md) with details of changes to the library.
+Update the [README.md](https://github.com/etienne-martin/device-detector-js/blob/master/README.md) with details of changes to the library.
 
-Execute `npm run test` and update the [tests](https://github.com/etienne-martin/device-detector/tree/master/src/tests) if needed.
+Execute `npm run test` and update the [tests](https://github.com/etienne-martin/device-detector-js/tree/master/src/tests) if needed.
 
 ## Authors
 
