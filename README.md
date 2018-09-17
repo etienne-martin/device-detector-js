@@ -168,4 +168,4 @@ Execute `npm run test` and update the [tests](https://github.com/etienne-martin/
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/etienne-martin/device-detector/blob/master/LICENSE) file for details.
+This is a free/libre library under license LGPL v3 or later.
