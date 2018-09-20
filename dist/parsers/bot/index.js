@@ -1,4 +1,5 @@
 "use strict";
+const environment_detection_1 = require("../../utils/environment-detection");
 const user_agent_1 = require("../../utils/user-agent");
 const lodash_1 = require("lodash");
 const LRU = require("lru-cache");
@@ -44,7 +45,7 @@ class BotParser {
             return null;
         };
         this.options = Object.assign({}, this.options, options);
-        if (this.options.cache) {
+        if (this.options.cache && !environment_detection_1.default()) {
             this.cache = LRU({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
         }
     }

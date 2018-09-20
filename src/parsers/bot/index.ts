@@ -1,4 +1,5 @@
 import { Bots } from "../../typings/bot";
+import isBrowser from "../../utils/environment-detection";
 import { userAgentParser } from "../../utils/user-agent";
 import { get } from "lodash";
 import { Result, BotResult } from "./typing";
@@ -19,7 +20,7 @@ class BotParser {
   constructor(options?: Partial<Options>) {
     this.options = {...this.options, ...options};
 
-    if (this.options.cache) {
+    if (this.options.cache && !isBrowser()) {
       this.cache = LRU<string, Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
     }
   }

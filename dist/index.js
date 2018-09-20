@@ -6,6 +6,7 @@ const vendor_fragment_1 = require("./parsers/vendor-fragment");
 const browser_1 = require("./parsers/client/browser");
 const BotParser = require("./parsers/bot");
 const lodash_1 = require("lodash");
+const environment_detection_1 = require("./utils/environment-detection");
 const user_agent_1 = require("./utils/user-agent");
 const version_compare_1 = require("./utils/version-compare");
 const LRU = require("lru-cache");
@@ -200,7 +201,7 @@ class DeviceDetector {
         this.operatingSystemParser = new operating_system_1.default(this.options);
         this.vendorFragmentParser = new vendor_fragment_1.default();
         this.botParser = new BotParser();
-        if (this.options.cache) {
+        if (this.options.cache && !environment_detection_1.default()) {
             this.cache = LRU({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
         }
     }

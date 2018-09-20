@@ -6,6 +6,7 @@ import BrowserParser from "./parsers/client/browser";
 import BotParser = require("./parsers/bot");
 import { Result as BotResult } from "./parsers/bot/typing";
 import { get } from "lodash";
+import isBrowser from "./utils/environment-detection";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
 import * as LRU from "lru-cache";
@@ -46,7 +47,7 @@ class DeviceDetector {
     this.vendorFragmentParser = new VendorFragmentParser();
     this.botParser = new BotParser();
 
-    if (this.options.cache) {
+    if (this.options.cache && !isBrowser()) {
       this.cache = LRU<string, Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
     }
   }
