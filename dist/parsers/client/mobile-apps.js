@@ -3,8 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const version_1 = require("../../utils/version");
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const yaml_loader_1 = require("../../utils/yaml-loader");
-const mobileApps = yaml_loader_1.loadRegexes("client/mobile_apps");
+const mobileApps = require("../../../php_modules/device-detector/regexes/client/mobile_apps.json");
 class MobileAppParser {
     constructor(options) {
         this.options = {

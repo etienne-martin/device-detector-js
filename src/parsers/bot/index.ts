@@ -1,6 +1,5 @@
 import { Bots } from "../../typings/bot";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 import { get } from "lodash";
 import { Result, BotResult } from "./typing";
 import * as LRU from "lru-cache";
@@ -9,7 +8,7 @@ interface Options {
   cache: boolean | number;
 }
 
-const bots: Bots = loadRegexes("bots");
+const bots: Bots = require("../../../php_modules/device-detector/regexes/bots.json");
 
 class BotParser {
   private readonly cache: LRU.Cache<string, Result> | undefined;

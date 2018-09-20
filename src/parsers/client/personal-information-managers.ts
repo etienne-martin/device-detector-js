@@ -2,7 +2,6 @@ import { PersonalInformationManagers } from "../../typings/client";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
 export interface PersonalInformationManagerResult {
   type: string;
@@ -14,7 +13,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const personalInformationManagers: PersonalInformationManagers = loadRegexes("client/pim");
+const personalInformationManagers: PersonalInformationManagers = require("../../../php_modules/device-detector/regexes/client/pim.json");
 
 export default class PersonalInformationManagerParser {
   private readonly options: Options = {

@@ -1,9 +1,8 @@
 import { Cameras, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
-const cameras: Cameras = loadRegexes("device/cameras");
+const cameras: Cameras = require("../../../php_modules/device-detector/regexes/device/cameras.json");
 
 export default class CameraParser {
   public parse = (userAgent: string): GenericDeviceResult => {

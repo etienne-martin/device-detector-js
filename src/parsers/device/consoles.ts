@@ -1,9 +1,8 @@
 import { Consoles, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
-const consoles: Consoles = loadRegexes("device/consoles");
+const consoles: Consoles = require("../../../php_modules/device-detector/regexes/device/consoles.json");
 
 export default class ConsoleParser {
   public parse = (userAgent: string): GenericDeviceResult => {

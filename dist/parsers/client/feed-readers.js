@@ -3,8 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const version_1 = require("../../utils/version");
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const yaml_loader_1 = require("../../utils/yaml-loader");
-const feedReaders = yaml_loader_1.loadRegexes("client/feed_readers");
+const feedReaders = require("../../../php_modules/device-detector/regexes/client/feed_readers.json");
 class FeedReaderParser {
     constructor(options) {
         this.options = {

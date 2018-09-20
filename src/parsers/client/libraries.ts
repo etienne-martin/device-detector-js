@@ -2,7 +2,6 @@ import { Libraries } from "../../typings/client";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
 export interface LibraryResult {
   type: string;
@@ -15,7 +14,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const libraries: Libraries = loadRegexes("client/libraries");
+const libraries: Libraries = require("../../../php_modules/device-detector/regexes/client/libraries.json");
 
 export default class LibraryParser {
   private readonly options: Options = {

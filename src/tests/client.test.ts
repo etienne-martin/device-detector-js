@@ -1,5 +1,4 @@
 import DeviceDetector = require("../");
-import { loadTests } from "../utils/yaml-loader";
 import { formatVersion } from "../utils/version";
 import { BrowserResult } from "../parsers/client/browser";
 import { MobileAppResult } from "../parsers/client/mobile-apps";
@@ -17,12 +16,12 @@ import {
   PersonalInformationManagerTests
 } from "../typings/client";
 
-const browserTests: BrowserTests = loadTests("Parser/Client/fixtures/browser");
-const feedReaderTests: FeedReaderTests = loadTests("Parser/Client/fixtures/feed_reader");
-const libraryTests: LibraryTests = loadTests("Parser/Client/fixtures/library");
-const mediaPlayerTests: MediaPlayerTests = loadTests("Parser/Client/fixtures/mediaplayer");
-const mobileAppTests: MobileAppTests = loadTests("Parser/Client/fixtures/mobile_app");
-const personalInformationManagerTests: PersonalInformationManagerTests = loadTests("Parser/Client/fixtures/pim");
+const browserTests: BrowserTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/browser.json");
+const feedReaderTests: FeedReaderTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/feed_reader.json");
+const libraryTests: LibraryTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/library.json");
+const mediaPlayerTests: MediaPlayerTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/mediaplayer.json");
+const mobileAppTests: MobileAppTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/mobile_app.json");
+const personalInformationManagerTests: PersonalInformationManagerTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/pim.json");
 
 const versionTruncation = 1;
 

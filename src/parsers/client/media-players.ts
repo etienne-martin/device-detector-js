@@ -2,7 +2,6 @@ import { MediaPlayers } from "../../typings/client";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
 export interface MediaPlayerResult {
   type: string;
@@ -14,7 +13,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const mediaPlayers: MediaPlayers = loadRegexes("client/mediaplayers");
+const mediaPlayers: MediaPlayers = require("../../../php_modules/device-detector/regexes/client/mediaplayers.json");
 
 export default class MediaPlayerParser {
   private readonly options: Options = {

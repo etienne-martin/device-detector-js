@@ -1,9 +1,8 @@
 import { Cars, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
-const cars: Cars = loadRegexes("device/car_browsers");
+const cars: Cars = require("../../../php_modules/device-detector/regexes/device/car_browsers.json");
 
 export default class CarParser {
   public parse = (userAgent: string): GenericDeviceResult => {
