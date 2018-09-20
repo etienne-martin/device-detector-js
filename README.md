@@ -165,10 +165,7 @@ Execute `npm run test` and update the [tests](https://github.com/etienne-martin/
 ## Authors
 
 * **Etienne Martin** - *Initial work* - [etiennemartin.ca](http://etiennemartin.ca/)
-
-## Contributors
-
-* **Alex Beauchemin** - [linkedin.com/in/alexbeauchemin](https://www.linkedin.com/in/alexbeauchemin/)
+* **Alex Beauchemin** - *Contributor* - [linkedin.com/in/alexbeauchemin](https://www.linkedin.com/in/alexbeauchemin/)
 
 ## License
 
