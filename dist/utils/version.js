@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const lodash_1 = require("lodash");
+const trim_1 = __importDefault(require("lodash/trim"));
 // TODO: implement $maxMinorParts
 exports.formatVersion = (version, versionTruncation) => {
     if (version === undefined)
         return "";
-    const versionString = lodash_1.trim(version, ".").replace(new RegExp("_", "g"), ".");
+    const versionString = trim_1.default(version, ".").replace(new RegExp("_", "g"), ".");
     const versionParts = versionString.split(".");
     // Return if the string is not only digits once we removed the dots
     if (!/^\d+$/.test(versionParts.join(""))) {

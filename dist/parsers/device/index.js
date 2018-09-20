@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const cameras_1 = require("./cameras");
-const mobiles_1 = require("./mobiles");
-const televisions_1 = require("./televisions");
-const cars_1 = require("./cars");
-const consoles_1 = require("./consoles");
-const portable_media_players_1 = require("./portable-media-players");
+const cameras_1 = __importDefault(require("./cameras"));
+const mobiles_1 = __importDefault(require("./mobiles"));
+const televisions_1 = __importDefault(require("./televisions"));
+const cars_1 = __importDefault(require("./cars"));
+const consoles_1 = __importDefault(require("./consoles"));
+const portable_media_players_1 = __importDefault(require("./portable-media-players"));
 const deviceParsers = [
     consoles_1.default,
     cars_1.default,
