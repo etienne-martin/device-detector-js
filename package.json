@@ -95,7 +95,6 @@
     ]
   },
   "dependencies": {
-    "async-cache": "^1.1.0",
     "js-yaml": "^3.12.0",
     "lodash": "^4.17.10",
     "lru-cache": "^4.1.3",
