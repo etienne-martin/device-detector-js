@@ -1,9 +1,9 @@
 import { Bots } from "../../typings/bot";
 import isBrowser from "../../utils/environment-detection";
 import { userAgentParser } from "../../utils/user-agent";
-import { get } from "lodash";
+import get from "lodash/get";
 import { Result, BotResult } from "./typing";
-import * as LRU from "lru-cache";
+import LRU from "lru-cache";
 
 interface Options {
   cache: boolean | number;
