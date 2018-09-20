@@ -9,7 +9,8 @@
     "lib": [
       "dom",
       "es2017"
-    ]
+    ],
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*"

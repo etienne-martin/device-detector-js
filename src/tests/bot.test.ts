@@ -1,7 +1,7 @@
 import { BotTests } from "../typings/bot";
 import BotParser = require("../parsers/bot");
 import { BotResult } from "../parsers/bot/typing";
-import { get } from "lodash";
+import get from "lodash/get";
 
 const botTests: BotTests = require("../../php_modules/device-detector/Tests/fixtures/bots.json");
 const botParser = new BotParser();
