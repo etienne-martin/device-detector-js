@@ -19,7 +19,8 @@
     "whitespace": [true, "check-branch", "check-operator", "check-typecast"],
     "no-bitwise": false,
     "no-var-requires": false,
-    "curly": [true, "ignore-same-line"]
+    "curly": [true, "ignore-same-line"],
+    "import-blacklist": [true, "lodash"]
   },
   "rulesDirectory": []
 }

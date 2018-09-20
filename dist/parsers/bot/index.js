@@ -1,8 +1,11 @@
 "use strict";
-const environment_detection_1 = require("../../utils/environment-detection");
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+const environment_detection_1 = __importDefault(require("../../utils/environment-detection"));
 const user_agent_1 = require("../../utils/user-agent");
-const lodash_1 = require("lodash");
-const LRU = require("lru-cache");
+const get_1 = __importDefault(require("lodash/get"));
+const lru_cache_1 = __importDefault(require("lru-cache"));
 const bots = require("../../../php_modules/device-detector/regexes/bots.json");
 class BotParser {
     constructor(options) {
@@ -32,8 +35,8 @@ class BotParser {
                 result.name = bot.name;
                 result.category = bot.category || "";
                 result.url = bot.url || "";
-                result.producer.name = lodash_1.get(bot, "producer.name") || "";
-                result.producer.url = lodash_1.get(bot, "producer.url") || "";
+                result.producer.name = get_1.default(bot, "producer.name") || "";
+                result.producer.url = get_1.default(bot, "producer.url") || "";
                 if (this.cache) {
                     this.cache.set(userAgent, result);
                 }
@@ -46,7 +49,7 @@ class BotParser {
         };
         this.options = Object.assign({}, this.options, options);
         if (this.options.cache && !environment_detection_1.default()) {
-            this.cache = LRU({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+            this.cache = lru_cache_1.default({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
         }
     }
 }
