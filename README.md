@@ -1,6 +1,6 @@
 # device-detector-js
 
-The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model. Works with nodejs and in the browser.
+The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model. Works with Node.js and in the browser.
 
 #### This is a javascript port of Matomo [device-detector](https://github.com/etienne-martin/matomo-device-detector).
 
@@ -94,12 +94,12 @@ Output:
 - `options` <[Object]> Options object which might have the following properties:
   - `skipBotDetection` <[boolean]> If true, bot detection will completely be skipped (bots will be detected as regular devices). Defaults to `false`.
   - `versionTruncation` <[0 | 1 | 2 | 3 | null]> Passing `null` disables version truncation, so full versions will be returned. Defaults to `1`, only minor versions will be returned (e.g. X.Y).
-  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry). (Nodejs only, will be automatically set to false if used in the browser)
+  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry). (Node.js only, will be automatically set to false if used in the browser)
   
 #### new BotDetector([options])
 
 - `options` <[Object]> Options object which might have the following property:
-  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry). (Nodejs only, will be automatically set to false if used in the browser)
+  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry). (Node.js only, will be automatically set to false if used in the browser)
   
 ## What device-detector-js is able to detect
 
