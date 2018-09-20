@@ -1,33 +1,32 @@
 import DeviceDetector = require("../");
-import { loadTests } from "../utils/yaml-loader";
 import { get } from "lodash";
 import { formatVersion } from "../utils/version";
 import { brands } from "./helpers";
 
 const tests: any = [
-  ...loadTests("fixtures/camera"),
-  ...loadTests("fixtures/car_browser"),
-  ...loadTests("fixtures/console"),
-  ...loadTests("fixtures/desktop"),
-  ...loadTests("fixtures/feature_phone"),
-  ...loadTests("fixtures/feed_reader"),
-  ...loadTests("fixtures/mediaplayer"),
-  ...loadTests("fixtures/mobile_apps"),
-  ...loadTests("fixtures/phablet"),
-  ...loadTests("fixtures/portable_media_player"),
-  ...loadTests("fixtures/smart_display"),
-  ...loadTests("fixtures/smartphone"),
-  ...loadTests("fixtures/smartphone-1"),
-  ...loadTests("fixtures/smartphone-2"),
-  ...loadTests("fixtures/smartphone-3"),
-  ...loadTests("fixtures/smartphone-4"),
-  ...loadTests("fixtures/smartphone-5"),
-  ...loadTests("fixtures/smartphone-6"),
-  ...loadTests("fixtures/tablet"),
-  ...loadTests("fixtures/tablet-1"),
-  ...loadTests("fixtures/tablet-2"),
-  ...loadTests("fixtures/tv"),
-  ...loadTests("fixtures/unknown")
+  ...require("../../php_modules/device-detector/Tests/fixtures/camera.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/car_browser.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/console.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/desktop.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/feature_phone.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/feed_reader.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/mediaplayer.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/mobile_apps.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/phablet.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/portable_media_player.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smart_display.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smartphone.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smartphone-1.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smartphone-2.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smartphone-3.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smartphone-4.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smartphone-5.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/smartphone-6.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/tablet.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/tablet-1.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/tablet-2.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/tv.json"),
+  ...require("../../php_modules/device-detector/Tests/fixtures/unknown.json")
 ];
 
 const versionTruncation = 1;

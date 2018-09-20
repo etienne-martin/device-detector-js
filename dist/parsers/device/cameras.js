@@ -2,8 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const yaml_loader_1 = require("../../utils/yaml-loader");
-const cameras = yaml_loader_1.loadRegexes("device/cameras");
+const cameras = require("../../../php_modules/device-detector/regexes/device/cameras.json");
 class CameraParser {
     constructor() {
         this.parse = (userAgent) => {

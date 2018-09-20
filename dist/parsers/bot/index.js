@@ -1,9 +1,8 @@
 "use strict";
 const user_agent_1 = require("../../utils/user-agent");
-const yaml_loader_1 = require("../../utils/yaml-loader");
 const lodash_1 = require("lodash");
 const LRU = require("lru-cache");
-const bots = yaml_loader_1.loadRegexes("bots");
+const bots = require("../../../php_modules/device-detector/regexes/bots.json");
 class BotParser {
     constructor(options) {
         this.options = {

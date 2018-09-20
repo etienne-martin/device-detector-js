@@ -1,8 +1,7 @@
 import { VendorFragments } from "../../typings/vendor-fragment";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
-const vendorFragments: VendorFragments = loadRegexes("vendorfragments");
+const vendorFragments: VendorFragments = require("../../../php_modules/device-detector/regexes/vendorfragments.json");
 
 export default class VendorFragmentParser {
   public parse = (userAgent: string): string => {

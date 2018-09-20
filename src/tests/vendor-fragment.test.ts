@@ -1,9 +1,8 @@
-import { loadTests } from "../utils/yaml-loader";
 import { VendorFragmentTests } from "../typings/vendor-fragment";
 import VendorFragmentParser from "../parsers/vendor-fragment";
 import { brands } from "./helpers";
 
-const vendorFragmentTests: VendorFragmentTests = loadTests("Parser/fixtures/vendorfragments");
+const vendorFragmentTests: VendorFragmentTests = require("../../php_modules/device-detector/Tests/Parser/fixtures/vendorfragments.json");
 const vendorFragmentParser = new VendorFragmentParser();
 
 describe("Vendor fragments", () => {

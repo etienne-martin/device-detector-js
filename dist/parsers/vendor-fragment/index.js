@@ -1,8 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_agent_1 = require("../../utils/user-agent");
-const yaml_loader_1 = require("../../utils/yaml-loader");
-const vendorFragments = yaml_loader_1.loadRegexes("vendorfragments");
+const vendorFragments = require("../../../php_modules/device-detector/regexes/vendorfragments.json");
 class VendorFragmentParser {
     constructor() {
         this.parse = (userAgent) => {

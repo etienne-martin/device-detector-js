@@ -2,7 +2,6 @@ import { MobileApps } from "../../typings/client";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
 export interface MobileAppResult {
   type: string;
@@ -14,7 +13,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const mobileApps: MobileApps = loadRegexes("client/mobile_apps");
+const mobileApps: MobileApps = require("../../../php_modules/device-detector/regexes/client/mobile_apps.json");
 
 export default class MobileAppParser {
   private readonly options: Options = {

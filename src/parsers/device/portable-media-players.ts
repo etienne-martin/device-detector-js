@@ -1,9 +1,8 @@
 import { PortableMediaPlayers, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-import { loadRegexes } from "../../utils/yaml-loader";
 
-const portableMediaPlayers: PortableMediaPlayers = loadRegexes("device/portable_media_player");
+const portableMediaPlayers: PortableMediaPlayers = require("../../../php_modules/device-detector/regexes/device/portable_media_player.json");
 
 export default class PortableMediaPlayersParser {
   public parse = (userAgent: string): GenericDeviceResult => {

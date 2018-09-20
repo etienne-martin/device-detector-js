@@ -2,8 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const yaml_loader_1 = require("../../utils/yaml-loader");
-const consoles = yaml_loader_1.loadRegexes("device/consoles");
+const consoles = require("../../../php_modules/device-detector/regexes/device/consoles.json");
 class ConsoleParser {
     constructor() {
         this.parse = (userAgent) => {

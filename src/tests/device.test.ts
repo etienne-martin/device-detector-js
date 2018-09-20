@@ -1,12 +1,11 @@
 import DeviceDetector = require("../");
-import { loadTests } from "../utils/yaml-loader";
 import { DeviceTests, DeviceTest, GenericDeviceResult } from "../typings/device";
 import { get } from "lodash";
 import { brands } from "./helpers";
 
-const cameraTests: DeviceTests = loadTests("Parser/Devices/fixtures/camera");
-const carTests: DeviceTests = loadTests("Parser/Devices/fixtures/car_browser");
-const consoleTests: DeviceTests = loadTests("Parser/Devices/fixtures/console");
+const cameraTests: DeviceTests = require("../../php_modules/device-detector/Tests/Parser/Devices/fixtures/camera.json");
+const carTests: DeviceTests = require("../../php_modules/device-detector/Tests/Parser/Devices/fixtures/car_browser.json");
+const consoleTests: DeviceTests = require("../../php_modules/device-detector/Tests/Parser/Devices/fixtures/console.json");
 
 const deviceDetector = new DeviceDetector();
 

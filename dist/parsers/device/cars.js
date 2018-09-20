@@ -2,8 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const yaml_loader_1 = require("../../utils/yaml-loader");
-const cars = yaml_loader_1.loadRegexes("device/car_browsers");
+const cars = require("../../../php_modules/device-detector/regexes/device/car_browsers.json");
 class CarParser {
     constructor() {
         this.parse = (userAgent) => {
