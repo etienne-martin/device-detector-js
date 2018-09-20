@@ -23,6 +23,9 @@
     "name": "Etienne Martin",
     "url": "http://etiennemartin.ca/"
   },
+  "contributors": [
+    "Alex Beauchemin <alexbeauchemin01@gmail.com> (https://github.com/AlexBeauchemin)"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/etienne-martin/device-detector-js"

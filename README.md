@@ -1,8 +1,8 @@
 # device-detector-js
 
-The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model.
+The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model. Works with Node.js and in the browser.
 
-#### This is a Node.js port of Matomo [device-detector](https://github.com/etienne-martin/matomo-device-detector).
+#### This is a javascript port of Matomo [device-detector](https://github.com/etienne-martin/matomo-device-detector).
 
 [![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector-js.svg)](https://coveralls.io/github/etienne-martin/device-detector-js)
 [![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector-js)
@@ -94,12 +94,12 @@ Output:
 - `options` <[Object]> Options object which might have the following properties:
   - `skipBotDetection` <[boolean]> If true, bot detection will completely be skipped (bots will be detected as regular devices). Defaults to `false`.
   - `versionTruncation` <[0 | 1 | 2 | 3 | null]> Passing `null` disables version truncation, so full versions will be returned. Defaults to `1`, only minor versions will be returned (e.g. X.Y).
-  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry).
+  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry). (Node.js only, will be automatically set to false if used in the browser)
   
 #### new BotDetector([options])
 
 - `options` <[Object]> Options object which might have the following property:
-  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry).
+  - `cache` <[boolean | number]> TTL of the cache (in seconds). Defaults to `true` (no expiry). (Node.js only, will be automatically set to false if used in the browser)
   
 ## What device-detector-js is able to detect
 
@@ -165,6 +165,10 @@ Execute `npm run test` and update the [tests](https://github.com/etienne-martin/
 ## Authors
 
 * **Etienne Martin** - *Initial work* - [etiennemartin.ca](http://etiennemartin.ca/)
+
+## Contributors
+
+* **Alex Beauchemin** - [linkedin.com/in/alexbeauchemin](https://www.linkedin.com/in/alexbeauchemin/)
 
 ## License
 
