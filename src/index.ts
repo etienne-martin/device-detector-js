@@ -5,10 +5,10 @@ import VendorFragmentParser from "./parsers/vendor-fragment";
 import BrowserParser from "./parsers/client/browser";
 import BotParser = require("./parsers/bot");
 import { Result as BotResult } from "./parsers/bot/typing";
-import { get } from "lodash";
+import get from "lodash/get";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
-import * as LRU from "lru-cache";
+import LRU from "lru-cache";
 
 interface Result {
   client: ClientResult;

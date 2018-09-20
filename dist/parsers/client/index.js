@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const browser_1 = require("./browser");
-const mobile_apps_1 = require("./mobile-apps");
-const feed_readers_1 = require("./feed-readers");
-const libraries_1 = require("./libraries");
-const media_players_1 = require("./media-players");
-const personal_information_managers_1 = require("./personal-information-managers");
+const browser_1 = __importDefault(require("./browser"));
+const mobile_apps_1 = __importDefault(require("./mobile-apps"));
+const feed_readers_1 = __importDefault(require("./feed-readers"));
+const libraries_1 = __importDefault(require("./libraries"));
+const media_players_1 = __importDefault(require("./media-players"));
+const personal_information_managers_1 = __importDefault(require("./personal-information-managers"));
 const clientParsers = [
     feed_readers_1.default,
     mobile_apps_1.default,

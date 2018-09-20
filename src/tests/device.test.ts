@@ -1,6 +1,6 @@
 import DeviceDetector = require("../");
 import { DeviceTests, DeviceTest, GenericDeviceResult } from "../typings/device";
-import { get } from "lodash";
+import get from "lodash/get";
 import { brands } from "./helpers";
 
 const cameraTests: DeviceTests = require("../../php_modules/device-detector/Tests/Parser/Devices/fixtures/camera.json");
