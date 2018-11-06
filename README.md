@@ -2,7 +2,7 @@
 
 The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model. Works with Node.js and in the browser.
 
-#### This is a javascript port of Matomo [device-detector](https://github.com/etienne-martin/matomo-device-detector).
+#### This is a javascript port of [Matomo device-detector](https://github.com/etienne-martin/matomo-device-detector) (3.11.2).
 
 [![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector-js.svg)](https://coveralls.io/github/etienne-martin/device-detector-js)
 [![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector-js)
