@@ -49,7 +49,7 @@
     "install": "sh install.sh"
   },
   "napa": {
-    "device-detector": "https://github.com/etienne-martin/matomo-device-detector#1.0.15"
+    "device-detector": "https://github.com/etienne-martin/matomo-device-detector#1.0.18"
   },
   "napa-config": {
     "cache": false
