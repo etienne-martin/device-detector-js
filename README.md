@@ -22,6 +22,16 @@ npm install device-detector-js
 
 ### Usage
 
+##### CommonJS
+```javascript
+const DeviceDetector = require("device-detector-js");
+```
+
+##### TypeScript
+```typescript
+import DeviceDetector = require("device-detector-js");
+```
+
 **Example** - simple user agent detection:
 
 ```javascript
