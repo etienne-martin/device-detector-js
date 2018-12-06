@@ -2,30 +2,34 @@ import { Bots } from "../../typings/bot";
 import isBrowser from "../../utils/environment-detection";
 import { userAgentParser } from "../../utils/user-agent";
 import get from "lodash/get";
-import { Result, BotResult } from "./typing";
+import { BotResult } from "./typing";
 import LRU from "lru-cache";
 
-interface Options {
-  cache: boolean | number;
+namespace BotParser { // tslint:disable-line
+  export type Result = BotResult | null;
+
+  export interface Options {
+    cache: boolean | number;
+  }
 }
 
 const bots: Bots = require("../../../php_modules/device-detector/regexes/bots.json");
 
 class BotParser {
-  private readonly cache: LRU.Cache<string, Result> | undefined;
-  private readonly options: Options = {
+  private readonly cache: LRU.Cache<string, BotParser.Result> | undefined;
+  private readonly options: BotParser.Options = {
     cache: true
   };
 
-  constructor(options?: Partial<Options>) {
+  constructor(options?: Partial<BotParser.Options>) {
     this.options = {...this.options, ...options};
 
     if (this.options.cache && !isBrowser()) {
-      this.cache = LRU<string, Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+      this.cache = LRU<string, BotParser.Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
     }
   }
 
-  public parse = (userAgent: string): Result => {
+  public parse = (userAgent: string): BotParser.Result => {
     if (this.cache) {
       const cachedResult = this.cache.get(userAgent);
 

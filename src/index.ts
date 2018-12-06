@@ -4,28 +4,29 @@ import OperatingSystemParser, { Result as OperatingSystemResult } from "./parser
 import VendorFragmentParser from "./parsers/vendor-fragment";
 import BrowserParser from "./parsers/client/browser";
 import BotParser = require("./parsers/bot");
-import { Result as BotResult } from "./parsers/bot/typing";
 import get from "lodash/get";
 import isBrowser from "./utils/environment-detection";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
 import LRU from "lru-cache";
 
-interface Result {
-  client: ClientResult;
-  device: DeviceResult;
-  os: OperatingSystemResult;
-  bot: BotResult;
-}
+namespace DeviceDetector { // tslint:disable-line
+  export interface Result {
+    client: ClientResult;
+    device: DeviceResult;
+    os: OperatingSystemResult;
+    bot: BotParser.Result;
+  }
 
-interface Options {
-  skipBotDetection: boolean;
-  versionTruncation: 0 | 1 | 2 | 3 | null;
-  cache: boolean | number;
+  export interface Options {
+    skipBotDetection: boolean;
+    versionTruncation: 0 | 1 | 2 | 3 | null;
+    cache: boolean | number;
+  }
 }
 
 class DeviceDetector {
-  private readonly cache: LRU.Cache<string, Result> | undefined;
+  private readonly cache: LRU.Cache<string, DeviceDetector.Result> | undefined;
   private clientParser: ClientParser;
   private deviceParser: DeviceParser;
   private operatingSystemParser: OperatingSystemParser;
@@ -33,13 +34,13 @@ class DeviceDetector {
   private botParser: BotParser;
 
   // Default options
-  private readonly options: Options = {
+  private readonly options: DeviceDetector.Options = {
     skipBotDetection: false,
     versionTruncation: 1,
     cache: true
   };
 
-  constructor(options?: Partial<Options>) {
+  constructor(options?: Partial<DeviceDetector.Options>) {
     this.options = {...this.options, ...options};
     this.clientParser = new ClientParser(this.options);
     this.deviceParser = new DeviceParser();
@@ -48,11 +49,11 @@ class DeviceDetector {
     this.botParser = new BotParser();
 
     if (this.options.cache && !isBrowser()) {
-      this.cache = LRU<string, Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+      this.cache = LRU<string, DeviceDetector.Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
     }
   }
 
-  public parse = (userAgent: string): Result => {
+  public parse = (userAgent: string): DeviceDetector.Result => {
     if (this.cache) {
       const cachedResult = this.cache.get(userAgent);
 
@@ -61,7 +62,7 @@ class DeviceDetector {
       }
     }
 
-    const result: Result = {
+    const result: DeviceDetector.Result = {
       client: this.clientParser.parse(userAgent),
       os: this.operatingSystemParser.parse(userAgent),
       device: this.deviceParser.parse(userAgent),
@@ -241,7 +242,7 @@ class DeviceDetector {
     return userAgentParser("Android( [\.0-9]+)?; Tablet;", userAgent);
   };
 
-  private isDesktop = (result: Result, osFamily: string): boolean => {
+  private isDesktop = (result: DeviceDetector.Result, osFamily: string): boolean => {
     if (!result.os) {
       return false;
     }
@@ -254,7 +255,7 @@ class DeviceDetector {
     return OperatingSystemParser.getDesktopOsArray().includes(osFamily);
   };
 
-  private usesMobileBrowser = (client: Result["client"]) => {
+  private usesMobileBrowser = (client: DeviceDetector.Result["client"]) => {
     if (!client) return false;
 
     return get(client, "type") === "browser" && BrowserParser.isMobileOnlyBrowser(get(client, "name"));

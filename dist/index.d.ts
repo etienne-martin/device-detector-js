@@ -1,17 +1,19 @@
 import { ClientResult } from "./parsers/client";
 import { DeviceResult } from "./parsers/device";
 import { Result as OperatingSystemResult } from "./parsers/operating-system";
-import { Result as BotResult } from "./parsers/bot/typing";
-interface Result {
-    client: ClientResult;
-    device: DeviceResult;
-    os: OperatingSystemResult;
-    bot: BotResult;
-}
-interface Options {
-    skipBotDetection: boolean;
-    versionTruncation: 0 | 1 | 2 | 3 | null;
-    cache: boolean | number;
+import BotParser = require("./parsers/bot");
+declare namespace DeviceDetector {
+    interface Result {
+        client: ClientResult;
+        device: DeviceResult;
+        os: OperatingSystemResult;
+        bot: BotParser.Result;
+    }
+    interface Options {
+        skipBotDetection: boolean;
+        versionTruncation: 0 | 1 | 2 | 3 | null;
+        cache: boolean | number;
+    }
 }
 declare class DeviceDetector {
     private readonly cache;
@@ -21,8 +23,8 @@ declare class DeviceDetector {
     private vendorFragmentParser;
     private botParser;
     private readonly options;
-    constructor(options?: Partial<Options>);
-    parse: (userAgent: string) => Result;
+    constructor(options?: Partial<DeviceDetector.Options>);
+    parse: (userAgent: string) => DeviceDetector.Result;
     private hasAndroidMobileFragment;
     private hasAndroidTabletFragment;
     private isDesktop;

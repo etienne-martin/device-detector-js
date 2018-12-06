@@ -7,5 +7,3 @@ export interface BotResult {
     url: string;
   }
 }
-
-export type Result = BotResult | null;
