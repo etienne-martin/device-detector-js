@@ -14,7 +14,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const libraries: Libraries = require("../../../php_modules/device-detector/regexes/client/libraries.json");
+const libraries: Libraries = require("../../../fixtures/regexes/client/libraries.json");
 
 export default class LibraryParser {
   private readonly options: Options = {

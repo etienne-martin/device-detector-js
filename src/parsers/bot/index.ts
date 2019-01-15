@@ -6,17 +6,17 @@ import { BotResult } from "./typing";
 import LRU from "lru-cache";
 
 namespace BotParser { // tslint:disable-line
-  export type Result = BotResult | null;
+  export type DeviceDetectorBotResult = BotResult | null;
 
   export interface Options {
     cache: boolean | number;
   }
 }
 
-const bots: Bots = require("../../../php_modules/device-detector/regexes/bots.json");
+const bots: Bots = require("../../../fixtures/regexes/bots.json");
 
 class BotParser {
-  private readonly cache: LRU.Cache<string, BotParser.Result> | undefined;
+  private readonly cache: LRU.Cache<string, BotParser.DeviceDetectorBotResult> | undefined;
   private readonly options: BotParser.Options = {
     cache: true
   };
@@ -25,11 +25,11 @@ class BotParser {
     this.options = {...this.options, ...options};
 
     if (this.options.cache && !isBrowser()) {
-      this.cache = LRU<string, BotParser.Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+      this.cache = LRU<string, BotParser.DeviceDetectorBotResult>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
     }
   }
 
-  public parse = (userAgent: string): BotParser.Result => {
+  public parse = (userAgent: string): BotParser.DeviceDetectorBotResult => {
     if (this.cache) {
       const cachedResult = this.cache.get(userAgent);
 

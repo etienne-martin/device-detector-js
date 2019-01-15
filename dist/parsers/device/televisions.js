@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
 const model_1 = require("../../utils/model");
-const televisions = require("../../../php_modules/device-detector/regexes/device/televisions.json");
+const televisions = require("../../../fixtures/regexes/device/televisions.json");
 class TelevisionParser {
     constructor() {
         this.parse = (userAgent) => {

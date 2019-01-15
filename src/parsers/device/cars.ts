@@ -2,7 +2,7 @@ import { Cars, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
-const cars: Cars = require("../../../php_modules/device-detector/regexes/device/car_browsers.json");
+const cars: Cars = require("../../../fixtures/regexes/device/car_browsers.json");
 
 export default class CarParser {
   public parse = (userAgent: string): GenericDeviceResult => {

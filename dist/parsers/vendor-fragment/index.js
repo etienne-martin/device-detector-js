@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_agent_1 = require("../../utils/user-agent");
-const vendorFragments = require("../../../php_modules/device-detector/regexes/vendorfragments.json");
+const vendorFragments = require("../../../fixtures/regexes/vendorfragments.json");
 class VendorFragmentParser {
     constructor() {
         this.parse = (userAgent) => {

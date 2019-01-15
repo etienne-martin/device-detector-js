@@ -1,7 +1,7 @@
 import { VendorFragments } from "../../typings/vendor-fragment";
 import { userAgentParser } from "../../utils/user-agent";
 
-const vendorFragments: VendorFragments = require("../../../php_modules/device-detector/regexes/vendorfragments.json");
+const vendorFragments: VendorFragments = require("../../../fixtures/regexes/vendorfragments.json");
 
 export default class VendorFragmentParser {
   public parse = (userAgent: string): string => {

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const version_1 = require("../../utils/version");
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const personalInformationManagers = require("../../../php_modules/device-detector/regexes/client/pim.json");
+const personalInformationManagers = require("../../../fixtures/regexes/client/pim.json");
 class PersonalInformationManagerParser {
     constructor(options) {
         this.options = {

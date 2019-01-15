@@ -13,7 +13,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const personalInformationManagers: PersonalInformationManagers = require("../../../php_modules/device-detector/regexes/client/pim.json");
+const personalInformationManagers: PersonalInformationManagers = require("../../../fixtures/regexes/client/pim.json");
 
 export default class PersonalInformationManagerParser {
   private readonly options: Options = {

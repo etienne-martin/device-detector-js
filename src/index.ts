@@ -11,11 +11,11 @@ import { versionCompare } from "./utils/version-compare";
 import LRU from "lru-cache";
 
 namespace DeviceDetector { // tslint:disable-line
-  export interface Result {
+  export interface DeviceDetectorResult {
     client: ClientResult;
     device: DeviceResult;
     os: OperatingSystemResult;
-    bot: BotParser.Result;
+    bot: BotParser.DeviceDetectorBotResult;
   }
 
   export interface Options {
@@ -26,7 +26,7 @@ namespace DeviceDetector { // tslint:disable-line
 }
 
 class DeviceDetector {
-  private readonly cache: LRU.Cache<string, DeviceDetector.Result> | undefined;
+  private readonly cache: LRU.Cache<string, DeviceDetector.DeviceDetectorResult> | undefined;
   private clientParser: ClientParser;
   private deviceParser: DeviceParser;
   private operatingSystemParser: OperatingSystemParser;
@@ -49,11 +49,11 @@ class DeviceDetector {
     this.botParser = new BotParser();
 
     if (this.options.cache && !isBrowser()) {
-      this.cache = LRU<string, DeviceDetector.Result>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
+      this.cache = LRU<string, DeviceDetector.DeviceDetectorResult>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
     }
   }
 
-  public parse = (userAgent: string): DeviceDetector.Result => {
+  public parse = (userAgent: string): DeviceDetector.DeviceDetectorResult => {
     if (this.cache) {
       const cachedResult = this.cache.get(userAgent);
 
@@ -62,7 +62,7 @@ class DeviceDetector {
       }
     }
 
-    const result: DeviceDetector.Result = {
+    const result: DeviceDetector.DeviceDetectorResult = {
       client: this.clientParser.parse(userAgent),
       os: this.operatingSystemParser.parse(userAgent),
       device: this.deviceParser.parse(userAgent),
@@ -242,7 +242,7 @@ class DeviceDetector {
     return userAgentParser("Android( [\.0-9]+)?; Tablet;", userAgent);
   };
 
-  private isDesktop = (result: DeviceDetector.Result, osFamily: string): boolean => {
+  private isDesktop = (result: DeviceDetector.DeviceDetectorResult, osFamily: string): boolean => {
     if (!result.os) {
       return false;
     }
@@ -255,7 +255,7 @@ class DeviceDetector {
     return OperatingSystemParser.getDesktopOsArray().includes(osFamily);
   };
 
-  private usesMobileBrowser = (client: DeviceDetector.Result["client"]) => {
+  private usesMobileBrowser = (client: DeviceDetector.DeviceDetectorResult["client"]) => {
     if (!client) return false;
 
     return get(client, "type") === "browser" && BrowserParser.isMobileOnlyBrowser(get(client, "name"));

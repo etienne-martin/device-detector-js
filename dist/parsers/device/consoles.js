@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const consoles = require("../../../php_modules/device-detector/regexes/device/consoles.json");
+const consoles = require("../../../fixtures/regexes/device/consoles.json");
 class ConsoleParser {
     constructor() {
         this.parse = (userAgent) => {

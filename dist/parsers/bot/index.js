@@ -6,7 +6,7 @@ const environment_detection_1 = __importDefault(require("../../utils/environment
 const user_agent_1 = require("../../utils/user-agent");
 const get_1 = __importDefault(require("lodash/get"));
 const lru_cache_1 = __importDefault(require("lru-cache"));
-const bots = require("../../../php_modules/device-detector/regexes/bots.json");
+const bots = require("../../../fixtures/regexes/bots.json");
 class BotParser {
     constructor(options) {
         this.options = {

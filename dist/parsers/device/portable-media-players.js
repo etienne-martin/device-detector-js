@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const portableMediaPlayers = require("../../../php_modules/device-detector/regexes/device/portable_media_player.json");
+const portableMediaPlayers = require("../../../fixtures/regexes/device/portable_media_player.json");
 class PortableMediaPlayersParser {
     constructor() {
         this.parse = (userAgent) => {

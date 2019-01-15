@@ -3,7 +3,7 @@ import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { buildModel } from "../../utils/model";
 
-const mobiles: Mobiles = require("../../../php_modules/device-detector/regexes/device/mobiles.json");
+const mobiles: Mobiles = require("../../../fixtures/regexes/device/mobiles.json");
 
 export default class MobileParser {
   public parse = (userAgent: string): GenericDeviceResult => {

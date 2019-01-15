@@ -14,7 +14,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const feedReaders: FeedReaders = require("../../../php_modules/device-detector/regexes/client/feed_readers.json");
+const feedReaders: FeedReaders = require("../../../fixtures/regexes/client/feed_readers.json");
 
 export default class FeedReaderParser {
   private readonly options: Options = {

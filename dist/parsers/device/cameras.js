@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const cameras = require("../../../php_modules/device-detector/regexes/device/cameras.json");
+const cameras = require("../../../fixtures/regexes/device/cameras.json");
 class CameraParser {
     constructor() {
         this.parse = (userAgent) => {

@@ -16,12 +16,12 @@ import {
   PersonalInformationManagerTests
 } from "../typings/client";
 
-const browserTests: BrowserTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/browser.json");
-const feedReaderTests: FeedReaderTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/feed_reader.json");
-const libraryTests: LibraryTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/library.json");
-const mediaPlayerTests: MediaPlayerTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/mediaplayer.json");
-const mobileAppTests: MobileAppTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/mobile_app.json");
-const personalInformationManagerTests: PersonalInformationManagerTests = require("../../php_modules/device-detector/Tests/Parser/Client/fixtures/pim.json");
+const browserTests: BrowserTests = require("../../fixtures/Tests/Parser/Client/fixtures/browser.json");
+const feedReaderTests: FeedReaderTests = require("../../fixtures/Tests/Parser/Client/fixtures/feed_reader.json");
+const libraryTests: LibraryTests = require("../../fixtures/Tests/Parser/Client/fixtures/library.json");
+const mediaPlayerTests: MediaPlayerTests = require("../../fixtures/Tests/Parser/Client/fixtures/mediaplayer.json");
+const mobileAppTests: MobileAppTests = require("../../fixtures/Tests/Parser/Client/fixtures/mobile_app.json");
+const personalInformationManagerTests: PersonalInformationManagerTests = require("../../fixtures/Tests/Parser/Client/fixtures/pim.json");
 
 const versionTruncation = 1;
 

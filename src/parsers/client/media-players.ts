@@ -13,7 +13,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const mediaPlayers: MediaPlayers = require("../../../php_modules/device-detector/regexes/client/mediaplayers.json");
+const mediaPlayers: MediaPlayers = require("../../../fixtures/regexes/client/mediaplayers.json");
 
 export default class MediaPlayerParser {
   private readonly options: Options = {

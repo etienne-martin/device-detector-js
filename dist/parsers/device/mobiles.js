@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
 const model_1 = require("../../utils/model");
-const mobiles = require("../../../php_modules/device-detector/regexes/device/mobiles.json");
+const mobiles = require("../../../fixtures/regexes/device/mobiles.json");
 class MobileParser {
     constructor() {
         this.parse = (userAgent) => {

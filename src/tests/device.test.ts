@@ -3,9 +3,9 @@ import { DeviceTests, DeviceTest, GenericDeviceResult } from "../typings/device"
 import get from "lodash/get";
 import { brands } from "./helpers";
 
-const cameraTests: DeviceTests = require("../../php_modules/device-detector/Tests/Parser/Devices/fixtures/camera.json");
-const carTests: DeviceTests = require("../../php_modules/device-detector/Tests/Parser/Devices/fixtures/car_browser.json");
-const consoleTests: DeviceTests = require("../../php_modules/device-detector/Tests/Parser/Devices/fixtures/console.json");
+const cameraTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/camera.json");
+const carTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/car_browser.json");
+const consoleTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/console.json");
 
 const deviceDetector = new DeviceDetector();
 
