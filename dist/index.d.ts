@@ -7,7 +7,7 @@ declare namespace DeviceDetector {
         client: ClientResult;
         device: DeviceResult;
         os: OperatingSystemResult;
-        bot: BotParser.Result;
+        bot: BotParser.DeviceDetectorBotResult;
     }
     interface Options {
         skipBotDetection: boolean;
