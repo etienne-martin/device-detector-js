@@ -14,7 +14,7 @@ This library is heavily tested and relies on over 6000 tests to detect thousands
 
 ## Online Demo
 
-https://codesandbox.io/s/lx3rzx16x9
+https://lx3rzx16x9.codesandbox.io/
 
 ## Getting Started
 
