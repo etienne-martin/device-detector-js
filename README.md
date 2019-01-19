@@ -12,7 +12,7 @@ This library is heavily tested and relies on over 6000 tests to detect thousands
 [![npm version](https://img.shields.io/npm/v/device-detector-js.svg)](https://www.npmjs.com/package/device-detector-js)
 [![npm monthly downloads](https://img.shields.io/npm/dm/device-detector-js.svg)](https://www.npmjs.com/package/device-detector-js)
 
-## Online Demo
+## Demo
 
 https://lx3rzx16x9.codesandbox.io/
 
