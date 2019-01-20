@@ -47,6 +47,7 @@ export declare type FeedReaders = FeedReader[];
 export declare type Libraries = Library[];
 export declare type MediaPlayers = MediaPlayer[];
 export declare type PersonalInformationManagers = PersonalInformationManager[];
+/** TEST TYPES */
 export interface BrowserTest {
     user_agent: string;
     client: {

@@ -9,6 +9,7 @@ export interface Bot {
     };
 }
 export declare type Bots = Bot[];
+/** TEST TYPES */
 export interface BotTest {
     user_agent: string;
     bot: {

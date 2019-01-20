@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const trim_1 = __importDefault(require("lodash/trim"));
-// TODO: implement $maxMinorParts
 exports.formatVersion = (version, versionTruncation) => {
     if (version === undefined)
         return "";

@@ -4,6 +4,7 @@ export interface OperatingSystem {
     version: string;
 }
 export declare type OperatingSystems = OperatingSystem[];
+/** TEST TYPES */
 export interface OperatingSystemTest {
     user_agent: string;
     os: {

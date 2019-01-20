@@ -72,6 +72,7 @@ export interface Consoles {
 export interface PortableMediaPlayers {
     [brand: string]: PortableMediaPlayer;
 }
+/** TEST TYPES */
 export interface DeviceTest {
     user_agent: string;
     device: {
