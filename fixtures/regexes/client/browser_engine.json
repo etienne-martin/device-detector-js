@@ -1,1 +1,1 @@
-[{"regex":"NetFront","name":"NetFront"},{"regex":"Edge","name":"Edge"},{"regex":"Trident","name":"Trident"},{"regex":"Blink","name":"Blink"},{"regex":"(?:Apple)?WebKit","name":"WebKit"},{"regex":"Presto","name":"Presto"},{"regex":"(?<!like )Gecko","name":"Gecko"},{"regex":"KHTML","name":"KHTML"},{"regex":"NetSurf","name":"NetSurf"}]
+[0,[8,"name","NetFront",637],[8,636,"Edge",638],[8,636,"Trident",639],[8,636,"Blink",640],[8,636,"(?:Apple)?WebKit","WebKit"],[8,636,"Presto",643],[8,636,"(?<!like )Gecko","Gecko"],[8,636,"KHTML",646],[8,636,"NetSurf",647],9]

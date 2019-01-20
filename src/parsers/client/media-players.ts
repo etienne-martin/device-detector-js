@@ -3,6 +3,8 @@ import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
+const jsonpack = require("jsonpack");
+
 export interface MediaPlayerResult {
   type: string;
   name: string;
@@ -13,7 +15,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const mediaPlayers: MediaPlayers = require("../../../fixtures/regexes/client/mediaplayers.json");
+const mediaPlayers: MediaPlayers = jsonpack.unpack(require("../../../fixtures/regexes/client/mediaplayers.json"));
 
 export default class MediaPlayerParser {
   private readonly options: Options = {

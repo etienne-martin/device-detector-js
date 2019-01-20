@@ -3,6 +3,8 @@ import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
+const jsonpack = require("jsonpack");
+
 export interface LibraryResult {
   type: string;
   name: string;
@@ -14,7 +16,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const libraries: Libraries = require("../../../fixtures/regexes/client/libraries.json");
+const libraries: Libraries = jsonpack.unpack(require("../../../fixtures/regexes/client/libraries.json"));
 
 export default class LibraryParser {
   private readonly options: Options = {

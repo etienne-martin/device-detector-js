@@ -3,6 +3,8 @@ import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
+const jsonpack = require("jsonpack");
+
 export interface MobileAppResult {
   type: string;
   name: string;
@@ -13,7 +15,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const mobileApps: MobileApps = require("../../../fixtures/regexes/client/mobile_apps.json");
+const mobileApps: MobileApps = jsonpack.unpack(require("../../../fixtures/regexes/client/mobile_apps.json"));
 
 export default class MobileAppParser {
   private readonly options: Options = {

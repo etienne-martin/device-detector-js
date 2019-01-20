@@ -38,8 +38,9 @@
   },
   "license": "LGPL-3.0",
   "scripts": {
+    "fixtures": "sh install.sh",
     "dev": "tsc --pretty --watch",
-    "predev": "sh install.sh",
+    "predev": "npm run fixtures",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
     "pretest": "npm run lint",
     "test": "jest src --coverage --verbose",
@@ -97,6 +98,7 @@
     ]
   },
   "dependencies": {
+    "jsonpack": "^1.1.5",
     "lodash": "4.17.10",
     "lru-cache": "4.1.3"
   },

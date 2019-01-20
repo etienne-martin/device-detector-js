@@ -5,6 +5,8 @@ import get from "lodash/get";
 import { BotResult } from "./typing";
 import LRU from "lru-cache";
 
+const jsonpack = require("jsonpack");
+
 namespace BotParser { // tslint:disable-line
   export type DeviceDetectorBotResult = BotResult | null;
 
@@ -13,7 +15,7 @@ namespace BotParser { // tslint:disable-line
   }
 }
 
-const bots: Bots = require("../../../fixtures/regexes/bots.json");
+const bots: Bots = jsonpack.unpack(require("../../../fixtures/regexes/bots.json"));
 
 class BotParser {
   private readonly cache: LRU.Cache<string, BotParser.DeviceDetectorBotResult> | undefined;

@@ -2,6 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const YAML = require("js-yaml");
 const recursive = require("recursive-readdir");
+const jsonpack = require("jsonpack");
 
 const loadYaml = (slug) => {
   return YAML.load(fs.readFileSync(slug, "utf8"), {
@@ -36,6 +37,13 @@ recursive("./node_modules/device-detector", [ignoreFilter], (err, files) => {
 
     ensureDirectoryExistence(destination);
 
-    fs.writeFileSync(destination, JSON.stringify(loadYaml(file)));
+    const json = loadYaml(file);
+    let compressedJson;
+
+    if (file.includes("/regexes/")) {
+      compressedJson = jsonpack.pack(json);
+    }
+
+    fs.writeFileSync(destination, JSON.stringify(compressedJson || json));
   }
 });

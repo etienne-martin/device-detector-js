@@ -3,6 +3,8 @@ import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
+const jsonpack = require("jsonpack");
+
 export interface PersonalInformationManagerResult {
   type: string;
   name: string;
@@ -13,7 +15,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const personalInformationManagers: PersonalInformationManagers = require("../../../fixtures/regexes/client/pim.json");
+const personalInformationManagers: PersonalInformationManagers = jsonpack.unpack(require("../../../fixtures/regexes/client/pim.json"));
 
 export default class PersonalInformationManagerParser {
   private readonly options: Options = {

@@ -2,7 +2,8 @@ import { Consoles, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
-const consoles: Consoles = require("../../../fixtures/regexes/device/consoles.json");
+const jsonpack = require("jsonpack");
+const consoles: Consoles = jsonpack.unpack(require("../../../fixtures/regexes/device/consoles.json"));
 
 export default class ConsoleParser {
   public parse = (userAgent: string): GenericDeviceResult => {
