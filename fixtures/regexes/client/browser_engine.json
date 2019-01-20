@@ -1,1 +1,1 @@
-[0,[8,"name","NetFront",637],[8,636,"Edge",638],[8,636,"Trident",639],[8,636,"Blink",640],[8,636,"(?:Apple)?WebKit","WebKit"],[8,636,"Presto",643],[8,636,"(?<!like )Gecko","Gecko"],[8,636,"KHTML",646],[8,636,"NetSurf",647],9]
+"regex|NetFront|name|Edge|Trident|Blink|(?:Apple)?WebKit|WebKit|Presto|(?<!like+)Gecko|Gecko|KHTML|NetSurf^^^@$0|1|2|1]|$0|3|2|3]|$0|4|2|4]|$0|5|2|5]|$0|6|2|7]|$0|8|2|8]|$0|9|2|A]|$0|B|2|B]|$0|C|2|C]]"

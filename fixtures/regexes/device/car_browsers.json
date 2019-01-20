@@ -1,1 +1,1 @@
-["Tesla",[3,1162,1163,"QtCarBrowser","car browser","Model S"],4]
+"Tesla|regex|QtCarBrowser|device|car+browser|model|Model+S^^^$0|$1|2|3|4|5|6]]"

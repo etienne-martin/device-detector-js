@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const version_1 = require("../../utils/version");
 const variable_replacement_1 = require("../../utils/variable-replacement");
 const user_agent_1 = require("../../utils/user-agent");
-const mediaPlayers = require("../../../fixtures/regexes/client/mediaplayers.json");
+const jsonpack = require("jsonpack");
+const mediaPlayers = jsonpack.unpack(require("../../../fixtures/regexes/client/mediaplayers.json"));
 class MediaPlayerParser {
     constructor(options) {
         this.options = {

@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_agent_1 = require("../../utils/user-agent");
-const vendorFragments = require("../../../fixtures/regexes/vendorfragments.json");
+const jsonpack = require("jsonpack");
+const vendorFragments = jsonpack.unpack(require("../../../fixtures/regexes/vendorfragments.json"));
 class VendorFragmentParser {
     constructor() {
         this.parse = (userAgent) => {
