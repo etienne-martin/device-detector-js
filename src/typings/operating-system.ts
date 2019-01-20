@@ -6,6 +6,8 @@ export interface OperatingSystem {
 
 export type OperatingSystems = OperatingSystem[];
 
+/** TEST TYPES */
+
 export interface OperatingSystemTest {
   user_agent: string;
   os: {

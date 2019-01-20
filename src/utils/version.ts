@@ -1,6 +1,5 @@
 import trim from "lodash/trim";
 
-// TODO: implement $maxMinorParts
 export const formatVersion = (version: string | undefined, versionTruncation: 0 | 1 | 2 | 3 | null): string => {
   if (version === undefined) return "";
 

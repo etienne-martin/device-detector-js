@@ -67,6 +67,8 @@ export interface Cars { [brand: string]: Car; }
 export interface Consoles { [brand: string]: Console; }
 export interface PortableMediaPlayers { [brand: string]: PortableMediaPlayer; }
 
+/** TEST TYPES */
+
 export interface DeviceTest {
   user_agent: string;
   device: {

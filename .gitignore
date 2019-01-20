@@ -1,6 +1,5 @@
 node_modules
 .idea
 coverage
-benchmark.js
 /fixtures/.coveralls.json
 /fixtures/.travis.json

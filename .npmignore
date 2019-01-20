@@ -4,7 +4,5 @@ tsconfig.json
 tslint.json
 coverage
 .circleci
-benchmark.js
-php_modules
 /fixtures/.coveralls.json
 /fixtures/.travis.json

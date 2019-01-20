@@ -55,6 +55,8 @@ export type Libraries = Library[];
 export type MediaPlayers = MediaPlayer[];
 export type PersonalInformationManagers = PersonalInformationManager[];
 
+/** TEST TYPES */
+
 export interface BrowserTest {
   user_agent: string;
   client: {
