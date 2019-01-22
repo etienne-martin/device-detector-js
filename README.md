@@ -4,7 +4,7 @@ The Universal Device Detection library will parse any User Agent and detect the 
 
 This library is heavily tested and relies on over 6000 tests to detect thousands of different device types.
 
-#### This is a javascript port of [Matomo device-detector](https://github.com/etienne-martin/matomo-device-detector) (3.11.2).
+#### This is a javascript port of [Matomo device-detector](https://github.com/matomo-org/device-detector) (3.11.4).
 
 [![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector-js.svg)](https://coveralls.io/github/etienne-martin/device-detector-js)
 [![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector-js)
@@ -165,7 +165,7 @@ Akregator, Apple PubSub, BashPodder, Downcast, FeedDemon, Feeddler RSS Reader, g
 
 ## Built with
 
-* [Matomo device detector](https://github.com/etienne-martin/matomo-device-detector) - A powerful device detection library.
+* [Matomo device detector](https://github.com/matomo-org/device-detector) - A powerful device detection library.
 * [node.js](https://nodejs.org/en/) - Cross-platform JavaScript run-time environment for executing JavaScript code server-side. 
 * [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript that compiles to plain JavaScript.
 * [Jest](https://facebook.github.io/jest/) - Delightful JavaScript Testing.
