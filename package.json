@@ -49,7 +49,7 @@
     "build": "tsc --pretty"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#3.11.4"
+    "device-detector": "https://github.com/matomo-org/device-detector"
   },
   "napa-config": {
     "cache": false
