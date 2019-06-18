@@ -1,6 +1,6 @@
 {
   "name": "@trafficguard/device-detector-js",
-  "version": "1.0.7",
+  "version": "1.0.12",
   "description": "A javascript port of Matomo device-detector",
   "homepage": "https://github.com/TrafficGuard/device-detector-js",
   "keywords": [
