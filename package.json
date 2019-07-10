@@ -108,7 +108,7 @@
     "@types/node": "10.9.2",
     "@types/recursive-readdir": "2.2.0",
     "@types/yamljs": "0.2.30",
-    "js-yaml": "3.12.0",
+    "js-yaml": "3.13.1",
     "coveralls": "3.0.2",
     "husky": "0.15.0-rc.13",
     "jest": "22.4.4",
