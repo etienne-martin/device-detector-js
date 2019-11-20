@@ -176,7 +176,7 @@ When contributing to this project, please first discuss the change you wish to m
 
 Update the [README.md](https://github.com/etienne-martin/device-detector-js/blob/master/README.md) with details of changes to the library.
 
-Execute `npm run test` and update the [tests](https://github.com/etienne-martin/device-detector-js/tree/master/src/tests) if needed.
+Execute `yarn test` and update the [tests](https://github.com/etienne-martin/device-detector-js/tree/master/src/tests) if needed.
 
 ## Authors
 

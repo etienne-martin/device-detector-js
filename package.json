@@ -39,14 +39,14 @@
   "license": "LGPL-3.0",
   "scripts": {
     "dev": "tsc --pretty --watch",
-    "predev": "npm run fixtures",
+    "predev": "yarn fixtures",
     "fixtures": "sh load-fixtures.sh",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
-    "pretest": "npm run lint",
+    "pretest": "yarn lint",
     "test": "jest src --coverage --verbose",
     "test:watch": "jest src --coverage --verbose --watch",
     "coverage": "coveralls < ./coverage/lcov.info",
-    "prebuild": "rm -rf dist/ && npm run lint",
+    "prebuild": "rm -rf dist/ && yarn lint",
     "build": "tsc --pretty"
   },
   "napa": {

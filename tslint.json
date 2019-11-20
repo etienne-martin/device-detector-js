@@ -6,7 +6,6 @@
     "one-variable-per-declaration": false,
     "quotemark": [true, "double"],
     "no-submodule-imports": false,
-    "no-unused-variable": true,
     "promise-function-async": true,
     "max-file-line-count": [true, 300],
     "no-trailing-whitespace": true,
@@ -24,4 +23,3 @@
   },
   "rulesDirectory": []
 }
-  
