@@ -47,7 +47,21 @@ describe("Full test", () => {
     test(`${unitTest.os.name || ""} ${brands[unitTest.device.brand] || ""} ${unitTest.client.name || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent);
 
-      const formattedResult = {
+      const expectedClientType = (unitTest.client.type || "")
+        .replace("pim", "personal information manager")
+        .replace("mediaplayer", "media player");
+
+      const expectedDeviceType = (unitTest.device.type || "")
+        .replace("car browser", "car")
+        .replace("tv", "television");
+
+      // Some tests contains "null" as string for the model
+      // We need to sanitize it
+      if (unitTest.device.model === "null") {
+        unitTest.device.model = "";
+      }
+
+      expect({
         os: {
           name: get(result, "os.name") || "",
           version: get(result, "os.version") || "",
@@ -64,25 +78,8 @@ describe("Full test", () => {
           type: get(result, "device.type") || "",
           brand: get(result, "device.brand") || "",
           model: get(result, "device.model") || ""
-        },
-        userAgent: unitTest.user_agent
-      };
-
-      const expectedClientType = (unitTest.client.type || "")
-        .replace("pim", "personal information manager")
-        .replace("mediaplayer", "media player");
-
-      const expectedDeviceType = (unitTest.device.type || "")
-        .replace("car browser", "car")
-        .replace("tv", "television");
-
-      // Some tests contains "null" as string for the model
-      // We need to sanitize it
-      if (unitTest.device.model === "null") {
-        unitTest.device.model = "";
-      }
-
-      const formattedTest = {
+        }
+      }).toEqual({
         os: {
           name: unitTest.os.name || "",
           version: formatVersion(unitTest.os.version, versionTruncation) || "",
@@ -99,11 +96,8 @@ describe("Full test", () => {
           type: expectedDeviceType,
           brand: brands[unitTest.device.brand] || "",
           model: unitTest.device.model || ""
-        },
-        userAgent: unitTest.user_agent
-      };
-
-      expect(formattedResult).toEqual(formattedTest);
+        }
+      });
     });
   }
 });

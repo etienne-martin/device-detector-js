@@ -35,8 +35,7 @@ describe("Client / browsers", () => {
       const result = deviceDetector.parse(browserTest.user_agent).client as BrowserResult;
 
       expect({
-        ...{ client: result },
-        userAgent: browserTest.user_agent
+        client: result
       }).toEqual({
         client: {
           type: browserTest.client.type || "",
@@ -44,8 +43,7 @@ describe("Client / browsers", () => {
           version: formatVersion(browserTest.client.version, versionTruncation) || "",
           engine: browserTest.client.engine || "",
           engineVersion: formatVersion(browserTest.client.engine_version, versionTruncation) || "",
-        },
-        userAgent: browserTest.user_agent
+        }
       });
     });
   }
@@ -57,15 +55,13 @@ describe("Client / mobile apps", () => {
       const result = deviceDetector.parse(mobileAppTest.user_agent).client as MobileAppResult;
 
       expect({
-        ...{ client: result },
-        userAgent: mobileAppTest.user_agent
+        client: result
       }).toEqual({
         client: {
           type: mobileAppTest.client.type || "",
           name: mobileAppTest.client.name || "",
           version: formatVersion(mobileAppTest.client.version, versionTruncation) || "",
-        },
-        userAgent: mobileAppTest.user_agent
+        }
       });
     });
   }

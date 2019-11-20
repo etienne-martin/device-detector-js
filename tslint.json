@@ -19,7 +19,8 @@
     "no-bitwise": false,
     "no-var-requires": false,
     "curly": [true, "ignore-same-line"],
-    "import-blacklist": [true, "lodash"]
+    "import-blacklist": [true, "lodash"],
+    "no-namespace": false
   },
   "rulesDirectory": []
 }
