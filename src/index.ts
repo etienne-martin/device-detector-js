@@ -5,10 +5,8 @@ import VendorFragmentParser from "./parsers/vendor-fragment";
 import BrowserParser from "./parsers/client/browser";
 import BotParser = require("./parsers/bot");
 import get from "lodash/get";
-import isBrowser from "./utils/environment-detection";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
-import LRU from "lru-cache";
 
 namespace DeviceDetector { // tslint:disable-line
   export interface DeviceDetectorResult {
@@ -21,12 +19,10 @@ namespace DeviceDetector { // tslint:disable-line
   export interface Options {
     skipBotDetection: boolean;
     versionTruncation: 0 | 1 | 2 | 3 | null;
-    cache: boolean | number;
   }
 }
 
 class DeviceDetector {
-  private readonly cache: LRU.Cache<string, DeviceDetector.DeviceDetectorResult> | undefined;
   private clientParser: ClientParser;
   private deviceParser: DeviceParser;
   private operatingSystemParser: OperatingSystemParser;
@@ -36,8 +32,7 @@ class DeviceDetector {
   // Default options
   private readonly options: DeviceDetector.Options = {
     skipBotDetection: false,
-    versionTruncation: 1,
-    cache: true
+    versionTruncation: 1
   };
 
   constructor(options?: Partial<DeviceDetector.Options>) {
@@ -47,21 +42,9 @@ class DeviceDetector {
     this.operatingSystemParser = new OperatingSystemParser(this.options);
     this.vendorFragmentParser = new VendorFragmentParser();
     this.botParser = new BotParser();
-
-    if (this.options.cache && !isBrowser()) {
-      this.cache = LRU<string, DeviceDetector.DeviceDetectorResult>({ maxAge: this.options.cache === true ? Infinity : this.options.cache });
-    }
   }
 
   public parse = (userAgent: string): DeviceDetector.DeviceDetectorResult => {
-    if (this.cache) {
-      const cachedResult = this.cache.get(userAgent);
-
-      if (cachedResult) {
-        return cachedResult;
-      }
-    }
-
     const result: DeviceDetector.DeviceDetectorResult = {
       client: this.clientParser.parse(userAgent),
       os: this.operatingSystemParser.parse(userAgent),
@@ -225,10 +208,6 @@ class DeviceDetector {
       }
 
       result.device.type = "desktop";
-    }
-
-    if (this.cache) {
-      this.cache.set(userAgent, result);
     }
 
     return result;
