@@ -180,6 +180,20 @@ Update the [README.md](https://github.com/etienne-martin/device-detector-js/blob
 
 Execute `yarn test` and update the [tests](https://github.com/etienne-martin/device-detector-js/tree/master/src/tests) if needed.
 
+### How to update to a newer version of matomo?
+
+This library needs to be updated when matomo releases a new version of their library. Here's how to proceed: 
+
+1. Pull the master branch from this repo
+2. Update the `https://github.com/matomo-org/device-detector#{version-number}` to the latest version of matomo device detector in the package.json
+3. Run `yarn fixtures` to update to the latest fixtures. This will download new fixtures based on the version specified in the package.json
+4. Run `yarn test` and update the library if some tests are failing
+5. Open a PR
+
+### Why are the tests failing after downloading new fixtures?
+
+When matomo releases a new version, they usually add support for new brands. [Those brands](https://github.com/matomo-org/device-detector/blob/1060530615c54796cc2045a030c7c605574060d2/Parser/Device/DeviceParserAbstract.php#L65) needs to be copied over to [this file](https://github.com/etienne-martin/device-detector-js/blob/3.12.1/src/tests/helpers.ts).  
+
 ## Authors
 
 * **Etienne Martin** - *Initial work* - [etiennemartin.ca](http://etiennemartin.ca/)
