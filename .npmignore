@@ -6,3 +6,7 @@ coverage
 .circleci
 /fixtures/.coveralls.json
 /fixtures/.travis.json
+/load-fixtures.js
+/load-fixtures.sh
+.github
+.circleci

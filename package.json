@@ -39,7 +39,8 @@
   "license": "LGPL-3.0",
   "scripts": {
     "dev": "tsc --pretty --watch",
-    "predev": "sh install.sh",
+    "predev": "npm run fixtures",
+    "fixtures": "sh load-fixtures.sh",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
     "pretest": "npm run lint",
     "test": "jest src --coverage --verbose",
