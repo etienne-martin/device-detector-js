@@ -1,6 +1,6 @@
 {
   "name": "device-detector-js",
-  "version": "1.1.1",
+  "version": "2.0.1",
   "description": "A javascript port of Matomo device-detector",
   "homepage": "https://github.com/etienne-martin/device-detector-js",
   "keywords": [
@@ -39,26 +39,21 @@
   "license": "LGPL-3.0",
   "scripts": {
     "dev": "tsc --pretty --watch",
-    "predev": "sh install.sh",
+    "predev": "yarn fixtures",
+    "fixtures": "sh load-fixtures.sh",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
-    "pretest": "npm run lint",
+    "pretest": "yarn lint",
     "test": "jest src --coverage --verbose",
     "test:watch": "jest src --coverage --verbose --watch",
     "coverage": "coveralls < ./coverage/lcov.info",
-    "prebuild": "rm -rf dist/ && npm run lint",
+    "prebuild": "rm -rf dist/ && yarn lint",
     "build": "tsc --pretty"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#3.11.4"
+    "device-detector": "https://github.com/matomo-org/device-detector#3.12.1"
   },
   "napa-config": {
     "cache": false
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build",
-      "pre-push": "npm run build && npm run test"
-    }
   },
   "jest": {
     "testEnvironment": "node",
@@ -97,20 +92,17 @@
     ]
   },
   "dependencies": {
-    "lodash": "^4.17.11",
-    "lru-cache": "4.1.3"
+    "lodash": "4.17.15"
   },
   "devDependencies": {
     "@types/jest": "22.2.3",
     "@types/js-yaml": "3.11.2",
     "@types/lodash": "4.14.116",
-    "@types/lru-cache": "4.1.1",
     "@types/node": "10.9.2",
     "@types/recursive-readdir": "2.2.0",
     "@types/yamljs": "0.2.30",
     "js-yaml": "3.13.1",
     "coveralls": "3.0.2",
-    "husky": "0.15.0-rc.13",
     "jest": "22.4.4",
     "ts-jest": "22.4.6",
     "tslint": "5.11.0",

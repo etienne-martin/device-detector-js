@@ -6,7 +6,6 @@
     "one-variable-per-declaration": false,
     "quotemark": [true, "double"],
     "no-submodule-imports": false,
-    "no-unused-variable": true,
     "promise-function-async": true,
     "max-file-line-count": [true, 300],
     "no-trailing-whitespace": true,
@@ -20,8 +19,8 @@
     "no-bitwise": false,
     "no-var-requires": false,
     "curly": [true, "ignore-same-line"],
-    "import-blacklist": [true, "lodash"]
+    "import-blacklist": [true, "lodash"],
+    "no-namespace": false
   },
   "rulesDirectory": []
 }
-  
