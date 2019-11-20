@@ -1,5 +1,6 @@
 import { formatVersion } from "../utils/version";
 import { variableReplacement } from "../utils/variable-replacement";
+import { userAgentParser } from "../utils/user-agent";
 
 describe("Utility functions", () => {
   test(`variable replacement`, () => {
@@ -33,5 +34,9 @@ describe("Utility functions", () => {
 
     // This shouldn't get truncated
     expect(formatVersion("THIS.IS.SOME.TEXT", 1)).toEqual("THIS.IS.SOME.TEXT");
+  });
+
+  test(`userAgentParser shouldn't throw when handling a non-supported regex`, () => {
+    expect(userAgentParser("?<!?<!", "USER-AGENT")).toEqual(null);
   });
 });
