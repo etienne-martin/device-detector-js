@@ -8,7 +8,7 @@ import get from "lodash/get";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
 
-namespace DeviceDetector { // tslint:disable-line
+namespace DeviceDetector {
   export interface DeviceDetectorResult {
     client: ClientResult;
     device: DeviceResult;

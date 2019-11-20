@@ -19,21 +19,15 @@ const deviceTester = (tests: DeviceTest[]) => {
         .replace("6", "car")
         .replace("4", "console");
 
-      const formattedResult = {
-        type: get(result, "type") || "",
-        brand: get(result, "brand") || "",
-        model: get(result, "model") || "",
-        userAgent: unitTest.user_agent
-      };
-
-      const formattedTest = {
+      expect({
+        type: get(result, "type", ""),
+        brand: get(result, "brand", ""),
+        model: get(result, "model", "")
+      }).toEqual({
         type: unitTest.device.type || "",
         brand: brands[unitTest.device.brand] || "",
-        model: unitTest.device.model || "",
-        userAgent: unitTest.user_agent
-      };
-
-      expect(formattedResult).toEqual(formattedTest);
+        model: unitTest.device.model || ""
+      });
     });
   }
 };
