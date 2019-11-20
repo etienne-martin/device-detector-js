@@ -22,9 +22,16 @@ const tests: any = [
   ...require("../../fixtures/Tests/fixtures/smartphone-4.json"),
   ...require("../../fixtures/Tests/fixtures/smartphone-5.json"),
   ...require("../../fixtures/Tests/fixtures/smartphone-6.json"),
+  ...require("../../fixtures/Tests/fixtures/smartphone-7.json"),
+  ...require("../../fixtures/Tests/fixtures/smartphone-8.json"),
+  ...require("../../fixtures/Tests/fixtures/smartphone-9.json"),
+  ...require("../../fixtures/Tests/fixtures/smartphone-10.json"),
+  ...require("../../fixtures/Tests/fixtures/smartphone-11.json"),
+  ...require("../../fixtures/Tests/fixtures/smartphone-12.json"),
   ...require("../../fixtures/Tests/fixtures/tablet.json"),
   ...require("../../fixtures/Tests/fixtures/tablet-1.json"),
   ...require("../../fixtures/Tests/fixtures/tablet-2.json"),
+  ...require("../../fixtures/Tests/fixtures/tablet-3.json"),
   ...require("../../fixtures/Tests/fixtures/tv.json"),
   ...require("../../fixtures/Tests/fixtures/unknown.json")
 ];
