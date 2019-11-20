@@ -110,12 +110,14 @@ Output:
 - `options` <[Object]> Options object which might have the following properties:
   - `skipBotDetection` <[boolean]> If true, bot detection will completely be skipped (bots will be detected as regular devices). Defaults to `false`.
   - `versionTruncation` <[0 | 1 | 2 | 3 | null]> Passing `null` disables version truncation, so full versions will be returned. Defaults to `1`, only minor versions will be returned (e.g. X.Y).
-  - `cache` <[boolean | number]> TTL of the cache (in seconds). Node.js only, will be automatically set to `false` if used in the browser. Defaults to `true` (no expiry).
   
-#### new BotDetector([options])
+## TypeScript
 
-- `options` <[Object]> Options object which might have the following property:
-  - `cache` <[boolean | number]> TTL of the cache (in seconds). Node.js only, will be automatically set to `false` if used in the browser. Defaults to `true` (no expiry).
+Type definitions are included in this library and exposed via:
+
+```typescript
+import { DeviceDetectorResult } from "device-detector-js";
+``` 
   
 ## What device-detector-js is able to detect
 
