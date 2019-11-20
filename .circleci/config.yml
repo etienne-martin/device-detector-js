@@ -1,42 +1,100 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node:8.11.4
+version: 2.1
 
+executors:
+  node-executor:
+    docker:
+      - image: circleci/node:10.16.0
     working_directory: ~/device-detector-js
 
+jobs:
+  deps:
+    executor: node-executor
     steps:
       - checkout
 
-      # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
 
       - run:
-          name: Install node dependencies
-          command: npm prune && npm install
-
-      - run:
-          name: Build project
-          command: npm run build
+          name: Install dependencies
+          command: yarn install --frozen-lockfile
 
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+
+      - persist_to_workspace:
+          root: ~/device-detector-js
+          paths:
+            - node_modules
+
+  build:
+    executor: node-executor
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: ~/device-detector-js
+
+      - run:
+          name: Build project
+          command: yarn build
+
+      - persist_to_workspace:
+          root: ~/device-detector-js
+          paths:
+            - dist
+
+  test:
+    executor: node-executor
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: ~/device-detector-js
 
       - run:
           name: Run tests
-          command: npm run test
+          command: yarn test
 
       - run:
-          name: Check code coverage
-          command: npm run coverage
+          name: Publish code coverage
+          command: yarn coverage
+
+  publish:
+    executor: node-executor
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: ~/device-detector-js
+
+      - run:
+          name: Publish to NPM
+          command: ./publish.sh $NPM_TOKEN
+
+workflows:
+  version: 2
+  build-test-and-publish:
+    jobs:
+      - deps
+
+      - build:
+          requires:
+            - deps
+
+      - test:
+          requires:
+            - deps
+
+      - publish:
+          requires:
+            - build
+            - test
+
+          filters:
+            branches:
+              only: master

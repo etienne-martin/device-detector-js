@@ -10,3 +10,5 @@ coverage
 /load-fixtures.sh
 .github
 .circleci
+.DS_Store
+publish.sh
