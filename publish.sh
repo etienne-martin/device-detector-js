@@ -23,7 +23,6 @@ PACKAGE_VERSION=$(cat package.json \
 if npm show "$PACKAGE_NAME" version | grep -w "$PACKAGE_VERSION" > /dev/null; then
   echo "Already published!";
 else
-  mv ./dist/* .
   npm set //registry.npmjs.org/:_authToken=$1
   npm publish;
 fi
