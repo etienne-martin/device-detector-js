@@ -6,9 +6,9 @@ coverage
 .circleci
 /fixtures/.coveralls.json
 /fixtures/.travis.json
+/fixtures/Tests
 /load-fixtures.js
 /load-fixtures.sh
 .github
-.circleci
 .DS_Store
 publish.sh

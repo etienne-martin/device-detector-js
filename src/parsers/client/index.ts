@@ -34,9 +34,7 @@ export default class ClientParser {
       const parser = new Parser(this.options);
       const client = parser.parse(userAgent);
 
-      if (client.type !== "") {
-        return client;
-      }
+      if (client.type !== "") return client;
     }
 
     return null;

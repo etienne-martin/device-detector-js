@@ -1,5 +1,5 @@
 import DeviceDetector = require("../");
-import get from "lodash/get";
+import { get } from "../utils/get";
 import { formatVersion } from "../utils/version";
 import { brands } from "./helpers";
 

@@ -1,6 +1,6 @@
 {
   "name": "device-detector-js",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A javascript port of Matomo device-detector",
   "homepage": "https://github.com/etienne-martin/device-detector-js",
   "keywords": [
@@ -17,8 +17,8 @@
     "browser",
     "detector"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "author": {
     "name": "Etienne Martin",
     "url": "http://etiennemartin.ca/"
@@ -91,25 +91,22 @@
       "src/**/*.(tsx|ts)"
     ]
   },
-  "dependencies": {
-    "lodash": "4.17.15"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "22.2.3",
     "@types/js-yaml": "3.11.2",
-    "@types/lodash": "4.14.116",
     "@types/node": "10.9.2",
     "@types/recursive-readdir": "2.2.0",
     "@types/yamljs": "0.2.30",
-    "js-yaml": "3.13.1",
     "coveralls": "3.0.2",
     "jest": "22.4.4",
+    "js-yaml": "3.13.1",
+    "napa": "3.0.0",
+    "recursive-readdir": "2.2.2",
     "ts-jest": "22.4.6",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
     "tslint-eslint-rules": "4.1.1",
-    "typescript": "2.9.2",
-    "napa": "3.0.0",
-    "recursive-readdir": "2.2.2"
+    "typescript": "2.9.2"
   }
 }

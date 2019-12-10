@@ -1,6 +1,6 @@
 import DeviceDetector = require("../");
 import { DeviceTests, DeviceTest, GenericDeviceResult } from "../typings/device";
-import get from "lodash/get";
+import { get } from "../utils/get";
 import { brands } from "./helpers";
 
 const cameraTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/camera.json");
