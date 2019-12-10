@@ -4,7 +4,7 @@ import OperatingSystemParser, { Result as OperatingSystemResult } from "./parser
 import VendorFragmentParser from "./parsers/vendor-fragment";
 import BrowserParser from "./parsers/client/browser";
 import BotParser = require("./parsers/bot");
-import get from "lodash/get";
+import { get } from "./utils/get";
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
 
@@ -16,7 +16,7 @@ namespace DeviceDetector {
     bot: BotParser.DeviceDetectorBotResult;
   }
 
-  export interface Options {
+  export interface DeviceDetectorOptions {
     skipBotDetection: boolean;
     versionTruncation: 0 | 1 | 2 | 3 | null;
   }
@@ -30,12 +30,12 @@ class DeviceDetector {
   private botParser: BotParser;
 
   // Default options
-  private readonly options: DeviceDetector.Options = {
+  private readonly options: DeviceDetector.DeviceDetectorOptions = {
     skipBotDetection: false,
     versionTruncation: 1
   };
 
-  constructor(options?: Partial<DeviceDetector.Options>) {
+  constructor(options?: Partial<DeviceDetector.DeviceDetectorOptions>) {
     this.options = {...this.options, ...options};
     this.clientParser = new ClientParser(this.options);
     this.deviceParser = new DeviceParser();

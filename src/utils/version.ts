@@ -1,4 +1,4 @@
-import trim from "lodash/trim";
+import { trim } from "./trim";
 
 export const formatVersion = (version: string | undefined, versionTruncation: 0 | 1 | 2 | 3 | null): string => {
   if (version === undefined) return "";

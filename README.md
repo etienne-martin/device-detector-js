@@ -12,6 +12,12 @@ This library is heavily tested and relies on over 10 000 tests to detect thousan
 [![npm version](https://img.shields.io/npm/v/device-detector-js.svg)](https://www.npmjs.com/package/device-detector-js)
 [![npm monthly downloads](https://img.shields.io/npm/dm/device-detector-js.svg)](https://www.npmjs.com/package/device-detector-js)
 
+## Features
+
+- No dependencies
+- TypeScript support
+- Thoroughly tested
+
 ## Demo
 
 https://lx3rzx16x9.codesandbox.io/
@@ -28,20 +34,20 @@ npm install device-detector-js
 
 ### Usage
 
-##### CommonJS
+##### ES2015 import:
 ```javascript
-const DeviceDetector = require("device-detector-js");
+import DeviceDetector from "device-detector-js";
 ```
 
-##### TypeScript
+##### TypeScript import:
 ```typescript
 import DeviceDetector = require("device-detector-js");
 ```
 
-**Example** - simple user agent detection:
+**Example** - user agent detection:
 
 ```javascript
-const DeviceDetector = require("device-detector-js");
+import DeviceDetector from "device-detector-js";
 
 const deviceDetector = new DeviceDetector();
 const userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36";
@@ -78,7 +84,7 @@ Output:
 **Example** - bot detection:
 
 ```javascript
-const BotDetector = require("device-detector-js/dist/parsers/bot");
+import BotDetector from "device-detector-js/dist/parsers/bot";
 
 const botDetector = new BotDetector();
 const userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)";
@@ -116,7 +122,7 @@ Output:
 Type definitions are included in this library and exposed via:
 
 ```typescript
-import { DeviceDetectorResult } from "device-detector-js";
+import { DeviceDetectorResult, DeviceDetectorOptions } from "device-detector-js";
 ``` 
   
 ## What device-detector-js is able to detect
@@ -190,7 +196,7 @@ This library needs to be updated when matomo releases a new version of their lib
 4. Run `yarn test` and update the library if some tests are failing
 5. Open a PR
 
-### Why are the tests failing after downloading new fixtures?
+### Why do tests fail after downloading new fixtures?
 
 When matomo releases a new version, they usually add support for new brands. [Those brands](https://github.com/matomo-org/device-detector/blob/1060530615c54796cc2045a030c7c605574060d2/Parser/Device/DeviceParserAbstract.php#L65) needs to be copied over to [this file](https://github.com/etienne-martin/device-detector-js/blob/master/src/tests/helpers.ts).  
 

@@ -1,6 +1,6 @@
 import { Bots } from "../../typings/bot";
 import { userAgentParser } from "../../utils/user-agent";
-import get from "lodash/get";
+import { get } from "../../utils/get";
 import { BotResult } from "./typing";
 
 namespace BotParser {
