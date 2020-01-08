@@ -4,7 +4,7 @@ The Universal Device Detection library will parse any User Agent and detect the 
 
 This library is heavily tested and relies on over 10 000 tests to detect thousands of different device types.
 
-#### This is a javascript port of [Matomo device-detector](https://github.com/matomo-org/device-detector) (3.12.1).
+#### This is a javascript port of [Matomo device-detector](https://github.com/matomo-org/device-detector) (3.12.2).
 
 [![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector-js.svg)](https://coveralls.io/github/etienne-martin/device-detector-js)
 [![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector-js)
