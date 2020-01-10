@@ -29,6 +29,10 @@ describe("Utility functions", () => {
     expect(formatVersion("1.1.3", 2)).toEqual("1.1.3");
     expect(formatVersion("1.1.3.5", 3)).toEqual("1.1.3.5");
 
+    expect(formatVersion("14.12.2125.9740.01 ", 1)).toEqual("14.12");
+    expect(formatVersion(" 14.12.2125.9740.01", 1)).toEqual("14.12");
+    expect(formatVersion(" 14.12.2125.9740.01 ", 1)).toEqual("14.12");
+
     expect(formatVersion("5.00.00", 1)).toEqual("5.0");
     expect(formatVersion("8.00", 1)).toEqual("8.0");
 

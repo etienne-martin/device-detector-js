@@ -60,10 +60,6 @@ jobs:
           name: Run tests
           command: yarn test
 
-      - run:
-          name: Publish code coverage
-          command: yarn coverage
-
   publish:
     executor: node-executor
     steps:
@@ -71,6 +67,10 @@ jobs:
 
       - attach_workspace:
           at: ~/device-detector-js
+
+      - run:
+          name: Publish code coverage
+          command: yarn coverage
 
       - run:
           name: Publish to NPM
