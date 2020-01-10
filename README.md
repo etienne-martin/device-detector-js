@@ -204,6 +204,7 @@ When matomo releases a new version, they usually add support for new brands. [Th
 
 * **Etienne Martin** - *Initial work* - [etiennemartin.ca](http://etiennemartin.ca/)
 * **Alex Beauchemin** - *Contributor* - [linkedin.com/in/alexbeauchemin](https://www.linkedin.com/in/alexbeauchemin/)
+* **Ayan Dey** - *Contributor* - [linkedin.com/in/dey-ayan](https://www.linkedin.com/in/dey-ayan) 
 
 ## License
 
