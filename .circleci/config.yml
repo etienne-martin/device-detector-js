@@ -60,6 +60,11 @@ jobs:
           name: Run tests
           command: yarn test
 
+      - persist_to_workspace:
+          root: ~/device-detector-js
+          paths:
+            - coverage
+
   publish:
     executor: node-executor
     steps:
