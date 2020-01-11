@@ -1,6 +1,5 @@
 import DeviceDetector = require("../");
 import { DeviceTests, DeviceTest, GenericDeviceResult } from "../typings/device";
-import { get } from "../utils/get";
 import { brands } from "./helpers";
 
 const cameraTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/camera.json");
@@ -20,9 +19,9 @@ const deviceTester = (tests: DeviceTest[]) => {
         .replace("4", "console");
 
       expect({
-        type: get(result, "type", ""),
-        brand: get(result, "brand", ""),
-        model: get(result, "model", "")
+        type: result?.type || "",
+        brand: result?.brand || "",
+        model: result?.model || ""
       }).toEqual({
         type: unitTest.device.type || "",
         brand: brands[unitTest.device.brand] || "",
