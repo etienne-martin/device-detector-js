@@ -5,6 +5,7 @@
     "strict": true,
     "declaration": true,
     "noImplicitAny": true,
+    "skipLibCheck": true,
     "outDir": "./dist",
     "lib": [
       "dom",

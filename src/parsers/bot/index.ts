@@ -1,6 +1,5 @@
 import { Bots } from "../../typings/bot";
 import { userAgentParser } from "../../utils/user-agent";
-import { get } from "../../utils/get";
 import { BotResult } from "./typing";
 
 namespace BotParser {
@@ -21,8 +20,8 @@ class BotParser {
         category: bot.category || "",
         url: bot.url || "",
         producer: {
-          name: get(bot, "producer.name", ""),
-          url: get(bot, "producer.url", "")
+          name: bot?.producer?.name || "",
+          url: bot?.producer?.url || ""
         }
       };
     }

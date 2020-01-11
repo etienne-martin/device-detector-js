@@ -108,6 +108,6 @@
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
     "tslint-eslint-rules": "4.1.1",
-    "typescript": "2.9.2"
+    "typescript": "3.7.3"
   }
 }

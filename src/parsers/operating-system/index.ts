@@ -37,9 +37,7 @@ export default class OperatingSystemParser {
 
   private static getOsShortName = (osName: string): string => {
     for (const [shortName, name] of Object.entries(shortOsNames)) {
-      if (name === osName) {
-        return shortName;
-      }
+      if (name === osName) return shortName;
     }
 
     return "";

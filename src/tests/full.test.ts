@@ -1,7 +1,7 @@
 import DeviceDetector = require("../");
-import { get } from "../utils/get";
 import { formatVersion } from "../utils/version";
 import { brands } from "./helpers";
+import { BrowserResult } from "../parsers/client/browser";
 
 const tests: any = [
   ...require("../../fixtures/Tests/fixtures/camera.json"),
@@ -65,21 +65,21 @@ describe("Full test", () => {
 
       expect({
         os: {
-          name: get(result, "os.name") || "",
-          version: get(result, "os.version") || "",
-          platform: get(result, "os.platform") || ""
+          name: result?.os?.name || "",
+          version: result?.os?.version || "",
+          platform: result?.os?.platform || ""
         },
         client: {
-          type: get(result, "client.type") || "",
-          name: get(result, "client.name") || "",
-          version: get(result, "client.version") || "",
-          engine: get(result, "client.engine") || "",
-          engineVersion: get(result, "client.engineVersion") || ""
+          type: result?.client?.type || "",
+          name: result?.client?.name || "",
+          version: result?.client?.version || "",
+          engine: result?.client?.type === "browser" ? (result?.client as BrowserResult).engine : "",
+          engineVersion: result?.client?.type === "browser" ? (result?.client as BrowserResult).engineVersion : "",
         },
         device: {
-          type: get(result, "device.type") || "",
-          brand: get(result, "device.brand") || "",
-          model: get(result, "device.model") || ""
+          type: result?.device?.type || "",
+          brand: result?.device?.brand || "",
+          model: result?.device?.model || ""
         }
       }).toEqual({
         os: {
