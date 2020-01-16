@@ -18,7 +18,7 @@ const ignoreFilter = (file, stats) => {
 const ensureDirectoryExistence = (filePath) => {
   const dirname = path.dirname(filePath);
 
-  if (fs.existsSync(dirname)) return true;
+  if (fs.existsSync(dirname)) return;
 
   ensureDirectoryExistence(dirname);
 
@@ -28,6 +28,7 @@ const ensureDirectoryExistence = (filePath) => {
 recursive("./node_modules/device-detector", [ignoreFilter], (err, files) => {
   for (const file of files) {
     let destination = file.replace(RegExp(".yml$", "i"), ".json");
+    destination = destination.replace("node_modules/device-detector", "fixtures");
     destination = destination.replace("node_modules\\device-detector", "fixtures");
 
     ensureDirectoryExistence(destination);
