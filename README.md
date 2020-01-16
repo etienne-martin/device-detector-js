@@ -1,6 +1,6 @@
 # device-detector-js
 
-Device-detector-js is a precise user agent parser and device detector written in TypeScript, backed by the largest and most up-to-date user agent database.
+Device-detector-js is a precise user agent parser and device detector written in TypeScript, backed by the largest and most up-to-date open-source user agent database.
 
 Device-detector-js will parse any user agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model. Works with Node.js and in the browser.
 
