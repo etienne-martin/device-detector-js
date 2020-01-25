@@ -349,6 +349,7 @@ export const brands: { [key: string]: string; } = {
   "ON": "OnePlus",
   "OP": "OPPO",
   "OR": "Orange",
+  "OS": "Ordissimo",
   "OT": "O2",
   "OK": "Ouki",
   "OU": "OUYA",
