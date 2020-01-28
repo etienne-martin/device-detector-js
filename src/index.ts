@@ -82,7 +82,7 @@ class DeviceDetector {
      * If it is present the device should be a smartphone, otherwise it's a tablet
      * See https://developer.chrome.com/multidevice/user-agent#chrome_for_android_user_agent
      */
-    if (!result.device?.type && osFamily === "Android" && ["Chrome", "Chrome Mobile"].includes(result.client?.name || "")) {
+    if (!result.device?.type && osFamily === "Android" && BrowserParser.getBrowserFamily(result.client?.name || "") === "Chrome") {
       if (userAgentParser("Chrome/[.0-9]* Mobile", userAgent)) {
         if (!result.device) {
           result.device = this.createDeviceObject();
