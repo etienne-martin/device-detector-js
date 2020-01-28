@@ -33,10 +33,10 @@ export default class BrowserParser {
   };
 
   public static getBrowserFamily = (browserName: string) => {
+    const browserShortName = BrowserParser.getBrowserShortName(browserName);
+
     for (const [browserFamily, browserLabels] of Object.entries(browserFamilies)) {
-      if (browserLabels.includes(BrowserParser.getBrowserShortName(browserName))) {
-        return browserFamily;
-      }
+      if (browserLabels.includes(browserShortName)) return browserFamily;
     }
 
     return "";
