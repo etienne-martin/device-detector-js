@@ -1,1 +1,1 @@
-{"Tesla":{"regex":"QtCarBrowser","device":"car browser","model":"Model S"}}
+{"Tesla":{"regex":"(?:Tesla/[0-9.]+|QtCarBrowser)","device":"car browser","models":[{"regex":"QtCarBrowser","model":"Model S"},{"regex":"Tesla/[0-9.]+","model":""}]}}
