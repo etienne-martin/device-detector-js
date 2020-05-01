@@ -126,6 +126,10 @@ Type definitions are included in this library and exposed via:
 ```typescript
 import { DeviceDetectorResult, DeviceDetectorOptions } from "device-detector-js";
 ``` 
+
+## Browser
+
+Even though this library can run in the browser, **it is strongly advised against doing so**, unless you are not concerned with performance. Keep in mind that using this library in browser-side code means sending around 432 KB of Regex rules and 144 KB of javascript (uncompressed and unminified), which may result in a poor user experience for people with a slow Internet connection.
   
 ## What device-detector-js is able to detect
 
