@@ -127,9 +127,11 @@ Type definitions are included in this library and exposed via:
 import { DeviceDetectorResult, DeviceDetectorOptions } from "device-detector-js";
 ``` 
 
-## Browser
+## ⚠️ Browser Environment
 
 Even though this library can run in the browser, **it is strongly advised against doing so**, unless you are not concerned with performance. Keep in mind that using this library in browser-side code means sending around 432 KB of Regex rules and 144 KB of javascript (uncompressed and unminified), which may result in a poor user experience for people with a slow Internet connection.
+
+You may experience inconsistencies when running this library in a browser environment, as some browsers like Safari do not yet support lookbehind syntax.
   
 ## What device-detector-js is able to detect
 
