@@ -1,8 +1,7 @@
-import { PortableMediaPlayers, GenericDeviceResult } from "../../typings/device";
+import portableMediaPlayers from "../../../fixtures/regexes/device/portable_media_player.json";
+import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-
-const portableMediaPlayers: PortableMediaPlayers = require("../../../fixtures/regexes/device/portable_media_player.json");
 
 export default class PortableMediaPlayersParser {
   public parse = (userAgent: string): GenericDeviceResult => {

@@ -1,8 +1,7 @@
-import { Consoles, GenericDeviceResult } from "../../typings/device";
+import consoles from "../../../fixtures/regexes/device/consoles.json";
+import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-
-const consoles: Consoles = require("../../../fixtures/regexes/device/consoles.json");
 
 export default class ConsoleParser {
   public parse = (userAgent: string): GenericDeviceResult => {

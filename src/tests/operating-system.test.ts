@@ -1,9 +1,8 @@
 import DeviceDetector = require("../");
+import operatingSystemTests from "../../fixtures/Tests/Parser/fixtures/oss.json";
 import { OperatingSystemResult } from "../parsers/operating-system";
 import { formatVersion } from "../utils/version";
-import { OperatingSystemTests } from "../typings/operating-system";
 
-const operatingSystemTests: OperatingSystemTests = require("../../fixtures/Tests/Parser/fixtures/oss.json");
 const deviceDetector = new DeviceDetector({
   versionTruncation: 1
 });
