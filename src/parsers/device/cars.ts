@@ -19,9 +19,14 @@ export default class CarParser {
       result.type = "car";
       result.brand = brand;
 
-      if (car.model) {
-        result.model = variableReplacement(car.model, match).trim();
+      for (const model of car.models) {
+        const match = userAgentParser(model.regex, userAgent);
+
+        if (!match) continue;
+
+        result.model = variableReplacement(model.model, match).trim();
       }
+
       break;
     }
 

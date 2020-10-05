@@ -1,6 +1,6 @@
 import DeviceDetector = require("../");
 import { formatVersion } from "../utils/version";
-import { brands } from "./helpers";
+import brands from "./fixtures/brands.json";
 import { BrowserResult } from "../parsers/client/browser";
 
 const tests: any = [
@@ -30,6 +30,7 @@ const tests: any = [
   ...require("../../fixtures/Tests/fixtures/smartphone-11.json"),
   ...require("../../fixtures/Tests/fixtures/smartphone-12.json"),
   ...require("../../fixtures/Tests/fixtures/smartphone-13.json"),
+  ...require("../../fixtures/Tests/fixtures/smartphone-14.json"),
   ...require("../../fixtures/Tests/fixtures/tablet.json"),
   ...require("../../fixtures/Tests/fixtures/tablet-1.json"),
   ...require("../../fixtures/Tests/fixtures/tablet-2.json"),
@@ -46,7 +47,9 @@ const deviceDetector = new DeviceDetector({
 
 describe("Full test", () => {
   for (const unitTest of tests) {
-    test(`${unitTest.os.name || ""} ${brands[unitTest.device.brand] || ""} ${unitTest.client.name || ""}`, () => {
+    const brand = (brands as Record<string, string>)[unitTest.device.brand] || "";
+
+    test(`${unitTest.os.name || ""} ${brand} ${unitTest.client.name || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent);
 
       const expectedClientType = (unitTest.client.type || "")
@@ -96,7 +99,7 @@ describe("Full test", () => {
         },
         device: {
           type: expectedDeviceType,
-          brand: brands[unitTest.device.brand] || "",
+          brand,
           model: unitTest.device.model || ""
         }
       });

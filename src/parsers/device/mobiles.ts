@@ -45,7 +45,11 @@ export default class MobileParser {
 
     // Sanitize device type
     if (result.type === "tv") {
-      result.type = result.type.replace("tv", "television");
+      result.type = "television";
+    }
+
+    if (result.type === "car browser") {
+      result.type = "car";
     }
 
     // Sanitize device brand

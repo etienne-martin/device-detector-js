@@ -1,5 +1,5 @@
 import DeviceDetector = require("../");
-import { brands } from "./helpers";
+import brands from "./fixtures/brands.json";
 
 import cameraTests from "../../fixtures/Tests/Parser/Devices/fixtures/camera.json";
 import carTests from "../../fixtures/Tests/Parser/Devices/fixtures/car_browser.json";
@@ -9,7 +9,9 @@ const deviceDetector = new DeviceDetector();
 
 const deviceTester = (tests: typeof cameraTests | typeof carTests | typeof consoleTests) => {
   for (const unitTest of tests) {
-    test(`${brands[unitTest.device.brand]} ${unitTest.device.model || ""}`, () => {
+    const brand = (brands as Record<string, string>)[unitTest.device.brand];
+
+    test(`${brand} ${unitTest.device.model || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent).device;
 
       unitTest.device.type = unitTest.device.type
@@ -23,7 +25,7 @@ const deviceTester = (tests: typeof cameraTests | typeof carTests | typeof conso
         model: result?.model || ""
       }).toEqual({
         type: unitTest.device.type || "",
-        brand: brands[unitTest.device.brand] || "",
+        brand: brand || "",
         model: unitTest.device.model || ""
       });
     });
