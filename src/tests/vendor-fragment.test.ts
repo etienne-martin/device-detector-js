@@ -1,16 +1,17 @@
-import { VendorFragmentTests } from "../typings/vendor-fragment";
+import vendorFragmentTests from "../../fixtures/Tests/Parser/fixtures/vendorfragments.json";
 import VendorFragmentParser from "../parsers/vendor-fragment";
-import { brands } from "./helpers";
+import brands from "./fixtures/brands.json";
 
-const vendorFragmentTests: VendorFragmentTests = require("../../fixtures/Tests/Parser/fixtures/vendorfragments.json");
 const vendorFragmentParser = new VendorFragmentParser();
 
 describe("Vendor fragments", () => {
   for (const vendorFragmentTest of vendorFragmentTests) {
-    test(`${brands[vendorFragmentTest.vendor]}`, () => {
+    const brand = (brands as Record<string, string>)[vendorFragmentTest.vendor];
+
+    test(`${brand}`, () => {
       const result = vendorFragmentParser.parse(vendorFragmentTest.useragent);
 
-      expect(result).toEqual(brands[vendorFragmentTest.vendor]);
+      expect(result).toEqual(brand);
     });
   }
 });

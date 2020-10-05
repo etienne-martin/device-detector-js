@@ -1,8 +1,7 @@
-import { Cars, GenericDeviceResult } from "../../typings/device";
+import cars from "../../../fixtures/regexes/device/car_browsers.json";
+import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-
-const cars: Cars = require("../../../fixtures/regexes/device/car_browsers.json");
 
 export default class CarParser {
   public parse = (userAgent: string): GenericDeviceResult => {
@@ -20,9 +19,14 @@ export default class CarParser {
       result.type = "car";
       result.brand = brand;
 
-      if (car.model) {
-        result.model = variableReplacement(car.model, match).trim();
+      for (const model of car.models) {
+        const match = userAgentParser(model.regex, userAgent);
+
+        if (!match) continue;
+
+        result.model = variableReplacement(model.model, match).trim();
       }
+
       break;
     }
 

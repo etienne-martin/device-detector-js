@@ -1,17 +1,18 @@
 import DeviceDetector = require("../");
-import { DeviceTests, DeviceTest, GenericDeviceResult } from "../typings/device";
-import { brands } from "./helpers";
+import brands from "./fixtures/brands.json";
 
-const cameraTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/camera.json");
-const carTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/car_browser.json");
-const consoleTests: DeviceTests = require("../../fixtures/Tests/Parser/Devices/fixtures/console.json");
+import cameraTests from "../../fixtures/Tests/Parser/Devices/fixtures/camera.json";
+import carTests from "../../fixtures/Tests/Parser/Devices/fixtures/car_browser.json";
+import consoleTests from "../../fixtures/Tests/Parser/Devices/fixtures/console.json";
 
 const deviceDetector = new DeviceDetector();
 
-const deviceTester = (tests: DeviceTest[]) => {
+const deviceTester = (tests: typeof cameraTests | typeof carTests | typeof consoleTests) => {
   for (const unitTest of tests) {
-    test(`${brands[unitTest.device.brand]} ${unitTest.device.model || ""}`, () => {
-      const result = deviceDetector.parse(unitTest.user_agent).device as GenericDeviceResult;
+    const brand = (brands as Record<string, string>)[unitTest.device.brand];
+
+    test(`${brand} ${unitTest.device.model || ""}`, () => {
+      const result = deviceDetector.parse(unitTest.user_agent).device;
 
       unitTest.device.type = unitTest.device.type
         .replace("8", "camera")
@@ -24,7 +25,7 @@ const deviceTester = (tests: DeviceTest[]) => {
         model: result?.model || ""
       }).toEqual({
         type: unitTest.device.type || "",
-        brand: brands[unitTest.device.brand] || "",
+        brand: brand || "",
         model: unitTest.device.model || ""
       });
     });

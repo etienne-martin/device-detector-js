@@ -6,7 +6,7 @@ Device-detector-js will parse any user agent and detect the browser, operating s
 
 This library is heavily tested and relies on over 10,000 tests to detect thousands of user agent strings, even from rare and obscure browsers and devices.
 
-#### This is a javascript port of [Matomo device-detector](https://github.com/matomo-org/device-detector) (3.12.3).
+#### This is a javascript port of [Matomo device-detector](https://github.com/matomo-org/device-detector) (3.12.4).
 
 [![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector-js.svg)](https://coveralls.io/github/etienne-martin/device-detector-js)
 [![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector-js)
@@ -126,6 +126,12 @@ Type definitions are included in this library and exposed via:
 ```typescript
 import { DeviceDetectorResult, DeviceDetectorOptions } from "device-detector-js";
 ``` 
+
+## ⚠️ Browser Environment
+
+Even though this library can run in the browser, **it is strongly advised against doing so**, unless you are not concerned with performance. Keep in mind that using this library in browser-side code means sending around 432 KB of Regex rules and 144 KB of javascript (uncompressed and unminified), which may result in a poor user experience for people with a slow Internet connection.
+
+**You may experience inconsistencies when running this library in a browser environment, as some browsers like Safari do not yet support lookbehind syntax.**
   
 ## What device-detector-js is able to detect
 

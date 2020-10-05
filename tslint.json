@@ -19,7 +19,13 @@
     "no-bitwise": false,
     "no-var-requires": false,
     "curly": [true, "ignore-same-line"],
-    "no-namespace": false
+    "no-namespace": false,
+    "no-shadowed-variable": false
   },
-  "rulesDirectory": []
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      "**/*.json"
+    ]
+  }
 }

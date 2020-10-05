@@ -1,8 +1,7 @@
-import { BotTests } from "../typings/bot";
+import botTests from "../../fixtures/Tests/fixtures/bots.json";
 import BotParser = require("../parsers/bot");
 import { BotResult } from "../parsers/bot/typing";
 
-const botTests: BotTests = require("../../fixtures/Tests/fixtures/bots.json");
 const botParser = new BotParser();
 
 describe("Bots", () => {

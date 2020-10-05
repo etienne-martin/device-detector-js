@@ -1,9 +1,8 @@
-import { Mobiles, GenericDeviceResult } from "../../typings/device";
+import mobiles from "../../../fixtures/regexes/device/mobiles.json";
+import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { buildModel } from "../../utils/model";
-
-const mobiles: Mobiles = require("../../../fixtures/regexes/device/mobiles.json");
 
 export default class MobileParser {
   public parse = (userAgent: string): GenericDeviceResult => {
@@ -18,7 +17,7 @@ export default class MobileParser {
 
       if (!match) continue;
 
-      result.type = mobile.device;
+      result.type = mobile.device || "";
       result.brand = brand;
 
       if (mobile.model) {
@@ -35,8 +34,8 @@ export default class MobileParser {
             result.type = model.device;
           }
 
-          if (model.brand) {
-            result.brand = model.brand;
+          if ("brand" in model) {
+            result.brand = model.brand || "";
           }
           break;
         }
@@ -46,7 +45,11 @@ export default class MobileParser {
 
     // Sanitize device type
     if (result.type === "tv") {
-      result.type = result.type.replace("tv", "television");
+      result.type = "television";
+    }
+
+    if (result.type === "car browser") {
+      result.type = "car";
     }
 
     // Sanitize device brand
