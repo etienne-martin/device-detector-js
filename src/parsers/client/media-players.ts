@@ -1,4 +1,4 @@
-import { MediaPlayers } from "../../typings/client";
+import mediaPlayers from "../../../fixtures/regexes/client/mediaplayers.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
@@ -12,8 +12,6 @@ export interface MediaPlayerResult {
 interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
-
-const mediaPlayers: MediaPlayers = require("../../../fixtures/regexes/client/mediaplayers.json");
 
 export default class MediaPlayerParser {
   private readonly options: Options = {

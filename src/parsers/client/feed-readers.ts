@@ -1,4 +1,4 @@
-import { FeedReaders } from "../../typings/client";
+import feedReaders from "../../../fixtures/regexes/client/feed_readers.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
@@ -13,8 +13,6 @@ export interface FeedReaderResult {
 interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
-
-const feedReaders: FeedReaders = require("../../../fixtures/regexes/client/feed_readers.json");
 
 export default class FeedReaderParser {
   private readonly options: Options = {

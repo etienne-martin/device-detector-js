@@ -1,7 +1,5 @@
-import { VendorFragments } from "../../typings/vendor-fragment";
+import vendorFragments from "../../../fixtures/regexes/vendorfragments.json";
 import { userAgentParser } from "../../utils/user-agent";
-
-const vendorFragments: VendorFragments = require("../../../fixtures/regexes/vendorfragments.json");
 
 export default class VendorFragmentParser {
   public parse = (userAgent: string): string => {

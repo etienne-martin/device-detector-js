@@ -1,4 +1,4 @@
-import { MobileApps } from "../../typings/client";
+import mobileApps from "../../../fixtures/regexes/client/mobile_apps.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
@@ -12,8 +12,6 @@ export interface MobileAppResult {
 interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
-
-const mobileApps: MobileApps = require("../../../fixtures/regexes/client/mobile_apps.json");
 
 export default class MobileAppParser {
   private readonly options: Options = {

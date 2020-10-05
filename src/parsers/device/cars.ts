@@ -1,8 +1,7 @@
-import { Cars, GenericDeviceResult } from "../../typings/device";
+import cars from "../../../fixtures/regexes/device/car_browsers.json";
+import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-
-const cars: Cars = require("../../../fixtures/regexes/device/car_browsers.json");
 
 export default class CarParser {
   public parse = (userAgent: string): GenericDeviceResult => {

@@ -1,18 +1,12 @@
 const path = require("path");
 const fs = require("fs");
 const YAML = require("js-yaml");
-const recursive = require("recursive-readdir");
+const glob = require("glob");
 
 const loadYaml = (filepath) => {
   return YAML.load(fs.readFileSync(filepath, "utf8"), {
     schema: YAML.FAILSAFE_SCHEMA
   });
-};
-
-const ignoreFilter = (file, stats) => {
-  if (stats.isDirectory()) return false;
-
-  return !(stats.isFile() && path.extname(file) === ".yml");
 };
 
 const ensureDirectoryExistence = (filePath) => {
@@ -25,17 +19,18 @@ const ensureDirectoryExistence = (filePath) => {
   fs.mkdirSync(dirname);
 };
 
-recursive("./node_modules/device-detector", [ignoreFilter], (err, files) => {
+glob("**/*.yml", {
+  cwd: "./node_modules/device-detector/"
+}, (err, files) => {
   for (const file of files) {
-    let destination = file.replace(RegExp(".yml$", "i"), ".json");
-    destination = destination.replace("node_modules/device-detector", "fixtures");
-    destination = destination.replace("node_modules\\device-detector", "fixtures");
+    const src = path.join("./node_modules/device-detector", file);
+    const dest = path.join("./fixtures", file.replace(RegExp(".yml$", "i"), ".json"));
 
-    ensureDirectoryExistence(destination);
+    ensureDirectoryExistence(dest);
 
-    const yaml = loadYaml(file);
-    const json = JSON.stringify(yaml);
+    const fixture = loadYaml(src);
+    const json = JSON.stringify(fixture);
 
-    fs.writeFileSync(destination, json);
+    fs.writeFileSync(dest, json);
   }
 });

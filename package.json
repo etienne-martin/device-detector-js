@@ -56,54 +56,15 @@
   "napa-config": {
     "cache": false
   },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/coverage/",
-      "/dist/",
-      "/typings/",
-      "/tests/",
-      "/utils/version-compare.ts"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 100,
-        "lines": 100,
-        "statements": -10
-      }
-    },
-    "testMatch": [
-      "**/?(*.)(test).(tsx|ts)"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.(tsx|ts)"
-    ]
-  },
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "22.2.3",
-    "@types/js-yaml": "3.11.2",
     "@types/node": "10.9.2",
-    "@types/recursive-readdir": "2.2.0",
-    "@types/yamljs": "0.2.30",
     "coveralls": "3.0.2",
+    "glob": "^7.1.6",
     "jest": "22.4.4",
     "js-yaml": "3.13.1",
     "napa": "3.0.0",
-    "recursive-readdir": "2.2.2",
     "ts-jest": "22.4.6",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",

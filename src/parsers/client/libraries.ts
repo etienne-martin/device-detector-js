@@ -1,4 +1,4 @@
-import { Libraries } from "../../typings/client";
+import libraries from "../../../fixtures/regexes/client/libraries.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
@@ -13,8 +13,6 @@ export interface LibraryResult {
 interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
-
-const libraries: Libraries = require("../../../fixtures/regexes/client/libraries.json");
 
 export default class LibraryParser {
   private readonly options: Options = {

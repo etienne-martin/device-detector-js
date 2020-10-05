@@ -1,12 +1,10 @@
-import { Bots } from "../../typings/bot";
+import bots from "../../../fixtures/regexes/bots.json";
 import { userAgentParser } from "../../utils/user-agent";
 import { BotResult } from "./typing";
 
 namespace BotParser {
   export type DeviceDetectorBotResult = BotResult | null;
 }
-
-const bots: Bots = require("../../../fixtures/regexes/bots.json");
 
 class BotParser {
   public parse = (userAgent: string): BotParser.DeviceDetectorBotResult => {

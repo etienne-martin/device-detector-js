@@ -1,4 +1,4 @@
-import { PersonalInformationManagers } from "../../typings/client";
+import personalInformationManagers from "../../../fixtures/regexes/client/pim.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
@@ -12,8 +12,6 @@ export interface PersonalInformationManagerResult {
 interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
-
-const personalInformationManagers: PersonalInformationManagers = require("../../../fixtures/regexes/client/pim.json");
 
 export default class PersonalInformationManagerParser {
   private readonly options: Options = {

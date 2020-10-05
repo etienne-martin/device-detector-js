@@ -1,8 +1,7 @@
-import { Cameras, GenericDeviceResult } from "../../typings/device";
+import cameras from "../../../fixtures/regexes/device/cameras.json";
+import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
-
-const cameras: Cameras = require("../../../fixtures/regexes/device/cameras.json");
 
 export default class CameraParser {
   public parse = (userAgent: string): GenericDeviceResult => {

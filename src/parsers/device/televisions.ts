@@ -1,9 +1,8 @@
-import { Televisions, GenericDeviceResult } from "../../typings/device";
+import televisions from "../../../fixtures/regexes/device/televisions.json";
+import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { buildModel } from "../../utils/model";
-
-const televisions: Televisions = require("../../../fixtures/regexes/device/televisions.json");
 
 export default class TelevisionParser {
   public parse = (userAgent: string): GenericDeviceResult => {
