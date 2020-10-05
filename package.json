@@ -1,6 +1,6 @@
 {
   "name": "device-detector-js",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "A javascript port of Matomo device-detector",
   "homepage": "https://github.com/etienne-martin/device-detector-js",
   "keywords": [
@@ -51,7 +51,7 @@
     "build": "tsc --pretty"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#3.12.3"
+    "device-detector": "https://github.com/matomo-org/device-detector#3.12.4"
   },
   "napa-config": {
     "cache": false
