@@ -1,4 +1,4 @@
-import mobileApps from "../../../fixtures/regexes/client/mobile_apps.json";
+import mobileApps from "../../fixtures/regexes/client/mobile_apps.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

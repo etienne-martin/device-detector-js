@@ -1,6 +1,6 @@
 node_modules
 .idea
 coverage
-/fixtures/.coveralls.json
-/fixtures/.travis.json
+/src/fixtures/.coveralls.json
+/src/fixtures/.travis.json
 dist

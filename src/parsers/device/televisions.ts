@@ -1,4 +1,4 @@
-import televisions from "../../../fixtures/regexes/device/televisions.json";
+import televisions from "../../fixtures/regexes/device/televisions.json";
 import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

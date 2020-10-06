@@ -1,4 +1,4 @@
-import consoles from "../../../fixtures/regexes/device/consoles.json";
+import consoles from "../../fixtures/regexes/device/consoles.json";
 import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

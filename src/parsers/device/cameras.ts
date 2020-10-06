@@ -1,4 +1,4 @@
-import cameras from "../../../fixtures/regexes/device/cameras.json";
+import cameras from "../../fixtures/regexes/device/cameras.json";
 import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

@@ -1,4 +1,4 @@
-import cars from "../../../fixtures/regexes/device/car_browsers.json";
+import cars from "../../fixtures/regexes/device/car_browsers.json";
 import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

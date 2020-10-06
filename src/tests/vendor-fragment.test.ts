@@ -1,4 +1,4 @@
-import vendorFragmentTests from "../../fixtures/Tests/Parser/fixtures/vendorfragments.json";
+import vendorFragmentTests from "../fixtures/Tests/Parser/fixtures/vendorfragments.json";
 import VendorFragmentParser from "../parsers/vendor-fragment";
 import brands from "./fixtures/brands.json";
 

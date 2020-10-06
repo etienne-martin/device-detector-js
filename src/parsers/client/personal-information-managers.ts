@@ -1,4 +1,4 @@
-import personalInformationManagers from "../../../fixtures/regexes/client/pim.json";
+import personalInformationManagers from "../../fixtures/regexes/client/pim.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

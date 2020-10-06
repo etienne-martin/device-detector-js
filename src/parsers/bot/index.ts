@@ -1,4 +1,4 @@
-import bots from "../../../fixtures/regexes/bots.json";
+import bots from "../../fixtures/regexes/bots.json";
 import { userAgentParser } from "../../utils/user-agent";
 import { BotResult } from "./typing";
 

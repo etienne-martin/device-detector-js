@@ -1,9 +1,9 @@
 import DeviceDetector = require("../");
 import brands from "./fixtures/brands.json";
 
-import cameraTests from "../../fixtures/Tests/Parser/Devices/fixtures/camera.json";
-import carTests from "../../fixtures/Tests/Parser/Devices/fixtures/car_browser.json";
-import consoleTests from "../../fixtures/Tests/Parser/Devices/fixtures/console.json";
+import cameraTests from "../fixtures/Tests/Parser/Devices/fixtures/camera.json";
+import carTests from "../fixtures/Tests/Parser/Devices/fixtures/car_browser.json";
+import consoleTests from "../fixtures/Tests/Parser/Devices/fixtures/console.json";
 
 const deviceDetector = new DeviceDetector();
 
