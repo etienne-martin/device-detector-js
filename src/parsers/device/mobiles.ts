@@ -1,4 +1,4 @@
-import mobiles from "../../../fixtures/regexes/device/mobiles.json";
+import mobiles from "../../fixtures/regexes/device/mobiles.json";
 import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

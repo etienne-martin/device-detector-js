@@ -4,11 +4,9 @@ tsconfig.json
 tslint.json
 coverage
 .circleci
-/fixtures/.coveralls.json
-/fixtures/.travis.json
-/fixtures/Tests
 /load-fixtures.js
 /load-fixtures.sh
 .github
 .DS_Store
 publish.sh
+jest.config.js

@@ -1,4 +1,4 @@
-import botTests from "../../fixtures/Tests/fixtures/bots.json";
+import botTests from "../fixtures/Tests/fixtures/bots.json";
 import BotParser = require("../parsers/bot");
 import { BotResult } from "../parsers/bot/typing";
 

@@ -14,8 +14,8 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-import browsers from "../../../fixtures/regexes/client/browsers.json";
-import browserEngines from "../../../fixtures/regexes/client/browser_engine.json";
+import browsers from "../../fixtures/regexes/client/browsers.json";
+import browserEngines from "../../fixtures/regexes/client/browser_engine.json";
 import availableBrowsers from "./fixtures/available-browsers.json";
 import browserFamilies from "./fixtures/browser-families.json";
 import mobileOnlyBrowsers from "./fixtures/mobile-only-browsers.json";

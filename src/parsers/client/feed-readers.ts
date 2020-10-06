@@ -1,4 +1,4 @@
-import feedReaders from "../../../fixtures/regexes/client/feed_readers.json";
+import feedReaders from "../../fixtures/regexes/client/feed_readers.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

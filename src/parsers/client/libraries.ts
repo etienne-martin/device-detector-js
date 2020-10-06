@@ -1,4 +1,4 @@
-import libraries from "../../../fixtures/regexes/client/libraries.json";
+import libraries from "../../fixtures/regexes/client/libraries.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

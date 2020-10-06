@@ -7,12 +7,12 @@ import { LibraryResult } from "../parsers/client/libraries";
 import { MediaPlayerResult } from "../parsers/client/media-players";
 import { PersonalInformationManagerResult } from "../parsers/client/personal-information-managers";
 
-import browserTests from "../../fixtures/Tests/Parser/Client/fixtures/browser.json";
-import feedReaderTests from "../../fixtures/Tests/Parser/Client/fixtures/feed_reader.json";
-import libraryTests from "../../fixtures/Tests/Parser/Client/fixtures/library.json";
-import mediaPlayerTests from "../../fixtures/Tests/Parser/Client/fixtures/mediaplayer.json";
-import mobileAppTests from "../../fixtures/Tests/Parser/Client/fixtures/mobile_app.json";
-import personalInformationManagerTests from "../../fixtures/Tests/Parser/Client/fixtures/pim.json";
+import browserTests from "../fixtures/Tests/Parser/Client/fixtures/browser.json";
+import feedReaderTests from "../fixtures/Tests/Parser/Client/fixtures/feed_reader.json";
+import libraryTests from "../fixtures/Tests/Parser/Client/fixtures/library.json";
+import mediaPlayerTests from "../fixtures/Tests/Parser/Client/fixtures/mediaplayer.json";
+import mobileAppTests from "../fixtures/Tests/Parser/Client/fixtures/mobile_app.json";
+import personalInformationManagerTests from "../fixtures/Tests/Parser/Client/fixtures/pim.json";
 
 const versionTruncation = 1;
 

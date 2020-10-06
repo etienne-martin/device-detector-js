@@ -24,7 +24,7 @@ glob("**/*.yml", {
 }, (err, files) => {
   for (const file of files) {
     const src = path.join("./node_modules/device-detector", file);
-    const dest = path.join("./fixtures", file.replace(RegExp(".yml$", "i"), ".json"));
+    const dest = path.join("./src/fixtures", file.replace(RegExp(".yml$", "i"), ".json"));
 
     ensureDirectoryExistence(dest);
 

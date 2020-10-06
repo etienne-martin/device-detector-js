@@ -1,4 +1,4 @@
-import portableMediaPlayers from "../../../fixtures/regexes/device/portable_media_player.json";
+import portableMediaPlayers from "../../fixtures/regexes/device/portable_media_player.json";
 import { GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

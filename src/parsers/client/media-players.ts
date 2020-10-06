@@ -1,4 +1,4 @@
-import mediaPlayers from "../../../fixtures/regexes/client/mediaplayers.json";
+import mediaPlayers from "../../fixtures/regexes/client/mediaplayers.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";

@@ -1,4 +1,4 @@
-import operatingSystems from "../../../fixtures/regexes/oss.json";
+import operatingSystems from "../../fixtures/regexes/oss.json";
 import { formatVersion } from "../../utils/version";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
