@@ -95,7 +95,13 @@ export default class BrowserParser {
 
     if (!result.engine) {
       for (const browserEngine of browserEngines) {
-        const match = RegExp(browserEngine.regex, "i").exec(userAgent);
+
+        let match = null;
+        try {
+          match = RegExp(browserEngine.regex, "i").exec(userAgent);
+        } catch {
+          // TODO: find out why it fails in some browsers
+        }
 
         if (!match) continue;
 
