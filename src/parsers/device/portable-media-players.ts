@@ -1,5 +1,5 @@
 import portableMediaPlayers from "../../fixtures/regexes/device/portable_media_player.json";
-import { GenericDeviceResult } from "../../typings/device";
+import { DeviceType, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
@@ -16,12 +16,12 @@ export default class PortableMediaPlayersParser {
 
       if (!match) continue;
 
-      result.type = portableMediaPlayer.device;
+      result.type = portableMediaPlayer.device as DeviceType;
       result.brand = brand;
 
-      if (portableMediaPlayer.model) {
+      if ("model" in portableMediaPlayer && portableMediaPlayer.model) {
         result.model = variableReplacement(portableMediaPlayer.model, match).trim();
-      } else if (portableMediaPlayer.models) {
+      } else if ("models" in portableMediaPlayer && portableMediaPlayer.models) {
         for (const model of portableMediaPlayer.models) {
           const modelMatch = userAgentParser(model.regex, userAgent);
 

@@ -19,9 +19,9 @@ export default class CameraParser {
       result.type = "camera";
       result.brand = brand;
 
-      if (camera.model) {
+      if ("model" in camera && camera.model) {
         result.model = variableReplacement(camera.model, match).trim();
-      } else if (camera.models) {
+      } else if ("models" in camera && camera.models) {
         for (const model of camera.models) {
           const modelMatch = userAgentParser(model.regex, userAgent);
 

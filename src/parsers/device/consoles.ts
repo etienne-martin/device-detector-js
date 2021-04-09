@@ -1,5 +1,5 @@
 import consoles from "../../fixtures/regexes/device/consoles.json";
-import { GenericDeviceResult } from "../../typings/device";
+import { DeviceType, GenericDeviceResult } from "../../typings/device";
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 
@@ -16,12 +16,12 @@ export default class ConsoleParser {
 
       if (!match) continue;
 
-      result.type = gameConsole.device;
+      result.type = gameConsole.device as DeviceType;
       result.brand = brand;
 
-      if (gameConsole.model) {
+      if ("model" in gameConsole && gameConsole.model) {
         result.model = variableReplacement(gameConsole.model, match).trim();
-      } else if (gameConsole.models) {
+      } else if ("models" in gameConsole && gameConsole.models) {
         for (const model of gameConsole.models) {
           const modelMatch = userAgentParser(model.regex, userAgent);
 
