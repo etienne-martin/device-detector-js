@@ -1,5 +1,5 @@
 import mobiles from "../../fixtures/regexes/device/mobiles.json";
-import { GenericDeviceResult } from "../../typings/device";
+import { DeviceType, GenericDeviceResult } from "../../typings/device"
 import { variableReplacement } from "../../utils/variable-replacement";
 import { userAgentParser } from "../../utils/user-agent";
 import { buildModel } from "../../utils/model";
@@ -11,18 +11,19 @@ export default class MobileParser {
       brand: "",
       model: ""
     };
+    let resultType = "";
 
     for (const [brand, mobile] of Object.entries(mobiles)) {
       const match = userAgentParser(mobile.regex, userAgent);
 
       if (!match) continue;
 
-      result.type = mobile.device || "";
+      resultType = "device" in mobile && mobile.device || "";
       result.brand = brand;
 
-      if (mobile.model) {
+      if ("model" in mobile && mobile.model) {
         result.model = buildModel(variableReplacement(mobile.model, match)).trim();
-      } else if (mobile.models) {
+      } else if ("models" in mobile && mobile.models) {
         for (const model of mobile.models) {
           const modelMatch = userAgentParser(model.regex, userAgent);
 
@@ -30,8 +31,8 @@ export default class MobileParser {
 
           result.model = buildModel(variableReplacement(model.model, modelMatch)).trim();
 
-          if (model.device) {
-            result.type = model.device;
+          if ("device" in model && model.device) {
+            resultType = model.device;
           }
 
           if ("brand" in model) {
@@ -44,12 +45,12 @@ export default class MobileParser {
     }
 
     // Sanitize device type
-    if (result.type === "tv") {
+    if (resultType === "tv") {
       result.type = "television";
-    }
-
-    if (result.type === "car browser") {
+    } else if (resultType === "car browser") {
       result.type = "car";
+    } else {
+      result.type = resultType as DeviceType;
     }
 
     // Sanitize device brand

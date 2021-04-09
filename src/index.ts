@@ -6,6 +6,7 @@ import BrowserParser from "./parsers/client/browser";
 import BotParser = require("./parsers/bot");
 import { userAgentParser } from "./utils/user-agent";
 import { versionCompare } from "./utils/version-compare";
+import { GenericDeviceResult } from "./typings/device";
 
 namespace DeviceDetector {
   export interface DeviceDetectorResult {
@@ -147,8 +148,8 @@ class DeviceDetector {
     /**
      * All detected feature phones running android are more likely smartphones
      */
-    if (result.device && result.device?.type === "feature phone" && osFamily === "Android") {
-      result.device.type = "smartphone";
+    if ((result.device?.type as string) === "feature phone" && osFamily === "Android") {
+      result.device!.type = "smartphone";
     }
 
     /**
@@ -243,7 +244,7 @@ class DeviceDetector {
     return userAgentParser("Touch", userAgent);
   };
 
-  private createDeviceObject = () => ({
+  private createDeviceObject = (): GenericDeviceResult => ({
     type: "",
     brand: "",
     model: ""

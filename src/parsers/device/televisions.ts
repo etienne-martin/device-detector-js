@@ -23,9 +23,9 @@ export default class TelevisionParser {
 
       result.brand = brand;
 
-      if (television.model) {
+      if ("model" in television && television.model) {
         result.model = buildModel(variableReplacement(television.model, match)).trim();
-      } else if (television.models) {
+      } else if ("models" in television && television.models) {
         for (const model of television.models) {
           const modelMatch = userAgentParser(model.regex, userAgent);
 
