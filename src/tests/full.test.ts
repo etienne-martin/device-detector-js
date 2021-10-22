@@ -1,6 +1,5 @@
 import DeviceDetector = require("../");
 import { formatVersion } from "../utils/version";
-import brands from "./fixtures/brands.json";
 import { BrowserResult } from "../parsers/client/browser";
 
 const tests: any = [
@@ -33,12 +32,17 @@ const tests: any = [
   ...require("../fixtures/Tests/fixtures/smartphone-14.json"),
   ...require("../fixtures/Tests/fixtures/smartphone-15.json"),
   ...require("../fixtures/Tests/fixtures/smartphone-16.json"),
+  ...require("../fixtures/Tests/fixtures/smartphone-17.json"),
+  ...require("../fixtures/Tests/fixtures/smartphone-18.json"),
   ...require("../fixtures/Tests/fixtures/tablet.json"),
   ...require("../fixtures/Tests/fixtures/tablet-1.json"),
   ...require("../fixtures/Tests/fixtures/tablet-2.json"),
   ...require("../fixtures/Tests/fixtures/tablet-3.json"),
+  ...require("../fixtures/Tests/fixtures/tablet-4.json"),
+  ...require("../fixtures/Tests/fixtures/tablet-5.json"),
   ...require("../fixtures/Tests/fixtures/tv.json"),
-  ...require("../fixtures/Tests/fixtures/unknown.json")
+  ...require("../fixtures/Tests/fixtures/unknown.json"),
+  ...require("../fixtures/Tests/fixtures/wearable.json"),
 ];
 
 const versionTruncation = 1;
@@ -49,7 +53,7 @@ const deviceDetector = new DeviceDetector({
 
 describe("Full test", () => {
   for (const unitTest of tests) {
-    const brand = (brands as Record<string, string>)[unitTest.device.brand] || "";
+    const brand = unitTest.device.brand || "";
 
     test(`${unitTest.os.name || ""} ${brand} ${unitTest.client.name || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent);
