@@ -26,6 +26,7 @@
   "BI": "Basilisk",
   "BE": "Beonex",
   "BH": "BlackHawk",
+  "BU": "Blue Browser",
   "BJ": "Bunjalloo",
   "BL": "B-Line",
   "BR": "Brave",
@@ -86,6 +87,7 @@
   "FN": "Fireweb Navigator",
   "FU": "FreeU",
   "GA": "Galeon",
+  "GO": "GOG Galaxy",
   "GE": "Google Earth",
   "HA": "Hawk Turbo Browser",
   "HO": "hola! Browser",
@@ -231,6 +233,7 @@
   "WO": "wOSBrowser",
   "WT": "WeTab Browser",
   "YA": "Yandex Browser",
+  "YN": "Yaani Browser",
   "YL": "Yandex Browser Lite",
   "XI": "Xiino"
 }

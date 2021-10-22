@@ -3,6 +3,7 @@ import MobileParser from "./mobiles";
 import TelevisionParser from "./televisions";
 import CarParser from "./cars";
 import ConsoleParser from "./consoles";
+import NotebookParser from "./notebooks";
 import PortableMediaPlayerParser from "./portable-media-players";
 import { GenericDeviceResult } from "../../typings/device";
 
@@ -14,7 +15,8 @@ const deviceParsers = [
   CameraParser,
   TelevisionParser,
   PortableMediaPlayerParser,
-  MobileParser
+  MobileParser,
+  NotebookParser
 ];
 
 export default class ClientParser {
