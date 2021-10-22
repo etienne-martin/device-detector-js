@@ -34,6 +34,8 @@ const tests: any = [
   ...require("../fixtures/Tests/fixtures/smartphone-16.json"),
   ...require("../fixtures/Tests/fixtures/smartphone-17.json"),
   ...require("../fixtures/Tests/fixtures/smartphone-18.json"),
+  ...require("../fixtures/Tests/fixtures/smartphone-19.json"),
+  ...require("../fixtures/Tests/fixtures/smartphone-20.json"),
   ...require("../fixtures/Tests/fixtures/tablet.json"),
   ...require("../fixtures/Tests/fixtures/tablet-1.json"),
   ...require("../fixtures/Tests/fixtures/tablet-2.json"),

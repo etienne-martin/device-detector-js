@@ -7,7 +7,7 @@ import operatingSystem from "./fixtures/operating-system.json"
 export interface OperatingSystemResult {
   name: string;
   version: string;
-  platform: "ARM" | "x64" | "x86" | "";
+  platform: "ARM" | "x64" | "x86" | "MIPS" | "SuperH" | "";
 }
 
 export type Result = OperatingSystemResult | null;
@@ -85,7 +85,7 @@ export default class OperatingSystemParser {
   };
 
   private parsePlatform = (userAgent: string) => {
-    if (userAgentParser("arm", userAgent)) {
+    if (userAgentParser("arm|aarch64|Watch ?OS|Watch1,[12]", userAgent)) {
       return "ARM";
     }
 
@@ -95,6 +95,14 @@ export default class OperatingSystemParser {
 
     if (userAgentParser("i[0-9]86|i86pc", userAgent)) {
       return "x86";
+    }
+
+    if (userAgentParser("mips", userAgent)) {
+      return "MIPS";
+    }
+
+    if (userAgentParser("sh4", userAgent)) {
+      return "SuperH";
     }
 
     return "";

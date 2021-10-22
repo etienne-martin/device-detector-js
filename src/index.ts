@@ -70,7 +70,7 @@ class DeviceDetector {
     /**
      * Assume all devices running iOS / Mac OS are from Apple
      */
-    if (!result.device?.brand && ["Apple TV", "iOS", "Mac"].includes(osName || "")) {
+    if (!result.device?.brand && ["Apple TV", "watchOS", "iOS", "Mac"].includes(osName || "")) {
       if (!result.device) {
         result.device = this.createDeviceObject();
       }
