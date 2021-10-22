@@ -9,15 +9,13 @@ const deviceDetector = new DeviceDetector();
 
 const deviceTester = (tests: typeof cameraTests | typeof carTests | typeof consoleTests) => {
   for (const unitTest of tests) {
-    const brand = (brands as Record<string, string>)[unitTest.device.brand];
+    const brand = unitTest.device.brand;
 
     test(`${brand} ${unitTest.device.model || ""}`, () => {
       const result = deviceDetector.parse(unitTest.user_agent).device;
 
       unitTest.device.type = unitTest.device.type
-        .replace("8", "camera")
-        .replace("6", "car")
-        .replace("4", "console");
+        .replace("car browser", "car");
 
       expect({
         type: result?.type || "",

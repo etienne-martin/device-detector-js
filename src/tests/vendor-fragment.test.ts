@@ -6,7 +6,7 @@ const vendorFragmentParser = new VendorFragmentParser();
 
 describe("Vendor fragments", () => {
   for (const vendorFragmentTest of vendorFragmentTests) {
-    const brand = (brands as Record<string, string>)[vendorFragmentTest.vendor];
+    const brand = vendorFragmentTest.vendor;
 
     test(`${brand}`, () => {
       const result = vendorFragmentParser.parse(vendorFragmentTest.useragent);

@@ -86,7 +86,7 @@ class DeviceDetector {
      *       a detected browser, but can still be detected. So we check the useragent for Chrome instead.
      */
     if (!result.device?.type && osFamily === "Android" && userAgentParser("Chrome/[\\.0-9]*", userAgent)) {
-      if (userAgentParser("Chrome/[.0-9]* Mobile", userAgent)) {
+      if (userAgentParser("Chrome/[.0-9]* (?:Mobile|eliboM)", userAgent)) {
         if (!result.device) {
           result.device = this.createDeviceObject();
         }
