@@ -136,10 +136,6 @@ Even though this library can run in the browser, **it is strongly advised agains
 ## What device-detector-js is able to detect
 
 The lists below are auto generated and updated from time to time. Some of them might not be complete.
-
-## What Device Detector is able to detect
-
-The lists below are auto generated and updated from time to time. Some of them might not be complete.
 *Last update: 2021/01/08*
 
 ### List of detected operating systems:
@@ -215,7 +211,8 @@ When matomo releases a new version, they usually add support for new brands. [Th
 
 * **Etienne Martin** - *Initial work* - [etiennemartin.ca](http://etiennemartin.ca/)
 * **Alex Beauchemin** - *Contributor* - [linkedin.com/in/alexbeauchemin](https://www.linkedin.com/in/alexbeauchemin/)
-* **Ayan Dey** - *Contributor* - [linkedin.com/in/dey-ayan](https://www.linkedin.com/in/dey-ayan) 
+* **Ayan Dey** - *Contributor* - [linkedin.com/in/dey-ayan](https://www.linkedin.com/in/dey-ayan)
+* **Julien Maitrehenry** - *Contributor* - [linkedin.com/in/jmaitrehenry](https://www.linkedin.com/in/jmaitrehenry)
 
 ## License
 
