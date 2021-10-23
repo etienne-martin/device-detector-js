@@ -31,16 +31,6 @@ export default class BrowserParser {
     return "";
   };
 
-  public static getBrowserFamily = (browserName: string) => {
-    const browserShortName = BrowserParser.getBrowserShortName(browserName);
-
-    for (const [browserFamily, browserLabels] of Object.entries(browserFamilies)) {
-      if (browserLabels.includes(browserShortName)) return browserFamily;
-    }
-
-    return "";
-  };
-
   public static isMobileOnlyBrowser = (browserName: string) => {
     return mobileOnlyBrowsers.includes(BrowserParser.getBrowserShortName(browserName));
   };
