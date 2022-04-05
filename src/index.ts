@@ -214,6 +214,20 @@ class DeviceDetector {
       result.device.type = "television";
     }
 
+    /**
+     * Set device type to desktop if string ua contains desktop
+     */
+    const hasDesktop = "desktop" !== result.device?.type
+      && null !== userAgentParser("Desktop", userAgent)
+      && this.hasDesktopFragment(userAgent);
+    if (hasDesktop) {
+      if (!result.device) {
+        result.device = this.createDeviceObject();
+      }
+
+      result.device.type = "desktop";
+    }
+
     // set device type to desktop for all devices running a desktop os that were not detected as an other device type
     if (!result.device?.type && this.isDesktop(result, osFamily)) {
       if (!result.device) {
@@ -232,6 +246,10 @@ class DeviceDetector {
 
   private hasAndroidTabletFragment = (userAgent: string) => {
     return userAgentParser("Android( [\.0-9]+)?; Tablet;", userAgent);
+  };
+
+  private hasDesktopFragment = (userAgent: string) => {
+    return userAgentParser("Desktop (x(?:32|64)|WOW64);", userAgent);
   };
 
   private isDesktop = (result: DeviceDetector.DeviceDetectorResult, osFamily: string): boolean => {
