@@ -1,0 +1,106 @@
+[
+  {
+    "user_agent": "Mozilla/6.0 (Macintosh; U; Amiga-AWeb) Safari 3.1",
+    "os": {
+      "name": "AmigaOS",
+      "version": "",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Amiga Aweb",
+      "version": "",
+      "engine": "",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "",
+      "model": ""
+    },
+    "os_family": "AmigaOS",
+    "browser_family": "Amiga"
+  },
+  {
+    "user_agent": "AmigaVoyager/3.2 (AmigaOS/MC680x0)",
+    "os": {
+      "name": "AmigaOS",
+      "version": "",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Amiga Voyager",
+      "version": "3.2",
+      "engine": "",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "",
+      "model": ""
+    },
+    "os_family": "AmigaOS",
+    "browser_family": "Amiga"
+  },
+  {
+    "user_agent": "Microsoft Office OneNote/16.0.13328.20478 (Windows/10.0; Desktop x64; en-GB; Universal app; Dell Inc./XXX TEST)",
+    "os": {
+      "name": "Windows",
+      "version": "10.0",
+      "platform": "x64"
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office OneNote",
+      "version": "16.0.13328.20478"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Dell",
+      "model": ""
+    },
+    "os_family": "Windows",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office OneNote/16.0.13328.20478 (Windows/10.0; Desktop WOW64; en-GB; Universal app; Dell Inc./XXX TEST)",
+    "os": {
+      "name": "Windows",
+      "version": "10.0",
+      "platform": "x64"
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office OneNote",
+      "version": "16.0.13328.20478"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Dell",
+      "model": ""
+    },
+    "os_family": "Windows",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office OneNote/16.0.13328.20478 (Windows/10.0; Desktop WOW64; en-GB; Universal app;)",
+    "os": {
+      "name": "Windows",
+      "version": "10.0",
+      "platform": "x64"
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office OneNote",
+      "version": "16.0.13328.20478"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "",
+      "model": ""
+    },
+    "os_family": "Windows",
+    "browser_family": "Unknown"
+  }
+]
