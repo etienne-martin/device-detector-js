@@ -193,6 +193,17 @@ class DeviceDetector {
     }
 
     /**
+     * All devices running Tizen TV or SmartTV are assumed to be televisions
+     */
+    if (userAgentParser("SmartTV|Tizen.+ TV .+$", userAgent)) {
+      if (!result.device ) {
+        result.device = this.createDeviceObject();
+      }
+
+      result.device.type = "television";
+    }
+
+    /**
      * Devices running Kylo or Espital TV Browsers are assumed to be televisions
      */
     if (!result.device?.type && ["Kylo", "Espial TV Browser"].includes(result.client?.name || "")) {

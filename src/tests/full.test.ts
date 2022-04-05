@@ -75,6 +75,7 @@ describe("Full test", () => {
       }
 
       expect({
+        // userAgent: unitTest.user_agent,
         os: {
           name: result?.os?.name || "",
           version: result?.os?.version || "",
@@ -93,6 +94,7 @@ describe("Full test", () => {
           model: result?.device?.model || ""
         }
       }).toEqual({
+        // userAgent: unitTest.user_agent,
         os: {
           name: unitTest.os.name || "",
           version: formatVersion(unitTest.os.version, versionTruncation) || "",
