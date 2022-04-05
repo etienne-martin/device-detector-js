@@ -36,6 +36,8 @@ const tests: any = [
   ...require("../fixtures/Tests/fixtures/smartphone-18.json"),
   ...require("../fixtures/Tests/fixtures/smartphone-19.json"),
   ...require("../fixtures/Tests/fixtures/smartphone-20.json"),
+  ...require("../fixtures/Tests/fixtures/smartphone-21.json"),
+  ...require("../fixtures/Tests/fixtures/smartphone-22.json"),
   ...require("../fixtures/Tests/fixtures/tablet.json"),
   ...require("../fixtures/Tests/fixtures/tablet-1.json"),
   ...require("../fixtures/Tests/fixtures/tablet-2.json"),
@@ -43,6 +45,7 @@ const tests: any = [
   ...require("../fixtures/Tests/fixtures/tablet-4.json"),
   ...require("../fixtures/Tests/fixtures/tablet-5.json"),
   ...require("../fixtures/Tests/fixtures/tv.json"),
+  ...require("../fixtures/Tests/fixtures/tv-1.json"),
   ...require("../fixtures/Tests/fixtures/unknown.json"),
   ...require("../fixtures/Tests/fixtures/wearable.json"),
 ];
@@ -75,6 +78,7 @@ describe("Full test", () => {
       }
 
       expect({
+        // userAgent: unitTest.user_agent,
         os: {
           name: result?.os?.name || "",
           version: result?.os?.version || "",
@@ -93,6 +97,7 @@ describe("Full test", () => {
           model: result?.device?.model || ""
         }
       }).toEqual({
+        // userAgent: unitTest.user_agent,
         os: {
           name: unitTest.os.name || "",
           version: formatVersion(unitTest.os.version, versionTruncation) || "",

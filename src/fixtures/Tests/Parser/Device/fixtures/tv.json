@@ -1,0 +1,42 @@
+[
+  {
+    "user_agent": "Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.4",
+    "os": [],
+    "client": {
+      "type": "browser",
+      "name": "Espial TV Browser",
+      "version": "6.0.4",
+      "engine": "WebKit",
+      "engine_version": "531.2"
+    },
+    "device": {
+      "type": "tv",
+      "brand": "",
+      "model": ""
+    },
+    "os_family": "Unknown",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (SMART-TV; Linux; Tizen 2.3) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.0 TV Safari/538.1",
+    "os": {
+      "name": "Tizen",
+      "version": "2.3",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "1.0",
+      "engine": "WebKit",
+      "engine_version": "538.1"
+    },
+    "device": {
+      "type": "tv",
+      "brand": "Samsung",
+      "model": "Smart TV"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  }
+]

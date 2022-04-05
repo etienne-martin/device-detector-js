@@ -7,6 +7,9 @@ describe("Utility functions", () => {
     expect(variableReplacement("$1", ["test"])).toEqual("test");
     expect(variableReplacement("$2 $1", ["last", "first"])).toEqual("first last");
     expect(variableReplacement("abcd ($1)", ["1.0"])).toEqual("abcd (1.0)");
+    // Handle null and undefined template
+    expect(variableReplacement(null, ["test"])).toEqual("");
+    expect(variableReplacement(undefined, ["test"])).toEqual("");
   });
 
   test(`version formatting`, () => {

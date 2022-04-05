@@ -193,6 +193,17 @@ class DeviceDetector {
     }
 
     /**
+     * All devices running Tizen TV or SmartTV are assumed to be televisions
+     */
+    if (userAgentParser("SmartTV|Tizen.+ TV .+$", userAgent)) {
+      if (!result.device ) {
+        result.device = this.createDeviceObject();
+      }
+
+      result.device.type = "television";
+    }
+
+    /**
      * Devices running Kylo or Espital TV Browsers are assumed to be televisions
      */
     if (!result.device?.type && ["Kylo", "Espial TV Browser"].includes(result.client?.name || "")) {
@@ -201,6 +212,20 @@ class DeviceDetector {
       }
 
       result.device.type = "television";
+    }
+
+    /**
+     * Set device type to desktop if string ua contains desktop
+     */
+    const hasDesktop = "desktop" !== result.device?.type
+      && null !== userAgentParser("Desktop", userAgent)
+      && this.hasDesktopFragment(userAgent);
+    if (hasDesktop) {
+      if (!result.device) {
+        result.device = this.createDeviceObject();
+      }
+
+      result.device.type = "desktop";
     }
 
     // set device type to desktop for all devices running a desktop os that were not detected as an other device type
@@ -221,6 +246,10 @@ class DeviceDetector {
 
   private hasAndroidTabletFragment = (userAgent: string) => {
     return userAgentParser("Android( [\.0-9]+)?; Tablet;", userAgent);
+  };
+
+  private hasDesktopFragment = (userAgent: string) => {
+    return userAgentParser("Desktop (x(?:32|64)|WOW64);", userAgent);
   };
 
   private isDesktop = (result: DeviceDetector.DeviceDetectorResult, osFamily: string): boolean => {
