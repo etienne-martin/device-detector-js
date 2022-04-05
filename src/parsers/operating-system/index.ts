@@ -89,20 +89,20 @@ export default class OperatingSystemParser {
       return "ARM";
     }
 
-    if (userAgentParser("WOW64|x64|win64|amd64|x86_64", userAgent)) {
-      return "x64";
-    }
-
-    if (userAgentParser("i[0-9]86|i86pc", userAgent)) {
-      return "x86";
-    }
-
     if (userAgentParser("mips", userAgent)) {
       return "MIPS";
     }
 
     if (userAgentParser("sh4", userAgent)) {
       return "SuperH";
+    }
+
+    if (userAgentParser("WOW64|x64|win64|amd64|x86_?64", userAgent)) {
+      return "x64";
+    }
+
+    if (userAgentParser("(?:i[0-9]|x)86|i86pc", userAgent)) {
+      return "x86";
     }
 
     return "";
