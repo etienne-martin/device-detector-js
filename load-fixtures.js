@@ -29,7 +29,7 @@ glob("**/*.yml", {
     ensureDirectoryExistence(dest);
 
     const fixture = loadYaml(src);
-    const json = JSON.stringify(fixture);
+    const json = JSON.stringify(fixture, null, 2);
 
     fs.writeFileSync(dest, json);
   }
