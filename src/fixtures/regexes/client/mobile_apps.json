@@ -546,7 +546,7 @@
   },
   {
     "regex": "RadioPublic/android-(\\d+[\\.\\d]+)",
-    "ame": "RadioPublic",
+    "name": "RadioPublic",
     "version": "$1"
   },
   {
@@ -557,6 +557,66 @@
   {
     "regex": "com.evolve.podcast/(\\d+[\\.\\d]+)",
     "name": "Evolve Podcast",
+    "version": "$1"
+  },
+  {
+    "regex": " Rocket.Chat\\+?/(\\d+[\\.\\d]+)",
+    "name": "Rocket Chat",
+    "version": "$1"
+  },
+  {
+    "regex": "^Pandora Audio.+Android",
+    "name": "Pandora",
+    "version": ""
+  },
+  {
+    "regex": "^NPROneAndroid",
+    "name": "NPR One",
+    "version": ""
+  },
+  {
+    "regex": "^WirtschaftsWoche-iOS-(\\d+[\\.\\d]+)",
+    "name": "Wirtschafts Woche",
+    "version": "$1"
+  },
+  {
+    "regex": "^Outlook-iOS/.+\\((\\d+[\\.\\d]+)\\)$",
+    "name": "Microsoft Outlook",
+    "version": "$1"
+  },
+  {
+    "regex": "^TVirl/(\\d+[\\.\\d]+)",
+    "name": "TVirl",
+    "version": "$1"
+  },
+  {
+    "regex": "2?chMate/(\\d+[\\.\\d]+)",
+    "name": "ChMate",
+    "version": "$1"
+  },
+  {
+    "regex": "2tch/(\\d+[\\.\\d]+)",
+    "name": "2tch",
+    "version": "$1"
+  },
+  {
+    "regex": "Ciisaa/(\\d+[\\.\\d]+)",
+    "name": "Ciisaa",
+    "version": "$1"
+  },
+  {
+    "regex": "BB2C (\\d+[\\.\\d]+)",
+    "name": "BB2C",
+    "version": "$1"
+  },
+  {
+    "regex": "twinkle/(\\d+[\\.\\d]+)",
+    "name": "twinkle",
+    "version": "$1"
+  },
+  {
+    "regex": "JaneStyle_iOS/(\\d+[\\.\\d]+)",
+    "name": "JaneStyle",
     "version": "$1"
   }
 ]

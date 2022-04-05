@@ -1,5 +1,37 @@
 [
   {
+    "regex": "Helio/(\\d+[\\.\\d]+)",
+    "name": "Helio",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "7654Browser/(\\d+[\\.\\d]+)",
+    "name": "7654 Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "Qazweb/(\\d+[\\.\\d]+)",
+    "name": "Qazweb",
+    "version": "$1",
+    "engine": {
+      "default": "Gecko"
+    }
+  },
+  {
+    "regex": "Degdegan/(\\d+[\\.\\d]+)",
+    "name": "deg-degan",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "JavaFX/(\\d+[\\.\\d]+)",
     "name": "JavaFX",
     "version": "$1",
@@ -318,6 +350,14 @@
     }
   },
   {
+    "regex": "OceanHero/([\\.\\d]+)",
+    "name": "OceanHero",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "Chrome/.+ SLBrowser/(?:(\\d+[\\.\\d]+))?",
     "name": "Smart Lenovo Browser",
     "version": "$1",
@@ -528,7 +568,10 @@
   {
     "regex": "AlohaLite(?:/(\\d+[\\.\\d]+))?",
     "name": "Aloha Browser Lite",
-    "version": "$1"
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
   },
   {
     "regex": "TaoBrowser(?:/(\\d+[\\.\\d]+))?",
@@ -844,6 +887,14 @@
     "version": "$1",
     "engine": {
       "default": "Gecko"
+    }
+  },
+  {
+    "regex": "Chrome/.+ AlohaBrowser(?:/(\\d+[\\.\\d]+))?",
+    "name": "Aloha Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
     }
   },
   {
@@ -1276,6 +1327,14 @@
     }
   },
   {
+    "regex": "Opera%20Touch/(\\d+[\\.\\d]+)? CFNetwork/.+Darwin/.+(?!.*x86_64)",
+    "name": "Opera Touch",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "OPT/(\\d+[\\.\\d]+)",
     "name": "Opera Touch",
     "version": "$1",
@@ -1460,6 +1519,14 @@
   {
     "regex": "TweakStyle(?:/(\\d+[\\.\\d]+))?",
     "name": "TweakStyle",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "Chrome.+Midori Browser/(\\d+[\\.\\d]+)",
+    "name": "Midori",
     "version": "$1",
     "engine": {
       "default": "Blink"

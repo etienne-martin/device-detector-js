@@ -653,8 +653,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "Maze",
-      "model": "Speed"
+      "brand": "Maze Speed",
+      "model": "SSB-504R"
     },
     "os_family": "Android",
     "browser_family": "Opera"
@@ -675,7 +675,7 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "Maze",
+      "brand": "Maze Speed",
       "model": "SSB-500"
     },
     "os_family": "Android",

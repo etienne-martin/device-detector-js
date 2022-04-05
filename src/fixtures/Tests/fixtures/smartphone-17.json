@@ -4450,8 +4450,8 @@
       "type": "browser",
       "name": "Aloha Browser",
       "version": "2.17.3",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "smartphone",
@@ -5774,7 +5774,7 @@
     "device": {
       "type": "smartphone",
       "brand": "Asus",
-      "model": "ZenFone 7 Pro"
+      "model": "ZenFone 7"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
