@@ -6,7 +6,7 @@ Device-detector-js will parse any user agent and detect the browser, operating s
 
 This library is heavily tested and relies on over 10,000 tests to detect thousands of user agent strings, even from rare and obscure browsers and devices.
 
-#### This is a javascript port of [Matomo device-detector](https://github.com/matomo-org/device-detector) (4.1.0).
+#### This is a javascript port of [Matomo device-detector](https://github.com/matomo-org/device-detector) (4.2.3).
 
 [![Coveralls github](https://img.shields.io/coveralls/github/etienne-martin/device-detector-js.svg)](https://coveralls.io/github/etienne-martin/device-detector-js)
 [![CircleCI build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/etienne-martin/device-detector-js)
