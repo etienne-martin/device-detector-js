@@ -68,7 +68,22 @@ export default class OperatingSystemParser {
       if (!match) continue;
 
       result.name = variableReplacement(operatingSystem.name, match);
-      result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+
+      if (operatingSystem.hasOwnProperty("versions")) {
+        const osVersions = operatingSystem.versions || [];
+
+        for (const osVersion of osVersions) {
+          const match = userAgentParser(osVersion.regex, userAgent);
+
+          if (!match) continue;
+
+          result.version = formatVersion(variableReplacement(osVersion.version, match), this.options.versionTruncation);
+
+          break;
+        }
+      } else {
+        result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+      }
 
       if (result.name === "lubuntu") {
         result.name = "Lubuntu";
