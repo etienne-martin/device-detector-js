@@ -4,28 +4,32 @@
     "device": "portable media player",
     "models": [
       {
-        "regex": "(?:Apple-)?iPod1[C,]1",
+        "regex": "(?:Apple-)?iPod1[C,_]?1",
         "model": "iPod Touch 1G"
       },
       {
-        "regex": "(?:Apple-)?iPod2[C,]1",
+        "regex": "(?:Apple-)?iPod2[C,_]?1",
         "model": "iPod Touch 2G"
       },
       {
-        "regex": "(?:Apple-)?iPod3[C,]1",
+        "regex": "(?:Apple-)?iPod3[C,_]?1",
         "model": "iPod Touch 3"
       },
       {
-        "regex": "(?:Apple-)?iPod4[C,]1",
+        "regex": "(?:Apple-)?iPod4[C,_]?1",
         "model": "iPod Touch 4"
       },
       {
-        "regex": "(?:Apple-)?iPod5[C,]1",
+        "regex": "(?:Apple-)?iPod5[C,_]?1",
         "model": "iPod Touch 5"
       },
       {
-        "regex": "(?:Apple-)?iPod7[C,]1",
+        "regex": "(?:Apple-)?iPod7[C,_]?1",
         "model": "iPod Touch 6"
+      },
+      {
+        "regex": "(?:Apple-)?iPod9[C,_]?1",
+        "model": "iPod Touch 7"
       },
       {
         "regex": "(?:Apple-)?iPod",
@@ -37,6 +41,20 @@
     "regex": "COWON ([^;/]+) Build",
     "device": "portable media player",
     "model": "$1"
+  },
+  "FiiO": {
+    "regex": "FiiO",
+    "device": "portable media player",
+    "models": [
+      {
+        "regex": "M11 Plus LTD",
+        "model": "M11 Plus LTD"
+      },
+      {
+        "regex": "M(1[57])",
+        "model": "M$1"
+      }
+    ]
   },
   "Microsoft": {
     "regex": "Microsoft ZuneHD",
@@ -104,5 +122,20 @@
         "model": "One"
       }
     ]
+  },
+  "Shanling": {
+    "regex": "Shanling M6",
+    "device": "portable media player",
+    "models": [
+      {
+        "regex": "Shanling (M6\\(21\\))",
+        "model": "$1"
+      }
+    ]
+  },
+  "Sylvania": {
+    "regex": "(SLTDVD102[34])",
+    "device": "portable media player",
+    "model": "$1"
   }
 }

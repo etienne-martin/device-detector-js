@@ -1,11 +1,46 @@
 [
   {
+    "regex": "python-httpx(?:/(\\d+[\\.\\d]+))?",
+    "name": "HTTPX",
+    "version": "$1"
+  },
+  {
+    "regex": "fasthttp(?:/(\\d+[\\.\\d]+))?",
+    "name": "fasthttp",
+    "version": "$1"
+  },
+  {
+    "regex": "geoipupdate(?:/(\\d+[\\.\\d]+))?",
+    "name": "GeoIP Update",
+    "version": "$1"
+  },
+  {
+    "regex": "PHP-Curl-Class(?:/(\\d+[\\.\\d]+))?",
+    "name": "PHP cURL Class",
+    "version": "$1"
+  },
+  {
+    "regex": "Cpanel-HTTP-Client(?:/(\\d+[\\.\\d]+))?",
+    "name": "cPanel HTTP Client",
+    "version": "$1"
+  },
+  {
+    "regex": "AnyEvent-HTTP(?:/(\\d+[\\.\\d]+))?",
+    "name": "AnyEvent HTTP",
+    "version": "$1"
+  },
+  {
+    "regex": "SlimerJS/(\\d+[\\.\\d]+)",
+    "name": "SlimerJS",
+    "version": "$1"
+  },
+  {
     "regex": "Wget(?:/(\\d+[\\.\\d]+))?",
     "name": "Wget",
     "version": "$1"
   },
   {
-    "regex": "Guzzle(?:/(\\d+[\\.\\d]+))?",
+    "regex": "Guzzle(?:Http)?(?:/(\\d+[\\.\\d]+))?",
     "name": "Guzzle (PHP HTTP Client)",
     "version": "$1"
   },
@@ -20,8 +55,24 @@
     "version": "$1"
   },
   {
+    "regex": "Python-httplib2(?:/(\\d+[\\.\\d]+))?",
+    "name": "httplib2",
+    "version": "$1",
+    "url": "https://pypi.org/project/httplib2/"
+  },
+  {
     "regex": "Python-urllib(?:/?(\\d+[\\.\\d]+))?",
     "name": "Python urllib",
+    "version": "$1"
+  },
+  {
+    "regex": "Apache-HttpClient(?:/?(\\d+[\\.\\d]+))?",
+    "name": "Apache HTTP Client",
+    "version": "$1"
+  },
+  {
+    "regex": "Java-http-client(?:/?(\\d+[\\.\\d]+))?",
+    "name": "Java HTTP Client",
     "version": "$1"
   },
   {
@@ -35,7 +86,18 @@
     "version": "$1"
   },
   {
-    "regex": "okhttp/([\\d\\.]+)",
+    "regex": "grpc-java-okhttp/([\\d\\.]+)",
+    "name": "gRPC-Java",
+    "version": "$1",
+    "url": "https://github.com/grpc/grpc-java"
+  },
+  {
+    "regex": "(?:okhttp|network-okhttp3)/([\\d\\.]+)",
+    "name": "OkHttp",
+    "version": "$1"
+  },
+  {
+    "regex": "okhttp3-([\\d\\.]+)",
     "name": "OkHttp",
     "version": "$1"
   },
@@ -62,7 +124,7 @@
     "version": "$1"
   },
   {
-    "regex": "Google-HTTP-Java-Client(?:/(\\d+[\\.\\d\\w-]+))?",
+    "regex": "Google-HTTP-Java-Client(?:/(\\d+[\\.\\w-]+))?",
     "name": "Google HTTP Java Client",
     "version": "$1"
   },
@@ -149,6 +211,11 @@
     "version": "$1"
   },
   {
+    "regex": "WinHTTP",
+    "name": "Windows HTTP",
+    "version": ""
+  },
+  {
     "regex": "Embarcadero URI Client/([\\.\\d]+)",
     "name": "Embarcadero URI Client",
     "version": "$1"
@@ -166,6 +233,66 @@
   {
     "regex": "akka-http/([\\.\\d]+)",
     "name": "Akka HTTP",
+    "version": "$1"
+  },
+  {
+    "regex": "aria2(?:/(\\d+[\\.\\d]+))?",
+    "name": "Aria2",
+    "version": "$1"
+  },
+  {
+    "regex": "BTWebClient/",
+    "name": "uTorrent",
+    "version": ""
+  },
+  {
+    "regex": "gvfs/(?:(\\d+[\\.\\d]+))?",
+    "name": "gvfs",
+    "version": "$1"
+  },
+  {
+    "regex": "uclient-fetch",
+    "name": "uclient-fetch",
+    "version": ""
+  },
+  {
+    "regex": "cpprestsdk/([\\.\\d]+)",
+    "name": "C++ REST SDK",
+    "version": "$1"
+  },
+  {
+    "regex": "lua-resty-http/([\\.\\d]+).+ngx_",
+    "name": "LUA OpenResty NGINX",
+    "version": "$1"
+  },
+  {
+    "regex": "unirest-java/([\\.\\d]+)",
+    "name": "Unirest for Java",
+    "version": "$1"
+  },
+  {
+    "regex": "jsdom/([\\.\\d]+)",
+    "name": "jsdom",
+    "version": "$1"
+  },
+  {
+    "regex": "hackney/([\\.\\d]+)",
+    "name": "hackney",
+    "version": "$1"
+  },
+  {
+    "regex": "go-resty/([\\.\\d]+)",
+    "name": "Resty",
+    "version": "$1"
+  },
+  {
+    "regex": "pa11y/([\\.\\d]+)",
+    "name": "Pa11y",
+    "version": "$1"
+  },
+  {
+    "regex": "ultimate_sitemap_parser/([\\.\\d]+)",
+    "name": "Ultimate Sitemap Parser",
     "version": "$1"
   }
 ]

@@ -11,7 +11,7 @@
       "name": "Chrome",
       "version": "53.0.2785.143",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "53.0.2785.143"
     },
     "device": {
       "type": "wearable",
@@ -60,7 +60,7 @@
     "device": {
       "type": "wearable",
       "brand": "Samsung",
-      "model": "Galaxy Watch Active 2"
+      "model": "Galaxy Watch Active 2 44mm"
     },
     "os_family": "Other Mobile",
     "browser_family": "Chrome"
@@ -451,7 +451,7 @@
       "name": "Chrome",
       "version": "53.0.2785.143",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "53.0.2785.143"
     },
     "device": {
       "type": "wearable",
@@ -524,5 +524,1229 @@
     },
     "os_family": "iOS",
     "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; Pico G2 4K Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "61.0.3163.98",
+      "engine": "Blink",
+      "engine_version": "61.0.3163.98"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Pico",
+      "model": "G2 4K"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 5.1.1; VRL42) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "5.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "79.0.3945.93",
+      "engine": "Blink",
+      "engine_version": "79.0.3945.93"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Digma",
+      "model": "VR L42"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 Linux; Android 7.1.1; NB RunIQ Build/NWD1.171016.002 AppleWebKit/537.36 KHTML, like Gecko Chrome/53.0.2785.143 Cr4 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "7.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "53.0.2785.143",
+      "engine": "Blink",
+      "engine_version": "53.0.2785.143"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "New Balance",
+      "model": "RunIQ"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R800) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 46mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R500) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch Active"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R760) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Gear S3 Frontier 46mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R845F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 3 45mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R855F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "69.0.3497.106",
+      "engine": "Blink",
+      "engine_version": "69.0.3497.106"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 3 41mm 4G"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R840) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "69.0.3497.106",
+      "engine": "Blink",
+      "engine_version": "69.0.3497.106"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 3 45mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "56.0.2924.0",
+      "engine": "Blink",
+      "engine_version": "56.0.2924.0"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch Active 2 40mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R765V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "56.0.2924.0",
+      "engine": "Blink",
+      "engine_version": "56.0.2924.0"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Gear S3 Frontier 33mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Gear Sport 43mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R815F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "69.0.3497.106",
+      "engine": "Blink",
+      "engine_version": "69.0.3497.106"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 42mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "56.0.2924.0",
+      "engine": "Blink",
+      "engine_version": "56.0.2924.0"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 42mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R850) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 3 41mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R805F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 46mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R805U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "56.0.2924.0",
+      "engine": "Blink",
+      "engine_version": "56.0.2924.0"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 46mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R815U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "56.0.2924.0",
+      "engine": "Blink",
+      "engine_version": "56.0.2924.0"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 42mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R825U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "56.0.2924.0",
+      "engine": "Blink",
+      "engine_version": "56.0.2924.0"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch Active 2 44mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R835F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "69.0.3497.106",
+      "engine": "Blink",
+      "engine_version": "69.0.3497.106"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch Active 2 40mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R770) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Gear S3 Classic 41mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R835U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "69.0.3497.106",
+      "engine": "Blink",
+      "engine_version": "69.0.3497.106"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch Active 2 40mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R815W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "4.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "56.0.2924.0",
+      "engine": "Blink",
+      "engine_version": "56.0.2924.0"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 42mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R855U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Samsung Browser",
+      "version": "2.0",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 3 41mm 4G"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R825F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "69.0.3497.106",
+      "engine": "Blink",
+      "engine_version": "69.0.3497.106"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch Active 2 44mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R845U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "5.5",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "69.0.3497.106",
+      "engine": "Blink",
+      "engine_version": "69.0.3497.106"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Galaxy Watch 3 45mm LTE"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; VR-1541F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.57 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.0.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "70.0.3538.57",
+      "engine": "Blink",
+      "engine_version": "70.0.3538.57"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Lenovo",
+      "model": "Mirage Solo"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "atc/1.0 watchOS/8.0.1 model/Watch6,6 hwp/t8301 build/19R354 (6; dt:259)",
+    "os": {
+      "name": "watchOS",
+      "version": "8.0.1",
+      "platform": "ARM"
+    },
+    "client": "null",
+    "device": {
+      "type": "wearable",
+      "brand": "Apple",
+      "model": "Watch Series 7 41mm"
+    },
+    "os_family": "iOS",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "atc/1.0 watchOS/8.0.1 model/Watch6,8 hwp/t8301 build/19R354 (6; dt:259)",
+    "os": {
+      "name": "watchOS",
+      "version": "8.0.1",
+      "platform": "ARM"
+    },
+    "client": "null",
+    "device": {
+      "type": "wearable",
+      "brand": "Apple",
+      "model": "Watch Series 7 41mm"
+    },
+    "os_family": "iOS",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "atc/1.0 watchOS/8.0.1 model/Watch6,7 hwp/t8301 build/19R354 (6; dt:259)",
+    "os": {
+      "name": "watchOS",
+      "version": "8.0.1",
+      "platform": "ARM"
+    },
+    "client": "null",
+    "device": {
+      "type": "wearable",
+      "brand": "Apple",
+      "model": "Watch Series 7 45mm"
+    },
+    "os_family": "iOS",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "atc/1.0 watchOS/8.0.1 model/Watch6,9 hwp/t8301 build/19R354 (6; dt:259)",
+    "os": {
+      "name": "watchOS",
+      "version": "8.0.1",
+      "platform": "ARM"
+    },
+    "client": "null",
+    "device": {
+      "type": "wearable",
+      "brand": "Apple",
+      "model": "Watch Series 7 45mm"
+    },
+    "os_family": "iOS",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 7.1.1; Pacific) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/10.16.0.0.0.296461555 SamsungBrowser/4.0 Chrome/91.0.4472.88 Mobile VR Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "7.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Oculus Browser",
+      "version": "10.16.0.0.0.296461555",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Oculus",
+      "model": "Go"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 7.1.1; Quest) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/13.4.0.3.15.268829550 SamsungBrowser/4.0 Chrome/87.0.4280.141 VR Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "7.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Oculus Browser",
+      "version": "13.4.0.3.15.268829550",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Oculus",
+      "model": "Quest"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Quest 2) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/13.0.0.2.16.259832224 SamsungBrowser/4.0 Chrome/87.0.4280.66 VR Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Oculus Browser",
+      "version": "13.0.0.2.16.259832224",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Oculus",
+      "model": "Quest 2"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Standalone HMD) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/8.5.0.4.24.209184609 SamsungBrowser/4.0 Chrome/79.0.3945.126 Mobile VR Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Oculus Browser",
+      "version": "8.5.0.4.24.209184609",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Oculus",
+      "model": "Quest 2"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; H1-C-ALADENG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "94.0.4606.71",
+      "engine": "Blink",
+      "engine_version": "94.0.4606.71"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Gocomma",
+      "model": "W5"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; LEM14 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "74.0.3729.186",
+      "engine": "Blink",
+      "engine_version": "74.0.3729.186"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "LEMFO",
+      "model": "LEM14"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 4.4; Moto 360 Build/KNX01S) AppleWebKit/537.36 (KHTML, like Gecko) WIB/0.9.8 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "4.4",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Wear Internet Browser",
+      "version": "0.9.8",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Motorola",
+      "model": "Moto 360"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 4.4; Gear Live Build/KMV78X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/19.77.34.5 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "4.4",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "19.77.34.5",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Gear Live"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 4.4; G Watch Build/KNX01Q) AppleWebKit/537.36 (KHTML, like Gecko) WIB/0.9.8 Mobile Safari/537.3",
+    "os": {
+      "name": "Android",
+      "version": "4.4",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Wear Internet Browser",
+      "version": "0.9.8",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "LG",
+      "model": "G Watch"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 4.4; G Watch R Build/KNX01R) AppleWebKit/537.36 (KHTML, like Gecko) WIB/0.9.8 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "4.4",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Wear Internet Browser",
+      "version": "0.9.8",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "LG",
+      "model": "G Watch R"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 5.0.2; SmartWatch 3 Build/LWX49K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/19.77.34.5 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "5.0.2",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "19.77.34.5",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Sony",
+      "model": "SmartWatch 3"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 2.3.4; Motorola-F100 Build/4.5.1-26_G2-436_US-MR7-24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.45 Mobile Safari/537.36 OPR/15.0.1162.59192",
+    "os": {
+      "name": "Android",
+      "version": "2.3.4",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Opera Mobile",
+      "version": "15.0.1162.59192",
+      "engine": "Blink",
+      "engine_version": "28.0.1500.45"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Motorola",
+      "model": "Moto ACTV"
+    },
+    "os_family": "Android",
+    "browser_family": "Opera"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; xx; NT-1501C Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "os": {
+      "name": "Android",
+      "version": "4.2.2",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Android Browser",
+      "version": "",
+      "engine": "WebKit",
+      "engine_version": "534.30"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "IconBIT",
+      "model": "Callisto 100"
+    },
+    "os_family": "Android",
+    "browser_family": "Android Browser"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36",
+    "os": {
+      "name": "Tizen",
+      "version": "2.2.1.3",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "34.0.1847.76",
+      "engine": "Blink",
+      "engine_version": "34.0.1847.76"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Gear S 40mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 2.2.1.3; SAMSUNG SM-R750A) AppleWebKit/538.1 (KHTML, like Gecko) Version/2.2.1.3 Mobile Safari/538.1",
+    "os": {
+      "name": "Tizen",
+      "version": "2.2.1.3",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Tizen Browser",
+      "version": "2.2.1.3",
+      "engine": "WebKit",
+      "engine_version": "538.1"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Gear S 40mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Tizen 2.3.2.2; SAMSUNG SM-R732) AppleWebKit/538.1 (KHTML, like Gecko) Version/2.3.2.2 Mobile Safari/538.1",
+    "os": {
+      "name": "Tizen",
+      "version": "2.3.2.2",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Tizen Browser",
+      "version": "2.3.2.2",
+      "engine": "WebKit",
+      "engine_version": "538.1"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Samsung",
+      "model": "Gear S2 42mm"
+    },
+    "os_family": "Other Mobile",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "AppleCoreMedia/1.0.0.18R590 (Apple Watch; U; CPU OS 7_1 like Mac OS X; it_it)",
+    "os": {
+      "name": "iOS",
+      "version": "7.1",
+      "platform": ""
+    },
+    "client": "null",
+    "device": {
+      "type": "wearable",
+      "brand": "Apple",
+      "model": "Watch"
+    },
+    "os_family": "iOS",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; R2021W2 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "74.0.3729.186",
+      "engine": "Blink",
+      "engine_version": "74.0.3729.186"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Autan",
+      "model": "R2021W2"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; APPLLP2 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "74.0.3729.186",
+      "engine": "Blink",
+      "engine_version": "74.0.3729.186"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "LOKMAT",
+      "model": "APPLLP2"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.0.0; LEO-DLXX Build/OWDE.180707.001.E1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045714 Mobile Safari/537.36 bwqsh/3.3.6",
+    "os": {
+      "name": "Android",
+      "version": "8.0.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "QQ Browser",
+      "version": "6.2",
+      "engine": "WebKit",
+      "engine_version": "537.36"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "Huawei",
+      "model": "Smart Watch 2 Sport"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; LEM12Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "74.0.3729.186",
+      "engine": "Blink",
+      "engine_version": "74.0.3729.186"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "LEMFO",
+      "model": "LEM12 Pro"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; OW19W1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "78.0.3904.96",
+      "engine": "Blink",
+      "engine_version": "78.0.3904.96"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "OPPO",
+      "model": "Watch 46mm"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; OW19W2 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "61.0.3163.98",
+      "engine": "Blink",
+      "engine_version": "61.0.3163.98"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "OPPO",
+      "model": "Watch 41mm"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; OW19W3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "64.0.3282.137",
+      "engine": "Blink",
+      "engine_version": "64.0.3282.137"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "OPPO",
+      "model": "Watch 46mm"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; OW20W1 Build/OPM1.171019.026.11_A.37.210713172937; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "61.0.3163.98",
+      "engine": "Blink",
+      "engine_version": "61.0.3163.98"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "OPPO",
+      "model": "Watch 2 46mm"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; LEM15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "100.0.4896.127",
+      "engine": "Blink",
+      "engine_version": "100.0.4896.127"
+    },
+    "device": {
+      "type": "wearable",
+      "brand": "LEMFO",
+      "model": "LEM15"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "regex": "360Spider(-Image|-Video)?",
+    "regex": "360Spider",
     "name": "360Spider",
     "category": "Search bot",
     "url": "https://www.so.com/help/help_3_2.html",
@@ -50,6 +50,16 @@
     }
   },
   {
+    "regex": "AhrefsSiteAudit/([\\d+.]+)",
+    "name": "AhrefsSiteAudit",
+    "category": "Site Monitor",
+    "url": "https://ahrefs.com/robot/site-audit",
+    "producer": {
+      "name": "Ahrefs Pte Ltd",
+      "url": "https://ahrefs.com/"
+    }
+  },
+  {
     "regex": "ia_archiver|alexabot|verifybot",
     "name": "Alexa Crawler",
     "category": "Search bot",
@@ -67,6 +77,16 @@
     "producer": {
       "name": "Alexa Internet",
       "url": "https://www.alexa.com"
+    }
+  },
+  {
+    "regex": "Amazonbot",
+    "name": "Amazon Bot",
+    "category": "Crawler",
+    "url": "https://developer.amazon.com/support/amazonbot",
+    "producer": {
+      "name": "Amazon.com, Inc.",
+      "url": "https://www.amazon.com/"
     }
   },
   {
@@ -199,7 +219,7 @@
     }
   },
   {
-    "regex": "baiduspider(-image)?|baidu Transcoder|baidu.*spider",
+    "regex": "Baidu.*spider|baidu Transcoder",
     "name": "Baidu Spider",
     "category": "Search bot",
     "url": "http://www.baidu.com/search/spider.htm",
@@ -216,6 +236,16 @@
     "producer": {
       "name": "",
       "url": ""
+    }
+  },
+  {
+    "regex": "Better Uptime Bot",
+    "name": "Better Uptime Bot",
+    "category": "Site Monitor",
+    "url": "https://betteruptime.com/faq",
+    "producer": {
+      "name": "Better Uptime",
+      "url": "https://betteruptime.com/"
     }
   },
   {
@@ -239,7 +269,7 @@
     }
   },
   {
-    "regex": "BLEXBot(Test)?",
+    "regex": "BLEXBot",
     "name": "BLEXBot Crawler",
     "category": "Crawler",
     "url": "http://webmeup-crawler.com",
@@ -418,7 +448,7 @@
     }
   },
   {
-    "regex": "Datadog Agent",
+    "regex": "Datadog Agent|Datadog/?Synthetics",
     "name": "Datadog Agent",
     "url": "https://github.com/DataDog/dd-agent",
     "category": "Site Monitor",
@@ -468,7 +498,7 @@
     }
   },
   {
-    "regex": "discobot(-news)?",
+    "regex": "discobot",
     "name": "Discobot",
     "category": "Search bot",
     "url": "http://discoveryengine.com/discobot.html",
@@ -547,7 +577,7 @@
     }
   },
   {
-    "regex": "Exabot(-Thumbnails|-Images)?|ExaleadCloudview",
+    "regex": "Exabot|ExaleadCloudview",
     "name": "ExaBot",
     "category": "Crawler",
     "url": "http://www.exabot.com/go/robot",
@@ -577,7 +607,7 @@
     }
   },
   {
-    "regex": "facebookexternalhit|facebookplatform|facebookexternalua",
+    "regex": "facebookexternalhit|facebookplatform|facebookexternalua|facebookcatalog",
     "name": "Facebook External Hit",
     "category": "Social Media Agent",
     "url": "https://www.facebook.com/externalhit_uatext.php",
@@ -617,7 +647,7 @@
     }
   },
   {
-    "regex": "(Meta)?Feedly(Bot|App)?",
+    "regex": "Feedly",
     "name": "Feedly",
     "url": "http://www.feedly.com",
     "category": "Feed Fetcher",
@@ -699,6 +729,11 @@
     }
   },
   {
+    "regex": "gobuster",
+    "name": "Gobuster",
+    "url": "https://github.com/OJ/gobuster"
+  },
+  {
     "regex": "ichiro/mobile goo",
     "name": "Goo",
     "category": "Search bot",
@@ -707,6 +742,11 @@
       "name": "NTT Resonant",
       "url": "http://goo.ne.jp"
     }
+  },
+  {
+    "regex": "Storebot-Google",
+    "name": "Google StoreBot",
+    "category": "Crawler"
   },
   {
     "regex": "Google Favicon",
@@ -824,7 +864,7 @@
     }
   },
   {
-    "regex": "AdsBot-Google(-Mobile)?|Adwords-(DisplayAds|Express|Instant)|Google Web Preview|Google[ -]Publisher[ -]Plugin|Google-(Ads-Qualify|Adwords|AMPHTML|Assess|HotelAdsVerifier|Read-Aloud|Shopping-Quality|Site-Verification|speakr|Test|Youtube-Links)|(APIs|DuplexWeb|Feedfetcher|Mediapartners)-Google|Googlebot(-Mobile|-Image|-Video|-News)?|GoogleProducer|Google.*/\\+/web/snippet",
+    "regex": "AdsBot-Google|Adwords-(DisplayAds|Express|Instant)|Google Web Preview|Google[ -]Publisher[ -]Plugin|Google-(Ads-Conversions|Ads-Qualify|Adwords|AMPHTML|Assess|HotelAdsVerifier|Read-Aloud|Shopping-Quality|Site-Verification|speakr|Stale-Content-Probe|Test|Youtube-Links)|(APIs|DuplexWeb|Feedfetcher|Mediapartners)-Google|Googlebot|Google(?:AssociationService|Producer)|Google.*/\\+/web/snippet",
     "name": "Googlebot",
     "category": "Search bot",
     "url": "http://www.google.com/bot.html",
@@ -908,6 +948,11 @@
     }
   },
   {
+    "regex": "k6/[0-9\\.]+",
+    "name": "K6",
+    "url": "https://k6.io/"
+  },
+  {
     "regex": "kouio",
     "name": "Kouio",
     "url": "http://kouio.com/",
@@ -938,7 +983,17 @@
     }
   },
   {
-    "regex": "linkdexbot(-mobile)?|linkdex\\.com",
+    "regex": "last-modified\\.com",
+    "name": "LastMod Bot",
+    "category": "Site Monitor",
+    "url": "https://last-modified.com/en/about",
+    "producer": {
+      "name": "",
+      "url": "https://last-modified.com/en"
+    }
+  },
+  {
+    "regex": "linkdexbot|linkdex\\.com",
     "name": "Linkdex Bot",
     "category": "Search bot",
     "url": "http://www.linkdex.com/bots",
@@ -967,7 +1022,7 @@
     }
   },
   {
-    "regex": "Mail\\.RU(_Bot)?",
+    "regex": "Mail\\.RU",
     "name": "Mail.Ru Bot",
     "category": "Search bot",
     "url": "http://help.mail.ru/webmaster/indexing/robots/types_robots",
@@ -994,6 +1049,16 @@
     "producer": {
       "name": "",
       "url": ""
+    }
+  },
+  {
+    "regex": "masscan-ng/([\\d+.]+)",
+    "name": "masscan-ng",
+    "url": "https://github.com/bi-zone/masscan-ng",
+    "category": "Crawler",
+    "producer": {
+      "name": "BIZON, OOO",
+      "url": "https://bi.zone/"
     }
   },
   {
@@ -1196,7 +1261,7 @@
     "name": "Octopus"
   },
   {
-    "regex": "omgili(?:bot)?",
+    "regex": "omgili",
     "name": "Omgili bot",
     "category": "Search bot",
     "url": "http://www.omgili.com/Crawler.html",
@@ -1302,7 +1367,7 @@
     }
   },
   {
-    "regex": "psbot(-page)?",
+    "regex": "psbot",
     "name": "Picsearch bot",
     "category": "Search bot",
     "url": "http://www.picsearch.com/bot.html",
@@ -1981,7 +2046,7 @@
     "url": "https://www.webpagetest.org"
   },
   {
-    "regex": "WeSEE(:Search)?",
+    "regex": "WeSEE",
     "name": "WeSEE:Search",
     "category": "Search bot",
     "url": "http://www.wesee.com/bot",
@@ -2101,7 +2166,7 @@
     }
   },
   {
-    "regex": "Yandex(SpravBot|ScreenshotBot|MobileBot|AccessibilityBot|ForDomain|Vertis|Market|Catalog|Calendar|Sitelinks|AdNet|Pagechecker|Webmaster|Media|Video|Bot|Images|Antivirus|Direct|Blogs|Favicons|ImageResizer|Verticals|News(links)?|Metrika|\\.Gazeta Bot)|YaDirectFetcher|YandexTurbo|YandexTracker|YandexSearchShop|YandexRCA|YandexPartner|YandexOntoDBAPI|YandexOntoDB|YandexMobileScreenShotBot",
+    "regex": "Yandex(SpravBot|ScreenshotBot|MobileBot|AccessibilityBot|ForDomain|Vertis|Market|Catalog|Calendar|Sitelinks|AdNet|Pagechecker|Webmaster|Media|Video|Bot|Images|Antivirus|Direct|Blogs|Favicons|ImageResizer|Verticals|News|Metrika|\\.Gazeta Bot)|YaDirectFetcher|YandexTurbo|YandexTracker|YandexSearchShop|YandexRCA|YandexPartner|YandexOntoDBAPI|YandexOntoDB|YandexMobileScreenShotBot",
     "name": "Yandex Bot",
     "category": "Search bot",
     "url": "http://www.yandex.com/bots",
@@ -2111,7 +2176,7 @@
     }
   },
   {
-    "regex": "Yeti|NaverJapan",
+    "regex": "Yeti|NaverJapan|AdsBot-Naver",
     "name": "Yeti/Naverbot",
     "category": "Search bot",
     "url": "http://help.naver.com/robots/",
@@ -2206,20 +2271,20 @@
     "regex": "HubPages.*crawlingpolicy",
     "name": "HubPages",
     "category": "Crawler",
-    "url": "http://hubpages.com/help/crawlingpolicy",
+    "url": "https://hubpages.com/help/crawlingpolicy",
     "producer": {
-      "name": "HubPages",
-      "url": "http://hubpages.com/"
+      "name": "HubPages, Inc.",
+      "url": "https://discover.hubpages.com/"
     }
   },
   {
     "regex": "Pinterest(bot)?/\\d\\.\\d.*www\\.pinterest\\.com.*",
     "name": "Pinterest",
-    "url": "http://www.pinterest.com/bot.html",
+    "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
     "category": "Crawler",
     "producer": {
       "name": "Pinterest",
-      "url": "http://www.pinterest.com/"
+      "url": "https://www.pinterest.com/"
     }
   },
   {
@@ -2240,6 +2305,16 @@
     "producer": {
       "name": "Snapchat Inc.",
       "url": "https://www.snapchat.com"
+    }
+  },
+  {
+    "regex": "Snap URL Preview Service",
+    "name": "Snap URL Preview Service",
+    "category": "Service Agent",
+    "url": "https://developers.snap.com/robots",
+    "producer": {
+      "name": "Snapchat Inc.",
+      "url": "https://www.snapchat.com/"
     }
   },
   {
@@ -2273,13 +2348,13 @@
     }
   },
   {
-    "regex": "Catchpoint( bot)?",
+    "regex": "Catchpoint",
     "name": "Catchpoint",
     "category": "Site Monitor",
-    "url": "",
+    "url": "https://www.catchpoint.com/",
     "producer": {
       "name": "Catchpoint Systems",
-      "url": "http://www.catchpoint.com/"
+      "url": "https://www.catchpoint.com/"
     }
   },
   {
@@ -2370,7 +2445,7 @@
     "name": "RSSRadio Bot"
   },
   {
-    "regex": "(A6-Indexer|nuhk|TsolCrawler|Yammybot|Openbot|Gulper Web Bot|grub-client|Download Demon|SearchExpress|Microsoft URL Control|borg|altavista|dataminr.com|tweetedtimes.com|TrendsmapResolver|teoma|blitzbot|oegp|furlbot|http%20client|polybot|htdig|mogimogi|larbin|scrubby|searchsight|seekbot|semanticdiscovery|snappy|vortex(?! Build)|zeal|fast-webcrawler|converacrawler|dataparksearch|findlinks|BrowserMob|HttpMonitor|ThumbShotsBot|URL2PNG|ZooShot|GomezA|Google SketchUp|Read%20Later|RackspaceBot|robots|SeopultContentAnalyzer|7Siters|centuryb.o.t9|InterNaetBoten|EasyBib AutoCite|Bidtellect|tomnomnom/meg)",
+    "regex": "(A6-Indexer|nuhk|TsolCrawler|Yammybot|Openbot|Gulper Web Bot|grub-client|Download Demon|SearchExpress|Microsoft URL Control|borg|altavista|dataminr.com|tweetedtimes.com|TrendsmapResolver|teoma|blitzbot|oegp|furlbot|http%20client|polybot|htdig|mogimogi|larbin|scrubby|searchsight|seekbot|semanticdiscovery|snappy|vortex(?!(?: Build|Plus))|zeal|fast-webcrawler|converacrawler|dataparksearch|findlinks|BrowserMob|HttpMonitor|ThumbShotsBot|URL2PNG|ZooShot|GomezA|Google SketchUp|Read%20Later|RackspaceBot|robots|SeopultContentAnalyzer|7Siters|centuryb.o.t9|InterNaetBoten|EasyBib AutoCite|Bidtellect|tomnomnom/meg|My User Agent|cortex|CF-UC User Agent|Re-re Studio|adreview|AHC/|NameOfAgent|Request-Promise|ALittle Client|Hello, world|wp_is_mobile|0xAbyssalDoesntExist|Anarchy99)",
     "name": "Generic Bot"
   },
   {
@@ -2666,7 +2741,7 @@
     "url": "https://serendeputy.com/about/serendeputy-bot"
   },
   {
-    "regex": "ias-va.*admantx.*service-fetcher",
+    "regex": "ias-(?:va|sg).*admantx.*service-fetcher|admantx.com.*service-fetcher",
     "name": "ADmantX Service Fetcher",
     "category": "Service bot",
     "url": "https://www.admantx.com/service-fetcher.html"
@@ -2881,8 +2956,8 @@
     "url": "https://whatcms.org/",
     "category": "Crawler",
     "producer": {
-      "name": "",
-      "url": ""
+      "name": "Nineteen Ten LLC",
+      "url": "https://whatcms.org/"
     }
   },
   {
@@ -2896,7 +2971,7 @@
     }
   },
   {
-    "regex": "scaninfo@expanseinc.com",
+    "regex": "scaninfo@(?:expanseinc|paloaltonetworks).com",
     "name": "Expanse",
     "category": "Security Checker",
     "url": "https://expanse.co/",
@@ -3010,7 +3085,582 @@
     "url": "https://www.woorank.com/bot"
   },
   {
-    "regex": "[a-z0-9\\-_]*((?<!cu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9])|crawler|crawl|checker|archiver|transcoder|spider)([^a-z]|$)",
+    "regex": "Cookiebot/([\\d+\\.])",
+    "name": "Cookiebot",
+    "category": "Crawler",
+    "url": "https://support.cookiebot.com/hc/en-us/articles/360014264140-Scanner-User-Agent",
+    "producer": {
+      "name": "Cybot A/S",
+      "url": "https://www.cybot.com/"
+    }
+  },
+  {
+    "regex": "NetSystemsResearch",
+    "name": "NetSystemsResearch",
+    "category": "Security Checker",
+    "url": "https://www.netsystemsresearch.com/",
+    "producer": {
+      "name": "NET SYSTEMS RESEARCH LLC",
+      "url": "https://www.netsystemsresearch.com/"
+    }
+  },
+  {
+    "regex": "CensysInspect/([\\d+\\.])",
+    "name": "CensysInspect",
+    "category": "Security Checker",
+    "url": "https://about.censys.io/",
+    "producer": {
+      "name": "Censys, Inc.",
+      "url": "https://censys.io/"
+    }
+  },
+  {
+    "regex": "gdnplus.com",
+    "name": "GDNP",
+    "category": "Crawler",
+    "url": "https://gdnplus.com/",
+    "producer": {
+      "name": "Global Digital Network Plus, LLC",
+      "url": "https://gdnplus.com/"
+    }
+  },
+  {
+    "regex": "WellKnownBot/([\\d+\\.])",
+    "name": "WellKnownBot",
+    "category": "Crawler",
+    "url": "https://well-known.dev"
+  },
+  {
+    "regex": "Adsbot/([\\d+\\.])",
+    "name": "Adsbot",
+    "category": "Crawler",
+    "url": "https://seostar.co/robot/"
+  },
+  {
+    "regex": "MTRobot/([\\d+\\.])",
+    "name": "MTRobot",
+    "category": "Crawler",
+    "url": "https://metrics-tools.de/robot.html",
+    "producer": {
+      "name": "Metrics Tools",
+      "url": "https://metrics-tools.de/"
+    }
+  },
+  {
+    "regex": "serpstatbot/([\\d+\\.])",
+    "name": "serpstatbot",
+    "category": "Crawler",
+    "url": "http://serpstatbot.com/",
+    "producer": {
+      "name": "Netpeak Ltd",
+      "url": "https://netpeak.net/"
+    }
+  },
+  {
+    "regex": "colly",
+    "name": "colly",
+    "category": "Crawler",
+    "url": "https://github.com/gocolly/colly/"
+  },
+  {
+    "regex": "l9tcpid/v([\\d+\\.])",
+    "name": "l9tcpid",
+    "category": "Security Checker",
+    "url": "https://github.com/LeakIX/l9tcpid"
+  },
+  {
+    "regex": "l9explore/([\\d+\\.])",
+    "name": "l9explore",
+    "category": "Security Checker",
+    "url": "https://github.com/LeakIX/l9explore"
+  },
+  {
+    "regex": "MegaIndex.ru/([\\d+\\.])",
+    "name": "MegaIndex",
+    "category": "Crawler",
+    "url": "https://megaindex.com/crawler"
+  },
+  {
+    "regex": "Seekport",
+    "name": "Seekport",
+    "category": "Crawler",
+    "url": "http://www.seekport.com/",
+    "producer": {
+      "name": "SISTRIX GmbH",
+      "url": "https://www.sistrix.de/"
+    }
+  },
+  {
+    "regex": "seolyt/([\\d+\\.])",
+    "name": "seolyt",
+    "category": "Crawler",
+    "url": "https://seolyt.com/"
+  },
+  {
+    "regex": "YaK/([\\d+\\.])",
+    "name": "YaK",
+    "category": "Crawler",
+    "url": "https://www.linkfluence.com/",
+    "producer": {
+      "name": "Linkfluence SAS",
+      "url": "https://www.linkfluence.com/"
+    }
+  },
+  {
+    "regex": "KomodiaBot/([\\d+\\.])",
+    "name": "KomodiaBot",
+    "category": "Crawler",
+    "url": "http://www.komodia.com/newwiki/index.php/URL_server_crawler",
+    "producer": {
+      "name": "Komodia Inc.",
+      "url": "https://www.komodia.com/"
+    }
+  },
+  {
+    "regex": "Neevabot/([\\d+\\.])",
+    "name": "Neevabot",
+    "category": "Search bot",
+    "url": "https://neeva.com/neevabot",
+    "producer": {
+      "name": "Neeva Inc.",
+      "url": "https://neeva.com/"
+    }
+  },
+  {
+    "regex": "LinkPreview/([\\d+\\.])",
+    "name": "LinkPreview",
+    "category": "Service Agent",
+    "url": "https://www.linkpreview.net/"
+  },
+  {
+    "regex": "JungleKeyThumbnail/([\\d+\\.])",
+    "name": "JungleKeyThumbnail",
+    "category": "Crawler",
+    "url": "https://junglekey.com/"
+  },
+  {
+    "regex": "rocketmonitor(?: |bot/)([\\d+\\.])",
+    "name": "RocketMonitorBot",
+    "category": "Site Monitor",
+    "url": "https://www.radiomast.io/docs/stream-monitoring/technical_details.html",
+    "producer": {
+      "name": "Radio Mast, Inc.",
+      "url": "https://www.radiomast.io/"
+    }
+  },
+  {
+    "regex": "SitemapParser-VIPnytt/([\\d+\\.])",
+    "name": "SitemapParser-VIPnytt",
+    "category": "Crawler",
+    "url": "https://github.com/VIPnytt/SitemapParser/"
+  },
+  {
+    "regex": "^Turnitin",
+    "name": "Turnitin",
+    "category": "Crawler",
+    "url": "https://turnitin.com/robot/crawlerinfo.html"
+  },
+  {
+    "regex": "DMBrowser/\\d+|DMBrowser-[UB]V",
+    "name": "Dotcom Monitor",
+    "category": "Site Monitor",
+    "url": "https://www.dotcom-monitor.com"
+  },
+  {
+    "regex": "ThinkChaos/",
+    "name": "ThinkChaos",
+    "category": "Crawler"
+  },
+  {
+    "regex": "DataForSeoBot",
+    "name": "DataForSeoBot",
+    "category": "Crawler",
+    "url": "https://dataforseo.com/dataforseo-bot"
+  },
+  {
+    "regex": "Discordbot/([\\d+.]+)",
+    "name": "Discord Bot",
+    "category": "Service Agent",
+    "url": "https://discordapp.com"
+  },
+  {
+    "regex": "Linespider/([\\d+.]+)",
+    "name": "Linespider",
+    "category": "Crawler",
+    "url": "https://lin.ee/4dwXkTH"
+  },
+  {
+    "regex": "Cincraw/([\\d+.]+)",
+    "name": "Cincraw",
+    "category": "Crawler",
+    "url": "http://cincrawdata.net/bot/"
+  },
+  {
+    "regex": "CISPA Web Analyzer",
+    "name": "CISPA Web Analyzer",
+    "category": "Crawler",
+    "url": "https://notify.cispa.de/",
+    "producer": {
+      "name": "CISPA - Helmholtz-Zentrum für Informationssicherheit gGmbH",
+      "url": "https://cispa.de/en"
+    }
+  },
+  {
+    "regex": "IonCrawl",
+    "name": "IONOS Crawler",
+    "category": "Crawler",
+    "url": "https://www.ionos.de/terms-gtc/faq-crawler-en/",
+    "producer": {
+      "name": "IONOS SE",
+      "url": "https://www.ionos.de/"
+    }
+  },
+  {
+    "regex": "Crawldad",
+    "name": "Crawldad",
+    "category": "Crawler",
+    "url": "https://gist.github.com/jayhardee9/2f2a2c4dba26564ee040ae32e0dd0972"
+  },
+  {
+    "regex": "https://securitytxt-scan.cs.hm.edu/",
+    "name": "security.txt scanserver",
+    "category": "Security Checker",
+    "url": "https://securitytxt-scan.cs.hm.edu/",
+    "producer": {
+      "name": "Hochschule für angewandte Wissenschaften München",
+      "url": "https://www.hm.edu/"
+    }
+  },
+  {
+    "regex": "TigerBot/([\\d+.]+)",
+    "name": "TigerBot",
+    "category": "Crawler",
+    "url": "https://tiger.ch/"
+  },
+  {
+    "regex": "TestCrawler/([\\d+.]+)",
+    "name": "TestCrawler",
+    "category": "Crawler",
+    "url": "https://www.comcepta.com/"
+  },
+  {
+    "regex": "CrowdTanglebot/([\\d+.]+)",
+    "name": "CrowdTangle",
+    "category": "Crawler",
+    "url": "https://help.crowdtangle.com/en/articles/3009319-crowdtangle-bot",
+    "producer": {
+      "name": "CrowdTangle, Inc.",
+      "url": "https://www.crowdtangle.com/"
+    }
+  },
+  {
+    "regex": "Sellers.Guide Crawler by Primis",
+    "name": "Sellers.Guide",
+    "category": "Crawler",
+    "url": "https://sellers.guide/",
+    "producer": {
+      "name": "McCann Disciplines, Ltd.",
+      "url": "https://www.primis.tech/"
+    }
+  },
+  {
+    "regex": "OnalyticaBot",
+    "name": "Onalytica",
+    "category": "Crawler",
+    "url": "https://www.airslate.com/bot/explore/onalytica-bot",
+    "producer": {
+      "name": "airSlate, Inc.",
+      "url": "https://www.airslate.com/"
+    }
+  },
+  {
+    "regex": "deepnoc",
+    "name": "deepnoc",
+    "category": "Crawler",
+    "url": "https://deepnoc.com/bot",
+    "producer": {
+      "name": "deepnoc, GmbH",
+      "url": "https://deepnoc.com/"
+    }
+  },
+  {
+    "regex": "Newslitbot/([\\d+.]+)",
+    "name": "Newslitbot",
+    "category": "Crawler",
+    "url": "https://www.newslit.co/",
+    "producer": {
+      "name": "Newslit, LLC.",
+      "url": "https://www.newslit.co/"
+    }
+  },
+  {
+    "regex": "um-LN/([\\d+.]+)",
+    "name": "uMBot",
+    "category": "Crawler",
+    "url": "https://www.ubermetrics-technologies.com/",
+    "producer": {
+      "name": "Ubermetrics Technologies GmbH",
+      "url": "https://www.ubermetrics-technologies.com/"
+    }
+  },
+  {
+    "regex": "Abonti/([\\d+.]+)",
+    "name": "Abonti",
+    "category": "Crawler",
+    "url": "http://abonti.com/"
+  },
+  {
+    "regex": "collection@infegy.com",
+    "name": "Infegy",
+    "category": "Crawler",
+    "url": "https://infegy.com/",
+    "producer": {
+      "name": "Infegy, Inc.",
+      "url": "https://infegy.com/"
+    }
+  },
+  {
+    "regex": "HTTP Banner Detection \\(https://security.ipip.net\\)",
+    "name": "IPIP",
+    "category": "Security Checker",
+    "url": "https://security.ipip.net/",
+    "producer": {
+      "name": "Beijing Tiantexin Tech. Co., Ltd.",
+      "url": "https://en.ipip.net/"
+    }
+  },
+  {
+    "regex": "ev-crawler/([\\d+.]+)",
+    "name": "Headline",
+    "category": "Crawler",
+    "url": "https://headline.com/legal/crawler",
+    "producer": {
+      "name": "e.ventures Managementgesellschaft mbH",
+      "url": "https://headline.com/"
+    }
+  },
+  {
+    "regex": "webprosbot/([\\d+.]+)",
+    "name": "WebPros",
+    "category": "Crawler",
+    "url": "https://webpros.com/",
+    "producer": {
+      "name": "WebPros Holdco B.V.",
+      "url": "https://webpros.com/"
+    }
+  },
+  {
+    "regex": "ELB-HealthChecker",
+    "name": "Amazon ELB",
+    "category": "Site Monitor",
+    "url": "https://aws.amazon.com/elasticloadbalancing/",
+    "producer": {
+      "name": "Amazon.com, Inc.",
+      "url": "https://www.amazon.com/"
+    }
+  },
+  {
+    "regex": "Wheregoes.com Redirect Checker/([\\d+.]+)",
+    "name": "WhereGoes",
+    "category": "Crawler",
+    "url": "https://wheregoes.com/"
+  },
+  {
+    "regex": "project_patchwatch",
+    "name": "Project Patchwatch",
+    "category": "Crawler",
+    "url": "http://66.240.192.82/"
+  },
+  {
+    "regex": "InternetMeasurement/([\\d+.]+)",
+    "name": "InternetMeasurement",
+    "category": "Crawler",
+    "url": "https://internet-measurement.com/"
+  },
+  {
+    "regex": "DomainAppender /([\\d+.]+)",
+    "name": "DomainAppender",
+    "category": "Crawler",
+    "url": "https://www.profound.net/product/domain_append/",
+    "producer": {
+      "name": "Profound Networks, LLC",
+      "url": "https://www.profound.net/"
+    }
+  },
+  {
+    "regex": "FreeWebMonitoring SiteChecker/([\\d+.]+)",
+    "name": "FreeWebMonitoring",
+    "category": "Site Monitor",
+    "url": "https://www.freewebmonitoring.com/bot.html",
+    "producer": {
+      "name": "GreenWave Online, Inc.",
+      "url": "http://www.greenwaveonline.com/"
+    }
+  },
+  {
+    "regex": "Page Modified Pinger",
+    "name": "Page Modified Pinger",
+    "category": "Site Monitor",
+    "url": "https://www.pagemodified.com/",
+    "producer": {
+      "name": "Valley Hosting, LLC",
+      "url": "https://www.pagemodified.com/"
+    }
+  },
+  {
+    "regex": "adstxtlab.com",
+    "name": "adstxtlab.com",
+    "category": "Crawler",
+    "url": "https://adstxtlab.com/validator.php",
+    "producer": {
+      "name": "Jaohawi AB",
+      "url": "https://adstxtlab.com/"
+    }
+  },
+  {
+    "regex": "Iframely/([\\d+.]+)",
+    "name": "Iframely",
+    "category": "Crawler",
+    "url": "https://iframely.com/",
+    "producer": {
+      "name": "Itteco Software, Corp.",
+      "url": "https://iframely.com/"
+    }
+  },
+  {
+    "regex": "DomainStatsBot/([\\d+.]+)",
+    "name": "DomainStatsBot",
+    "category": "Crawler",
+    "url": "https://domainstats.com/pages/our-bot",
+    "producer": {
+      "name": "Domainstats Ltd",
+      "url": "https://domainstats.com/"
+    }
+  },
+  {
+    "regex": "aiHitBot/([\\d+.]+)",
+    "name": "aiHitBot",
+    "category": "Crawler",
+    "url": "https://www.aihitdata.com/about"
+  },
+  {
+    "regex": "DomainCrawler/",
+    "name": "DomainCrawler",
+    "category": "Crawler",
+    "url": "https://domaincrawler.com/about-us/"
+  },
+  {
+    "regex": "DNSResearchBot",
+    "name": "DNSResearchBot",
+    "category": "Crawler"
+  },
+  {
+    "regex": "GitCrawlerBot",
+    "name": "GitCrawlerBot",
+    "category": "Crawler"
+  },
+  {
+    "regex": "AdAuth/([\\d+.]+)",
+    "name": "AdAuth",
+    "category": "Crawler",
+    "url": "https://www.adauth.com"
+  },
+  {
+    "regex": "faveeo.com",
+    "name": "Faveeo",
+    "category": "Crawler",
+    "url": "http://www.faveeo.com"
+  },
+  {
+    "regex": "kozmonavt\\.",
+    "name": "Kozmonavt",
+    "category": "Crawler",
+    "url": "https://kozmonavt.ml"
+  },
+  {
+    "regex": "CriteoBot/",
+    "name": "CriteoBot",
+    "category": "Crawler",
+    "url": "https://www.criteo.com/criteo-crawler/"
+  },
+  {
+    "regex": "PayPal IPN",
+    "name": "PayPal IPN",
+    "category": "Service Agent",
+    "url": "https://developer.paypal.com/api/nvp-soap/ipn/IPNIntro/",
+    "producer": {
+      "name": "PayPal, Inc.",
+      "url": "https://www.paypal.com/"
+    }
+  },
+  {
+    "regex": "MaCoCu",
+    "name": "MaCoCu",
+    "category": "Crawler",
+    "url": "https://www.clarin.si/info/macocu-massive-collection-and-curation-of-monolingual-and-bilingual-data/",
+    "producer": {
+      "name": "Jožef Stefan Institute",
+      "url": "https://www.ijs.si/ijsw/JSI"
+    }
+  },
+  {
+    "regex": "dnt-policy@eff.org",
+    "name": "EFF Do Not Track Verifier",
+    "category": "Crawler",
+    "url": "https://www.eff.org/issues/do-not-track",
+    "producer": {
+      "name": "Electronic Frontier Foundation",
+      "url": "https://www.eff.org/"
+    }
+  },
+  {
+    "regex": "InfoTigerBot",
+    "name": "InfoTigerBot",
+    "category": "Crawler",
+    "url": "https://infotiger.com/bot",
+    "producer": {
+      "name": "Infotiger UG",
+      "url": "https://infotiger.com/"
+    }
+  },
+  {
+    "regex": "(?:Birdcrawlerbot|CrawlaDeBot)",
+    "name": "Birdcrawlerbot",
+    "category": "Crawler",
+    "url": "https://crawla.de/de/index.php",
+    "producer": {
+      "name": "Swoppen Systems GmbH",
+      "url": "https://www.swoppen.com/de"
+    }
+  },
+  {
+    "regex": "ScamadviserExternalHit/([\\d+.]+)",
+    "name": "Scamadviser External Hit",
+    "category": "Crawler",
+    "url": "https://www.scamadviser.com/",
+    "producer": {
+      "name": "Ecommerce Operations B.V.",
+      "url": "https://www.scamadviser.com/"
+    }
+  },
+  {
+    "regex": "ZaldamoSearchBot",
+    "name": "Zaldamo",
+    "category": "Crawler",
+    "url": "https://www.zaldamo.com/search.html",
+    "producer": {
+      "name": "Project Orlando, LLC.",
+      "url": "https://www.projectorlando.com/"
+    }
+  },
+  {
+    "regex": "AFB/([\\d+.]+)",
+    "name": "Allloadin Favicon Bot",
+    "category": "Crawler",
+    "url": "https://allloadin.com/"
+  },
+  {
+    "regex": "[a-z0-9\\-_]*((?<!cu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9]|[ _]Senior|[ _]Junior)|crawler|crawl|checker|archiver|transcoder|spider)([^a-z]|$)",
     "name": "Generic Bot"
   }
 ]

@@ -122,6 +122,18 @@
     }
   },
   {
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot)",
+    "bot": {
+      "name": "Amazon Bot",
+      "category": "Crawler",
+      "url": "https://developer.amazon.com/support/amazonbot",
+      "producer": {
+        "name": "Amazon.com, Inc.",
+        "url": "https://www.amazon.com/"
+      }
+    }
+  },
+  {
     "user_agent": "Amazon Route 53 Health Check Service; ref:xxxxxxxx-xxxx-xxxxxxxxx-xxxxxxxxxxxx; report http://amzn.to/xxxxxxx",
     "bot": {
       "name": "Amazon Route53 Health Check",
@@ -2098,10 +2110,10 @@
     "bot": {
       "name": "HubPages",
       "category": "Crawler",
-      "url": "http://hubpages.com/help/crawlingpolicy",
+      "url": "https://hubpages.com/help/crawlingpolicy",
       "producer": {
-        "name": "HubPages",
-        "url": "http://hubpages.com/"
+        "name": "HubPages, Inc.",
+        "url": "https://discover.hubpages.com/"
       }
     }
   },
@@ -2267,6 +2279,18 @@
       "producer": {
         "name": "Lighthouse",
         "url": "https://developers.google.com/web/tools/lighthouse"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; LastModBot/0.1; +https://last-modified.com/en)",
+    "bot": {
+      "name": "LastMod Bot",
+      "category": "Site Monitor",
+      "url": "https://last-modified.com/en/about",
+      "producer": {
+        "name": null,
+        "url": "https://last-modified.com/en"
       }
     }
   },
@@ -3055,11 +3079,11 @@
     "user_agent": "Mozilla/5.0 (compatible; Pinterestbot/1.0; http://www.pinterest.com/bot.html)",
     "bot": {
       "name": "Pinterest",
-      "url": "http://www.pinterest.com/bot.html",
+      "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
       "category": "Crawler",
       "producer": {
         "name": "Pinterest",
-        "url": "http://www.pinterest.com/"
+        "url": "https://www.pinterest.com/"
       }
     }
   },
@@ -3067,11 +3091,23 @@
     "user_agent": "Pinterest/0.2 (+http://www.pinterest.com/)",
     "bot": {
       "name": "Pinterest",
-      "url": "http://www.pinterest.com/bot.html",
+      "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
       "category": "Crawler",
       "producer": {
         "name": "Pinterest",
-        "url": "http://www.pinterest.com/"
+        "url": "https://www.pinterest.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Pinterestbot/1.0;  https://www.pinterest.com/bot.html)",
+    "bot": {
+      "name": "Pinterest",
+      "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
+      "category": "Crawler",
+      "producer": {
+        "name": "Pinterest",
+        "url": "https://www.pinterest.com/"
       }
     }
   },
@@ -5418,8 +5454,8 @@
       "url": "https://whatcms.org/",
       "category": "Crawler",
       "producer": {
-        "name": "",
-        "url": ""
+        "name": "Nineteen Ten LLC",
+        "url": "https://whatcms.org/"
       }
     }
   },
@@ -5601,6 +5637,1030 @@
         "name": "Yahoo! Inc.",
         "url": "http://www.yahoo.com"
       }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; Cookiebot/1.0;  http://cookiebot.com/) Chrome/79.0.3945.117 Safari/537.36",
+    "bot": {
+      "name": "Cookiebot",
+      "category": "Crawler",
+      "url": "https://support.cookiebot.com/hc/en-us/articles/360014264140-Scanner-User-Agent",
+      "producer": {
+        "name": "Cybot A/S",
+        "url": "https://www.cybot.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "NetSystemsResearch studies the availability of various services across the internet. Our website is netsystemsresearch.com",
+    "bot": {
+      "name": "NetSystemsResearch",
+      "category": "Security Checker",
+      "url": "https://www.netsystemsresearch.com/",
+      "producer": {
+        "name": "NET SYSTEMS RESEARCH LLC",
+        "url": "https://www.netsystemsresearch.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; CensysInspect/1.1;  https://about.censys.io/)",
+    "bot": {
+      "name": "CensysInspect",
+      "category": "Security Checker",
+      "url": "https://about.censys.io/",
+      "producer": {
+        "name": "Censys, Inc.",
+        "url": "https://censys.io/"
+      }
+    }
+  },
+  {
+    "user_agent": "https://gdnplus.com:Gather Analyze Provide.",
+    "bot": {
+      "name": "GDNP",
+      "category": "Crawler",
+      "url": "https://gdnplus.com/",
+      "producer": {
+        "name": "Global Digital Network Plus, LLC",
+        "url": "https://gdnplus.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "WellKnownBot/0.1 (https://well-known.dev)",
+    "bot": {
+      "name": "WellKnownBot",
+      "category": "Crawler",
+      "url": "https://well-known.dev"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Adsbot/3.1;  https://seostar.co/robot/)",
+    "bot": {
+      "name": "Adsbot",
+      "category": "Crawler",
+      "url": "https://seostar.co/robot/"
+    }
+  },
+  {
+    "user_agent": "MTRobot/0.2 (Metrics Tools Analytics Crawler; https://metrics-tools.de/robot.html; crawler@metrics-tools.de)",
+    "bot": {
+      "name": "MTRobot",
+      "category": "Crawler",
+      "url": "https://metrics-tools.de/robot.html",
+      "producer": {
+        "name": "Metrics Tools",
+        "url": "https://metrics-tools.de/"
+      }
+    }
+  },
+  {
+    "user_agent": "My User Agent 1.0",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "serpstatbot/1.0 (advanced backlink tracking bot; curl/7.58.0; http://serpstatbot.com/; abuse@serpstatbot.com)",
+    "bot": {
+      "name": "serpstatbot",
+      "category": "Crawler",
+      "url": "http://serpstatbot.com/",
+      "producer": {
+        "name": "Netpeak Ltd",
+        "url": "https://netpeak.net/"
+      }
+    }
+  },
+  {
+    "user_agent": "colly - https://github.com/gocolly/colly/v2",
+    "bot": {
+      "name": "colly",
+      "category": "Crawler",
+      "url": "https://github.com/gocolly/colly/"
+    }
+  },
+  {
+    "user_agent": "l9tcpid/v1.0.0",
+    "bot": {
+      "name": "l9tcpid",
+      "category": "Security Checker",
+      "url": "https://github.com/LeakIX/l9tcpid"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; MegaIndex.ru/2.0; +http://megaindex.com/crawler)",
+    "bot": {
+      "name": "MegaIndex",
+      "category": "Crawler",
+      "url": "https://megaindex.com/crawler"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Seekport Crawler; http://seekport.com/)",
+    "bot": {
+      "name": "Seekport",
+      "category": "Crawler",
+      "url": "http://www.seekport.com/",
+      "producer": {
+        "name": "SISTRIX GmbH",
+        "url": "https://www.sistrix.de/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; seolyt/1.1; +https://seolyt.com)",
+    "bot": {
+      "name": "seolyt",
+      "category": "Crawler",
+      "url": "https://seolyt.com/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; YaK/1.0; http://linkfluence.com/; bot@linkfluence.com)",
+    "bot": {
+      "name": "YaK",
+      "category": "Crawler",
+      "url": "https://www.linkfluence.com/",
+      "producer": {
+        "name": "Linkfluence SAS",
+        "url": "https://www.linkfluence.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; +http://www.komodia.com/newwiki/index.php/URL_server_crawler) KomodiaBot/1.0",
+    "bot": {
+      "name": "KomodiaBot",
+      "category": "Crawler",
+      "url": "http://www.komodia.com/newwiki/index.php/URL_server_crawler",
+      "producer": {
+        "name": "Komodia Inc.",
+        "url": "https://www.komodia.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0; Catchpoint) like Gecko",
+    "bot": {
+      "name": "Catchpoint",
+      "category": "Site Monitor",
+      "url": "https://www.catchpoint.com/",
+      "producer": {
+        "name": "Catchpoint Systems",
+        "url": "https://www.catchpoint.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Better Uptime Bot Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+    "bot": {
+      "name": "Better Uptime Bot",
+      "category": "Site Monitor",
+      "url": "https://betteruptime.com/faq",
+      "producer": {
+        "name": "Better Uptime",
+        "url": "https://betteruptime.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "gobuster/3.1.0",
+    "bot": {
+      "name": "Gobuster",
+      "url": "https://github.com/OJ/gobuster"
+    }
+  },
+  {
+    "user_agent": "k6/0.31.1 (https://k6.io/)",
+    "bot": {
+      "name": "K6",
+      "url": "https://k6.io/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Neevabot/1.0;  https://neeva.com/neevabot)",
+    "bot": {
+      "name": "Neevabot",
+      "category": "Search bot",
+      "url": "https://neeva.com/neevabot",
+      "producer": {
+        "name": "Neeva Inc.",
+        "url": "https://neeva.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "LinkPreview/1.5 (http://linkpreview.net)",
+    "bot": {
+      "name": "LinkPreview",
+      "category": "Service Agent",
+      "url": "https://www.linkpreview.net/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; JungleKeyThumbnail/1.1; +http://www.junglekey.fr/)",
+    "bot": {
+      "name": "JungleKeyThumbnail",
+      "category": "Crawler",
+      "url": "https://junglekey.com/"
+    }
+  },
+  {
+    "user_agent": "rocketmonitor 1.0",
+    "bot": {
+      "name": "RocketMonitorBot",
+      "category": "Site Monitor",
+      "url": "https://www.radiomast.io/docs/stream-monitoring/technical_details.html",
+      "producer": {
+        "name": "Radio Mast, Inc.",
+        "url": "https://www.radiomast.io/"
+      }
+    }
+  },
+  {
+    "user_agent": "RocketMonitorBot/1.0 ( https://www.radiomast.io)",
+    "bot": {
+      "name": "RocketMonitorBot",
+      "category": "Site Monitor",
+      "url": "https://www.radiomast.io/docs/stream-monitoring/technical_details.html",
+      "producer": {
+        "name": "Radio Mast, Inc.",
+        "url": "https://www.radiomast.io/"
+      }
+    }
+  },
+  {
+    "user_agent": "SitemapParser-VIPnytt/1.1 ( https://github.com/VIPnytt/SitemapParser/blob/master/README.md)",
+    "bot": {
+      "name": "SitemapParser-VIPnytt",
+      "category": "Crawler",
+      "url": "https://github.com/VIPnytt/SitemapParser/"
+    }
+  },
+  {
+    "user_agent": "Turnitin (https://bit.ly/2UvnfoQ)",
+    "bot": {
+      "name": "Turnitin",
+      "category": "Crawler",
+      "url": "https://turnitin.com/robot/crawlerinfo.html"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; Storebot-Google/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36",
+    "bot": {
+      "name": "Google StoreBot",
+      "category": "Crawler"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.56 Safari/537.36 DMBrowser/2.1 (UV)",
+    "bot": {
+      "name": "Dotcom Monitor",
+      "category": "Site Monitor",
+      "url": "https://www.dotcom-monitor.com"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:29.0) Gecko/20100101 /29.0 DMBrowser-BV",
+    "bot": {
+      "name": "Dotcom Monitor",
+      "category": "Site Monitor",
+      "url": "https://www.dotcom-monitor.com"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; ThinkChaos/0.3.0; +In_the_test_phase,_if_the_ThinkChaos_brings_you_trouble,_please_add_disallow_to_the_robots.txt._Thank_you.)",
+    "bot": {
+      "name": "ThinkChaos",
+      "category": "Crawler"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; DataForSeoBot/1.0; +https://dataforseo.com/dataforseo-bot)",
+    "bot": {
+      "name": "DataForSeoBot",
+      "category": "Crawler",
+      "url": "https://dataforseo.com/dataforseo-bot"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)",
+    "bot": {
+      "name": "Discord Bot",
+      "category": "Service Agent",
+      "url": "https://discordapp.com"
+    }
+  },
+  {
+    "user_agent": "facebookcatalog/1.0",
+    "bot": {
+      "name": "Facebook External Hit",
+      "category": "Social Media Agent",
+      "url": "https://www.facebook.com/externalhit_uatext.php",
+      "producer": {
+        "name": "Facebook",
+        "url": "http://www.facebook.com"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Linespider/1.1; https://lin.ee/4dwXkTH)",
+    "bot": {
+      "name": "Linespider",
+      "category": "Crawler",
+      "url": "https://lin.ee/4dwXkTH"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Cincraw/1.0; +http://cincrawdata.net/bot/)",
+    "bot": {
+      "name": "Cincraw",
+      "category": "Crawler",
+      "url": "http://cincrawdata.net/bot/"
+    }
+  },
+  {
+    "user_agent": "CISPA Web Analyzer (https://notify.cispa.de)",
+    "bot": {
+      "name": "CISPA Web Analyzer",
+      "category": "Crawler",
+      "url": "https://notify.cispa.de/",
+      "producer": {
+        "name": "CISPA - Helmholtz-Zentrum für Informationssicherheit gGmbH",
+        "url": "https://cispa.de/en"
+      }
+    }
+  },
+  {
+    "user_agent": "IonCrawl (https://www.ionos.de/terms-gtc/faq-crawler-en/)",
+    "bot": {
+      "name": "IONOS Crawler",
+      "category": "Crawler",
+      "url": "https://www.ionos.de/terms-gtc/faq-crawler-en/",
+      "producer": {
+        "name": "IONOS SE",
+        "url": "https://www.ionos.de/"
+      }
+    }
+  },
+  {
+    "user_agent": "Crawldad (+https://gist.github.com/jayhardee9/2f2a2c4dba26564ee040ae32e0dd0972)",
+    "bot": {
+      "name": "Crawldad",
+      "category": "Crawler",
+      "url": "https://gist.github.com/jayhardee9/2f2a2c4dba26564ee040ae32e0dd0972"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 ### This is a crawler for security.txt files. For more information visit https://securitytxt-scan.cs.hm.edu/ ###",
+    "bot": {
+      "name": "security.txt scanserver",
+      "category": "Security Checker",
+      "url": "https://securitytxt-scan.cs.hm.edu/",
+      "producer": {
+        "name": "Hochschule für angewandte Wissenschaften München",
+        "url": "https://www.hm.edu/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; CentOS Linux release 7.4.1708) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 (compatible; AdsBot-Naver/1.0; +http://searchad.naver.com)",
+    "bot": {
+      "name": "Yeti/Naverbot",
+      "category": "Search bot",
+      "url": "http://help.naver.com/robots/",
+      "producer": {
+        "name": "Naver",
+        "url": "http://www.naver.com"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Google-Stale-Content-Probe; +http://www.google.com/bot.html)",
+    "bot": {
+      "name": "Googlebot",
+      "category": "Search bot",
+      "url": "http://www.google.com/bot.html",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "http://www.google.com"
+      }
+    }
+  },
+  {
+    "user_agent": "cortex/1.0",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/95.0.4638.69 Safari/537.36 Google-Ads-Conversions",
+    "bot": {
+      "name": "Googlebot",
+      "category": "Search bot",
+      "url": "http://www.google.com/bot.html",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "http://www.google.com"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; TigerBot/8.69; Tiger.ch)",
+    "bot": {
+      "name": "TigerBot",
+      "category": "Crawler",
+      "url": "https://tiger.ch/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; TestCrawler/0.2;  http://www.comcepta.com)",
+    "bot": {
+      "name": "TestCrawler",
+      "category": "Crawler",
+      "url": "https://www.comcepta.com/"
+    }
+  },
+  {
+    "user_agent": "CF-UC User Agent v.1d.99613",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "Re-re Studio ( http://vip0.ru/)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "adreview/1.0",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "AHC/2.1",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "NameOfAgent",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "Request-Promise",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "GoogleAssociationService",
+    "bot": {
+      "name": "Googlebot",
+      "category": "Search bot",
+      "url": "http://www.google.com/bot.html",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "http://www.google.com"
+      }
+    }
+  },
+  {
+    "user_agent": "CrowdTanglebot/1.0",
+    "bot": {
+      "name": "CrowdTangle",
+      "category": "Crawler",
+      "url": "https://help.crowdtangle.com/en/articles/3009319-crowdtangle-bot",
+      "producer": {
+        "name": "CrowdTangle, Inc.",
+        "url": "https://www.crowdtangle.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Sellers.Guide Crawler by Primis",
+    "bot": {
+      "name": "Sellers.Guide",
+      "category": "Crawler",
+      "url": "https://sellers.guide/",
+      "producer": {
+        "name": "McCann Disciplines, Ltd.",
+        "url": "https://www.primis.tech/"
+      }
+    }
+  },
+  {
+    "user_agent": "AhrefsSiteAudit/6.1; http://ahrefs.com/robot/site-audit",
+    "bot": {
+      "name": "AhrefsSiteAudit",
+      "category": "Site Monitor",
+      "url": "https://ahrefs.com/robot/site-audit",
+      "producer": {
+        "name": "Ahrefs Pte Ltd",
+        "url": "https://ahrefs.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "OnalyticaBot",
+    "bot": {
+      "name": "Onalytica",
+      "category": "Crawler",
+      "url": "https://www.airslate.com/bot/explore/onalytica-bot",
+      "producer": {
+        "name": "airSlate, Inc.",
+        "url": "https://www.airslate.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Snap URL Preview Service; bot; https://developer.snapchat.com/robots",
+    "bot": {
+      "name": "Snap URL Preview Service",
+      "category": "Service Agent",
+      "url": "https://developers.snap.com/robots",
+      "producer": {
+        "name": "Snapchat Inc.",
+        "url": "https://www.snapchat.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "deepnoc - https://deepnoc.com/bot",
+    "bot": {
+      "name": "deepnoc",
+      "category": "Crawler",
+      "url": "https://deepnoc.com/bot",
+      "producer": {
+        "name": "deepnoc, GmbH",
+        "url": "https://deepnoc.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Newslitbot/0.1; https://www.newslit.co",
+    "bot": {
+      "name": "Newslitbot",
+      "category": "Crawler",
+      "url": "https://www.newslit.co/",
+      "producer": {
+        "name": "Newslit, LLC.",
+        "url": "https://www.newslit.co/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; um-LN/1.0; mailto: techinfo@ubermetrics-technologies.com)",
+    "bot": {
+      "name": "uMBot",
+      "category": "Crawler",
+      "url": "https://www.ubermetrics-technologies.com/",
+      "producer": {
+        "name": "Ubermetrics Technologies GmbH",
+        "url": "https://www.ubermetrics-technologies.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Abonti/0.91 - http://www.abonti.com)",
+    "bot": {
+      "name": "Abonti",
+      "category": "Crawler",
+      "url": "http://abonti.com/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36; +collection@infegy.com",
+    "bot": {
+      "name": "Infegy",
+      "category": "Crawler",
+      "url": "https://infegy.com/",
+      "producer": {
+        "name": "Infegy, Inc.",
+        "url": "https://infegy.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "ALittle Client",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "Hello, world",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "wp_is_mobile",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "HTTP Banner Detection (https://security.ipip.net)",
+    "bot": {
+      "name": "IPIP",
+      "category": "Security Checker",
+      "url": "https://security.ipip.net/",
+      "producer": {
+        "name": "Beijing Tiantexin Tech. Co., Ltd.",
+        "url": "https://en.ipip.net/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)",
+    "bot": {
+      "name": "Headline",
+      "category": "Crawler",
+      "url": "https://headline.com/legal/crawler",
+      "producer": {
+        "name": "e.ventures Managementgesellschaft mbH",
+        "url": "https://headline.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "webprosbot/2.0 (+mailto:abuse-6337@webpros.com)",
+    "bot": {
+      "name": "WebPros",
+      "category": "Crawler",
+      "url": "https://webpros.com/",
+      "producer": {
+        "name": "WebPros Holdco B.V.",
+        "url": "https://webpros.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "0xAbyssalDoesntExist",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "ELB-HealthChecker/2.0",
+    "bot": {
+      "name": "Amazon ELB",
+      "category": "Site Monitor",
+      "url": "https://aws.amazon.com/elasticloadbalancing/",
+      "producer": {
+        "name": "Amazon.com, Inc.",
+        "url": "https://www.amazon.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Datadog/Synthetics",
+    "bot": {
+      "name": "Datadog Agent",
+      "url": "https://github.com/DataDog/dd-agent",
+      "category": "Site Monitor",
+      "producer": {
+        "name": "Datadog",
+        "url": "https://www.datadoghq.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "DatadogSynthetics",
+    "bot": {
+      "name": "Datadog Agent",
+      "url": "https://github.com/DataDog/dd-agent",
+      "category": "Site Monitor",
+      "producer": {
+        "name": "Datadog",
+        "url": "https://www.datadoghq.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Wheregoes.com Redirect Checker/1.0",
+    "bot": {
+      "name": "WhereGoes",
+      "category": "Crawler",
+      "url": "https://wheregoes.com/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 project_patchwatch",
+    "bot": {
+      "name": "Project Patchwatch",
+      "category": "Crawler",
+      "url": "http://66.240.192.82/"
+    }
+  },
+  {
+    "user_agent": "masscan-ng/1.3 (https://github.com/bi-zone/masscan-ng)",
+    "bot": {
+      "name": "masscan-ng",
+      "url": "https://github.com/bi-zone/masscan-ng",
+      "category": "Crawler",
+      "producer": {
+        "name": "BIZON, OOO",
+        "url": "https://bi.zone/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)",
+    "bot": {
+      "name": "InternetMeasurement",
+      "category": "Crawler",
+      "url": "https://internet-measurement.com/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; DomainAppender /1.0; +http://www.profound.net/domainappender)",
+    "bot": {
+      "name": "DomainAppender",
+      "category": "Crawler",
+      "url": "https://www.profound.net/product/domain_append/",
+      "producer": {
+        "name": "Profound Networks, LLC",
+        "url": "https://www.profound.net/"
+      }
+    }
+  },
+  {
+    "user_agent": "FreeWebMonitoring SiteChecker/0.2 (+https://www.freewebmonitoring.com/bot.html)",
+    "bot": {
+      "name": "FreeWebMonitoring",
+      "category": "Site Monitor",
+      "url": "https://www.freewebmonitoring.com/bot.html",
+      "producer": {
+        "name": "GreenWave Online, Inc.",
+        "url": "http://www.greenwaveonline.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Page Modified Pinger (+http://www.pagemodified.com/bots)",
+    "bot": {
+      "name": "Page Modified Pinger",
+      "category": "Site Monitor",
+      "url": "https://www.pagemodified.com/",
+      "producer": {
+        "name": "Valley Hosting, LLC",
+        "url": "https://www.pagemodified.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "adstxtlab.com Crawler",
+    "bot": {
+      "name": "adstxtlab.com",
+      "category": "Crawler",
+      "url": "https://adstxtlab.com/validator.php",
+      "producer": {
+        "name": "Jaohawi AB",
+        "url": "https://adstxtlab.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Iframely/1.6.1 (+https://metadata.xayn.com)",
+    "bot": {
+      "name": "Iframely",
+      "category": "Crawler",
+      "url": "https://iframely.com/",
+      "producer": {
+        "name": "Itteco Software, Corp.",
+        "url": "https://iframely.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "DomainStatsBot/1.0 (https://domainstats.com/pages/our-bot)",
+    "bot": {
+      "name": "DomainStatsBot",
+      "category": "Crawler",
+      "url": "https://domainstats.com/pages/our-bot",
+      "producer": {
+        "name": "Domainstats Ltd",
+        "url": "https://domainstats.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; aiHitBot/2.9; +https://www.aihitdata.com/about)",
+    "bot": {
+      "name": "aiHitBot",
+      "category": "Crawler",
+      "url": "https://www.aihitdata.com/about"
+    }
+  },
+  {
+    "user_agent": "ias-sg/3.1 (+https://www.admantx.com/service-fetcher.html)",
+    "bot": {
+      "name": "ADmantX Service Fetcher",
+      "category": "Service bot",
+      "url": "https://www.admantx.com/service-fetcher.html"
+    }
+  },
+  {
+    "user_agent": "DomainCrawler/3.0 (info@domaincrawler.com; http://www.domaincrawler.com/wwweb.be)",
+    "bot": {
+      "name": "DomainCrawler",
+      "category": "Crawler",
+      "url": "https://domaincrawler.com/about-us/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; DNSResearchBot/2.1; +http://195.37.190.77)",
+    "bot": {
+      "name": "DNSResearchBot",
+      "category": "Crawler"
+    }
+  },
+  {
+    "user_agent": "GitCrawlerBot/0.0.1 (abuse reports to abuse@crissyfield.de)",
+    "bot": {
+      "name": "GitCrawlerBot",
+      "category": "Crawler"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 AdAuth/1.0; +https://www.adauth.com",
+    "bot": {
+      "name": "AdAuth",
+      "category": "Crawler",
+      "url": "https://www.adauth.com"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Faveeo/1.0; +http://www.faveeo.com)",
+    "bot": {
+      "name": "Faveeo",
+      "category": "Crawler",
+      "url": "http://www.faveeo.com"
+    }
+  },
+  {
+    "user_agent": "ias-ir/3.1 (+https://www.admantx.com/service-fetcher.html)",
+    "bot": {
+      "name": "ADmantX Service Fetcher",
+      "category": "Service bot",
+      "url": "https://www.admantx.com/service-fetcher.html"
+    }
+  },
+  {
+    "user_agent": "ias-jp/3.1 (+https://www.admantx.com/service-fetcher.html)",
+    "bot": {
+      "name": "ADmantX Service Fetcher",
+      "category": "Service bot",
+      "url": "https://www.admantx.com/service-fetcher.html"
+    }
+  },
+  {
+    "user_agent": "KOCMOHABT (+https://kozmonavt.tk/) Mozilla/5.0 (compatible; Web Explorer 2)",
+    "bot": {
+      "name": "Kozmonavt",
+      "category": "Crawler",
+      "url": "https://kozmonavt.ml"
+    }
+  },
+  {
+    "user_agent": "KOCMOHABT (https://kozmonavt.ml/) Mozilla/5.0 (Web Explorer)",
+    "bot": {
+      "name": "Kozmonavt",
+      "category": "Crawler",
+      "url": "https://kozmonavt.ml"
+    }
+  },
+  {
+    "user_agent": "CriteoBot/0.1 (+https://www.criteo.com/criteo-crawler/)",
+    "bot": {
+      "name": "CriteoBot",
+      "category": "Crawler",
+      "url": "https://www.criteo.com/criteo-crawler/"
+    }
+  },
+  {
+    "user_agent": "PayPal IPN ( https://www.paypal.com/ipn )",
+    "bot": {
+      "name": "PayPal IPN",
+      "category": "Service Agent",
+      "url": "https://developer.paypal.com/api/nvp-soap/ipn/IPNIntro/",
+      "producer": {
+        "name": "PayPal, Inc.",
+        "url": "https://www.paypal.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "l9explore/1.3.0",
+    "bot": {
+      "name": "l9explore",
+      "category": "Security Checker",
+      "url": "https://github.com/LeakIX/l9explore"
+    }
+  },
+  {
+    "user_agent": "Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com",
+    "bot": {
+      "name": "Expanse",
+      "category": "Security Checker",
+      "url": "https://expanse.co/",
+      "producer": {
+        "name": "Expanse Inc.",
+        "url": "https://expanse.co/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; MaCoCu; +https://www.clarin.si/info/macocu-massive-collection-and-curation-of-monolingual-and-bilingual-data/)",
+    "bot": {
+      "name": "MaCoCu",
+      "category": "Crawler",
+      "url": "https://www.clarin.si/info/macocu-massive-collection-and-curation-of-monolingual-and-bilingual-data/",
+      "producer": {
+        "name": "Jožef Stefan Institute",
+        "url": "https://www.ijs.si/ijsw/JSI"
+      }
+    }
+  },
+  {
+    "user_agent": "Electronic Frontier Foundation's Do Not Track Verifier (for questions or concerns email dnt-policy@eff.org)",
+    "bot": {
+      "name": "EFF Do Not Track Verifier",
+      "category": "Crawler",
+      "url": "https://www.eff.org/issues/do-not-track",
+      "producer": {
+        "name": "Electronic Frontier Foundation",
+        "url": "https://www.eff.org/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; InfoTigerBot/1.9; +https://infotiger.com/bot)",
+    "bot": {
+      "name": "InfoTigerBot",
+      "category": "Crawler",
+      "url": "https://infotiger.com/bot",
+      "producer": {
+        "name": "Infotiger UG",
+        "url": "https://infotiger.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Birdcrawlerbot/0.5; +https://crawla.de)",
+    "bot": {
+      "name": "Birdcrawlerbot",
+      "category": "Crawler",
+      "url": "https://crawla.de/de/index.php",
+      "producer": {
+        "name": "Swoppen Systems GmbH",
+        "url": "https://www.swoppen.com/de"
+      }
+    }
+  },
+  {
+    "user_agent": "ScamadviserExternalHit/1.0",
+    "bot": {
+      "name": "Scamadviser External Hit",
+      "category": "Crawler",
+      "url": "https://www.scamadviser.com/",
+      "producer": {
+        "name": "Ecommerce Operations B.V.",
+        "url": "https://www.scamadviser.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "ZaldamoSearchBot(www.zaldamo.com/search.html)",
+    "bot": {
+      "name": "Zaldamo",
+      "category": "Crawler",
+      "url": "https://www.zaldamo.com/search.html",
+      "producer": {
+        "name": "Project Orlando, LLC.",
+        "url": "https://www.projectorlando.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Anarchy99",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "AFB/4.1 (+http://allloadin.com)",
+    "bot": {
+      "name": "Allloadin Favicon Bot",
+      "category": "Crawler",
+      "url": "https://allloadin.com/"
     }
   }
 ]

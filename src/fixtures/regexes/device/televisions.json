@@ -17,7 +17,12 @@
   "ALDI SÜD": {
     "regex": "ALDISUED[;,]",
     "device": "tv",
-    "model": ""
+    "models": [
+      {
+        "regex": "ALDISUED, ([a-z0-9_ \\-]+), (?:wired|wireless)",
+        "model": ""
+      }
+    ]
   },
   "Altech UEC": {
     "regex": "Altech UEC",
@@ -142,7 +147,12 @@
   "Grundig": {
     "regex": "(OWB|Grundig|Arcelik)",
     "device": "tv",
-    "model": ""
+    "models": [
+      {
+        "regex": "G7",
+        "model": "G7"
+      }
+    ]
   },
   "Haier": {
     "regex": "(?:HHW_)?HAIER",
@@ -218,7 +228,7 @@
     "model": ""
   },
   "Humax": {
-    "regex": "Humax",
+    "regex": "Humax|hdr1000s",
     "device": "tv",
     "models": [
       {
@@ -228,6 +238,22 @@
       {
         "regex": "HMS1000S",
         "model": "HMS-1000S"
+      },
+      {
+        "regex": "FVP4000T",
+        "model": "FVP-4000T"
+      },
+      {
+        "regex": "HGS1000S",
+        "model": "HGS-1000S"
+      },
+      {
+        "regex": "HDR1000S",
+        "model": "HDR-1000S"
+      },
+      {
+        "regex": "HDR4000T",
+        "model": "HDR-4000T"
       },
       {
         "regex": "Humax; ([^);/]+)",
@@ -417,7 +443,12 @@
   "Medion": {
     "regex": "Medion",
     "device": "tv",
-    "model": ""
+    "models": [
+      {
+        "regex": "MEDION, ([a-z0-9_ \\-]+), (?:wired|wireless)",
+        "model": ""
+      }
+    ]
   },
   "Miray": {
     "regex": "MIRAY",
@@ -591,6 +622,10 @@
     "device": "tv",
     "models": [
       {
+        "regex": "SHARP, ([a-z0-9_ \\-]+), (?:wired|wireless)",
+        "model": ""
+      },
+      {
         "regex": "Sharp[,;] ?((?! |HbbTV)[^),;/]+)",
         "model": "$1"
       },
@@ -618,7 +653,7 @@
       }
     ]
   },
-  "Smart": {
+  "Smart Electronic": {
     "regex": "Smart[;,]",
     "device": "tv",
     "models": [
@@ -826,6 +861,11 @@
   },
   "Vestel": {
     "regex": "(?:Vestel.+VESTEL|VESTEL;)",
+    "device": "tv",
+    "model": ""
+  },
+  "Unknown": {
+    "regex": "OEM, ([a-z0-9_ \\-]+), (?:wired|wireless)",
     "device": "tv",
     "model": ""
   }

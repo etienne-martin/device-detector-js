@@ -16,9 +16,13 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const desktopOsArray = ["AmigaOS","IBM","GNU/Linux","Mac","Unix","Windows","BeOS","Chrome OS"];
+const desktopOsArray = ["AmigaOS","IBM","GNU/Linux","Mac","Unix","Windows","BeOS","Chrome OS", "Chromium OS"];
 const shortOsNames = operatingSystem.operatingSystem
 const osFamilies = operatingSystem.osFamilies
+const clientHintMapping = {
+  "GNU/Linux": ["Linux"],
+  "Mac": ["MacOs"]
+}
 
 export default class OperatingSystemParser {
   public static getDesktopOsArray = (): string[] => desktopOsArray;
@@ -64,7 +68,27 @@ export default class OperatingSystemParser {
       if (!match) continue;
 
       result.name = variableReplacement(operatingSystem.name, match);
-      result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+
+      if (operatingSystem.hasOwnProperty("versions")) {
+        const osVersions = operatingSystem.versions || [];
+
+        for (const osVersion of osVersions) {
+          const match = userAgentParser(osVersion.regex, userAgent);
+
+          if (!match) continue;
+
+          result.version = formatVersion(variableReplacement(osVersion.version, match), this.options.versionTruncation);
+
+          break;
+        }
+
+        // use version from user agent if non was provided, but os family from useragent matches
+        if (result.version === "") {
+          result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+        }
+      } else {
+        result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+      }
 
       if (result.name === "lubuntu") {
         result.name = "Lubuntu";
@@ -74,10 +98,6 @@ export default class OperatingSystemParser {
         result.name = "Debian";
       }
 
-      if (result.name === "YunOS") {
-        result.name = "YunOs";
-      }
-
       return result;
     }
 
@@ -85,7 +105,7 @@ export default class OperatingSystemParser {
   };
 
   private parsePlatform = (userAgent: string) => {
-    if (userAgentParser("arm|aarch64|Watch ?OS|Watch1,[12]", userAgent)) {
+    if (userAgentParser("arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]", userAgent)) {
       return "ARM";
     }
 
@@ -97,11 +117,11 @@ export default class OperatingSystemParser {
       return "SuperH";
     }
 
-    if (userAgentParser("WOW64|x64|win64|amd64|x86_?64", userAgent)) {
+    if (userAgentParser("64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|amd64|x86_?64", userAgent)) {
       return "x64";
     }
 
-    if (userAgentParser("(?:i[0-9]|x)86|i86pc", userAgent)) {
+    if (userAgentParser(".+32bit|.+win32|(?:i[0-9]|x)86|i86pc", userAgent)) {
       return "x86";
     }
 
