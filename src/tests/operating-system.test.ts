@@ -1,4 +1,4 @@
-import DeviceDetector = require("../");
+import DeviceDetector from "../";
 import operatingSystemTests from "../fixtures/Tests/Parser/fixtures/oss.json";
 import { OperatingSystemResult } from "../parsers/operating-system";
 import { formatVersion } from "../utils/version";

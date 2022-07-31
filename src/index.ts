@@ -70,7 +70,7 @@ class DeviceDetector {
     /**
      * Assume all devices running iOS / Mac OS are from Apple
      */
-    if (!result.device?.brand && ["Apple TV", "watchOS", "iOS", "Mac"].includes(osName || "")) {
+    if (!result.device?.brand && ["iPadOS", "tvOS", "Apple TV", "watchOS", "iOS", "Mac"].includes(osName || "")) {
       if (!result.device) {
         result.device = this.createDeviceObject();
       }
@@ -86,13 +86,13 @@ class DeviceDetector {
      *       a detected browser, but can still be detected. So we check the useragent for Chrome instead.
      */
     if (!result.device?.type && osFamily === "Android" && userAgentParser("Chrome/[\\.0-9]*", userAgent)) {
-      if (userAgentParser("Chrome/[.0-9]* (?:Mobile|eliboM)", userAgent)) {
+      if (userAgentParser("Chrome/[.0-9]* (?:Mobile|eliboM) Safari/", userAgent)) {
         if (!result.device) {
           result.device = this.createDeviceObject();
         }
 
         result.device.type = "smartphone";
-      } else if (userAgentParser("Chrome/[.0-9]* (?!Mobile)", userAgent)) {
+      } else if (userAgentParser("Chrome/[.0-9]* (?!Mobile)Safari", userAgent)) {
         if (!result.device) {
           result.device = this.createDeviceObject();
         }
@@ -184,13 +184,24 @@ class DeviceDetector {
     /**
      * All devices running Opera TV Store are assumed to be televisions
      */
-    if (userAgentParser("Opera TV Store", userAgent)) {
+    if (userAgentParser("Opera TV Store| OMI/", userAgent)) {
       if (!result.device ) {
         result.device = this.createDeviceObject();
       }
 
       result.device.type = "television";
     }
+
+    /**
+     * All devices that contain Andr0id in string are assumed to be a tv
+     */
+    if (userAgentParser("Andr0id|Android TV", userAgent)) {
+    if (!result.device ) {
+      result.device = this.createDeviceObject();
+    }
+
+    result.device.type = "television";
+  }
 
     /**
      * All devices running Tizen TV or SmartTV are assumed to be televisions
