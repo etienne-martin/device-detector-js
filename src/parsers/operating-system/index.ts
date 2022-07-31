@@ -81,6 +81,11 @@ export default class OperatingSystemParser {
 
           break;
         }
+
+        // use version from user agent if non was provided, but os family from useragent matches
+        if (result.version === "") {
+          result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+        }
       } else {
         result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
       }
@@ -91,10 +96,6 @@ export default class OperatingSystemParser {
 
       if (result.name === "debian") {
         result.name = "Debian";
-      }
-
-      if (result.name === "YunOS") {
-        result.name = "YunOs";
       }
 
       return result;
