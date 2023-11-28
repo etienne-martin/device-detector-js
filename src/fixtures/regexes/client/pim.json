@@ -68,5 +68,40 @@
     "regex": "BathyScaphe/",
     "name": "BathyScaphe",
     "version": ""
+  },
+  {
+    "regex": "Raindrop.io/(\\d+[\\.\\d]+)",
+    "name": "Raindrop.io",
+    "version": "$1"
+  },
+  {
+    "regex": "Franz/(\\d+[\\.\\d]+)",
+    "name": "Franz",
+    "version": "$1"
+  },
+  {
+    "regex": "Mailspring/(\\d+[\\.\\d]+)",
+    "name": "Mailspring",
+    "version": "$1"
+  },
+  {
+    "regex": "Notion/(\\d+[\\.\\d]+)",
+    "name": "Notion",
+    "version": "$1"
+  },
+  {
+    "regex": "Basecamp[0-9]/?(\\d+[\\.\\d]+)",
+    "name": "Basecamp",
+    "version": "$1"
+  },
+  {
+    "regex": "Evernote/?(\\d+[\\.\\d]+)",
+    "name": "Evernote",
+    "version": "$1"
+  },
+  {
+    "regex": "ramboxpro/(\\d+\\.[\\.\\d]+)?",
+    "name": "Rambox Pro",
+    "version": "$1"
   }
 ]

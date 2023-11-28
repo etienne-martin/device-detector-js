@@ -2098,10 +2098,10 @@
     "bot": {
       "name": "HubPages",
       "category": "Crawler",
-      "url": "http://hubpages.com/help/crawlingpolicy",
+      "url": "https://hubpages.com/help/crawlingpolicy",
       "producer": {
-        "name": "HubPages",
-        "url": "http://hubpages.com/"
+        "name": "HubPages, Inc.",
+        "url": "https://discover.hubpages.com/"
       }
     }
   },
@@ -3055,11 +3055,11 @@
     "user_agent": "Mozilla/5.0 (compatible; Pinterestbot/1.0; http://www.pinterest.com/bot.html)",
     "bot": {
       "name": "Pinterest",
-      "url": "http://www.pinterest.com/bot.html",
+      "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
       "category": "Crawler",
       "producer": {
         "name": "Pinterest",
-        "url": "http://www.pinterest.com/"
+        "url": "https://www.pinterest.com/"
       }
     }
   },
@@ -3067,11 +3067,23 @@
     "user_agent": "Pinterest/0.2 (+http://www.pinterest.com/)",
     "bot": {
       "name": "Pinterest",
-      "url": "http://www.pinterest.com/bot.html",
+      "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
       "category": "Crawler",
       "producer": {
         "name": "Pinterest",
-        "url": "http://www.pinterest.com/"
+        "url": "https://www.pinterest.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Pinterestbot/1.0;  https://www.pinterest.com/bot.html)",
+    "bot": {
+      "name": "Pinterest",
+      "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
+      "category": "Crawler",
+      "producer": {
+        "name": "Pinterest",
+        "url": "https://www.pinterest.com/"
       }
     }
   },
@@ -5418,8 +5430,8 @@
       "url": "https://whatcms.org/",
       "category": "Crawler",
       "producer": {
-        "name": "",
-        "url": ""
+        "name": "Nineteen Ten LLC",
+        "url": "https://whatcms.org/"
       }
     }
   },
@@ -5600,6 +5612,192 @@
       "producer": {
         "name": "Yahoo! Inc.",
         "url": "http://www.yahoo.com"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; Cookiebot/1.0;  http://cookiebot.com/) Chrome/79.0.3945.117 Safari/537.36",
+    "bot": {
+      "name": "Cookiebot",
+      "category": "Crawler",
+      "url": "https://support.cookiebot.com/hc/en-us/articles/360014264140-Scanner-User-Agent",
+      "producer": {
+        "name": "Cybot A/S",
+        "url": "https://www.cybot.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "NetSystemsResearch studies the availability of various services across the internet. Our website is netsystemsresearch.com",
+    "bot": {
+      "name": "NetSystemsResearch",
+      "category": "Security Checker",
+      "url": "https://www.netsystemsresearch.com/",
+      "producer": {
+        "name": "NET SYSTEMS RESEARCH LLC",
+        "url": "https://www.netsystemsresearch.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; CensysInspect/1.1;  https://about.censys.io/)",
+    "bot": {
+      "name": "CensysInspect",
+      "category": "Security Checker",
+      "url": "https://about.censys.io/",
+      "producer": {
+        "name": "Censys, Inc.",
+        "url": "https://censys.io/"
+      }
+    }
+  },
+  {
+    "user_agent": "https://gdnplus.com:Gather Analyze Provide.",
+    "bot": {
+      "name": "GDNP",
+      "category": "Crawler",
+      "url": "https://gdnplus.com/",
+      "producer": {
+        "name": "Global Digital Network Plus, LLC",
+        "url": "https://gdnplus.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "WellKnownBot/0.1 (https://well-known.dev)",
+    "bot": {
+      "name": "WellKnownBot",
+      "category": "Crawler",
+      "url": "https://well-known.dev"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Adsbot/3.1;  https://seostar.co/robot/)",
+    "bot": {
+      "name": "Adsbot",
+      "category": "Crawler",
+      "url": "https://seostar.co/robot/"
+    }
+  },
+  {
+    "user_agent": "MTRobot/0.2 (Metrics Tools Analytics Crawler; https://metrics-tools.de/robot.html; crawler@metrics-tools.de)",
+    "bot": {
+      "name": "MTRobot",
+      "category": "Crawler",
+      "url": "https://metrics-tools.de/robot.html",
+      "producer": {
+        "name": "Metrics Tools",
+        "url": "https://metrics-tools.de/"
+      }
+    }
+  },
+  {
+    "user_agent": "My User Agent 1.0",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "user_agent": "serpstatbot/1.0 (advanced backlink tracking bot; curl/7.58.0; http://serpstatbot.com/; abuse@serpstatbot.com)",
+    "bot": {
+      "name": "serpstatbot",
+      "category": "Crawler",
+      "url": "http://serpstatbot.com/",
+      "producer": {
+        "name": "Netpeak Ltd",
+        "url": "https://netpeak.net/"
+      }
+    }
+  },
+  {
+    "user_agent": "colly - https://github.com/gocolly/colly/v2",
+    "bot": {
+      "name": "colly",
+      "category": "Crawler",
+      "url": "https://github.com/gocolly/colly/"
+    }
+  },
+  {
+    "user_agent": "l9tcpid/v1.0.0",
+    "bot": {
+      "name": "l9tcpid",
+      "category": "Security Checker",
+      "url": "https://github.com/LeakIX/l9tcpid"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; MegaIndex.ru/2.0; +http://megaindex.com/crawler)",
+    "bot": {
+      "name": "MegaIndex",
+      "category": "Crawler",
+      "url": "https://megaindex.com/crawler"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; Seekport Crawler; http://seekport.com/)",
+    "bot": {
+      "name": "Seekport",
+      "category": "Crawler",
+      "url": "http://www.seekport.com/",
+      "producer": {
+        "name": "SISTRIX GmbH",
+        "url": "https://www.sistrix.de/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; seolyt/1.1; +https://seolyt.com)",
+    "bot": {
+      "name": "seolyt",
+      "category": "Crawler",
+      "url": "https://seolyt.com/"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (compatible; YaK/1.0; http://linkfluence.com/; bot@linkfluence.com)",
+    "bot": {
+      "name": "YaK",
+      "category": "Crawler",
+      "url": "https://www.linkfluence.com/",
+      "producer": {
+        "name": "Linkfluence SAS",
+        "url": "https://www.linkfluence.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; +http://www.komodia.com/newwiki/index.php/URL_server_crawler) KomodiaBot/1.0",
+    "bot": {
+      "name": "KomodiaBot",
+      "category": "Crawler",
+      "url": "http://www.komodia.com/newwiki/index.php/URL_server_crawler",
+      "producer": {
+        "name": "Komodia Inc.",
+        "url": "https://www.komodia.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0; Catchpoint) like Gecko",
+    "bot": {
+      "name": "Catchpoint",
+      "category": "Site Monitor",
+      "url": "https://www.catchpoint.com/",
+      "producer": {
+        "name": "Catchpoint Systems",
+        "url": "https://www.catchpoint.com/"
+      }
+    }
+  },
+  {
+    "user_agent": "Better Uptime Bot Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+    "bot": {
+      "name": "Better Uptime Bot",
+      "category": "Site Monitor",
+      "url": "https://betteruptime.com/faq",
+      "producer": {
+        "name": "Better Uptime",
+        "url": "https://betteruptime.com/"
       }
     }
   }

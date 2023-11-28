@@ -90,6 +90,11 @@
     "version": "$1"
   },
   {
+    "regex": "com.netflix.mediaclient(?:/(\\d+\\.[\\d\\.]+))?",
+    "name": "Netflix",
+    "version": "$1"
+  },
+  {
     "regex": "([^/]+)/(\\d+(?:\\.\\d+)+) \\((?:iPhone|iPad); iOS [0-9\\.]+; Scale/[0-9\\.]+\\)",
     "name": "$1",
     "version": "$2"
@@ -285,6 +290,11 @@
     "version": "$1"
   },
   {
+    "regex": "strimio(?:-desktop)/(\\d+\\.(?:[\\.\\d]+))?",
+    "name": "Strimio",
+    "version": "$1"
+  },
+  {
     "regex": "UnityPlayer/([\\d\\.]+)",
     "name": "UnityPlayer",
     "version": "$1"
@@ -315,7 +325,7 @@
     "version": "1.0"
   },
   {
-    "regex": "LinkedIn/([\\d\\.]+)",
+    "regex": "LinkedIn(?:App)?(?:/([\\d\\.]+))?",
     "name": "LinkedIn",
     "version": "$1"
   },
@@ -530,7 +540,7 @@
     "version": "$1"
   },
   {
-    "regex": "TuneIn Radio(?:[^/]+)?/(\\d+[\\.\\d]+)",
+    "regex": "TuneIn(?: Radio(?:[^/]+)?)?/(\\d+[\\.\\d]+)",
     "name": "TuneIn Radio",
     "version": "$1"
   },
@@ -617,6 +627,56 @@
   {
     "regex": "JaneStyle_iOS/(\\d+[\\.\\d]+)",
     "name": "JaneStyle",
+    "version": "$1"
+  },
+  {
+    "regex": "BNC/.+\\(Android (\\d+[\\.\\d]+)\\)",
+    "name": "Binance",
+    "version": "$1"
+  },
+  {
+    "regex": "ru\\.mail\\.my/(\\d+[\\.\\d]+)",
+    "name": "My World",
+    "version": "$1"
+  },
+  {
+    "regex": "OK(?:Android|iOS)/([\\d\\.]+)",
+    "name": "Odnoklassniki",
+    "version": "$1"
+  },
+  {
+    "regex": "yakyak/(\\d+[\\.\\d]+)",
+    "name": "YakYak",
+    "version": "$1"
+  },
+  {
+    "regex": "Teams/(\\d+[\\.\\d]+)",
+    "name": "Teams",
+    "version": "$1"
+  },
+  {
+    "regex": "StreamlabsOBS/(\\d+[\\.\\d]+)",
+    "name": "Streamlabs OBS",
+    "version": "$1"
+  },
+  {
+    "regex": "Blitz/([\\d\\.]+)",
+    "name": "Blitz",
+    "version": "$1"
+  },
+  {
+    "regex": "OfferUp/([\\d\\.]+)",
+    "name": "OfferUp",
+    "version": "$1"
+  },
+  {
+    "regex": "Vuhuv/([\\d\\.]+)",
+    "name": "Vuhuv",
+    "version": "$1"
+  },
+  {
+    "regex": ".+/(?:gfibertv|gftv200)-([\\d]+)-",
+    "name": "Google Fiber TV",
     "version": "$1"
   }
 ]

@@ -1,5 +1,37 @@
 [
   {
+    "regex": "Arvin/(\\d+[\\.\\d]+)",
+    "name": "Arvin",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "Version/.+Chrome/.+EdgW/(\\d+[\\.\\d]+)",
+    "name": "Edge WebView",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
+    "regex": "Mandarin Browser/(\\d+[\\.\\d]+)",
+    "name": "Mandarin",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "Torrent/(\\d+[\\.\\d]+)",
+    "name": "Maelstrom",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "Helio/(\\d+[\\.\\d]+)",
     "name": "Helio",
     "version": "$1",
@@ -1941,6 +1973,25 @@
     }
   },
   {
+    "regex": "OpenFin/(?:(\\d+[\\.\\d]+))",
+    "name": "OpenFin",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "SuperBird(?:/(\\d+[\\.\\d]+))?",
+    "name": "SuperBird",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit",
+      "versions": {
+        "28": "Blink"
+      }
+    }
+  },
+  {
     "regex": "Version/.* Chrome(?:/(\\d+[\\.\\d]+))?",
     "name": "Chrome Webview",
     "version": "$1",
@@ -2023,6 +2074,17 @@
     "regex": "(?:Tizen|SLP) Browser(?:/(\\d+[\\.\\d]+))?",
     "name": "Tizen Browser",
     "version": "$1"
+  },
+  {
+    "regex": "Tizen (?:\\d+[\\.\\d]+).+ Version/(\\d+[\\.\\d]+) (?:TV|Mobile)",
+    "name": "Tizen Browser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit",
+      "versions": {
+        "4": "Blink"
+      }
+    }
   },
   {
     "regex": "Blazer(?:/(\\d+[\\.\\d]+))?",
@@ -2423,11 +2485,6 @@
   {
     "regex": "Sunrise(?:Browser)?(?:/(\\d+[\\.\\d]+))?",
     "name": "Sunrise",
-    "version": "$1"
-  },
-  {
-    "regex": "SuperBird(?:/(\\d+[\\.\\d]+))?",
-    "name": "SuperBird",
     "version": "$1"
   },
   {
