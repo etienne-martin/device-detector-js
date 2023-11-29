@@ -31,6 +31,6 @@ export default class ShellTvParser {
   };
 
   private isShellTv = (userAgent: string) => {
-    return userAgentParser("[a-z]+[ _]Shell[ _]\w{6}", userAgent);
+    return userAgentParser("[a-z]+[ _]Shell[ _]\\w{6}", userAgent);
   };
 }
