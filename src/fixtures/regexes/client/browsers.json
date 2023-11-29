@@ -1,5 +1,13 @@
 [
   {
+    "regex": "Secure/(?:(\\d+[\\.\\d]+))?",
+    "name": "Secure Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "Arvin/(\\d+[\\.\\d]+)",
     "name": "Arvin",
     "version": "$1",
@@ -736,6 +744,14 @@
   {
     "regex": "Jio(?:Browser|Pages)(?:/(\\d+[\\.\\d]+))?",
     "name": "Jio Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "SY/(\\d+[\\.\\d]+) Chrome/",
+    "name": "Stampy Browser",
     "version": "$1",
     "engine": {
       "default": "Blink"
@@ -1573,7 +1589,7 @@
     }
   },
   {
-    "regex": "Mercury(?:/(\\d+[\\.\\d]+))?",
+    "regex": "Mercury/(?:(\\d+[\\.\\d]+))?",
     "name": "Mercury",
     "version": "$1"
   },
@@ -2545,7 +2561,7 @@
     }
   },
   {
-    "regex": "(?:iPod|iPhone|iPad)",
+    "regex": "(?:iPod|(?<!Apple TV; U; CPU )iPhone|iPad)",
     "name": "Mobile Safari",
     "version": "",
     "engine": {

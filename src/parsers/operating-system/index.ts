@@ -85,7 +85,7 @@ export default class OperatingSystemParser {
   };
 
   private parsePlatform = (userAgent: string) => {
-    if (userAgentParser("arm|aarch64|Watch ?OS|Watch1,[12]", userAgent)) {
+    if (userAgentParser("arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]", userAgent)) {
       return "ARM";
     }
 

@@ -25,11 +25,6 @@
     "version": "$1"
   },
   {
-    "regex": "Sailfish|Jolla",
-    "name": "Sailfish OS",
-    "version": ""
-  },
-  {
     "regex": "(?:Ali)?YunOS[ /]?(\\d+[\\.\\d]+)?",
     "name": "YunOS",
     "version": "$1"
@@ -77,6 +72,11 @@
   {
     "regex": "KAIOS(?:/(\\d+[\\.\\d]+))?",
     "name": "KaiOS",
+    "version": "$1"
+  },
+  {
+    "regex": "HarmonyOS(?:[/ ](\\d+[\\.\\d]+))?",
+    "name": "HarmonyOS",
     "version": "$1"
   },
   {
@@ -178,6 +178,11 @@
     "regex": "Linux; diordnA[; ](\\d+[\\.\\d]*)",
     "name": "Android",
     "version": "$1"
+  },
+  {
+    "regex": "Sailfish|Jolla",
+    "name": "Sailfish OS",
+    "version": ""
   },
   {
     "regex": "AmigaOS[ ]?(\\d+[\\.\\d]+)",
@@ -425,9 +430,39 @@
     "version": ""
   },
   {
+    "regex": "Apple TV.*CPU (?:iPhone )?OS ((?:9|1[0-5])_\\d+(?:[_\\.]\\d+)*)",
+    "name": "tvOS",
+    "version": "$1"
+  },
+  {
+    "regex": "iOS(?:; |/)((?:9|1[0-5]).\\d+(?:[_\\.]\\d+)*) (?:model/)?AppleTV",
+    "name": "tvOS",
+    "version": "$1"
+  },
+  {
     "regex": "(?:Watch1,[12]/|Watch OS,|watchOS[ /])(\\d+[\\.\\d]*)",
     "name": "watchOS",
     "version": "$1"
+  },
+  {
+    "regex": "FBMD/iPad;.*FBSV/ ?(1[345]).(\\d+[\\.\\d]*);",
+    "name": "iPadOS",
+    "version": "$1.$2"
+  },
+  {
+    "regex": "iPad/(1[345]).(\\d+[\\.\\d]*)",
+    "name": "iPadOS",
+    "version": "$1.$2"
+  },
+  {
+    "regex": "iPad.+CPU OS ((1[345])+(?:[_\\.]\\d+)*)",
+    "name": "iPadOS",
+    "version": "$1"
+  },
+  {
+    "regex": "iOS/(1[345]).(\\d+[\\.\\d]*).+Apple/iPad",
+    "name": "iPadOS",
+    "version": "$1.$2"
   },
   {
     "regex": "iPad/([89]|1[012]).(\\d+[\\.\\d]*)",
@@ -740,7 +775,7 @@
     "version": ""
   },
   {
-    "regex": "iTunes-(iPod|iPad|iPhone)/(?:[\\d\\.]+)",
+    "regex": "iTunes-(AppleTV|iPod|iPad|iPhone)/(?:[\\d\\.]+)",
     "name": "iOS",
     "version": ""
   },

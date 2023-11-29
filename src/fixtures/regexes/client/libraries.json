@@ -167,5 +167,20 @@
     "regex": "akka-http/([\\.\\d]+)",
     "name": "Akka HTTP",
     "version": "$1"
+  },
+  {
+    "regex": "aria2(?:/(\\d+[\\.\\d]+))?",
+    "name": "Aria2",
+    "version": "$1"
+  },
+  {
+    "regex": "BTWebClient/",
+    "name": "uTorrent",
+    "version": ""
+  },
+  {
+    "regex": "gvfs/(?:(\\d+[\\.\\d]+))?",
+    "name": "gvfs",
+    "version": "$1"
   }
 ]

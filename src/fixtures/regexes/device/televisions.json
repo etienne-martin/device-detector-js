@@ -618,7 +618,7 @@
       }
     ]
   },
-  "Smart": {
+  "Smart Electronic": {
     "regex": "Smart[;,]",
     "device": "tv",
     "models": [

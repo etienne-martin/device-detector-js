@@ -95,6 +95,11 @@
     "version": "$1"
   },
   {
+    "regex": "Downcast/(\\d+\\.[\\d\\.]+)?(?:.+(?:!Mac)|$)",
+    "name": "Downcast",
+    "version": "$1"
+  },
+  {
     "regex": "([^/]+)/(\\d+(?:\\.\\d+)+) \\((?:iPhone|iPad); iOS [0-9\\.]+; Scale/[0-9\\.]+\\)",
     "name": "$1",
     "version": "$2"
@@ -155,9 +160,9 @@
     "version": ""
   },
   {
-    "regex": "Podkicker(?: Pro)?/([\\d\\.]+)",
-    "name": "Podkicker",
-    "version": "$1"
+    "regex": "Podkicker( (?:Pro|Classic))?/([\\d\\.]+)",
+    "name": "Podkicker$1",
+    "version": "$2"
   },
   {
     "regex": "PodcastRepublic/([\\d\\.]+)",
@@ -280,6 +285,16 @@
     "version": "$1"
   },
   {
+    "regex": "^Pocket Casts",
+    "name": "Pocket Casts",
+    "version": ""
+  },
+  {
+    "regex": "^GaanaAndroid-([\\d\\.]+)",
+    "name": "Gaana",
+    "version": "$1"
+  },
+  {
     "regex": "TopBuzz/([\\d\\.]+)",
     "name": "TopBuzz",
     "version": "$1"
@@ -288,6 +303,16 @@
     "regex": "Snapchat/([\\d\\.]+)",
     "name": "Snapchat",
     "version": "$1"
+  },
+  {
+    "regex": "AhaRadio2/([\\d\\.]+)",
+    "name": "Aha Radio 2",
+    "version": "$1"
+  },
+  {
+    "regex": "Unibox/([\\d\\.]+)",
+    "name": "Unibox",
+    "version": ""
   },
   {
     "regex": "strimio(?:-desktop)/(\\d+\\.(?:[\\.\\d]+))?",
@@ -415,7 +440,7 @@
     "version": "$1"
   },
   {
-    "regex": "TikTok[/ ](\\d+\\.(?:[\\.\\d]+))?",
+    "regex": "(?:TikTok[/ ]|musical_ly_|AppName/musical_ly app_version/)(\\d+\\.(?:[\\.\\d]+))?",
     "name": "TikTok",
     "version": "$1"
   },
@@ -550,6 +575,11 @@
     "version": "$1"
   },
   {
+    "regex": "devcasts/(\\d+[\\.\\d]+)",
+    "name": "DevCasts",
+    "version": "$1"
+  },
+  {
     "regex": "Swoot/(\\d+[\\.\\d]+)",
     "name": "Swoot",
     "version": "$1"
@@ -678,5 +708,30 @@
     "regex": ".+/(?:gfibertv|gftv200)-([\\d]+)-",
     "name": "Google Fiber TV",
     "version": "$1"
+  },
+  {
+    "regex": "QuickCast$",
+    "name": "QuickCast",
+    "version": ""
+  },
+  {
+    "regex": "Aliexpress(?:Android)?/([\\d\\.]+)",
+    "name": "AliExpress",
+    "version": "$1"
+  },
+  {
+    "regex": "Blue Proxy/([\\d\\.]+)",
+    "name": "Blue Proxy",
+    "version": "$1"
+  },
+  {
+    "regex": "ntvmobil/",
+    "name": "NTV Mobil",
+    "version": ""
+  },
+  {
+    "regex": "COAF%20SMART%20Citizen/",
+    "name": "COAF SMART Citizen",
+    "version": ""
   }
 ]

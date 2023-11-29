@@ -1361,7 +1361,11 @@
   },
   {
     "user_agent": "iTunes-AppleTV/4.1",
-    "os": [],
+    "os": {
+      "name": "iOS",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "mediaplayer",
       "name": "iTunes",
@@ -1372,7 +1376,7 @@
       "brand": "Apple",
       "model": "Apple TV"
     },
-    "os_family": "Unknown",
+    "os_family": "iOS",
     "browser_family": "Unknown"
   },
   {
@@ -1380,7 +1384,7 @@
     "os": {
       "name": "iOS",
       "version": "8.1.3",
-      "platform": ""
+      "platform": "ARM"
     },
     "client": "null",
     "device": {
@@ -1394,9 +1398,9 @@
   {
     "user_agent": "XBMC/PRE-11.0 Git:20110623-62171b3 (iOS; 11.0.0 AppleTV2,1; http://www.xbmc.org)",
     "os": {
-      "name": "Apple TV",
-      "version": "",
-      "platform": ""
+      "name": "tvOS",
+      "version": "11.0.0",
+      "platform": "ARM"
     },
     "client": {
       "type": "mediaplayer",
@@ -1408,7 +1412,7 @@
       "brand": "Apple",
       "model": "Apple TV 2"
     },
-    "os_family": "Apple TV",
+    "os_family": "iOS",
     "browser_family": "Unknown"
   },
   {
@@ -6175,7 +6179,7 @@
     "client": "null",
     "device": {
       "type": "tv",
-      "brand": "Smart",
+      "brand": "Smart Electronic",
       "model": "CX10"
     },
     "os_family": "Unknown",
@@ -6187,7 +6191,7 @@
     "client": "null",
     "device": {
       "type": "tv",
-      "brand": "Smart",
+      "brand": "Smart Electronic",
       "model": "VX10"
     },
     "os_family": "Unknown",
@@ -6199,7 +6203,7 @@
     "client": "null",
     "device": {
       "type": "tv",
-      "brand": "Smart",
+      "brand": "Smart Electronic",
       "model": "ZAPPIX HD+"
     },
     "os_family": "Unknown",
@@ -8039,6 +8043,54 @@
       "model": "Smart TV (2021)"
     },
     "os_family": "Unknown",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "AppleCoreMedia/1.0.0.12H911 (Apple TV; U; CPU OS 8_4_4 like Mac OS X; en_us)",
+    "os": {
+      "name": "iOS",
+      "version": "8.4.4",
+      "platform": "ARM"
+    },
+    "client": "null",
+    "device": {
+      "type": "tv",
+      "brand": "Apple",
+      "model": "Apple TV"
+    },
+    "os_family": "iOS",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "AppleCoreMedia/1.0.0.18J383 (Apple TV; U; CPU OS 14_0 like Mac OS X; en_us)",
+    "os": {
+      "name": "tvOS",
+      "version": "14.0",
+      "platform": "ARM"
+    },
+    "client": "null",
+    "device": {
+      "type": "tv",
+      "brand": "Apple",
+      "model": "Apple TV"
+    },
+    "os_family": "iOS",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Apple TV; U; CPU iPhone OS 10_1_1 like Mac OS X; en-US) FOX Sports GO/1160",
+    "os": {
+      "name": "tvOS",
+      "version": "10.1.1",
+      "platform": "ARM"
+    },
+    "client": "null",
+    "device": {
+      "type": "tv",
+      "brand": "Apple",
+      "model": "Apple TV"
+    },
+    "os_family": "iOS",
     "browser_family": "Unknown"
   },
   {

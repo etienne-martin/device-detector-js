@@ -11128,7 +11128,7 @@
   {
     "user_agent": "Microsoft Office Word/2.45.106 (iOS/14.2; Tablet; es-MX; AppStore; Apple/iPad8,9)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.2",
       "platform": ""
     },
@@ -11148,7 +11148,7 @@
   {
     "user_agent": "Microsoft Office Word/2.45.106 (iOS/14.2; Tablet; es-MX; AppStore; Apple/iPad8,10)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.2",
       "platform": ""
     },
@@ -11168,7 +11168,7 @@
   {
     "user_agent": "Microsoft Office Word/2.45.106 (iOS/14.3; Tablet; en-US; AppStore; Apple/iPad8,11)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.3",
       "platform": ""
     },
@@ -11188,7 +11188,7 @@
   {
     "user_agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad8,12;FBMD/iPad;FBSN/iOS;FBSV/13.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5;FBCR/]",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "13.4",
       "platform": ""
     },
@@ -11208,7 +11208,7 @@
   {
     "user_agent": "Microsoft Office Mobile/2.45.106 (iOS/14.3; Phone; es-MX; AppStore; Apple/iPad11,1)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.3",
       "platform": ""
     },
@@ -11228,7 +11228,7 @@
   {
     "user_agent": "Microsoft Office Word/2.42.1008 (iOS/14.0.1; Tablet; es-MX; AppStore; Apple/iPad11,2)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.0.1",
       "platform": ""
     },
@@ -11248,7 +11248,7 @@
   {
     "user_agent": "Microsoft Office Word/2.44.1211 (iOS/13.7; Tablet; es-MX; AppStore; Apple/iPad11,3)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "13.7",
       "platform": ""
     },
@@ -11268,7 +11268,7 @@
   {
     "user_agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad11,4;FBMD/iPad;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5;FBCR/iPad]",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "13.3.1",
       "platform": ""
     },
@@ -11288,7 +11288,7 @@
   {
     "user_agent": "Microsoft Office Word/2.44.1211 (iOS/14.0; Tablet; es-MX; AppStore; Apple/iPad11,6)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.0",
       "platform": ""
     },
@@ -11308,7 +11308,7 @@
   {
     "user_agent": "Microsoft Office Word/2.45.106 (iOS/14.2; Tablet; es-MX; AppStore; Apple/iPad11,7)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.2",
       "platform": ""
     },
@@ -11328,7 +11328,7 @@
   {
     "user_agent": "Microsoft Office OneNote/16.45/210106 (iOS/14.4; Tablet; es-MX; AppStore; Apple/iPad13,1)",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.4",
       "platform": ""
     },
@@ -11348,7 +11348,7 @@
   {
     "user_agent": "Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad13,2;FBMD/iPad;FBSN/iOS;FBSV/14.2;FBSS/2;FBID/tablet;FBLC/it_IT;FBOP/5]",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.2",
       "platform": ""
     },

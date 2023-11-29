@@ -6,7 +6,8 @@
       "name": "Beaker Browser",
       "version": "0.8.2",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -16,7 +17,8 @@
       "name": "360 Phone Browser",
       "version": "6.8.7",
       "engine": "WebKit",
-      "engine_version": "534.30"
+      "engine_version": "534.30",
+      "family": null
     }
   },
   {
@@ -26,7 +28,8 @@
       "name": "360 Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -36,7 +39,8 @@
       "name": "360 Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -46,7 +50,8 @@
       "name": "Avant Browser",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -56,7 +61,8 @@
       "name": "ABrowse",
       "version": "0.6",
       "engine": "WebKit",
-      "engine_version": "420"
+      "engine_version": "420",
+      "family": null
     }
   },
   {
@@ -66,7 +72,8 @@
       "name": "ANT Fresco",
       "version": "2.17",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -76,7 +83,8 @@
       "name": "ANTGalio",
       "version": "3.1.1.23.04.09",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -86,7 +94,8 @@
       "name": "Amaya",
       "version": "9.51",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -96,7 +105,8 @@
       "name": "Amigo",
       "version": "28.0.1500.74",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -106,7 +116,8 @@
       "name": "Android Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "522"
+      "engine_version": "522",
+      "family": "Android Browser"
     }
   },
   {
@@ -116,7 +127,8 @@
       "name": "Android Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "533.1"
+      "engine_version": "533.1",
+      "family": "Android Browser"
     }
   },
   {
@@ -126,7 +138,8 @@
       "name": "Arora",
       "version": "0.10.1",
       "engine": "WebKit",
-      "engine_version": "532.1"
+      "engine_version": "532.1",
+      "family": null
     }
   },
   {
@@ -136,7 +149,8 @@
       "name": "Amiga Voyager",
       "version": "3.2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Amiga"
     }
   },
   {
@@ -146,7 +160,8 @@
       "name": "Amiga Aweb",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Amiga"
     }
   },
   {
@@ -156,7 +171,8 @@
       "name": "Atomic Web Browser",
       "version": "7.0.1",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -166,7 +182,8 @@
       "name": "BlackBerry Browser",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "BlackBerry Browser"
     }
   },
   {
@@ -176,7 +193,8 @@
       "name": "Baidu Browser",
       "version": "4.5.20.0",
       "engine": "WebKit",
-      "engine_version": "534.24"
+      "engine_version": "534.24",
+      "family": "Baidu"
     }
   },
   {
@@ -186,7 +204,8 @@
       "name": "Baidu Spark",
       "version": "26.4",
       "engine": "WebKit",
-      "engine_version": "537.31"
+      "engine_version": "537.31",
+      "family": "Baidu"
     }
   },
   {
@@ -196,7 +215,8 @@
       "name": "Beonex",
       "version": "0.8.1",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -206,7 +226,8 @@
       "name": "Bunjalloo",
       "version": "0.7.6",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -216,7 +237,8 @@
       "name": "BriskBard",
       "version": "1.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -226,7 +248,8 @@
       "name": "Brave",
       "version": "0.7.9",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -236,7 +259,8 @@
       "name": "BrowseX",
       "version": "2.0.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -246,7 +270,8 @@
       "name": "Camino",
       "version": "2.1.2",
       "engine": "Gecko",
-      "engine_version": "1.9.2.28"
+      "engine_version": "1.9.2.28",
+      "family": null
     }
   },
   {
@@ -256,7 +281,8 @@
       "name": "Cunaguaro",
       "version": "27.0",
       "engine": "Gecko",
-      "engine_version": "27.0"
+      "engine_version": "27.0",
+      "family": "Firefox"
     }
   },
   {
@@ -266,7 +292,8 @@
       "name": "Coc Coc",
       "version": "45.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -276,7 +303,8 @@
       "name": "Comodo Dragon",
       "version": "17.1.0.0",
       "engine": "WebKit",
-      "engine_version": "535.11"
+      "engine_version": "535.11",
+      "family": "Chrome"
     }
   },
   {
@@ -286,7 +314,8 @@
       "name": "Charon",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -296,7 +325,8 @@
       "name": "Chrome Frame",
       "version": "19.0.1084.52",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -306,7 +336,8 @@
       "name": "Headless Chrome",
       "version": "63.0.3205.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -316,7 +347,8 @@
       "name": "Headless Chrome",
       "version": "60.0.3112.78",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -326,7 +358,8 @@
       "name": "Chrome",
       "version": "12.0.742.100",
       "engine": "WebKit",
-      "engine_version": "534.30"
+      "engine_version": "534.30",
+      "family": "Chrome"
     }
   },
   {
@@ -336,7 +369,8 @@
       "name": "Chrome Mobile",
       "version": "61.0.3163.98",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -346,7 +380,8 @@
       "name": "Chrome",
       "version": "36.0.1985.125",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -356,7 +391,8 @@
       "name": "Chrome Mobile iOS",
       "version": "31.0.1650.18",
       "engine": "WebKit",
-      "engine_version": "536.26"
+      "engine_version": "536.26",
+      "family": "Chrome"
     }
   },
   {
@@ -366,7 +402,8 @@
       "name": "Conkeror",
       "version": "1.0",
       "engine": "Gecko",
-      "engine_version": "17.0"
+      "engine_version": "17.0",
+      "family": null
     }
   },
   {
@@ -376,7 +413,8 @@
       "name": "Chrome Mobile",
       "version": "31.0.1650.59",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -386,7 +424,8 @@
       "name": "CoolNovo",
       "version": "1.6.5.28",
       "engine": "WebKit",
-      "engine_version": "535.7"
+      "engine_version": "535.7",
+      "family": "Chrome"
     }
   },
   {
@@ -396,7 +435,8 @@
       "name": "CometBird",
       "version": "11.0",
       "engine": "Gecko",
-      "engine_version": "11.0"
+      "engine_version": "11.0",
+      "family": null
     }
   },
   {
@@ -406,7 +446,8 @@
       "name": "ChromePlus",
       "version": "1.6.0.0",
       "engine": "WebKit",
-      "engine_version": "534.13"
+      "engine_version": "534.13",
+      "family": "Chrome"
     }
   },
   {
@@ -416,7 +457,8 @@
       "name": "Chromium",
       "version": "31.0.1650.63",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -426,7 +468,8 @@
       "name": "Cheshire",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "418.9"
+      "engine_version": "418.9",
+      "family": null
     }
   },
   {
@@ -436,7 +479,8 @@
       "name": "B-Line",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.51.2"
+      "engine_version": "537.51.2",
+      "family": null
     }
   },
   {
@@ -446,7 +490,8 @@
       "name": "B-Line",
       "version": "1.04",
       "engine": "WebKit",
-      "engine_version": "601.1.46"
+      "engine_version": "601.1.46",
+      "family": null
     }
   },
   {
@@ -456,7 +501,8 @@
       "name": "dbrowser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "536.26"
+      "engine_version": "536.26",
+      "family": null
     }
   },
   {
@@ -466,7 +512,8 @@
       "name": "dbrowser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "536.26"
+      "engine_version": "536.26",
+      "family": null
     }
   },
   {
@@ -476,7 +523,8 @@
       "name": "Deepnet Explorer",
       "version": "1.5.3",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -486,7 +534,8 @@
       "name": "Dolphin",
       "version": "3.0",
       "engine": "WebKit",
-      "engine_version": "534.20"
+      "engine_version": "534.20",
+      "family": null
     }
   },
   {
@@ -496,7 +545,8 @@
       "name": "Dillo",
       "version": "0.8.5",
       "engine": "Dillo",
-      "engine_version": "0.8.5"
+      "engine_version": "0.8.5",
+      "family": null
     }
   },
   {
@@ -506,7 +556,8 @@
       "name": "Dorado",
       "version": "1.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Nokia Browser"
     }
   },
   {
@@ -516,7 +567,8 @@
       "name": "DuckDuckGo Privacy Browser",
       "version": "5",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -526,7 +578,8 @@
       "name": "Element Browser",
       "version": "5.0",
       "engine": "WebKit",
-      "engine_version": "533"
+      "engine_version": "533",
+      "family": null
     }
   },
   {
@@ -536,7 +589,8 @@
       "name": "Elinks",
       "version": "0.12",
       "engine": "Text-based",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -546,7 +600,8 @@
       "name": "GNOME Web",
       "version": "1.2.6",
       "engine": "Gecko",
-      "engine_version": "1.6"
+      "engine_version": "1.6",
+      "family": null
     }
   },
   {
@@ -556,7 +611,8 @@
       "name": "GNOME Web",
       "version": "2.30.6",
       "engine": "WebKit",
-      "engine_version": "531.2"
+      "engine_version": "531.2",
+      "family": null
     }
   },
   {
@@ -566,7 +622,8 @@
       "name": "Espial TV Browser",
       "version": "6.1.5",
       "engine": "WebKit",
-      "engine_version": "531.2"
+      "engine_version": "531.2",
+      "family": null
     }
   },
   {
@@ -576,7 +633,8 @@
       "name": "Firebird",
       "version": "0.7",
       "engine": "Gecko",
-      "engine_version": "1.5"
+      "engine_version": "1.5",
+      "family": "Firefox"
     }
   },
   {
@@ -586,7 +644,8 @@
       "name": "Fluid",
       "version": "0.9.6",
       "engine": "WebKit",
-      "engine_version": "528.16"
+      "engine_version": "528.16",
+      "family": null
     }
   },
   {
@@ -596,7 +655,8 @@
       "name": "Fennec",
       "version": "10.0",
       "engine": "Gecko",
-      "engine_version": "10.0"
+      "engine_version": "10.0",
+      "family": "Firefox"
     }
   },
   {
@@ -606,7 +666,8 @@
       "name": "Firefox",
       "version": "4.0",
       "engine": "Gecko",
-      "engine_version": "2.0"
+      "engine_version": "2.0",
+      "family": "Firefox"
     }
   },
   {
@@ -616,7 +677,8 @@
       "name": "Firefox",
       "version": "2.0.0.21",
       "engine": "Gecko",
-      "engine_version": "1.8.1.21"
+      "engine_version": "1.8.1.21",
+      "family": "Firefox"
     }
   },
   {
@@ -626,7 +688,8 @@
       "name": "Firefox",
       "version": "3.0.11",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Firefox"
     }
   },
   {
@@ -636,7 +699,8 @@
       "name": "Firefox",
       "version": "3.0",
       "engine": "Gecko",
-      "engine_version": "1.9"
+      "engine_version": "1.9",
+      "family": "Firefox"
     }
   },
   {
@@ -646,7 +710,8 @@
       "name": "Firefox",
       "version": "3.5",
       "engine": "Gecko",
-      "engine_version": "1.9.1"
+      "engine_version": "1.9.1",
+      "family": "Firefox"
     }
   },
   {
@@ -656,7 +721,8 @@
       "name": "Firefox",
       "version": "3.6.3",
       "engine": "Gecko",
-      "engine_version": "1.9.2.3"
+      "engine_version": "1.9.2.3",
+      "family": "Firefox"
     }
   },
   {
@@ -666,7 +732,8 @@
       "name": "Firefox",
       "version": "3.6.13",
       "engine": "Gecko",
-      "engine_version": "1.9.2.13"
+      "engine_version": "1.9.2.13",
+      "family": "Firefox"
     }
   },
   {
@@ -676,7 +743,8 @@
       "name": "Firefox Mobile iOS",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "600.1.4"
+      "engine_version": "600.1.4",
+      "family": "Firefox"
     }
   },
   {
@@ -686,7 +754,8 @@
       "name": "Firefox Focus",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -696,7 +765,8 @@
       "name": "Firefox Focus",
       "version": "1.1",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -706,7 +776,8 @@
       "name": "Flock",
       "version": "2.5.6",
       "engine": "Gecko",
-      "engine_version": "1.9.0.16"
+      "engine_version": "1.9.0.16",
+      "family": null
     }
   },
   {
@@ -716,7 +787,8 @@
       "name": "Fireweb Navigator",
       "version": "2.4",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -726,7 +798,8 @@
       "name": "Fireweb",
       "version": "1.0.0.0",
       "engine": "WebKit",
-      "engine_version": "534"
+      "engine_version": "534",
+      "family": null
     }
   },
   {
@@ -736,7 +809,8 @@
       "name": "Galeon",
       "version": "1.3.21",
       "engine": "Gecko",
-      "engine_version": "1.7.12"
+      "engine_version": "1.7.12",
+      "family": null
     }
   },
   {
@@ -746,7 +820,8 @@
       "name": "Google Earth",
       "version": "5.2.1.1329",
       "engine": "WebKit",
-      "engine_version": "532.4"
+      "engine_version": "532.4",
+      "family": null
     }
   },
   {
@@ -756,7 +831,8 @@
       "name": "HotJava",
       "version": "1.1.2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -766,7 +842,8 @@
       "name": "IBrowse",
       "version": "2.4",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -776,7 +853,8 @@
       "name": "iCab",
       "version": "2.9.9",
       "engine": "iCab",
-      "engine_version": "2.9.9"
+      "engine_version": "2.9.9",
+      "family": null
     }
   },
   {
@@ -786,7 +864,8 @@
       "name": "iCab",
       "version": "4.8",
       "engine": "WebKit",
-      "engine_version": "533.19.4"
+      "engine_version": "533.19.4",
+      "family": null
     }
   },
   {
@@ -796,7 +875,8 @@
       "name": "IceDragon",
       "version": "26.0.0.2",
       "engine": "Gecko",
-      "engine_version": "26.0"
+      "engine_version": "26.0",
+      "family": null
     }
   },
   {
@@ -806,7 +886,8 @@
       "name": "Iceweasel",
       "version": "3.0.6",
       "engine": "Gecko",
-      "engine_version": "1.9.0.15"
+      "engine_version": "1.9.0.15",
+      "family": "Firefox"
     }
   },
   {
@@ -816,7 +897,8 @@
       "name": "Internet Explorer",
       "version": "4.01",
       "engine": "Trident",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -826,7 +908,8 @@
       "name": "Microsoft Edge",
       "version": "12.0",
       "engine": "Edge",
-      "engine_version": "12.0"
+      "engine_version": "12.0",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -836,7 +919,8 @@
       "name": "Microsoft Edge",
       "version": "12.10240",
       "engine": "Edge",
-      "engine_version": "12.10240"
+      "engine_version": "12.10240",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -846,7 +930,8 @@
       "name": "Microsoft Edge",
       "version": "13.10537",
       "engine": "Edge",
-      "engine_version": "13.10537"
+      "engine_version": "13.10537",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -856,7 +941,8 @@
       "name": "Microsoft Edge",
       "version": "13.10547",
       "engine": "Edge",
-      "engine_version": "13.10547"
+      "engine_version": "13.10547",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -866,7 +952,8 @@
       "name": "Microsoft Edge",
       "version": "41.1.35.1",
       "engine": "WebKit",
-      "engine_version": "603.2.4"
+      "engine_version": "603.2.4",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -876,7 +963,8 @@
       "name": "Microsoft Edge",
       "version": "41.1.35.1",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -886,7 +974,8 @@
       "name": "Microsoft Edge",
       "version": "75.0.107.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -896,7 +985,8 @@
       "name": "IE Mobile",
       "version": "9.0",
       "engine": "Trident",
-      "engine_version": "5.0"
+      "engine_version": "5.0",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -906,7 +996,8 @@
       "name": "Iron",
       "version": "26.0.1450.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -916,7 +1007,8 @@
       "name": "Isivioo",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "538.34.9"
+      "engine_version": "538.34.9",
+      "family": null
     }
   },
   {
@@ -926,7 +1018,8 @@
       "name": "Isivioo",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -936,7 +1029,8 @@
       "name": "Jasmine",
       "version": "0.8",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -946,7 +1040,8 @@
       "name": "Jig Browser",
       "version": "5.0.1",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -956,7 +1051,8 @@
       "name": "Jig Browser",
       "version": "1.0.4",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -966,7 +1062,8 @@
       "name": "Jig Browser",
       "version": "1.5.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -976,7 +1073,8 @@
       "name": "Jig Browser",
       "version": "1.4.9",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -986,7 +1084,8 @@
       "name": "Kindle Browser",
       "version": "2.0",
       "engine": "NetFront",
-      "engine_version": "3.4"
+      "engine_version": "3.4",
+      "family": null
     }
   },
   {
@@ -996,7 +1095,8 @@
       "name": "K-meleon",
       "version": "1.5.4",
       "engine": "Gecko",
-      "engine_version": "1.8.1.24"
+      "engine_version": "1.8.1.24",
+      "family": null
     }
   },
   {
@@ -1006,7 +1106,8 @@
       "name": "Konqueror",
       "version": "3.5",
       "engine": "KHTML",
-      "engine_version": "3.5.8"
+      "engine_version": "3.5.8",
+      "family": "Konqueror"
     }
   },
   {
@@ -1016,7 +1117,8 @@
       "name": "Kapiko",
       "version": "3.0",
       "engine": "Gecko",
-      "engine_version": "1.9"
+      "engine_version": "1.9",
+      "family": null
     }
   },
   {
@@ -1026,7 +1128,8 @@
       "name": "Kazehakase",
       "version": "0.5.6",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1036,7 +1139,8 @@
       "name": "Kylo",
       "version": "0.6.1.70394",
       "engine": "Gecko",
-      "engine_version": "1.9.2"
+      "engine_version": "1.9.2",
+      "family": null
     }
   },
   {
@@ -1046,7 +1150,8 @@
       "name": "Cheetah Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -1056,7 +1161,8 @@
       "name": "Links",
       "version": "2.1",
       "engine": "Text-based",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1066,7 +1172,8 @@
       "name": "LuaKit",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "538.1"
+      "engine_version": "538.1",
+      "family": null
     }
   },
   {
@@ -1076,7 +1183,8 @@
       "name": "Lunascape",
       "version": "2.1.3",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1086,7 +1194,8 @@
       "name": "Lynx",
       "version": "2.8.8",
       "engine": "Text-based",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1096,7 +1205,8 @@
       "name": "MicroB",
       "version": "0.9.7",
       "engine": "Gecko",
-      "engine_version": "1.9.2"
+      "engine_version": "1.9.2",
+      "family": "Firefox"
     }
   },
   {
@@ -1106,7 +1216,8 @@
       "name": "Avast Secure Browser",
       "version": "66.2.567.182",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -1116,7 +1227,8 @@
       "name": "MicroB",
       "version": "",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Firefox"
     }
   },
   {
@@ -1126,7 +1238,8 @@
       "name": "MicroB",
       "version": "1.7.4.8",
       "engine": "Gecko",
-      "engine_version": "1.9.2.3"
+      "engine_version": "1.9.2.3",
+      "family": "Firefox"
     }
   },
   {
@@ -1136,7 +1249,8 @@
       "name": "NCSA Mosaic",
       "version": "2.7",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1146,7 +1260,8 @@
       "name": "Mercury",
       "version": "8.0.1",
       "engine": "WebKit",
-      "engine_version": "536.26"
+      "engine_version": "536.26",
+      "family": null
     }
   },
   {
@@ -1156,7 +1271,8 @@
       "name": "MIUI Browser",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "534.30"
+      "engine_version": "534.30",
+      "family": "Android Browser"
     }
   },
   {
@@ -1166,7 +1282,8 @@
       "name": "Mobile Safari",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "533.17.9"
+      "engine_version": "533.17.9",
+      "family": "Safari"
     }
   },
   {
@@ -1176,7 +1293,8 @@
       "name": "Mobile Safari",
       "version": "9537.53",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Safari"
     }
   },
   {
@@ -1186,7 +1304,8 @@
       "name": "Midori",
       "version": "0.5",
       "engine": "WebKit",
-      "engine_version": "535.22"
+      "engine_version": "535.22",
+      "family": null
     }
   },
   {
@@ -1196,7 +1315,8 @@
       "name": "Mobile Silk",
       "version": "3.12",
       "engine": "WebKit",
-      "engine_version": "535.19"
+      "engine_version": "535.19",
+      "family": "Chrome"
     }
   },
   {
@@ -1206,7 +1326,8 @@
       "name": "Maxthon",
       "version": "4.1.2.2000",
       "engine": "WebKit",
-      "engine_version": "537.22"
+      "engine_version": "537.22",
+      "family": null
     }
   },
   {
@@ -1216,7 +1337,8 @@
       "name": "Nokia Browser",
       "version": "8.3.1.4",
       "engine": "WebKit",
-      "engine_version": "535.1"
+      "engine_version": "535.1",
+      "family": "Nokia Browser"
     }
   },
   {
@@ -1226,7 +1348,8 @@
       "name": "Nokia OSS Browser",
       "version": "3.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Nokia Browser"
     }
   },
   {
@@ -1236,7 +1359,8 @@
       "name": "NetFront Life",
       "version": "2.3",
       "engine": "NetFront",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1246,7 +1370,8 @@
       "name": "Nokia Ovi Browser",
       "version": "3.9.0.0.22",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Nokia Browser"
     }
   },
   {
@@ -1256,7 +1381,8 @@
       "name": "NetFront",
       "version": "3.4",
       "engine": "NetFront",
-      "engine_version": "3.4"
+      "engine_version": "3.4",
+      "family": "NetFront"
     }
   },
   {
@@ -1266,7 +1392,8 @@
       "name": "NetPositive",
       "version": "2.2.1",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1276,7 +1403,8 @@
       "name": "Netscape",
       "version": "6.01",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1286,7 +1414,8 @@
       "name": "Netscape",
       "version": "8.1.3",
       "engine": "Gecko",
-      "engine_version": "1.7.5"
+      "engine_version": "1.7.5",
+      "family": null
     }
   },
   {
@@ -1296,7 +1425,8 @@
       "name": "NTENT Browser",
       "version": "1.0.0.547",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -1306,7 +1436,8 @@
       "name": "LG Browser",
       "version": "5.00.00",
       "engine": "WebKit",
-      "engine_version": "534.26"
+      "engine_version": "534.26",
+      "family": null
     }
   },
   {
@@ -1316,7 +1447,8 @@
       "name": "Obigo",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1326,7 +1458,8 @@
       "name": "Odyssey Web Browser",
       "version": "1.23",
       "engine": "WebKit",
-      "engine_version": "538.1"
+      "engine_version": "538.1",
+      "family": null
     }
   },
   {
@@ -1336,7 +1469,8 @@
       "name": "Off By One",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1346,7 +1480,8 @@
       "name": "ONE Browser",
       "version": "4.2.0",
       "engine": "WebKit",
-      "engine_version": "533.1"
+      "engine_version": "533.1",
+      "family": null
     }
   },
   {
@@ -1356,7 +1491,8 @@
       "name": "Opera Touch",
       "version": "1.10.36",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1366,7 +1502,8 @@
       "name": "Opera Mini",
       "version": "12.16",
       "engine": "Presto",
-      "engine_version": "2.12.423"
+      "engine_version": "2.12.423",
+      "family": "Opera"
     }
   },
   {
@@ -1376,7 +1513,8 @@
       "name": "Opera Mini",
       "version": "7.1.32052",
       "engine": "Presto",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1386,7 +1524,8 @@
       "name": "Opera Mobile",
       "version": "15.0.1162.61541",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1396,7 +1535,8 @@
       "name": "Opera Mini",
       "version": "5.0.21073",
       "engine": "Presto",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1406,7 +1546,8 @@
       "name": "Opera",
       "version": "12.10",
       "engine": "Presto",
-      "engine_version": "2.11.355"
+      "engine_version": "2.11.355",
+      "family": "Opera"
     }
   },
   {
@@ -1416,7 +1557,8 @@
       "name": "Opera",
       "version": "3.2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1426,7 +1568,8 @@
       "name": "Opera",
       "version": "6.04",
       "engine": "Elektra",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1436,7 +1579,8 @@
       "name": "Opera",
       "version": "8.00",
       "engine": "Presto",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1446,7 +1590,8 @@
       "name": "Opera Next",
       "version": "20.0.1387.37",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -1456,7 +1601,8 @@
       "name": "Oregano",
       "version": "1.10",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1466,7 +1612,8 @@
       "name": "Openwave Mobile Browser",
       "version": "6.2.3.2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1476,7 +1623,8 @@
       "name": "Openwave Mobile Browser",
       "version": "1.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1486,7 +1634,8 @@
       "name": "OmniWeb",
       "version": "624.0",
       "engine": "WebKit",
-      "engine_version": "9537.73.11"
+      "engine_version": "9537.73.11",
+      "family": null
     }
   },
   {
@@ -1496,7 +1645,8 @@
       "name": "Oppo Browser",
       "version": "1.0.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -1506,7 +1656,8 @@
       "name": "Otter Browser",
       "version": "0.9.04",
       "engine": "WebKit",
-      "engine_version": "538.1"
+      "engine_version": "538.1",
+      "family": null
     }
   },
   {
@@ -1516,7 +1667,8 @@
       "name": "Palm Blazer",
       "version": "4.3",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1526,7 +1678,8 @@
       "name": "Pale Moon",
       "version": "24.3.1",
       "engine": "Gecko",
-      "engine_version": "24.0"
+      "engine_version": "24.0",
+      "family": null
     }
   },
   {
@@ -1536,7 +1689,8 @@
       "name": "Palm Pre",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "525.27.1"
+      "engine_version": "525.27.1",
+      "family": null
     }
   },
   {
@@ -1546,7 +1700,8 @@
       "name": "Puffin",
       "version": "2.10977",
       "engine": "WebKit",
-      "engine_version": "534.35"
+      "engine_version": "534.35",
+      "family": null
     }
   },
   {
@@ -1556,7 +1711,8 @@
       "name": "Palm WebPro",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1566,7 +1722,8 @@
       "name": "Palmscape",
       "version": "3.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1576,7 +1733,8 @@
       "name": "Phoenix",
       "version": "0.4",
       "engine": "Gecko",
-      "engine_version": "1.2"
+      "engine_version": "1.2",
+      "family": "Firefox"
     }
   },
   {
@@ -1586,7 +1744,8 @@
       "name": "Polaris",
       "version": "6.2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1596,7 +1755,8 @@
       "name": "Rekonq",
       "version": "2.3.2",
       "engine": "WebKit",
-      "engine_version": "537.21"
+      "engine_version": "537.21",
+      "family": null
     }
   },
   {
@@ -1606,7 +1766,8 @@
       "name": "RockMelt",
       "version": "0.16.91.483",
       "engine": "WebKit",
-      "engine_version": "535.7"
+      "engine_version": "535.7",
+      "family": "Chrome"
     }
   },
   {
@@ -1616,7 +1777,8 @@
       "name": "Samsung Browser",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "538.1"
+      "engine_version": "538.1",
+      "family": "Chrome"
     }
   },
   {
@@ -1626,7 +1788,8 @@
       "name": "Samsung Browser",
       "version": "4.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -1636,7 +1799,8 @@
       "name": "Sailfish Browser",
       "version": "1.0",
       "engine": "Gecko",
-      "engine_version": "26.0"
+      "engine_version": "26.0",
+      "family": "Sailfish Browser"
     }
   },
   {
@@ -1646,7 +1810,8 @@
       "name": "Sogou Explorer",
       "version": "2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1656,7 +1821,8 @@
       "name": "Vision Mobile Browser",
       "version": "8.1",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1666,7 +1832,8 @@
       "name": "Safari",
       "version": "",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Safari"
     }
   },
   {
@@ -1676,7 +1843,8 @@
       "name": "Seraphic Sraf",
       "version": "3.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -1686,7 +1854,8 @@
       "name": "SEMC-Browser",
       "version": "4.0.3",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1696,7 +1865,8 @@
       "name": "Shiira",
       "version": "1.2.3",
       "engine": "WebKit",
-      "engine_version": "419"
+      "engine_version": "419",
+      "family": null
     }
   },
   {
@@ -1706,7 +1876,8 @@
       "name": "Skyfire",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "530.17"
+      "engine_version": "530.17",
+      "family": null
     }
   },
   {
@@ -1716,7 +1887,8 @@
       "name": "Sleipnir",
       "version": "2.9.18",
       "engine": "Trident",
-      "engine_version": "6.0"
+      "engine_version": "6.0",
+      "family": null
     }
   },
   {
@@ -1726,7 +1898,8 @@
       "name": "Snowshoe",
       "version": "1.0.0",
       "engine": "WebKit",
-      "engine_version": "537.21"
+      "engine_version": "537.21",
+      "family": null
     }
   },
   {
@@ -1736,7 +1909,8 @@
       "name": "Streamy",
       "version": "1.1.11",
       "engine": "WebKit",
-      "engine_version": "601.1.46"
+      "engine_version": "601.1.46",
+      "family": null
     }
   },
   {
@@ -1746,7 +1920,8 @@
       "name": "Streamy",
       "version": "1.1.11",
       "engine": "WebKit",
-      "engine_version": "601.1.46"
+      "engine_version": "601.1.46",
+      "family": null
     }
   },
   {
@@ -1756,7 +1931,8 @@
       "name": "Streamy",
       "version": "1.1.193",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -1766,7 +1942,8 @@
       "name": "Sunrise",
       "version": "0.833",
       "engine": "WebKit",
-      "engine_version": "125.5.7"
+      "engine_version": "125.5.7",
+      "family": null
     }
   },
   {
@@ -1776,7 +1953,8 @@
       "name": "SuperBird",
       "version": "24.0",
       "engine": "WebKit",
-      "engine_version": "537.17"
+      "engine_version": "537.17",
+      "family": null
     }
   },
   {
@@ -1786,7 +1964,8 @@
       "name": "Swiftfox",
       "version": "2.0",
       "engine": "Gecko",
-      "engine_version": "1.8.1"
+      "engine_version": "1.8.1",
+      "family": "Firefox"
     }
   },
   {
@@ -1796,7 +1975,8 @@
       "name": "Tizen Browser",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "534.46"
+      "engine_version": "534.46",
+      "family": null
     }
   },
   {
@@ -1806,7 +1986,8 @@
       "name": "UC Browser",
       "version": "9.4.1.377",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1816,7 +1997,8 @@
       "name": "Vivaldi",
       "version": "1.0.105.7",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -1826,7 +2008,8 @@
       "name": "TweakStyle",
       "version": "0.9.2",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -1836,7 +2019,8 @@
       "name": "WebPositive",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "533.4"
+      "engine_version": "533.4",
+      "family": null
     }
   },
   {
@@ -1846,7 +2030,8 @@
       "name": "WeTab Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "534.3"
+      "engine_version": "534.3",
+      "family": null
     }
   },
   {
@@ -1856,7 +2041,8 @@
       "name": "wOSBrowser",
       "version": "1.4.5",
       "engine": "WebKit",
-      "engine_version": "532.2"
+      "engine_version": "532.2",
+      "family": null
     }
   },
   {
@@ -1866,7 +2052,8 @@
       "name": "Yandex Browser",
       "version": "13.10.1500.9323",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1876,7 +2063,8 @@
       "name": "Xiino",
       "version": "1.0.9",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1886,7 +2074,8 @@
       "name": "QQ Browser",
       "version": "8.0.3197.400",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -1896,7 +2085,8 @@
       "name": "QQ Browser Mini",
       "version": "2.6",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -1906,7 +2096,8 @@
       "name": "Polarity",
       "version": "6.0.0",
       "engine": "WebKit",
-      "engine_version": "534.30"
+      "engine_version": "534.30",
+      "family": "Chrome"
     }
   },
   {
@@ -1916,7 +2107,8 @@
       "name": "QupZilla",
       "version": "1.1.5",
       "engine": "WebKit",
-      "engine_version": "533.3"
+      "engine_version": "533.3",
+      "family": null
     }
   },
   {
@@ -1926,7 +2118,8 @@
       "name": "Dooble",
       "version": "1.41",
       "engine": "WebKit",
-      "engine_version": "534.34"
+      "engine_version": "534.34",
+      "family": null
     }
   },
   {
@@ -1936,7 +2129,8 @@
       "name": "Epic",
       "version": "1.2",
       "engine": "Gecko",
-      "engine_version": "1.9.2.10"
+      "engine_version": "1.9.2.10",
+      "family": "Firefox"
     }
   },
   {
@@ -1946,7 +2140,8 @@
       "name": "Chrome Webview",
       "version": "43.0.2357.121",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -1956,7 +2151,8 @@
       "name": "Coast",
       "version": "1.0.2.62956",
       "engine": "WebKit",
-      "engine_version": "536.26"
+      "engine_version": "536.26",
+      "family": null
     }
   },
   {
@@ -1966,7 +2162,8 @@
       "name": "Qutebrowser",
       "version": "0.2.1",
       "engine": "WebKit",
-      "engine_version": "538.1"
+      "engine_version": "538.1",
+      "family": null
     }
   },
   {
@@ -1976,7 +2173,8 @@
       "name": "Aloha Browser",
       "version": "1.4",
       "engine": "WebKit",
-      "engine_version": "602.1.50"
+      "engine_version": "602.1.50",
+      "family": null
     }
   },
   {
@@ -1986,7 +2184,8 @@
       "name": "Waterfox",
       "version": "30.0",
       "engine": "Gecko",
-      "engine_version": "30.0"
+      "engine_version": "30.0",
+      "family": "Firefox"
     }
   },
   {
@@ -1996,7 +2195,8 @@
       "name": "Iridium",
       "version": "41.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2006,7 +2206,8 @@
       "name": "Cyberfox",
       "version": "28.0.1",
       "engine": "Gecko",
-      "engine_version": "28.0"
+      "engine_version": "28.0",
+      "family": null
     }
   },
   {
@@ -2016,7 +2217,8 @@
       "name": "iCab Mobile",
       "version": "1.1",
       "engine": "WebKit",
-      "engine_version": "538.34.9"
+      "engine_version": "538.34.9",
+      "family": null
     }
   },
   {
@@ -2026,7 +2228,8 @@
       "name": "NetSurf",
       "version": "3.7",
       "engine": "NetSurf",
-      "engine_version": "3.7"
+      "engine_version": "3.7",
+      "family": "NetSurf"
     }
   },
   {
@@ -2036,7 +2239,8 @@
       "name": "Tenta Browser",
       "version": "2.10.3",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2046,7 +2250,8 @@
       "name": "Qwant Mobile",
       "version": "2.5",
       "engine": "Gecko",
-      "engine_version": "63.0"
+      "engine_version": "63.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2056,7 +2261,8 @@
       "name": "TenFourFox",
       "version": "",
       "engine": "Gecko",
-      "engine_version": "45.0"
+      "engine_version": "45.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2066,7 +2272,8 @@
       "name": "AOL Shield",
       "version": "52.4.2",
       "engine": "Gecko",
-      "engine_version": "52.0"
+      "engine_version": "52.0",
+      "family": "Chrome"
     }
   },
   {
@@ -2076,7 +2283,8 @@
       "name": "Firefox Rocket",
       "version": "1.6.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Firefox"
     }
   },
   {
@@ -2086,7 +2294,8 @@
       "name": "Web Explorer",
       "version": "2.6.6",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2096,7 +2305,8 @@
       "name": "Chrome Webview",
       "version": "67.0.3396.87",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -2106,7 +2316,8 @@
       "name": "2345 Browser",
       "version": "4.0",
       "engine": "WebKit",
-      "engine_version": "534.30"
+      "engine_version": "534.30",
+      "family": "Chrome"
     }
   },
   {
@@ -2116,7 +2327,8 @@
       "name": "CM Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2126,7 +2338,8 @@
       "name": "Ecosia",
       "version": "3.0.1.533",
       "engine": "WebKit",
-      "engine_version": "602.4.6"
+      "engine_version": "602.4.6",
+      "family": "Chrome"
     }
   },
   {
@@ -2136,7 +2349,8 @@
       "name": "Firefox Mobile",
       "version": "18.1",
       "engine": "Gecko",
-      "engine_version": "18.1"
+      "engine_version": "18.1",
+      "family": "Firefox"
     }
   },
   {
@@ -2146,7 +2360,8 @@
       "name": "Iron Mobile",
       "version": "1.3.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -2156,7 +2371,8 @@
       "name": "IceCat",
       "version": "52.6.0",
       "engine": "Gecko",
-      "engine_version": "52.6.0"
+      "engine_version": "52.6.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2166,7 +2382,8 @@
       "name": "Kiwi",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2176,7 +2393,8 @@
       "name": "LieBaoFast",
       "version": "3.17.4",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2186,7 +2404,8 @@
       "name": "Mobicip",
       "version": "",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Firefox"
     }
   },
   {
@@ -2196,7 +2415,8 @@
       "name": "Mint Browser",
       "version": "1.3.3",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2206,7 +2426,8 @@
       "name": "Opera Neon",
       "version": "1.0.2459.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -2216,7 +2437,8 @@
       "name": "Opera Devices",
       "version": "4.2.12.29",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -2226,7 +2448,8 @@
       "name": "Qwant Mobile",
       "version": "1.3",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Firefox"
     }
   },
   {
@@ -2236,7 +2459,8 @@
       "name": "Opera Mini iOS",
       "version": "8.0.1.80062",
       "engine": "WebKit",
-      "engine_version": "537.51.2"
+      "engine_version": "537.51.2",
+      "family": "Opera"
     }
   },
   {
@@ -2246,7 +2470,8 @@
       "name": "QtWebEngine",
       "version": "5.2.1",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2256,7 +2481,8 @@
       "name": "Sogou Mobile Browser",
       "version": "3.8.5",
       "engine": "WebKit",
-      "engine_version": "534.30"
+      "engine_version": "534.30",
+      "family": "Safari"
     }
   },
   {
@@ -2266,7 +2492,8 @@
       "name": "Seznam Browser",
       "version": "3.0.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -2276,7 +2503,8 @@
       "name": "UC Browser Mini",
       "version": "10.9.0.946",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2286,7 +2514,8 @@
       "name": "Whale Browser",
       "version": "0.7.33.5",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -2296,7 +2525,8 @@
       "name": "Hawk Turbo Browser",
       "version": "3.0.0.4.21.06211557",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -2306,7 +2536,8 @@
       "name": "Hawk Turbo Browser",
       "version": "2.0.51",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -2316,7 +2547,8 @@
       "name": "Nox Browser",
       "version": "2.0.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2326,7 +2558,8 @@
       "name": "FreeU",
       "version": "1.2.148",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2336,7 +2569,8 @@
       "name": "Basilisk",
       "version": "20190912",
       "engine": "Goanna",
-      "engine_version": "4.4"
+      "engine_version": "4.4",
+      "family": "Firefox"
     }
   },
   {
@@ -2346,7 +2580,8 @@
       "name": "Sputnik Browser",
       "version": "1.2.5.158",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2356,7 +2591,8 @@
       "name": "K.Browser",
       "version": "26.07",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2366,7 +2602,8 @@
       "name": "Oculus Browser",
       "version": "6.0.17.167158974",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2376,7 +2613,8 @@
       "name": "Jio Browser",
       "version": "1.4.2",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2386,7 +2624,8 @@
       "name": "hola! Browser",
       "version": "1.148.217",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2396,7 +2635,8 @@
       "name": "Huawei Browser",
       "version": "10.0.1.332",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2406,7 +2646,8 @@
       "name": "vivo Browser",
       "version": "5.10.0.1",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2416,7 +2657,8 @@
       "name": "Realme Browser",
       "version": "35.5.0.8",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2426,7 +2668,8 @@
       "name": "Yandex Browser Lite",
       "version": "19.1.0.130",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2436,7 +2679,8 @@
       "name": "Yandex Browser",
       "version": "18.11.1.822.00 alpha",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2446,7 +2690,8 @@
       "name": "Yandex Browser",
       "version": "18.11.0.350.01 beta",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2456,7 +2701,8 @@
       "name": "Ordissimo",
       "version": "3.8.20",
       "engine": "Gecko",
-      "engine_version": "52.0"
+      "engine_version": "52.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2466,7 +2712,8 @@
       "name": "Ordissimo",
       "version": "3.7.22",
       "engine": "Gecko",
-      "engine_version": "42.0"
+      "engine_version": "42.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2476,7 +2723,8 @@
       "name": "COS Browser",
       "version": "1.0.0",
       "engine": "WebKit",
-      "engine_version": "537.17"
+      "engine_version": "537.17",
+      "family": null
     }
   },
   {
@@ -2486,7 +2734,8 @@
       "name": "Crusta",
       "version": "1.4.3",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2496,7 +2745,8 @@
       "name": "Opera GX",
       "version": "60.0.3255.50747",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -2506,7 +2756,8 @@
       "name": "UC Browser Turbo",
       "version": "1.7.9.900",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2516,7 +2767,8 @@
       "name": "UBrowser",
       "version": "5.5.5701.114",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2526,7 +2778,8 @@
       "name": "eZ Browser",
       "version": "1.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2536,7 +2789,8 @@
       "name": "EUI Browser",
       "version": "5.8.018",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2546,7 +2800,8 @@
       "name": "Super Fast Browser",
       "version": "12.0.2115.28",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2556,7 +2811,8 @@
       "name": "Super Fast Browser",
       "version": "11.0.1001.0327",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2566,7 +2822,8 @@
       "name": "t-online.de Browser",
       "version": "7.68.0.201",
       "engine": "Gecko",
-      "engine_version": "68.0"
+      "engine_version": "68.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2576,7 +2833,8 @@
       "name": "Sleipnir",
       "version": "3.5.7",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2586,7 +2844,8 @@
       "name": "SimpleBrowser",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2596,7 +2855,8 @@
       "name": "Uzbl",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "1.3"
+      "engine_version": "1.3",
+      "family": null
     }
   },
   {
@@ -2606,7 +2866,8 @@
       "name": "CCleaner",
       "version": "75.1.103.145",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2616,7 +2877,8 @@
       "name": "Aloha Browser Lite",
       "version": "1.4.0.1",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -2626,7 +2888,8 @@
       "name": "Tao Browser",
       "version": "3.1",
       "engine": "WebKit",
-      "engine_version": "536.11"
+      "engine_version": "536.11",
+      "family": "Chrome"
     }
   },
   {
@@ -2636,7 +2899,8 @@
       "name": "Falkon",
       "version": "3.1.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2646,7 +2910,8 @@
       "name": "mCent",
       "version": "0.13.1027",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2656,7 +2921,8 @@
       "name": "SalamWeb",
       "version": "3.0.1.592",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2666,7 +2932,8 @@
       "name": "BlackHawk",
       "version": "25.3.1",
       "engine": "Gecko",
-      "engine_version": "25.3"
+      "engine_version": "25.3",
+      "family": "Firefox"
     }
   },
   {
@@ -2676,7 +2943,8 @@
       "name": "Minimo",
       "version": "0.020",
       "engine": "Gecko",
-      "engine_version": "1.8.1.5"
+      "engine_version": "1.8.1.5",
+      "family": "Firefox"
     }
   },
   {
@@ -2686,7 +2954,8 @@
       "name": "Wear Internet Browser",
       "version": "0.9.8",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2696,7 +2965,8 @@
       "name": "Origyn Web Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "528.5"
+      "engine_version": "528.5",
+      "family": null
     }
   },
   {
@@ -2706,7 +2976,8 @@
       "name": "Kinza",
       "version": "4.8.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2716,7 +2987,8 @@
       "name": "Beamrise",
       "version": "17.2.0.9",
       "engine": "WebKit",
-      "engine_version": "535.8"
+      "engine_version": "535.8",
+      "family": "Chrome"
     }
   },
   {
@@ -2726,7 +2998,8 @@
       "name": "Faux Browser",
       "version": "20151018",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -2736,7 +3009,8 @@
       "name": "Iron",
       "version": "77.0.4000.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2746,7 +3020,8 @@
       "name": "Splash",
       "version": "10.0",
       "engine": "WebKit",
-      "engine_version": "602.1"
+      "engine_version": "602.1",
+      "family": null
     }
   },
   {
@@ -2756,7 +3031,8 @@
       "name": "Meizu Browser",
       "version": "6.9.410",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2766,7 +3042,8 @@
       "name": "AVG Secure Browser",
       "version": "77.2.2156.122",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2776,7 +3053,8 @@
       "name": "START Internet Browser",
       "version": "53.0.2785.97",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2786,7 +3064,8 @@
       "name": "Lovense Browser",
       "version": "20.0.1",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2796,7 +3075,8 @@
       "name": "Delta Browser",
       "version": "2.0.8.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -2806,7 +3086,8 @@
       "name": "Firefox Reality",
       "version": "",
       "engine": "Gecko",
-      "engine_version": "66.0"
+      "engine_version": "66.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2816,7 +3097,8 @@
       "name": "TV Bro",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2826,7 +3108,8 @@
       "name": "surf",
       "version": "2.0",
       "engine": "WebKit",
-      "engine_version": "605.1.15"
+      "engine_version": "605.1.15",
+      "family": null
     }
   },
   {
@@ -2836,7 +3119,8 @@
       "name": "Origin In-Game Overlay",
       "version": "9.1.11.2678",
       "engine": "WebKit",
-      "engine_version": "534.34"
+      "engine_version": "534.34",
+      "family": "Chrome"
     }
   },
   {
@@ -2846,7 +3130,8 @@
       "name": "VMware AirWatch",
       "version": "6.14.0.19",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2856,7 +3141,8 @@
       "name": "AOL Desktop",
       "version": "11.0.2617",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2866,7 +3152,8 @@
       "name": "Elements Browser",
       "version": "1.1.35",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2876,7 +3163,8 @@
       "name": "Light",
       "version": "49.0",
       "engine": "Gecko",
-      "engine_version": "49.0"
+      "engine_version": "49.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2886,7 +3174,8 @@
       "name": "Steam In-Game Overlay",
       "version": "1586022601",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2896,7 +3185,8 @@
       "name": "Centaury",
       "version": "20200313",
       "engine": "Goanna",
-      "engine_version": "4.5"
+      "engine_version": "4.5",
+      "family": "Firefox"
     }
   },
   {
@@ -2906,7 +3196,8 @@
       "name": "Avast Secure Browser",
       "version": "4.58.2552.909",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2916,7 +3207,8 @@
       "name": "Arctic Fox",
       "version": "27.9.19",
       "engine": "Goanna",
-      "engine_version": "3.4"
+      "engine_version": "3.4",
+      "family": "Firefox"
     }
   },
   {
@@ -2926,7 +3218,8 @@
       "name": "Mypal",
       "version": "28.9.0",
       "engine": "Goanna",
-      "engine_version": "4.5"
+      "engine_version": "4.5",
+      "family": "Firefox"
     }
   },
   {
@@ -2936,7 +3229,8 @@
       "name": "Atom",
       "version": "6.3.0.4",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2946,7 +3240,8 @@
       "name": "115 Browser",
       "version": "12.0.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2956,7 +3251,8 @@
       "name": "Safe Exam Browser",
       "version": "2.4",
       "engine": "Gecko",
-      "engine_version": "52.0"
+      "engine_version": "52.0",
+      "family": "Firefox"
     }
   },
   {
@@ -2966,7 +3262,8 @@
       "name": "Colibri",
       "version": "1.16.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2976,7 +3273,8 @@
       "name": "Xvast",
       "version": "1.1.0.8",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2986,7 +3284,8 @@
       "name": "Tungsten",
       "version": "2.1",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -2996,7 +3295,8 @@
       "name": "Lulumi",
       "version": "1.3.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3006,7 +3306,8 @@
       "name": "Yahoo! Japan Browser",
       "version": "1.0.20.0",
       "engine": "WebKit",
-      "engine_version": "605.1.15"
+      "engine_version": "605.1.15",
+      "family": "Chrome"
     }
   },
   {
@@ -3016,7 +3317,8 @@
       "name": "Yahoo! Japan Browser",
       "version": "1.6.9.1",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3026,7 +3328,8 @@
       "name": "Lunascape",
       "version": "3251",
       "engine": "WebKit",
-      "engine_version": "601.1.46"
+      "engine_version": "601.1.46",
+      "family": null
     }
   },
   {
@@ -3036,7 +3339,8 @@
       "name": "Lunascape Lite",
       "version": "3.2.1",
       "engine": "WebKit",
-      "engine_version": "533.17.9"
+      "engine_version": "533.17.9",
+      "family": null
     }
   },
   {
@@ -3046,7 +3350,8 @@
       "name": "Polypane",
       "version": "2.1.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -3056,7 +3361,8 @@
       "name": "OhHai Browser",
       "version": "3.3.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3066,7 +3372,8 @@
       "name": "Jig Browser Plus",
       "version": "1.8.2",
       "engine": "WebKit",
-      "engine_version": "601.1.46"
+      "engine_version": "601.1.46",
+      "family": "null"
     }
   },
   {
@@ -3076,7 +3383,8 @@
       "name": "Qwant Mobile",
       "version": "1.1",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Firefox"
     }
   },
   {
@@ -3086,7 +3394,8 @@
       "name": "Sizzy",
       "version": "0.0.21",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3096,7 +3405,8 @@
       "name": "Glass Browser",
       "version": "0.5.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3106,7 +3416,8 @@
       "name": "Avast Secure Browser",
       "version": "49.0.79.75",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3116,7 +3427,8 @@
       "name": "ToGate",
       "version": "72.0.3626.109",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3126,7 +3438,8 @@
       "name": "Baidu Browser",
       "version": "1.9.0.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Baidu"
     }
   },
   {
@@ -3136,7 +3449,8 @@
       "name": "Zvu",
       "version": "18.0.1",
       "engine": "Gecko",
-      "engine_version": "18.0"
+      "engine_version": "18.0",
+      "family": "Firefox"
     }
   },
   {
@@ -3146,7 +3460,8 @@
       "name": "Quark",
       "version": "4.1.2.133",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3156,7 +3471,8 @@
       "name": "Blue Browser",
       "version": "3.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": null
     }
   },
   {
@@ -3166,7 +3482,8 @@
       "name": "Yaani Browser",
       "version": "4.3.0.153",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3176,7 +3493,8 @@
       "name": "GOG Galaxy",
       "version": "2.0.20.39",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3186,7 +3504,8 @@
       "name": "Monument Browser",
       "version": "2.2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3196,7 +3515,8 @@
       "name": "Japan Browser",
       "version": "2.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3206,7 +3526,8 @@
       "name": "Yandex Browser",
       "version": "20.93.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3216,7 +3537,8 @@
       "name": "MAUI WAP Browser",
       "version": "",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3226,7 +3548,8 @@
       "name": "Yaani Browser",
       "version": "6.1.3",
       "engine": "Gecko",
-      "engine_version": "68.0"
+      "engine_version": "68.0",
+      "family": "Chrome"
     }
   },
   {
@@ -3236,7 +3559,8 @@
       "name": "Slimjet",
       "version": "22.0.4.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3246,7 +3570,8 @@
       "name": "7Star",
       "version": "1.45.0.415",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3256,7 +3581,8 @@
       "name": "MxNitro",
       "version": "1.0.1.3000",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3266,7 +3592,8 @@
       "name": "Crazy Browser",
       "version": "3.1.0",
       "engine": "Trident",
-      "engine_version": "7.0"
+      "engine_version": "7.0",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -3276,7 +3603,8 @@
       "name": "PrivacyWall",
       "version": "70.0",
       "engine": "Gecko",
-      "engine_version": "70.0"
+      "engine_version": "70.0",
+      "family": "Firefox"
     }
   },
   {
@@ -3286,7 +3614,8 @@
       "name": "Ghostery Privacy Browser",
       "version": "3.0",
       "engine": "Gecko",
-      "engine_version": "78.0"
+      "engine_version": "78.0",
+      "family": null
     }
   },
   {
@@ -3296,7 +3625,8 @@
       "name": "Ghostery Privacy Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "605.1.15"
+      "engine_version": "605.1.15",
+      "family": null
     }
   },
   {
@@ -3306,7 +3636,8 @@
       "name": "Kode Browser",
       "version": "",
       "engine": "Gecko",
-      "engine_version": "81.0"
+      "engine_version": "81.0",
+      "family": null
     }
   },
   {
@@ -3316,7 +3647,8 @@
       "name": "Kode Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "604.3.5"
+      "engine_version": "604.3.5",
+      "family": null
     }
   },
   {
@@ -3326,7 +3658,8 @@
       "name": "Kode Browser",
       "version": "3.16",
       "engine": "WebKit",
-      "engine_version": "605.1.15"
+      "engine_version": "605.1.15",
+      "family": null
     }
   },
   {
@@ -3336,7 +3669,8 @@
       "name": "Kode Browser",
       "version": "3.21.2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3346,7 +3680,8 @@
       "name": "t-online.de Browser",
       "version": "7.42.0.19",
       "engine": "Gecko",
-      "engine_version": "42.0"
+      "engine_version": "42.0",
+      "family": "Firefox"
     }
   },
   {
@@ -3356,7 +3691,8 @@
       "name": "Borealis Navigator",
       "version": "0.9.7441",
       "engine": "Goanna",
-      "engine_version": "4.6"
+      "engine_version": "4.6",
+      "family": "Firefox"
     }
   },
   {
@@ -3366,7 +3702,19 @@
       "name": "Phoenix Browser",
       "version": "6.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.112 Secure/57.0.441.112 Safari/537.36",
+    "client": {
+      "type": "browser",
+      "name": "Secure Browser",
+      "version": "57.0.441.112",
+      "engine": "Blink",
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3376,7 +3724,8 @@
       "name": "CoolBrowser",
       "version": "78.0.3904.108",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3386,7 +3735,8 @@
       "name": "SFive",
       "version": "62.115.3202.101",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3396,7 +3746,8 @@
       "name": "Navigateur Web",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "538.1"
+      "engine_version": "538.1",
+      "family": null
     }
   },
   {
@@ -3406,7 +3757,8 @@
       "name": "Seewo Browser",
       "version": "2.0.16.3558",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3416,7 +3768,8 @@
       "name": "UR Browser",
       "version": "61.1.3163.21",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3426,7 +3779,8 @@
       "name": "Stargon",
       "version": "2.3.2",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3436,7 +3790,8 @@
       "name": "NFS Browser",
       "version": "5.0.5.2050",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3446,7 +3801,8 @@
       "name": "Yolo Browser",
       "version": "1.0.1.74",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3456,7 +3812,8 @@
       "name": "Smart Lenovo Browser",
       "version": "6.0.1.9171",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3466,7 +3823,8 @@
       "name": "Smart Lenovo Browser",
       "version": "10.0.2559.400",
       "engine": "Trident",
-      "engine_version": "7.0"
+      "engine_version": "7.0",
+      "family": null
     }
   },
   {
@@ -3476,7 +3834,8 @@
       "name": "Browzar",
       "version": "",
       "engine": "Trident",
-      "engine_version": "7.0"
+      "engine_version": "7.0",
+      "family": "Internet Explorer"
     }
   },
   {
@@ -3486,7 +3845,8 @@
       "name": "Odin",
       "version": "74.3729.2.10",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3496,7 +3856,8 @@
       "name": "SFive",
       "version": "65.0.3325.109",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3506,7 +3867,8 @@
       "name": "SFive",
       "version": "1.0.0.16",
       "engine": "WebKit",
-      "engine_version": "602.1.50"
+      "engine_version": "602.1.50",
+      "family": "Chrome"
     }
   },
   {
@@ -3516,7 +3878,8 @@
       "name": "T-Browser",
       "version": "2.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3526,7 +3889,8 @@
       "name": "Flow",
       "version": "2.2.4.7",
       "engine": "EkiohFlow",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3536,7 +3900,8 @@
       "name": "Flow",
       "version": "2.2.4.7",
       "engine": "EkiohFlow",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3546,7 +3911,8 @@
       "name": "Flow",
       "version": "5.7.4",
       "engine": "EkiohFlow",
-      "engine_version": "5.7.4.30559"
+      "engine_version": "5.7.4.30559",
+      "family": null
     }
   },
   {
@@ -3556,7 +3922,8 @@
       "name": "Oregano",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "536.7"
+      "engine_version": "536.7",
+      "family": null
     }
   },
   {
@@ -3566,7 +3933,8 @@
       "name": "Oregano",
       "version": "4.25.2",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3576,7 +3944,8 @@
       "name": "Zetakey",
       "version": "3.3.1",
       "engine": "WebKit",
-      "engine_version": "533.21.1"
+      "engine_version": "533.21.1",
+      "family": null
     }
   },
   {
@@ -3586,7 +3955,8 @@
       "name": "AwoX",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "533.3"
+      "engine_version": "533.3",
+      "family": null
     }
   },
   {
@@ -3596,7 +3966,8 @@
       "name": "AwoX",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "534.34"
+      "engine_version": "534.34",
+      "family": null
     }
   },
   {
@@ -3606,7 +3977,8 @@
       "name": "Phantom Browser",
       "version": "2.0",
       "engine": "WebKit",
-      "engine_version": "531"
+      "engine_version": "531",
+      "family": null
     }
   },
   {
@@ -3616,7 +3988,8 @@
       "name": "Perfect Browser",
       "version": "9.1",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3626,7 +3999,8 @@
       "name": "Perfect Browser",
       "version": "2.6",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3636,7 +4010,8 @@
       "name": "Perfect Browser",
       "version": "22.4",
       "engine": "WebKit",
-      "engine_version": "605.1.15"
+      "engine_version": "605.1.15",
+      "family": null
     }
   },
   {
@@ -3646,7 +4021,8 @@
       "name": "Perfect Browser",
       "version": "22.2.1",
       "engine": "WebKit",
-      "engine_version": "605.1.15"
+      "engine_version": "605.1.15",
+      "family": null
     }
   },
   {
@@ -3656,7 +4032,8 @@
       "name": "Perfect Browser",
       "version": "25.5",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3666,7 +4043,8 @@
       "name": "Biyubi",
       "version": "5.0",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3676,7 +4054,8 @@
       "name": "Biyubi",
       "version": "4.5",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3686,7 +4065,8 @@
       "name": "xStand",
       "version": "6.6.2",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3696,7 +4076,8 @@
       "name": "Maxthon",
       "version": "405",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3706,7 +4087,8 @@
       "name": "Maxthon",
       "version": "4043",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3716,7 +4098,8 @@
       "name": "Maxthon",
       "version": "180507",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3726,7 +4109,8 @@
       "name": "UC Browser HD",
       "version": "3.0.1.776",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3736,7 +4120,8 @@
       "name": "QQ Browser Lite",
       "version": "5385",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3746,7 +4131,8 @@
       "name": "PlayFree Browser",
       "version": "2.2.0.0",
       "engine": "WebKit",
-      "engine_version": "537.16"
+      "engine_version": "537.16",
+      "family": null
     }
   },
   {
@@ -3756,7 +4142,8 @@
       "name": "Chim Lac",
       "version": "1.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3766,7 +4153,8 @@
       "name": "Chim Lac",
       "version": "73.0.3683.91",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3776,7 +4164,8 @@
       "name": "Sleipnir",
       "version": "4.5.5012",
       "engine": "",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3786,7 +4175,8 @@
       "name": "SP Browser",
       "version": "3.8.2",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Safari"
     }
   },
   {
@@ -3796,7 +4186,41 @@
       "name": "Opera Mini iOS",
       "version": "16.0.4.120849",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.16 (KHTML, like Gecko) Chrome/20.0.1207.0 PlayFreeBrowser/2.2.0.0 Safari/537.16",
+    "client": {
+      "type": "browser",
+      "name": "PlayFree Browser",
+      "version": "2.2.0.0",
+      "engine": "WebKit",
+      "engine_version": "537.16",
+      "family": null
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) chimlac_browser/1.0 Chrome/64.0.3282.140 Safari/537.36",
+    "client": {
+      "type": "browser",
+      "name": "Chim Lac",
+      "version": "1.0",
+      "engine": "Blink",
+      "engine_version": "",
+      "family": "Chrome"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.91 chimlac/73.0.3683.91 Safari/537.36",
+    "client": {
+      "type": "browser",
+      "name": "Chim Lac",
+      "version": "73.0.3683.91",
+      "engine": "Blink",
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3806,7 +4230,8 @@
       "name": "Maelstrom",
       "version": "44.0.1.3",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3816,7 +4241,8 @@
       "name": "Orca",
       "version": "1.1",
       "engine": "Gecko",
-      "engine_version": "1.9.0.7"
+      "engine_version": "1.9.0.7",
+      "family": "Firefox"
     }
   },
   {
@@ -3826,7 +4252,8 @@
       "name": "Cornowser",
       "version": "1.0.4.7",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3836,7 +4263,8 @@
       "name": "Arvin",
       "version": "9.0.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3846,7 +4274,8 @@
       "name": "Helio",
       "version": "0.98.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3856,7 +4285,8 @@
       "name": "7654 Browser",
       "version": "1.0.2.3",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3866,7 +4296,8 @@
       "name": "Deledao",
       "version": "80.0.3987.153",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3876,7 +4307,8 @@
       "name": "Deledao",
       "version": "73.0.3683.80",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3886,7 +4318,8 @@
       "name": "Qwant Mobile",
       "version": "2.4.1",
       "engine": "WebKit",
-      "engine_version": "603.3.8"
+      "engine_version": "603.3.8",
+      "family": "Firefox"
     }
   },
   {
@@ -3896,7 +4329,8 @@
       "name": "HasBrowser",
       "version": "5.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3906,7 +4340,8 @@
       "name": "Dot Browser",
       "version": "3.0.2",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3916,7 +4351,8 @@
       "name": "DeskBrowse",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "312.8"
+      "engine_version": "312.8",
+      "family": null
     }
   },
   {
@@ -3926,7 +4362,8 @@
       "name": "GinxDroid Browser",
       "version": "90.9.8.3",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3936,7 +4373,8 @@
       "name": "Avira Scout",
       "version": "47.0.2526.111",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3946,7 +4384,8 @@
       "name": "Yandex Browser",
       "version": "10.91",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3956,7 +4395,8 @@
       "name": "Baidu Browser",
       "version": "2.6.2",
       "engine": "WebKit",
-      "engine_version": "534.46"
+      "engine_version": "534.46",
+      "family": "Baidu"
     }
   },
   {
@@ -3966,7 +4406,8 @@
       "name": "Super Fast Browser",
       "version": "15.0.0024.18",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -3976,7 +4417,8 @@
       "name": "Venus Browser",
       "version": "2.0.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -3986,7 +4428,8 @@
       "name": "Otter Browser",
       "version": "1.0.01",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -3996,7 +4439,8 @@
       "name": "Smooz",
       "version": "1.96.6.2725",
       "engine": "WebKit",
-      "engine_version": "605.1.15"
+      "engine_version": "605.1.15",
+      "family": null
     }
   },
   {
@@ -4006,7 +4450,8 @@
       "name": "Smooz",
       "version": "1.47.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4016,7 +4461,8 @@
       "name": "BriskBard",
       "version": "1.8.4",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4026,7 +4472,8 @@
       "name": "JavaFX",
       "version": "8.0",
       "engine": "WebKit",
-      "engine_version": "538.19"
+      "engine_version": "538.19",
+      "family": null
     }
   },
   {
@@ -4036,7 +4483,8 @@
       "name": "Byffox",
       "version": "15.0",
       "engine": "Gecko",
-      "engine_version": "15.0"
+      "engine_version": "15.0",
+      "family": "Firefox"
     }
   },
   {
@@ -4046,7 +4494,8 @@
       "name": "Craving Explorer",
       "version": "2.2.17",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4056,7 +4505,8 @@
       "name": "Lolifox",
       "version": "28.12.0",
       "engine": "Goanna",
-      "engine_version": "4.6"
+      "engine_version": "4.6",
+      "family": "Firefox"
     }
   },
   {
@@ -4066,7 +4516,8 @@
       "name": "Jio Browser",
       "version": "2.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4076,7 +4527,8 @@
       "name": "PolyBrowser",
       "version": "36.0",
       "engine": "Gecko",
-      "engine_version": "36.0"
+      "engine_version": "36.0",
+      "family": "Firefox"
     }
   },
   {
@@ -4086,7 +4538,8 @@
       "name": "Coc Coc",
       "version": "47.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4096,7 +4549,8 @@
       "name": "Qutebrowser",
       "version": "1.13.1",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4106,7 +4560,8 @@
       "name": "Flast",
       "version": "83.0.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4116,7 +4571,8 @@
       "name": "Avant Browser",
       "version": "",
       "engine": "WebKit",
-      "engine_version": "537.1"
+      "engine_version": "537.1",
+      "family": null
     }
   },
   {
@@ -4126,7 +4582,8 @@
       "name": "Coc Coc",
       "version": "33.0.1750.157",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4136,7 +4593,8 @@
       "name": "Baidu Spark",
       "version": "2",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Baidu"
     }
   },
   {
@@ -4146,7 +4604,8 @@
       "name": "Qazweb",
       "version": "2.0",
       "engine": "Gecko",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Firefox"
     }
   },
   {
@@ -4156,7 +4615,8 @@
       "name": "Maxthon",
       "version": "5.2.6.200",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4166,7 +4626,8 @@
       "name": "Maxthon",
       "version": "5.2.1.5000",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4176,7 +4637,8 @@
       "name": "Mandarin",
       "version": "1.0.0.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4186,7 +4648,8 @@
       "name": "deg-degan",
       "version": "75.4.128",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4196,7 +4659,8 @@
       "name": "Chedot",
       "version": "8.0.1",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4206,7 +4670,8 @@
       "name": "Chromium GOST",
       "version": "83.0.4103.116",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4216,7 +4681,8 @@
       "name": "Baidu Browser",
       "version": "1.9.0.1",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Baidu"
     }
   },
   {
@@ -4226,7 +4692,8 @@
       "name": "Opera Touch",
       "version": "77",
       "engine": "WebKit",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Opera"
     }
   },
   {
@@ -4236,7 +4703,8 @@
       "name": "Midori",
       "version": "1.2",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4246,7 +4714,8 @@
       "name": "OceanHero",
       "version": "6",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4256,7 +4725,8 @@
       "name": "Tizen Browser",
       "version": "2.4.0",
       "engine": "WebKit",
-      "engine_version": "538.1"
+      "engine_version": "538.1",
+      "family": null
     }
   },
   {
@@ -4266,7 +4736,8 @@
       "name": "Tizen Browser",
       "version": "5.0",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
     }
   },
   {
@@ -4276,7 +4747,8 @@
       "name": "OpenFin",
       "version": "6.49.12.65",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": "Chrome"
     }
   },
   {
@@ -4286,7 +4758,8 @@
       "name": "Edge WebView",
       "version": "1.0",
       "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine_version": "537.36",
+      "family": "Chrome"
     }
   },
   {
@@ -4296,7 +4769,19 @@
       "name": "SuperBird",
       "version": "73.0.3683.103",
       "engine": "Blink",
-      "engine_version": ""
+      "engine_version": "",
+      "family": null
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 SY/1.9 Chrome/90.0.4430.210 Mobile Safari/537.36",
+    "client": {
+      "type": "browser",
+      "name": "Stampy Browser",
+      "version": "1.9",
+      "engine": "Blink",
+      "engine_version": "",
+      "family": "Chrome"
     }
   }
 ]
