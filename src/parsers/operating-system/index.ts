@@ -111,11 +111,11 @@ export default class OperatingSystemParser {
       return "SuperH";
     }
 
-    if (userAgentParser("64bit|WOW64|(?:Intel)?x64|win64|amd64|x86_?64", userAgent)) {
+    if (userAgentParser("64-?bit|WOW64|(?:Intel)?x64|win64|amd64|x86_?64", userAgent)) {
       return "x64";
     }
 
-    if (userAgentParser("(?:i[0-9]|x)86|i86pc", userAgent)) {
+    if (userAgentParser(".+32bit|.+win32|(?:i[0-9]|x)86|i86pc", userAgent)) {
       return "x86";
     }
 

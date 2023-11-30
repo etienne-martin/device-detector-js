@@ -1058,5 +1058,10 @@
     "regex": "Theyub v(\\d+[\\.\\d]+)",
     "name": "Theyub",
     "version": "$1"
+  },
+  {
+    "regex": "BBCNewsUKWatchApp/(\\d+[\\.\\d]+)",
+    "name": "BBC News",
+    "version": "$1"
   }
 ]

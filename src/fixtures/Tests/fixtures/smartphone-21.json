@@ -4149,7 +4149,7 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "CHIA",
+      "brand": "Ghia",
       "model": "Sveglio H1"
     },
     "os_family": "Android",
@@ -4171,7 +4171,7 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "CHIA",
+      "brand": "Ghia",
       "model": "Sveglio Q1"
     },
     "os_family": "Android",
@@ -6129,7 +6129,7 @@
     },
     "device": {
       "type": "tablet",
-      "brand": "CHIA",
+      "brand": "Ghia",
       "model": "TREO TAB8G"
     },
     "os_family": "Android",

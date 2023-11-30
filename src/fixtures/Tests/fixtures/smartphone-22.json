@@ -2252,10 +2252,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.0.5.306",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "smartphone",
@@ -2263,7 +2263,7 @@
       "model": "P smart (2021)"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; PPA-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36 OPR/62.2.3146.57547",
@@ -6070,10 +6070,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.0.4.302",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "smartphone",
@@ -6081,7 +6081,7 @@
       "model": "Nova 7 SE 5G"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; I1927) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36",
@@ -7354,7 +7354,7 @@
     "device": {
       "type": "smartphone",
       "brand": "Meizu",
-      "model": "Pro 7 Plus"
+      "model": "PRO 7 Plus"
     },
     "os_family": "Android",
     "browser_family": "Unknown"
@@ -9846,7 +9846,7 @@
     "browser_family": "Chrome"
   },
   {
-    "user_agent": "Mozilla/5.0 (Linux; Android 10; YOK-AN10 Build/HONORYOR-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120",
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; YOK-AN10; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 HuaweiBrowser/11.0.8.301 Mobile Safari/537.36",
     "os": {
       "name": "Android",
       "version": "10",
@@ -9854,8 +9854,8 @@
     },
     "client": {
       "type": "browser",
-      "name": "Chrome Webview",
-      "version": "77.0.3865.120",
+      "name": "Huawei Browser Mobile",
+      "version": "11.0.8.301",
       "engine": "Blink",
       "engine_version": ""
     },

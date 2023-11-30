@@ -4428,10 +4428,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.5.310",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4439,7 +4439,7 @@
       "model": "C3 9.7\" (2020)"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; BZC-W00; HMSCore 6.1.0.305) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Safari/537.36",
@@ -4450,10 +4450,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.4.301",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4461,7 +4461,7 @@
       "model": "C3 9.7\" (2020) WiFi"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; AGR-W09HN; HMSCore 6.1.0.313) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36",
@@ -4472,10 +4472,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.5.310",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4483,7 +4483,7 @@
       "model": "Honor Pad X6"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; AGS3-W09; HMSCore 5.2.0.324) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 HuaweiBrowser/11.0.6.305 Safari/537.36",
@@ -4494,10 +4494,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.0.6.305",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4505,7 +4505,7 @@
       "model": "MatePad T10s WiFi"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; AGS3-AL00; HMSCore 6.1.0.313) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36",
@@ -4516,10 +4516,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.5.310",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4527,7 +4527,7 @@
       "model": "MatePad T10s"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; AGS3-AL09HN; HMSCore 6.1.0.313) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36",
@@ -4538,10 +4538,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.5.310",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4549,7 +4549,7 @@
       "model": "Honor Pad 6 10.1\""
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; AGS3-W00D; HMSCore 6.1.0.313) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36",
@@ -4560,10 +4560,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.5.310",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4571,7 +4571,7 @@
       "model": "Enjoy Tablet 2 10.1\" WiFi"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; AGS3-W00E; HMSCore 6.1.0.313) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.301 Safari/537.36",
@@ -4582,10 +4582,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.5.301",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4593,7 +4593,7 @@
       "model": "Enjoy Tablet 2 10.1\" WiFi"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 10; AGS3-W09HN; HMSCore 6.1.0.313) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36",
@@ -4604,10 +4604,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.5.310",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4615,7 +4615,7 @@
       "model": "Honor Pad 6 10.1\" WiFi"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 9; BAH2-W09; HMSCore 6.1.0.313) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Safari/537.36",
@@ -4626,10 +4626,10 @@
     },
     "client": {
       "type": "browser",
-      "name": "Huawei Browser",
+      "name": "Huawei Browser Mobile",
       "version": "11.1.4.301",
-      "engine": "WebKit",
-      "engine_version": "537.36"
+      "engine": "Blink",
+      "engine_version": ""
     },
     "device": {
       "type": "tablet",
@@ -4637,7 +4637,7 @@
       "model": "MediaPad M5 Lite"
     },
     "os_family": "Android",
-    "browser_family": "Unknown"
+    "browser_family": "Chrome"
   },
   {
     "user_agent": "Mozilla/5.0 (Linux; Android 5.1; Co-Mate) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Safari/537.36",
@@ -5974,7 +5974,7 @@
     "device": {
       "type": "tablet",
       "brand": "Huawei",
-      "model": "MatePad Pro"
+      "model": "MatePad Pro 10.8\" WiFi"
     },
     "os_family": "Android",
     "browser_family": "Unknown"
@@ -6129,6 +6129,1610 @@
       "type": "tablet",
       "brand": "Supra",
       "model": "M12CG"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-J706F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Lenovo",
+      "model": "Tab P11 Pro"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; H1010) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Proline",
+      "model": "H1010"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; MONZA-T7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Packard Bell",
+      "model": "Monza T7"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Optima 8 Z801 4G TS8227PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Digma",
+      "model": "Optima 8 Z801 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Optima 7 Z800 4G TS7225PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4583.0 Mobile Safari/537.36 OPR/62.3.3146.57763",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Opera Mobile",
+      "version": "62.3.3146.57763",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Digma",
+      "model": "Optima 7 Z800 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Opera"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Optima 7 A101 3G TT7223PG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 OPR/64.2.3282.60128",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Opera",
+      "version": "64.2.3282.60128",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Digma",
+      "model": "Optima 7 A101 3G"
+    },
+    "os_family": "Android",
+    "browser_family": "Opera"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Optima 7 A100S 3G TS7222PG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Digma",
+      "model": "Optima 7 A100S 3G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; Optima 10 A501S 4G TS1221PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Digma",
+      "model": "Optima 10 A501S 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; SEN_1055_ARM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "81.0.4044.138",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Connex",
+      "model": "Serenity 1055 10.1\""
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; MRX-W19; HMSCore 5.3.0.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.1.310 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Huawei Browser Mobile",
+      "version": "11.1.1.310",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad Pro 10.8\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; MRX-W39; HMSCore 6.0.1.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.3.300 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Huawei Browser Mobile",
+      "version": "11.1.3.300",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad Pro 10.8\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRX-AL19; HMSCore 6.0.0.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.2.301 Safari/537.36",
+    "os": {
+      "name": "HarmonyOS",
+      "version": "",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Huawei Browser Mobile",
+      "version": "11.1.2.301",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad Pro 10.8\""
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRX-AN19; HMSCore 6.1.0.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Mobile Safari/537.36",
+    "os": {
+      "name": "HarmonyOS",
+      "version": "",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Huawei Browser Mobile",
+      "version": "11.1.4.301",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad Pro 10.8\" 5G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W29; HMSCore 6.0.1.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Safari/537.36",
+    "os": {
+      "name": "HarmonyOS",
+      "version": "",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Huawei Browser Mobile",
+      "version": "11.1.4.301",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad Pro 10.8\" (2021) WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; WGR-W09 Build/XXXXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "83.0.4103.106",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad Pro 12.6\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; WGR-W19 Build/XXXXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Safari/537.36 T7/12.19.0.0 SP-engine/2.33.0 baiduboxapp/12.19.0.11 (Baidu; P1 10) NABar/1.0",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Baidu Box App",
+      "version": "12.19.0.11"
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad Pro 12.6\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 5.1; Ginzzu GT-X890 Build/LRX21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.159 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "5.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "92.0.4515.159",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Ginzzu",
+      "model": "GT-X890"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 4.2.2; SM-T111NQ Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4591.0 Safari/537.36 OPR/50.4.2426.146257",
+    "os": {
+      "name": "Android",
+      "version": "4.2.2",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Opera",
+      "version": "50.4.2426.146257",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Samsung",
+      "model": "Galaxy Tab 3 Lite 7.0\""
+    },
+    "os_family": "Android",
+    "browser_family": "Opera"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-T297) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "11",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Samsung",
+      "model": "Galaxy Tab A 8.0\" (2019) LTE"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; TEL-73GIQA Build/OPM2.171019.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.120 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "91.0.4472.120",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Telefunken",
+      "model": "TEL-73GIQA"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; BDF-M107) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "BDF",
+      "model": "M107"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; TZ773) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Irbis",
+      "model": "TZ773"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; QT19101HV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "90.0.4430.210",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Qilive",
+      "model": "QT19101HV"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; Q210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus Q210"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; SCMR-W09; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36",
+    "os": {
+      "name": "HarmonyOS",
+      "version": "",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Huawei Browser Mobile",
+      "version": "11.1.5.310",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad 10.8\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; SCMR-AL09; HMSCore 6.0.1.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Safari/537.36",
+    "os": {
+      "name": "HarmonyOS",
+      "version": "",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Huawei Browser Mobile",
+      "version": "11.1.4.301",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Huawei",
+      "model": "MatePad 10.8\""
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; LIFETAB P1071X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Medion",
+      "model": "Lifetab P1071X"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; Lenovo TB-8506F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "11",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Lenovo",
+      "model": "Tab M8"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; LAVIE Tab E 8HD1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "NEC",
+      "model": "LAVIE Tab E 8HD1"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; EX111) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "92.0.4515.131",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus EX111"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; Q310) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus Q310"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; 8052) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Alcatel",
+      "model": "TEKE Mini"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; 8051) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Alcatel",
+      "model": "Smart Tab 7\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; 8088X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Alcatel",
+      "model": "3T 10\""
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; N210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus N210"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; N310) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus N310"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; N370) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus N370"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; N570) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus N570"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; arm; Android 9; E110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaApp_Android/21.110.1/apad YaSearchBrowser/21.110.1/apad BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": "ARM"
+    },
+    "client": {
+      "type": "browser",
+      "name": "Yandex Browser",
+      "version": "21.110.1",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus E110"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; NQT-1014GIQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Neon IQ",
+      "model": "Tab 10.1\" 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; NQT-1013GIQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "70.0.3538.110",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Neon IQ",
+      "model": "Tab 10.1\" 3G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Dalvik/2.1.0 (Linux; U; Android 6.0; NQT-73GIQ Build/MRA58K)",
+    "os": {
+      "name": "Android",
+      "version": "6.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Android Browser",
+      "version": "",
+      "engine": "WebKit",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Neon IQ",
+      "model": "Tab 7\" 3G"
+    },
+    "os_family": "Android",
+    "browser_family": "Android Browser"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 5.1.1; NQT-7W Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "5.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Webview",
+      "version": "39.0.0.0",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Neon IQ",
+      "model": "Tab 7\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; TEL-74GIQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "85.0.4183.127",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Telefunken",
+      "model": "TEL-74GIQ"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; TARISTAB2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.71",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Stylo",
+      "model": "Taris Tab 2"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; arm; Android 5.1; Ursus A310) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4597.1 YaBrowser/20.8.3.71.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "5.1",
+      "platform": "ARM"
+    },
+    "client": {
+      "type": "browser",
+      "name": "Yandex Browser",
+      "version": "20.8.3.71.01",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus A310"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; Visionbook_10Q_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.61",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Umax",
+      "model": "VisionBook 10Q Pro"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; TBBVNC100005207) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "ONN",
+      "model": "TBBVNC100005207"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; SMART_L103_eea) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.71",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "iGet",
+      "model": "Smart L103"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; SMART_W10X_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "iGet",
+      "model": "Smart W10X"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; Archos 101 Oxygen 4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Archos",
+      "model": "101 Oxygen 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; PMT7788_4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Prestigio",
+      "model": "Grace 7788 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; PMT5791_4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Prestigio",
+      "model": "Grace 5791 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; PMT5778_4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.50",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Prestigio",
+      "model": "Grace 5778 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; PMT5771_4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Prestigio",
+      "model": "Grace 5771 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0; PMT5588_4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "8.1.0",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Prestigio",
+      "model": "Grace 5588 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 7.1.2; RCT6973W43R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "7.1.2",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "94.0.4606.61",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "RCA Tablets",
+      "model": "Voyager III 7.0\""
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; UTBook_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Awow",
+      "model": "UTBook"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; inoiPad mini 1+16 Wi-Fi Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 YandexSearch/7.52 YandexSearchBrowser/7.52",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Yandex Browser",
+      "version": "7.52",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Inoi",
+      "model": "Pad Mini 1+16 WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; iPlay_8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "AllDocube",
+      "model": "iPlay 8T"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; Nokia T20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "11",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Nokia",
+      "model": "T20"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; P80_ROW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome Mobile",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Teclast",
+      "model": "P80"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; PMT3231_4G_D_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Prestigio",
+      "model": "Muze 3231 4G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-T733) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "11",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Samsung",
+      "model": "Galaxy Tab S7 FE 12.4\" WiFi"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; N410) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus N410"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; RQ-713S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "RoyQueen",
+      "model": "713S"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; uk-ua; AOCOS PX102 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
+    "os": {
+      "name": "Android",
+      "version": "4.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Android Browser",
+      "version": "",
+      "engine": "WebKit",
+      "engine_version": "534.30"
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Aocos",
+      "model": "PX102"
+    },
+    "os_family": "Android",
+    "browser_family": "Android Browser"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; kPad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "11",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "AllDocube",
+      "model": "kPad"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; M40Pro_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "11",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "88.0.4324.181",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Teclast",
+      "model": "M40 Pro"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; Lenovo TB-J616X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "11",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "87.0.4280.141",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Lenovo",
+      "model": "Tab P11 Plus"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 4.0.3; W22PRO 3G Build/ICS.w22ref.20120912) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "4.0.3",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "42.0.2311.111",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "Ramos",
+      "model": "W22 Pro 3G"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; L310i) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "96.0.4664.45",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "DEXP",
+      "model": "Ursus L310i"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; GRAVITY 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "10",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "92.0.4515.159",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "tablet",
+      "brand": "SPC",
+      "model": "Gravity 2"
     },
     "os_family": "Android",
     "browser_family": "Chrome"

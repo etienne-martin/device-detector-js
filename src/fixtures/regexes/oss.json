@@ -456,7 +456,7 @@
     "version": "3.1"
   },
   {
-    "regex": "Windows|Win64|MSDW|HandBrake Win Upd|Microsoft BITS",
+    "regex": "Windows|.+win32|Win64|MSDW|HandBrake Win Upd|Microsoft BITS",
     "name": "Windows",
     "version": ""
   },
@@ -516,7 +516,7 @@
     "version": "$1.$2"
   },
   {
-    "regex": "^(?:iPad|iPhone)(?:\\d+[\\,\\d]*)/(\\d+[\\.\\d]+)",
+    "regex": "^(?:iPad|iPhone)(?:\\d+[\\,\\d]*)[/_](\\d+[\\.\\d]+)",
     "name": "iOS",
     "version": "$1"
   },
@@ -526,12 +526,12 @@
     "version": "$1"
   },
   {
-    "regex": "iOS/(\\d+[\\.\\d]+)",
+    "regex": "(?:iPhone ?OS|iOS(?: Version)?)(?:/|; |,)(\\d+[\\.\\d]+)",
     "name": "iOS",
     "version": "$1"
   },
   {
-    "regex": "CFNetwork/.+ Darwin/(\\d+[\\.\\d]+)(?!.*(?:x86_64|i386))",
+    "regex": "CFNetwork/.+ Darwin/(\\d+[\\.\\d]+)(?!.*(?:x86_64|i386|PowerMac))",
     "name": "iOS",
     "versions": [
       {
@@ -627,6 +627,18 @@
         "version": "11.4"
       },
       {
+        "regex": "Darwin/17.5.0",
+        "version": "11.3"
+      },
+      {
+        "regex": "Darwin/17.4.0",
+        "version": "11.2.6"
+      },
+      {
+        "regex": "Darwin/17.3.0",
+        "version": "11.2"
+      },
+      {
         "regex": "CFNetwork/889",
         "version": "11.1"
       },
@@ -657,6 +669,10 @@
       {
         "regex": "CFNetwork/808",
         "version": "10"
+      },
+      {
+        "regex": "CFNetwork/758\\.5\\.3",
+        "version": "9.3.5"
       },
       {
         "regex": "CFNetwork/758\\.4\\.3",
@@ -788,6 +804,16 @@
     "version": "$1"
   },
   {
+    "regex": "iPad.+; (\\d+[\\.\\d]+);",
+    "name": "iOS",
+    "version": "$1"
+  },
+  {
+    "regex": "iPhone.+; Version (\\d+[\\.\\d]+)",
+    "name": "iOS",
+    "version": "$1"
+  },
+  {
     "regex": "(?:Apple-)?(?:iPhone|iPad|iPod)(?:.*Mac OS X.*Version/(\\d+\\.\\d+)|; Opera)?",
     "name": "iOS",
     "version": "$1"
@@ -818,7 +844,7 @@
     "version": ""
   },
   {
-    "regex": "CFNetwork/.+ Darwin/(?:[\\d\\.]+).+(?:x86_64|i386)|(?:x86_64-apple-)?darwin(?:[\\d\\.]+)",
+    "regex": "CFNetwork/.+ Darwin/(?:[\\d\\.]+).+(?:x86_64|i386)|(?:x86_64-apple-)?darwin(?:[\\d\\.]+)|PowerMac",
     "name": "Mac",
     "versions": [
       {
@@ -1060,6 +1086,10 @@
       {
         "regex": "(?:x86_64-apple-)?Darwin/?10.3.0",
         "version": "10.6.3"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin/?9.8.0",
+        "version": "10.5.8"
       },
       {
         "regex": "(?:x86_64-apple-)?Darwin/?9.7.1",

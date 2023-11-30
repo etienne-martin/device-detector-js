@@ -575,7 +575,7 @@
       "name": "Windows",
       "short_name": "WIN",
       "version": "NT",
-      "platform": null,
+      "platform": "x64",
       "family": "Windows"
     }
   },
@@ -2565,7 +2565,7 @@
       "name": "Windows Phone",
       "short_name": "WPH",
       "version": "8.0",
-      "platform": "",
+      "platform": "x86",
       "family": "Windows Mobile"
     }
   },
@@ -3477,6 +3477,156 @@
       "version": "6",
       "platform": "",
       "family": "Android"
+    }
+  },
+  {
+    "user_agent": "Jungle Disk Workgroup HTTP/110 (Windows 10.0 64-bit)",
+    "os": {
+      "name": "Windows",
+      "short_name": "WIN",
+      "version": "10",
+      "platform": "x64",
+      "family": "Windows"
+    }
+  },
+  {
+    "user_agent": "GOGGalaxyCommunicationService/2.0.4.164 (Windows_32bit)",
+    "os": {
+      "name": "Windows",
+      "short_name": "WIN",
+      "version": "",
+      "platform": "x86",
+      "family": "Windows"
+    }
+  },
+  {
+    "user_agent": "Hola svc_js_win32/1.187.344",
+    "os": {
+      "name": "Windows",
+      "short_name": "WIN",
+      "version": "",
+      "platform": "x86",
+      "family": "Windows"
+    }
+  },
+  {
+    "user_agent": "Deezer/8.51.0.5 (iOS; 14.4.2; Mobile; en; iPhone10_4)",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "14.4.2",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "iPhone12,1_15.0.2_weibo_11.10.1_iPhone_wifi ijkplayer WBFPlayer",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "15.0.2",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "MobileSafari/601.1 CFNetwork/758.5.3 Darwin/15.6.0",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "9.3.5",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "Puffin/16015 CFNetwork/893.14.2 Darwin/17.3.0",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "11.2",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "MobileSafari/604.1 CFNetwork/894 Darwin/17.4.0",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "11.2.6",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "Puffin/15867 CFNetwork/897.15 Darwin/17.5.0",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "11.3",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "iPhoneOS/12.1.4 (16D57)",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "12.1.4",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "server-bag [iPhone OS,12.4.8,16G201,iPad4,4]",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "12.4.8",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "Rokt SDK(iPhone; ios Version/13.1.1)",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "13.1.1",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "gamed/5.11.20.4.9.17.5.5.2 (iPad4,4; 12.4.8; 16G201; GameKit-577.8)",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "12.4.8",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "iPhone7,1; Version 12.4.6 (Build 16G183); com.apple.ap.adprivacyd; 143441-1,29",
+    "os": {
+      "name": "iOS",
+      "short_name": "IOS",
+      "version": "12.4.6",
+      "platform": "",
+      "family": "iOS"
+    }
+  },
+  {
+    "user_agent": "Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power Macintosh) (PowerMac7,2)",
+    "os": {
+      "name": "Mac",
+      "short_name": "MAC",
+      "version": "10.5.8",
+      "platform": "",
+      "family": "Mac"
     }
   }
 ]
