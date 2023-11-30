@@ -16,7 +16,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const desktopOsArray = ["AmigaOS","IBM","GNU/Linux","Mac","Unix","Windows","BeOS","Chrome OS"];
+const desktopOsArray = ["AmigaOS", "IBM", "GNU/Linux", "Mac", "Unix", "Windows", "BeOS", "Chrome OS"];
 const shortOsNames = operatingSystem.operatingSystem
 const osFamilies = operatingSystem.osFamilies
 
@@ -64,7 +64,21 @@ export default class OperatingSystemParser {
       if (!match) continue;
 
       result.name = variableReplacement(operatingSystem.name, match);
-      result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+
+      if ("version" in operatingSystem && operatingSystem.version) {
+        result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+      }
+
+      if ("versions" in operatingSystem && operatingSystem.versions) {
+        for (const version of operatingSystem.versions) {
+          const versionMatch = userAgentParser(version.regex, userAgent);
+
+          if (!versionMatch) continue;
+
+          result.version = formatVersion(variableReplacement(version.version, versionMatch), this.options.versionTruncation);
+          break;
+        }
+      }
 
       if (result.name === "lubuntu") {
         result.name = "Lubuntu";
@@ -97,7 +111,7 @@ export default class OperatingSystemParser {
       return "SuperH";
     }
 
-    if (userAgentParser("WOW64|x64|win64|amd64|x86_?64", userAgent)) {
+    if (userAgentParser("64bit|WOW64|(?:Intel)?x64|win64|amd64|x86_?64", userAgent)) {
       return "x64";
     }
 

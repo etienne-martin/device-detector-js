@@ -7515,8 +7515,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia M2 Lite"
+      "brand": "Nubia",
+      "model": "M2 Lite"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -7537,8 +7537,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia M2 Play"
+      "brand": "Nubia",
+      "model": "M2 Play"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -7559,8 +7559,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia N1"
+      "brand": "Nubia",
+      "model": "N1"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -7581,8 +7581,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia N1 Lite"
+      "brand": "Nubia",
+      "model": "N1 Lite"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -7603,8 +7603,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z11 Mini"
+      "brand": "Nubia",
+      "model": "Z11 Mini"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -7623,8 +7623,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z5S Mini"
+      "brand": "Nubia",
+      "model": "Z5S Mini"
     },
     "os_family": "Android",
     "browser_family": "Unknown"
@@ -7643,8 +7643,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z9 Max"
+      "brand": "Nubia",
+      "model": "Z9 Max"
     },
     "os_family": "Android",
     "browser_family": "Unknown"
@@ -7665,8 +7665,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z9 Mini"
+      "brand": "Nubia",
+      "model": "Z9 Mini"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -7687,8 +7687,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z9 Mini"
+      "brand": "Nubia",
+      "model": "Z9 Mini"
     },
     "os_family": "Android",
     "browser_family": "Unknown"

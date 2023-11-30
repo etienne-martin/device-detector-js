@@ -15,6 +15,11 @@
     "version": ""
   },
   {
+    "regex": "AudienceNetworkForAndroid.+(?:FBAV)(?:[ /]([\\d\\.]+))?",
+    "name": "Facebook Audience Network",
+    "version": "$1"
+  },
+  {
     "regex": "MessengerLiteForiOS.(?:FBAV)(?:[ /]([\\d\\.]+))?",
     "name": "Facebook Messenger Lite",
     "version": "$1"
@@ -22,6 +27,11 @@
   {
     "regex": "(?:MessengerForiOS|MESSENGER).(?:FBAV)(?:[ /]([\\d\\.]+))?",
     "name": "Facebook Messenger",
+    "version": "$1"
+  },
+  {
+    "regex": "(?:GroupsForiOS).(?:FBAV)(?:[ /]([\\d\\.]+))?",
+    "name": "Facebook Groups",
     "version": "$1"
   },
   {
@@ -75,7 +85,7 @@
     "version": "$1"
   },
   {
-    "regex": "Pinterest(?: for (?:Android|iOS))?(?:/([\\d\\.]+))?",
+    "regex": "Pinterest(?: for (?:Android(?: Tablet)?|iOS))?(?:/([\\d\\.]+))?",
     "name": "Pinterest",
     "version": "$1"
   },
@@ -97,6 +107,16 @@
   {
     "regex": "Downcast/(\\d+\\.[\\d\\.]+)?(?:.+(?:!Mac)|$)",
     "name": "Downcast",
+    "version": "$1"
+  },
+  {
+    "regex": "Flipp-iOS/.+CFNetwork",
+    "name": "Flipp",
+    "version": ""
+  },
+  {
+    "regex": "Flipp-iOS/(\\d+[\\.\\d]+)",
+    "name": "Flipp",
     "version": "$1"
   },
   {
@@ -440,6 +460,11 @@
     "version": "$1"
   },
   {
+    "regex": "iPhoneLync/([\\d\\.]+)",
+    "name": "Skype for Business",
+    "version": "$1"
+  },
+  {
     "regex": "(?:TikTok[/ ]|musical_ly_|AppName/musical_ly app_version/)(\\d+\\.(?:[\\.\\d]+))?",
     "name": "TikTok",
     "version": "$1"
@@ -665,6 +690,11 @@
     "version": "$1"
   },
   {
+    "regex": "Binance/(\\d+[\\.\\d]+)",
+    "name": "Binance",
+    "version": "$1"
+  },
+  {
     "regex": "ru\\.mail\\.my/(\\d+[\\.\\d]+)",
     "name": "My World",
     "version": "$1"
@@ -683,6 +713,11 @@
     "regex": "Teams/(\\d+[\\.\\d]+)",
     "name": "Teams",
     "version": "$1"
+  },
+  {
+    "regex": "TeamsMobile-iOS",
+    "name": "Teams",
+    "version": ""
   },
   {
     "regex": "StreamlabsOBS/(\\d+[\\.\\d]+)",
@@ -733,5 +768,295 @@
     "regex": "COAF%20SMART%20Citizen/",
     "name": "COAF SMART Citizen",
     "version": ""
+  },
+  {
+    "regex": "GitHubDesktop/([\\d\\.]+)",
+    "name": "GitHub Desktop",
+    "version": "$1"
+  },
+  {
+    "regex": "logioptionsplus/([\\d\\.]+)",
+    "name": "Logi Options+",
+    "version": "$1"
+  },
+  {
+    "regex": "EmbyTheater/([\\d\\.]+)",
+    "name": "Emby Theater",
+    "version": "$1"
+  },
+  {
+    "regex": "y8-browser/([\\d\\.]+)",
+    "name": "Y8 Browser",
+    "version": "$1"
+  },
+  {
+    "regex": "NuMuKiBrowser/([\\d\\.]+)",
+    "name": "NuMuKi Browser",
+    "version": "$1"
+  },
+  {
+    "regex": "LandisGyrAIMbrowser/(\\d+[\\.\\d]+)",
+    "name": "Landis+Gyr AIM Browser",
+    "version": "$1"
+  },
+  {
+    "regex": "Code/(\\d+[\\.\\d]+)",
+    "name": "Visual Studio Code",
+    "version": "$1"
+  },
+  {
+    "regex": "Wireshark/(\\d+[\\.\\d]+)",
+    "name": "Wireshark",
+    "version": "$1"
+  },
+  {
+    "regex": "Magician",
+    "name": "Samsung Magician",
+    "version": ""
+  },
+  {
+    "regex": "Razer Central PC",
+    "name": "Razer Synapse",
+    "version": ""
+  },
+  {
+    "regex": "git/(\\d+[\\.\\d]+)",
+    "name": "Git",
+    "version": "$1"
+  },
+  {
+    "regex": "GooglePodcasts/(\\d+[\\.\\d]+)",
+    "name": "Google Podcasts",
+    "version": "$1"
+  },
+  {
+    "regex": "Microsoft-CryptoAPI/(\\d+[\\.\\d]+)",
+    "name": "Windows CryptoAPI",
+    "version": ""
+  },
+  {
+    "regex": "Microsoft-Delivery-Optimization",
+    "name": "Windows Delivery Optimization",
+    "version": ""
+  },
+  {
+    "regex": "Windows-Update-Agent",
+    "name": "Windows Update Agent",
+    "version": ""
+  },
+  {
+    "regex": "^MSDW",
+    "name": "Dr. Watson",
+    "version": ""
+  },
+  {
+    "regex": "qBittorrent/(\\d+[\\.\\d]+)",
+    "name": "qBittorrent",
+    "version": "$1"
+  },
+  {
+    "regex": "^CPUID",
+    "name": "CPU-Z",
+    "version": ""
+  },
+  {
+    "regex": "AIDA64",
+    "name": "AIDA64",
+    "version": ""
+  },
+  {
+    "regex": "HandBrake Win Upd (\\d+[\\.\\d]+)",
+    "name": "HandBrake",
+    "version": "$1"
+  },
+  {
+    "regex": "CCleaner, (\\d+[\\.\\d]+)",
+    "name": "CCleaner",
+    "version": "$1"
+  },
+  {
+    "regex": "Microsoft Edge Update/(\\d+[\\.\\d]+)",
+    "name": "Edge Update",
+    "version": "$1"
+  },
+  {
+    "regex": "Google(?:Software| )Update/(\\d+[\\.\\d]+)",
+    "name": "Chrome Update",
+    "version": "$1"
+  },
+  {
+    "regex": "Bose Music",
+    "name": "Bose Music",
+    "version": ""
+  },
+  {
+    "regex": "HikConnect",
+    "name": "Hik-Connect",
+    "version": ""
+  },
+  {
+    "regex": "Cortana (\\d+[\\.\\d]+)",
+    "name": "Cortana",
+    "version": "$1"
+  },
+  {
+    "regex": "Opera News/(\\d+[\\.\\d]+)",
+    "name": "Opera News",
+    "version": "$1"
+  },
+  {
+    "regex": "CreativeCloud/(\\d+[\\.\\d]+)",
+    "name": "Adobe Creative Cloud",
+    "version": "$1"
+  },
+  {
+    "regex": "rekordbox/(\\d+[\\.\\d]+)",
+    "name": "rekordbox",
+    "version": "$1"
+  },
+  {
+    "regex": "Microsoft-WNS/(\\d+[\\.\\d]+)",
+    "name": "Windows Push Notification Services",
+    "version": "$1"
+  },
+  {
+    "regex": "Microsoft BITS/(\\d+[\\.\\d]+)",
+    "name": "Background Intelligent Transfer Service",
+    "version": "$1"
+  },
+  {
+    "regex": "ERA Agent Update",
+    "name": "ESET Remote Administrator",
+    "version": ""
+  },
+  {
+    "regex": "EpicGamesLauncher/(\\d+[\\.\\d]+)",
+    "name": "Epic Games Launcher",
+    "version": "$1"
+  },
+  {
+    "regex": "Microsoft-WebDAV-MiniRedir",
+    "name": "WebDAV",
+    "version": ""
+  },
+  {
+    "regex": "Battle.net/(\\d+[\\.\\d]+)",
+    "name": "Battle.net",
+    "version": "$1"
+  },
+  {
+    "regex": "Bookshelf-Android/(\\d+[\\.\\d]+)",
+    "name": "Bookshelf",
+    "version": "$1"
+  },
+  {
+    "regex": "RaveSocial/(\\d+[\\.\\d]+)",
+    "name": "Rave Social",
+    "version": "$1"
+  },
+  {
+    "regex": "wordcookies/(\\d+[\\.\\d]+)",
+    "name": "Word Cookies!",
+    "version": "$1"
+  },
+  {
+    "regex": "com.meevii.bibleKJV/(\\d+[\\.\\d]+)",
+    "name": "Bible KJV",
+    "version": "$1"
+  },
+  {
+    "regex": "MetaTrader 5 Terminal/(\\d+[\\.\\d]+)",
+    "name": "MetaTrader",
+    "version": "$1"
+  },
+  {
+    "regex": "com.paint.bynumber/(\\d+[\\.\\d]+)",
+    "name": "Paint by Number",
+    "version": "$1"
+  },
+  {
+    "regex": "zepeto_global/(\\d+[\\.\\d]+)",
+    "name": "ZEPETO",
+    "version": "$1"
+  },
+  {
+    "regex": "Jungle Disk Workgroup HTTP",
+    "name": "Jungle Disk",
+    "version": ""
+  },
+  {
+    "regex": "(?:mirall|Nextcloud-android)/(\\d+[\\.\\d]+)",
+    "name": "Nextcloud",
+    "version": "$1"
+  },
+  {
+    "regex": "GoNativeIOS/(\\d+[\\.\\d]+)",
+    "name": "GoNative",
+    "version": "$1"
+  },
+  {
+    "regex": "Pandora/(\\d+[\\.\\d]+)",
+    "name": "Pandora",
+    "version": "$1"
+  },
+  {
+    "regex": "Blackboard/(\\d+[\\.\\d]+)",
+    "name": "Blackboard",
+    "version": "$1"
+  },
+  {
+    "regex": "Blackboard/unspecified",
+    "name": "Blackboard",
+    "version": ""
+  },
+  {
+    "regex": "QQMusic/(\\d+[\\.\\d]+)",
+    "name": "QQMusic",
+    "version": "$1"
+  },
+  {
+    "regex": "etoro-cordova-app",
+    "name": "eToro",
+    "version": ""
+  },
+  {
+    "regex": "Avid Link Desktop App/(\\d+[\\.\\d]+)",
+    "name": "Avid Link",
+    "version": "$1"
+  },
+  {
+    "regex": "Netflix/(\\d+[\\.\\d]+)",
+    "name": "Netflix",
+    "version": "$1"
+  },
+  {
+    "regex": "GoogleTagManager/(\\d+[\\.\\d]+)",
+    "name": "Google Tag Manager",
+    "version": "$1"
+  },
+  {
+    "regex": "Adobe Synchronizer (\\d+[\\.\\d]+)",
+    "name": "Adobe Synchronizer",
+    "version": "$1"
+  },
+  {
+    "regex": "BlueStacks(?: 5)?/(\\d+[\\.\\d]+)",
+    "name": "BlueStacks",
+    "version": "$1"
+  },
+  {
+    "regex": "WindowsPowerShell/(\\d+[\\.\\d]+)",
+    "name": "PowerShell",
+    "version": "$1"
+  },
+  {
+    "regex": "PAN GlobalProtect/(\\d+[\\.\\d]+)",
+    "name": "GlobalProtect",
+    "version": "$1"
+  },
+  {
+    "regex": "Theyub v(\\d+[\\.\\d]+)",
+    "name": "Theyub",
+    "version": "$1"
   }
 ]

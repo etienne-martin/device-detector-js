@@ -1,5 +1,77 @@
 [
   {
+    "regex": "SushiBrowser/(\\d+[\\.\\d]+)",
+    "name": "Sushi Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "dBrowser/(\\d+[\\.\\d]+)",
+    "name": "Peeps dBrowser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "LTBrowser/(\\d+[\\.\\d]+)",
+    "name": "LT Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "lagatos-browser/(\\d+[\\.\\d]+)",
+    "name": "Lagatos Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "psi-secure-browser/(\\d+[\\.\\d]+)",
+    "name": "PSI Secure Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "Harman_Browser/(\\d+[\\.\\d]+)",
+    "name": "Harman Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "bonsai-browser/(\\d+[\\.\\d]+)",
+    "name": "Bonsai",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "spectre-browser/(\\d+[\\.\\d]+)",
+    "name": "Spectre Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "FlashBrowser/(\\d+[\\.\\d]+)",
+    "name": "Flash Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "Secure/(?:(\\d+[\\.\\d]+))?",
     "name": "Secure Browser",
     "version": "$1",
@@ -853,7 +925,7 @@
     }
   },
   {
-    "regex": "Edge[ /](\\d+[\\.\\d]+)",
+    "regex": "(?<!motorola )Edge[ /](\\d+[\\.\\d]+)",
     "name": "Microsoft Edge",
     "version": "$1",
     "engine": {
@@ -1787,6 +1859,14 @@
     "version": ""
   },
   {
+    "regex": "Chrome/.+Tenta/(\\d+[\\.\\d]+)",
+    "name": "Tenta Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "Tenta/(\\d+[\\.\\d]+)",
     "name": "Tenta Browser",
     "version": "$1",
@@ -1912,6 +1992,11 @@
     "engine": {
       "default": "WebKit"
     }
+  },
+  {
+    "regex": "GoBrowser(?:/(\\d+[\\.\\d]+))?",
+    "name": "GoBrowser",
+    "version": "$1"
   },
   {
     "regex": "(?:NokiaBrowser|BrowserNG)(?:/(\\d+[\\.\\d]+))?",
@@ -2577,7 +2662,7 @@
     }
   },
   {
-    "regex": "Dorado WAP-Browser[/ ](\\d+[\\.\\d]+)",
+    "regex": "Dorado WAP-Browser(?:[/ ](\\d+[\\.\\d]+))?",
     "name": "Dorado",
     "version": "$1"
   },

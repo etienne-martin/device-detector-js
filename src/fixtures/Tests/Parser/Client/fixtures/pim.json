@@ -230,5 +230,21 @@
       "name": "Rambox Pro",
       "version": "1.5.2"
     }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36 Mailbird/2.4.30.0/",
+    "client": {
+      "type": "pim",
+      "name": "Mailbird",
+      "version": "2.4.30.0"
+    }
+  },
+  {
+    "user_agent": "MacOutlook/16.46.21021202 (Intelx64 Mac OS X 11.2.2 (Build 20D80))",
+    "client": {
+      "type": "pim",
+      "name": "Microsoft Outlook",
+      "version": "16.46.21021202"
+    }
   }
 ]

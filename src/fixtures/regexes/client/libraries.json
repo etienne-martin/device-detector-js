@@ -182,5 +182,15 @@
     "regex": "gvfs/(?:(\\d+[\\.\\d]+))?",
     "name": "gvfs",
     "version": "$1"
+  },
+  {
+    "regex": "uclient-fetch",
+    "name": "uclient-fetch",
+    "version": ""
+  },
+  {
+    "regex": "cpprestsdk/([\\.\\d]+)",
+    "name": "C++ REST SDK",
+    "version": "$1"
   }
 ]

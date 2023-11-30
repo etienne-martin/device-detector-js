@@ -1649,7 +1649,11 @@
   },
   {
     "user_agent": "NGM_Coffee/ObigoInternetBrowser/QO3C Profile/MIDP2.0 Configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Obigo",
@@ -1662,7 +1666,7 @@
       "brand": "NGM",
       "model": "Coffee"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {

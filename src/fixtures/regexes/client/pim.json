@@ -5,7 +5,7 @@
     "version": "$1"
   },
   {
-    "regex": "Microsoft Outlook(?:[/ ](\\d+[\\.\\d]+))?",
+    "regex": "(?:Microsoft Outlook|MacOutlook)(?:[/ ](\\d+[\\.\\d]+))?",
     "name": "Microsoft Outlook",
     "version": "$1"
   },
@@ -102,6 +102,11 @@
   {
     "regex": "ramboxpro/(\\d+\\.[\\.\\d]+)?",
     "name": "Rambox Pro",
+    "version": "$1"
+  },
+  {
+    "regex": "Mailbird/(\\d+\\.[\\.\\d]+)/",
+    "name": "Mailbird",
     "version": "$1"
   }
 ]

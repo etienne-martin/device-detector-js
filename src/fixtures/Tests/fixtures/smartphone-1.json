@@ -4723,7 +4723,11 @@
   },
   {
     "user_agent": "UCWEB/2.0 (Java; U; MIDP-2.0; fr-FR; ALCATEL_one_touch_585) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "UC Browser",
@@ -4736,7 +4740,7 @@
       "brand": "Alcatel",
       "model": "One Touch 585"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
@@ -10217,7 +10221,11 @@
   },
   {
     "user_agent": "UCWEB/2.0(Java; U; MIDP-2.0; en-us; alcatel-ot-807d) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "UC Browser",
@@ -10230,7 +10238,7 @@
       "brand": "Alcatel",
       "model": "ot-807d"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {

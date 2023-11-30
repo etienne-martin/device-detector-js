@@ -191,8 +191,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Rakuten Big"
+      "brand": "Rakuten",
+      "model": "Big"
     },
     "os_family": "Android",
     "browser_family": "Chrome"

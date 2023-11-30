@@ -7433,7 +7433,11 @@
   },
   {
     "user_agent": "SAMSUNG-GT-C3011/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Openwave Mobile Browser",
@@ -7446,12 +7450,16 @@
       "brand": "Samsung",
       "model": "GT-C3011"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
     "user_agent": "SAMSUNG-GT-C3262 Opera/9.80 (J2ME/MIDP; Opera Mini/7.0.30281/34.1000; U; en) Presto/2.8.119 Version/11.10",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Opera Mini",
@@ -7464,12 +7472,16 @@
       "brand": "Samsung",
       "model": "GT-C3262"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Opera"
   },
   {
     "user_agent": "SAMSUNG-GT-C3303K/C3303KJPJI2 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "NetFront",
@@ -7482,12 +7494,16 @@
       "brand": "Samsung",
       "model": "GT-C3303K"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "NetFront"
   },
   {
     "user_agent": "SAMSUNG-GT-C3520/C3520JPKK2 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "NetFront",
@@ -7500,7 +7516,7 @@
       "brand": "Samsung",
       "model": "GT-C3520"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "NetFront"
   },
   {
@@ -7659,7 +7675,11 @@
   },
   {
     "user_agent": "SAMSUNG-GT-S5230-Bouygues/S5230AGIF2 SHP/VPP/R5 Jasmine/0.8 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Jasmine",
@@ -7672,12 +7692,16 @@
       "brand": "Samsung",
       "model": "GT-S5230"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
     "user_agent": "SAMSUNG-GT-S5230-ORANGE/S5230BVIF1 SHP/VPP/R5 Jasmine/0.8 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Jasmine",
@@ -7690,12 +7714,16 @@
       "brand": "Samsung",
       "model": "GT-S5230"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
     "user_agent": "SAMSUNG-GT-S5230/S523MXEIL2 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Jasmine",
@@ -7708,12 +7736,16 @@
       "brand": "Samsung",
       "model": "GT-S5230"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
     "user_agent": "SAMSUNG-GT-S5230N/S5230NCEKF1 SHP/VPP/R5 Jasmine/0.8 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Jasmine",
@@ -7726,12 +7758,16 @@
       "brand": "Samsung",
       "model": "GT-S5230N"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
     "user_agent": "SAMSUNG-GT-S5230W/S523WXEIL1 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Jasmine",
@@ -7744,7 +7780,7 @@
       "brand": "Samsung",
       "model": "GT-S5230W"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
@@ -8277,7 +8313,11 @@
   },
   {
     "user_agent": "SAMSUNG-S8000/S8000XXIF3 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 FirePHP/0.3",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Jasmine",
@@ -8290,7 +8330,7 @@
       "brand": "Samsung",
       "model": "S8000"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
@@ -8339,7 +8379,11 @@
   },
   {
     "user_agent": "sam-r560 UP.Browser/6.2.3.8 (GUI) MMP/2.0",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Openwave Mobile Browser",
@@ -8352,7 +8396,7 @@
       "brand": "Samsung",
       "model": "SCH-r560"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
@@ -8379,7 +8423,11 @@
   },
   {
     "user_agent": "SAMSUNG-SGH-A737/UCHD2 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "NetFront",
@@ -8392,7 +8440,7 @@
       "brand": "Samsung",
       "model": "SGH-A737"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "NetFront"
   },
   {
@@ -8875,7 +8923,11 @@
   },
   {
     "user_agent": "SAMSUNG-SGH-T259/1.0 SHP/VPP/R5 NetFront/4.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "NetFront",
@@ -8888,12 +8940,16 @@
       "brand": "Samsung",
       "model": "SGH-T259"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "NetFront"
   },
   {
     "user_agent": "SAMSUNG-SGH-T359/T359UVJI2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "NetFront",
@@ -8906,7 +8962,7 @@
       "brand": "Samsung",
       "model": "SGH-T359"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "NetFront"
   },
   {
@@ -8955,7 +9011,11 @@
   },
   {
     "user_agent": "SAMSUNG-SGH-T749/T749UVIF3 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "NetFront",
@@ -8968,7 +9028,7 @@
       "brand": "Samsung",
       "model": "SGH-T749"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "NetFront"
   },
   {

@@ -2761,7 +2761,11 @@
   },
   {
     "user_agent": "COCOON/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Obigo",
@@ -2774,7 +2778,7 @@
       "brand": "O2",
       "model": "COCOON"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Unknown"
   },
   {
@@ -6115,7 +6119,11 @@
   },
   {
     "user_agent": "PANTECH-P7000/JDUS10052009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15645; U; fr) Opera 9.50",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Opera Mini",
@@ -6128,7 +6136,7 @@
       "brand": "Pantech",
       "model": "P7000"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Opera"
   },
   {
@@ -6177,7 +6185,11 @@
   },
   {
     "user_agent": "PantechP9020/JEUS04262010; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18216; U; fr) Opera 9.50",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Opera Mini",
@@ -6190,7 +6202,7 @@
       "brand": "Pantech",
       "model": "P9020"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Opera"
   },
   {

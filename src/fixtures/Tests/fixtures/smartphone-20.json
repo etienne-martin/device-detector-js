@@ -2249,8 +2249,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z11 Mini"
+      "brand": "Nubia",
+      "model": "Z11 Mini"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
