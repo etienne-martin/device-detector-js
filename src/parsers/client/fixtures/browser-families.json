@@ -15,18 +15,20 @@
     "AW"
   ],
   "Chrome": [
-    "CH", "BA", "BR", "CC", "CD", "CM", "CI", "CF", "CN",
-    "CR", "CP", "DD", "IR", "RM", "AO", "TS", "VI", "PT",
-    "AS", "TB", "AD", "SB", "WP", "I3", "CV", "WH", "SZ",
-    "QW", "LF", "KW", "2B", "CE", "EC", "MT", "MS", "HA",
-    "OC", "MZ", "BM", "KN", "SW", "M1", "FA", "TA", "AH",
-    "CL", "SU", "EU", "UB", "LO", "VG", "TV", "A0", "1B",
-    "S4", "EE", "AE", "VM", "O0", "TG", "GB", "SY", "HH",
-    "YJ", "LL", "TU", "XV", "C2", "QU", "YN", "JB", "MR",
-    "S6", "7S", "NM", "PB", "UR", "NR", "SG", "S8", "C3",
-    "SS", "O2", "SV", "TR", "CW", "GI", "VE", "AC", "FS",
-    "CG", "DR", "C4", "HS", "DA", "C5", "C6", "DG", "CG",
-    "HE", "H2"
+    "1B", "2B", "7S", "A0", "AC", "AD", "AE", "AH", "AI",
+    "AO", "AS", "BA", "BM", "BR", "C2", "C3", "C5", "C4",
+    "C6", "CC", "CD", "CE", "CF", "CG", "CH", "CI", "CL",
+    "CM", "CN", "CP", "CR", "CV", "CW", "DA", "DD", "DG",
+    "DR", "EC", "EE", "EU", "EW", "FA", "FS", "GB", "GI",
+    "H2", "HA", "HE", "HH", "HS", "I3", "IR", "JB", "KN",
+    "KW", "LF", "LL", "LO", "M1", "MA", "MD", "MR", "MS",
+    "MT", "MZ", "NM", "NR", "O0", "O2", "O3", "OC", "PB",
+    "PT", "QU", "QW", "RM", "S4", "S6", "S8", "S9", "SB",
+    "SG", "SS", "SU", "SV", "SW", "SY", "SZ", "T1", "TA",
+    "TB", "TG", "TR", "TS", "TU", "TV", "UB", "UR", "VE",
+    "VG", "VI", "VM", "WP", "WH", "XV", "YJ", "YN", "FH",
+    "B1", "BO", "HB", "PC", "LA", "LT", "PD", "HR", "HU",
+    "HP", "IO", "TP", "CJ"
   ],
   "Firefox": [
     "FF", "FE", "FM", "SX", "FB", "PX", "MB", "EI", "WF",

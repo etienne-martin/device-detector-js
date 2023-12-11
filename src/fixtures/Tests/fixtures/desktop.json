@@ -3538,7 +3538,7 @@
     "os": {
       "name": "Windows",
       "version": "NT",
-      "platform": ""
+      "platform": "x64"
     },
     "client": {
       "type": "browser",
@@ -5249,7 +5249,7 @@
     "user_agent": "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)",
     "os": {
       "name": "Mac",
-      "version": "10.9",
+      "version": "10.9.0",
       "platform": "x64"
     },
     "client": {
@@ -7257,7 +7257,7 @@
     "user_agent": "Safari/7537.78.2 CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookAir3%2C1)",
     "os": {
       "name": "Mac",
-      "version": "10.7",
+      "version": "10.7.5",
       "platform": "x64"
     },
     "client": {
@@ -7361,7 +7361,7 @@
     "user_agent": "1PasswordThumbs/1 CFNetwork/520.5.1 Darwin/11.4.2 (x86_64) (MacBookAir5%2C2)",
     "os": {
       "name": "Mac",
-      "version": "10.7",
+      "version": "10.7.5",
       "platform": "x64"
     },
     "client": {
@@ -7563,7 +7563,7 @@
     "user_agent": "Safari5525.27.1 CFNetwork/422.15.2 Darwin/9.6.2 (i386) (MacBookPro5%2C1)",
     "os": {
       "name": "Mac",
-      "version": "10.5",
+      "version": "10.5.6",
       "platform": "x86"
     },
     "client": {
@@ -7607,7 +7607,7 @@
     "user_agent": "1PasswordThumbs/1 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro5%2C5)",
     "os": {
       "name": "Mac",
-      "version": "10.6",
+      "version": "10.6.8",
       "platform": "x86"
     },
     "client": {
@@ -7627,7 +7627,7 @@
     "user_agent": "Safari/6531.22.7 CFNetwork/454.9.4 Darwin/10.3.0 (i386) (MacBookPro5%2C3)",
     "os": {
       "name": "Mac",
-      "version": "10.6",
+      "version": "10.6.3",
       "platform": "x86"
     },
     "client": {
@@ -7649,7 +7649,7 @@
     "user_agent": "Safari5530.18 CFNetwork/438.12 Darwin/9.7.1 (i386) (MacBookPro5%2C4)",
     "os": {
       "name": "Mac",
-      "version": "10.5",
+      "version": "10.5.7",
       "platform": "x86"
     },
     "client": {
@@ -7759,7 +7759,7 @@
     "user_agent": "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookPro8%2C2)",
     "os": {
       "name": "Mac",
-      "version": "10.9",
+      "version": "10.9.0",
       "platform": "x64"
     },
     "client": {
@@ -7781,7 +7781,7 @@
     "user_agent": "Safari/6533.21.1 CFNetwork/454.11.12 Darwin/10.7.3 (x86_64) (MacBookPro8%2C3)",
     "os": {
       "name": "Mac",
-      "version": "10.6",
+      "version": "10.6.7",
       "platform": "x64"
     },
     "client": {
@@ -7843,7 +7843,7 @@
     "user_agent": "1PasswordThumbs/1 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookPro10%2C1)",
     "os": {
       "name": "Mac",
-      "version": "10.9",
+      "version": "10.9.0",
       "platform": "x64"
     },
     "client": {
@@ -8305,7 +8305,7 @@
     "user_agent": "Safari/5525.27.1 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro1,1)",
     "os": {
       "name": "Mac",
-      "version": "10.5",
+      "version": "10.5.5",
       "platform": "x86"
     },
     "client": {
@@ -8327,7 +8327,7 @@
     "user_agent": "Safari/5525.27.1 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro1,2)",
     "os": {
       "name": "Mac",
-      "version": "10.5",
+      "version": "10.5.5",
       "platform": "x86"
     },
     "client": {
@@ -8349,7 +8349,7 @@
     "user_agent": "Safari/5525.20.1 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro2,1)",
     "os": {
       "name": "Mac",
-      "version": "10.5",
+      "version": "10.5.5",
       "platform": "x86"
     },
     "client": {
@@ -8371,7 +8371,7 @@
     "user_agent": "Safari/5526.11.2 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro2,2)",
     "os": {
       "name": "Mac",
-      "version": "10.5",
+      "version": "10.5.5",
       "platform": "x86"
     },
     "client": {
@@ -8393,7 +8393,7 @@
     "user_agent": "Safari/5525.26.12 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro3,1)",
     "os": {
       "name": "Mac",
-      "version": "10.5",
+      "version": "10.5.5",
       "platform": "x86"
     },
     "client": {
@@ -9216,5 +9216,407 @@
     },
     "os_family": "Windows",
     "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Dalvik/2.1.0 (Linux; U; Android 7.1.1; HP Chromebook 11 G5 Build/R79-12607.81.0)",
+    "os": {
+      "name": "Android",
+      "version": "7.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Android Browser",
+      "version": "",
+      "engine": "WebKit",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "HP",
+      "model": "Chromebook 11 G5"
+    },
+    "os_family": "Android",
+    "browser_family": "Android Browser"
+  },
+  {
+    "user_agent": "Dalvik/2.1.0 (Linux; U; Android 9; HP Chromebook x360 11 G1 EE Build/R80-12739.111.0)",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Android Browser",
+      "version": "",
+      "engine": "WebKit",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "HP",
+      "model": "Chromebook x360 11 G1 EE"
+    },
+    "os_family": "Android",
+    "browser_family": "Android Browser"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 9; HP Chromebook 13 G1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "80.0.3987.162",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "HP",
+      "model": "Chromebook 13 G1"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 7.1.1; Aspire 4349) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "version": "7.1.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Chrome",
+      "version": "72.0.3626.121",
+      "engine": "Blink",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Acer",
+      "model": "Aspire 4349"
+    },
+    "os_family": "Android",
+    "browser_family": "Chrome"
+  },
+  {
+    "user_agent": "com.google.android.youtube/5.3.32(Linux; U; Android 4.0.3; ro_RO; GOCLEVER NETBOOK R103 Build/IML74K) gzip",
+    "os": {
+      "name": "Android",
+      "version": "4.0.3",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "YouTube",
+      "version": "5.3.32"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "GOCLEVER",
+      "model": "Netbook R103"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/MacBookPro18,1)",
+    "os": {
+      "name": "Mac",
+      "version": "12.0.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office Excel",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "MacBook Pro 16\" (2021)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/MacBookPro18,3)",
+    "os": {
+      "name": "Mac",
+      "version": "12.0.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office Excel",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "MacBook Pro 14\" (2021)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/MacBookPro18,2)",
+    "os": {
+      "name": "Mac",
+      "version": "12.0.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office Excel",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "MacBook Pro 16\" (2021)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/MacBookPro18,4)",
+    "os": {
+      "name": "Mac",
+      "version": "12.0.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office Excel",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "MacBook Pro 14\" (2021)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office PowerPoint/16.54.1010 (Mac OS/11.5.1; Desktop; en-US; NonAppStore; Apple/iMac18,1)",
+    "os": {
+      "name": "Mac",
+      "version": "11.5.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "iMac 21.5\" (2017)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office PowerPoint/16.54.1010 (Mac OS/11.5.1; Desktop; en-US; NonAppStore; Apple/iMac18,2)",
+    "os": {
+      "name": "Mac",
+      "version": "11.5.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "iMac 21.5\" (2017)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office PowerPoint/16.54.1010 (Mac OS/11.5.1; Desktop; en-US; NonAppStore; Apple/iMac18,3)",
+    "os": {
+      "name": "Mac",
+      "version": "11.5.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "iMac 27\" (2017)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office Word/16.54.1010 (Mac OS/11.6; Desktop; en-US; AppStore; Apple/iMac21,1)",
+    "os": {
+      "name": "Mac",
+      "version": "11.6",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office Word",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "iMac 24\" (2021)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office Word/16.54.1010 (Mac OS/11.6; Desktop; en-US; AppStore; Apple/iMac21,2)",
+    "os": {
+      "name": "Mac",
+      "version": "11.6",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office Word",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "iMac 24\" (2021)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/iMacPro1,1)",
+    "os": {
+      "name": "Mac",
+      "version": "12.0.1",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office Excel",
+      "version": "16.54.1010"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "iMac Pro 27\" (2017)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "server-bag [Mac OS X,10.14.6,18G8022,MacBookPro15,4]",
+    "os": {
+      "name": "Mac",
+      "version": "10.14.6",
+      "platform": ""
+    },
+    "client": "null",
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "MacBook Pro 13\" (2019)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "server-bag [macOS,11.6.1,20G224,MacBookAir6,2]",
+    "os": {
+      "name": "Mac",
+      "version": "11.6.1",
+      "platform": ""
+    },
+    "client": "null",
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "MacBook Air 13\" (2013-2014)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Bookshelf-Android/10.0.3 (Android OS/9; Samsung Chromebook 3) vitalsource",
+    "os": {
+      "name": "Android",
+      "version": "9",
+      "platform": ""
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Bookshelf",
+      "version": "10.0.3"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Samsung",
+      "model": "Chromebook 3"
+    },
+    "os_family": "Android",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Microsoft Office OneNote/16.0.12527.21962 (Windows/6.1; Desktop x86; es-MX; Desktop app; Sony Corporation/VGN-FE650FM)",
+    "os": {
+      "name": "Windows",
+      "version": "6.1",
+      "platform": "x86"
+    },
+    "client": {
+      "type": "mobile app",
+      "name": "Microsoft Office OneNote",
+      "version": "16.0.12527.21962"
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Sony",
+      "model": "VGN-FE650FM"
+    },
+    "os_family": "Windows",
+    "browser_family": "Unknown"
+  },
+  {
+    "user_agent": "Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power Macintosh) (PowerMac7,2)",
+    "os": {
+      "name": "Mac",
+      "version": "10.5.8",
+      "platform": ""
+    },
+    "client": {
+      "type": "browser",
+      "name": "Safari",
+      "version": "",
+      "engine": "WebKit",
+      "engine_version": ""
+    },
+    "device": {
+      "type": "desktop",
+      "brand": "Apple",
+      "model": "Power Macintosh G5 (2003)"
+    },
+    "os_family": "Mac",
+    "browser_family": "Safari"
   }
 ]

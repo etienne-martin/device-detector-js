@@ -16,7 +16,7 @@ interface Options {
   versionTruncation: 0 | 1 | 2 | 3 | null;
 }
 
-const desktopOsArray = ["AmigaOS","IBM","GNU/Linux","Mac","Unix","Windows","BeOS","Chrome OS"];
+const desktopOsArray = ["AmigaOS", "IBM", "GNU/Linux", "Mac", "Unix", "Windows", "BeOS", "Chrome OS"];
 const shortOsNames = operatingSystem.operatingSystem
 const osFamilies = operatingSystem.osFamilies
 
@@ -64,7 +64,21 @@ export default class OperatingSystemParser {
       if (!match) continue;
 
       result.name = variableReplacement(operatingSystem.name, match);
-      result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+
+      if ("version" in operatingSystem && operatingSystem.version) {
+        result.version = formatVersion(variableReplacement(operatingSystem.version, match), this.options.versionTruncation);
+      }
+
+      if ("versions" in operatingSystem && operatingSystem.versions) {
+        for (const version of operatingSystem.versions) {
+          const versionMatch = userAgentParser(version.regex, userAgent);
+
+          if (!versionMatch) continue;
+
+          result.version = formatVersion(variableReplacement(version.version, versionMatch), this.options.versionTruncation);
+          break;
+        }
+      }
 
       if (result.name === "lubuntu") {
         result.name = "Lubuntu";
@@ -74,10 +88,6 @@ export default class OperatingSystemParser {
         result.name = "Debian";
       }
 
-      if (result.name === "YunOS") {
-        result.name = "YunOs";
-      }
-
       return result;
     }
 
@@ -85,7 +95,7 @@ export default class OperatingSystemParser {
   };
 
   private parsePlatform = (userAgent: string) => {
-    if (userAgentParser("arm|aarch64|Watch ?OS|Watch1,[12]", userAgent)) {
+    if (userAgentParser("arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]", userAgent)) {
       return "ARM";
     }
 
@@ -97,11 +107,11 @@ export default class OperatingSystemParser {
       return "SuperH";
     }
 
-    if (userAgentParser("WOW64|x64|win64|amd64|x86_?64", userAgent)) {
+    if (userAgentParser("64-?bit|WOW64|(?:Intel)?x64|win64|amd64|x86_?64", userAgent)) {
       return "x64";
     }
 
-    if (userAgentParser("(?:i[0-9]|x)86|i86pc", userAgent)) {
+    if (userAgentParser(".+32bit|.+win32|(?:i[0-9]|x)86|i86pc", userAgent)) {
       return "x86";
     }
 

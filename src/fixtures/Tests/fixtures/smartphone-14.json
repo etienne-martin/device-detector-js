@@ -2611,7 +2611,11 @@
   },
   {
     "user_agent": "SHARP-STX2/MC.40; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; en-US) Opera 9.50",
-    "os": [],
+    "os": {
+      "name": "Java ME",
+      "version": "",
+      "platform": ""
+    },
     "client": {
       "type": "browser",
       "name": "Opera Mini",
@@ -2624,7 +2628,7 @@
       "brand": "Sharp",
       "model": "STX2"
     },
-    "os_family": "Unknown",
+    "os_family": "Real-time OS",
     "browser_family": "Opera"
   },
   {
@@ -11167,8 +11171,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia X6"
+      "brand": "Nubia",
+      "model": "X6"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11189,8 +11193,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia My Prague"
+      "brand": "Nubia",
+      "model": "My Prague"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11211,8 +11215,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z17S"
+      "brand": "Nubia",
+      "model": "Z17S"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11233,8 +11237,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z17 Lite"
+      "brand": "Nubia",
+      "model": "Z17 Lite"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11255,8 +11259,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z17"
+      "brand": "Nubia",
+      "model": "Z17"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11277,8 +11281,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia M2"
+      "brand": "Nubia",
+      "model": "M2"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11299,8 +11303,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z11 Max"
+      "brand": "Nubia",
+      "model": "Z11 Max"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11321,8 +11325,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z11"
+      "brand": "Nubia",
+      "model": "Z11"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11343,8 +11347,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z9"
+      "brand": "Nubia",
+      "model": "Z9"
     },
     "os_family": "Android",
     "browser_family": "Chrome"
@@ -11392,7 +11396,7 @@
   {
     "user_agent": "Mozilla/5.0 (iPad; CPU OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad5,1;FBMD/iPad;FBSN/iOS;FBSV/13.5;FBSS/2;FBCR/;FBID/tablet;FBLC/fr_FR;FBOP/5]",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "13.5",
       "platform": ""
     },
@@ -11412,7 +11416,7 @@
   {
     "user_agent": "Mozilla/5.0 (iPad; CPU OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/14.0.1;FBSS/2;FBID/tablet;FBLC/ru_RU;FBOP/5]",
     "os": {
-      "name": "iOS",
+      "name": "iPadOS",
       "version": "14.0.1",
       "platform": ""
     },
@@ -11445,8 +11449,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z7"
+      "brand": "Nubia",
+      "model": "Z7"
     },
     "os_family": "Android",
     "browser_family": "Opera"
@@ -11467,8 +11471,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z5S"
+      "brand": "Nubia",
+      "model": "Z5S"
     },
     "os_family": "Android",
     "browser_family": "Opera"
@@ -11489,8 +11493,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z5 Mini"
+      "brand": "Nubia",
+      "model": "Z5 Mini"
     },
     "os_family": "Android",
     "browser_family": "Android Browser"
@@ -11511,8 +11515,8 @@
     },
     "device": {
       "type": "smartphone",
-      "brand": "ZTE",
-      "model": "Nubia Z5 Mini"
+      "brand": "Nubia",
+      "model": "Z5 Mini"
     },
     "os_family": "Android",
     "browser_family": "Chrome"

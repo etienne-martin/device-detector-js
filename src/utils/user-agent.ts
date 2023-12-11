@@ -11,7 +11,7 @@ const getRegexInstance = (rawRegex: string) => {
 
   if (cachedRegexInstance) return cachedRegexInstance.value;
 
-  const regexInstance = RegExp(`(?:^|[^A-Z0-9\-_]|[^A-Z0-9\-]_|sprd-)(?:${rawRegex})`, "i");
+  const regexInstance = RegExp(`(?:^|[^A-Z0-9\-_]|[^A-Z0-9\-]_|sprd-|MZ-)(?:${rawRegex})`, "i");
 
   cache.set(rawRegex, {
     value: regexInstance

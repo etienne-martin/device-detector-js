@@ -1,6 +1,7 @@
 import CameraParser from "./cameras";
 import MobileParser from "./mobiles";
 import TelevisionParser from "./televisions";
+import ShellTvParser from "./shell-tvs";
 import CarParser from "./cars";
 import ConsoleParser from "./consoles";
 import NotebookParser from "./notebooks";
@@ -14,6 +15,7 @@ const deviceParsers = [
   CarParser,
   CameraParser,
   TelevisionParser,
+  ShellTvParser,
   PortableMediaPlayerParser,
   MobileParser,
   NotebookParser
