@@ -1,5 +1,21 @@
 [
   {
+    "regex": "T\\+Browser/(\\d+[\\.\\d]+)",
+    "name": "T+Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "ChanjetCloud/(\\d+[\\.\\d]+)",
+    "name": "ChanjetCloud",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "SushiBrowser/(\\d+[\\.\\d]+)",
     "name": "Sushi Browser",
     "version": "$1",
@@ -1056,7 +1072,7 @@
     "version": "$1"
   },
   {
-    "regex": "(?:Avast|ASW|Safer)(?:/(\\d+[\\.\\d]+))?",
+    "regex": "(?:Avast(?:SecureBrowser)?|ASW|Safer)(?:/(\\d+[\\.\\d]+))?",
     "name": "Avast Secure Browser",
     "version": "$1"
   },
@@ -1277,7 +1293,7 @@
     }
   },
   {
-    "regex": "(?:Focus|Klar)(?:/(\\d+[\\.\\d]+))?",
+    "regex": "(?:Focus|Klar)(?:/(\\d+[\\.\\d]+))",
     "name": "Firefox Focus",
     "version": "$1"
   },
@@ -1931,6 +1947,14 @@
   },
   {
     "regex": "Web Explorer/(\\d+[\\.\\d]+).*Chrome",
+    "name": "Web Explorer",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
+    "regex": "webexplorer/(\\d+)",
     "name": "Web Explorer",
     "version": "$1",
     "engine": {

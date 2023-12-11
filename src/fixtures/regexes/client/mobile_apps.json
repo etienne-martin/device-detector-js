@@ -405,7 +405,12 @@
     "version": ""
   },
   {
-    "regex": "Discord/([\\d\\.]+)",
+    "regex": "discord/([\\d\\.]+).+Electron",
+    "name": "Discord",
+    "version": "$1"
+  },
+  {
+    "regex": "discord(?:-Updater)?/([\\d\\.]+)",
     "name": "Discord",
     "version": ""
   },
@@ -1062,6 +1067,36 @@
   {
     "regex": "BBCNewsUKWatchApp/(\\d+[\\.\\d]+)",
     "name": "BBC News",
+    "version": "$1"
+  },
+  {
+    "regex": "TradingView/(\\d+[\\.\\d]+)",
+    "name": "TradingView",
+    "version": "$1"
+  },
+  {
+    "regex": "Instabridge",
+    "name": "Instabridge",
+    "version": ""
+  },
+  {
+    "regex": "Be Focused/(\\d+\\.[\\.\\d]+)?",
+    "name": "Be Focused",
+    "version": "$1"
+  },
+  {
+    "regex": "Focus Matrix/(\\d+\\.[\\.\\d]+)?",
+    "name": "Focus Matrix",
+    "version": "$1"
+  },
+  {
+    "regex": "Focuskeeper/(\\d+\\.[\\.\\d]+)?",
+    "name": "Focus Keeper",
+    "version": "$1"
+  },
+  {
+    "regex": "Quick Search TV/(\\d+\\.[\\.\\d]+)",
+    "name": "Quick Search TV",
     "version": "$1"
   }
 ]

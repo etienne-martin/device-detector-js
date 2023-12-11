@@ -120,6 +120,11 @@
     "version": ""
   },
   {
+    "regex": "Android Marshmallow",
+    "name": "Android",
+    "version": "6"
+  },
+  {
     "regex": "(?:Podbean|Podimo)(?:.+)?/Android",
     "name": "Android",
     "version": ""
@@ -1247,7 +1252,7 @@
   },
   {
     "regex": "AppleTV(?:/?(\\d+[\\.\\d]+))?",
-    "name": "Apple TV",
+    "name": "tvOS",
     "version": "$1"
   },
   {

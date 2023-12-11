@@ -1286,5 +1286,61 @@
       "name": "Theyub",
       "version": "7.4.8"
     }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.9003 Chrome/91.0.4472.164 Electron/13.4.0 Safari/537.36",
+    "client": {
+      "type": "mobile app",
+      "name": "Discord",
+      "version": "1.0.9003"
+    }
+  },
+  {
+    "user_agent": "Discord-Updater/1",
+    "client": {
+      "type": "mobile app",
+      "name": "Discord",
+      "version": ""
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TradingView/1.0.0-beta.15 Chrome/96.0.4664.55 Safari/537.36 TVDesktop/1.0.0-beta.15",
+    "client": {
+      "type": "mobile app",
+      "name": "TradingView",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Instabridge",
+    "client": {
+      "type": "mobile app",
+      "name": "Instabridge",
+      "version": ""
+    }
+  },
+  {
+    "user_agent": "Be Focused/104 CFNetwork/976 Darwin/18.2.0",
+    "client": {
+      "type": "mobile app",
+      "name": "Be Focused",
+      "version": ""
+    }
+  },
+  {
+    "user_agent": "Focuskeeper/2.0.15.4 CFNetwork/1240.0.4 Darwin/20.5.0",
+    "client": {
+      "type": "mobile app",
+      "name": "Focus Keeper",
+      "version": "2.0.15.4"
+    }
+  },
+  {
+    "user_agent": "Focus Matrix/155 CFNetwork/976 Darwin/18.2.0",
+    "client": {
+      "type": "mobile app",
+      "name": "Focus Matrix",
+      "version": ""
+    }
   }
 ]

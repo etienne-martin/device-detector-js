@@ -88,10 +88,6 @@ export default class OperatingSystemParser {
         result.name = "Debian";
       }
 
-      if (result.name === "YunOS") {
-        result.name = "YunOs";
-      }
-
       return result;
     }
 
